@@ -1,6 +1,7 @@
 import collections
 from tinydb import TinyDB, Query
 from code.models.round import Round
+import json
 
 class Tournament:
 
@@ -18,9 +19,11 @@ class Tournament:
         self.selected_players = selected_players
         self.game_type = game_type
         self.notes = notes
+        self.num_of_duel = int(len(self.selected_players)/2)
         self.scoreboard = ""
         self.ranked_dict = {}
         self.object_dict = {}
+
 
     def return_ranking(self):
         """ Return a ordered dictionnary that contains participants informations
@@ -38,7 +41,7 @@ class Tournament:
         return
 
     def scoreboard_maker(self):
-        self.scoreboard = TinyDB('scoreboard.json')
+        self.scoreboard = TinyDB('scoreboard.json', indent=1)
         if (len(self.scoreboard)) < 1: ## -DEVonly
             def add_to_database(rank,ref,ID):
                 self.scoreboard.insert({'Classement':rank,'Reference': ref, 'ID':ID, "Score": 0,
@@ -48,19 +51,23 @@ class Tournament:
 
     def sort_score_rank(self):
         """Sort the json file based on his 'Classement-Score' key"""
-        pass
+        for line, rank in zip(sorted(self.scoreboard, key=lambda k: k['Score'],
+                                     reverse=True),range(1,len(self.selected_players)+1)):
+            self.scoreboard.update({'Classement-Score': rank},
+                                   Query().Reference == line['Reference'])
+
+        return
 
     def first_draw(self):
         """ Generate the first list of duel """
 
-        self.NUM_OF_DUEL = int(len(self.scoreboard)/2)
         self.duel_list = []
 
-        for index in range(self.NUM_OF_DUEL):
+        for index in range(self.num_of_duel):
 
             results = []
             player_1 = self.scoreboard.search(Query().Classement == index+1)
-            player_2 = self.scoreboard.search(Query().Classement == index+1+self.NUM_OF_DUEL)
+            player_2 = self.scoreboard.search(Query().Classement == index+1+self.num_of_duel)
 
             results.append(player_1[0]['Reference'])
             results.append(player_2[0]['Reference'])
@@ -101,6 +108,5 @@ class Tournament:
                 pass
 
     def duel_generator(self):
-        NUM_OF_DUEL = len(self.scoreboard)/2
-
+        pass
 

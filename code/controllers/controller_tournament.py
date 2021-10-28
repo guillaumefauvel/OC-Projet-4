@@ -45,7 +45,7 @@ def launch_from_controller(tournament_object):
     adding_result_match(results, NUM_OF_MATCH)
     # Use these matchs objects to update the scoreboard
     tournament_object.updating_scoreboard_score(1)
-
-    for line in tournament_object.scoreboard:
-        print(line)
+    # Show the scoreboard
+    tournament_object.sort_score_rank()
     # Generate the next series of duel thanks to the scoreboard
+

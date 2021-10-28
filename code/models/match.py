@@ -9,6 +9,5 @@ class Match:
         self.player_2 = player_2
         self.parent = parent_reference
         self.winner = ""
-        self.scoreboard = self.parent.scoreboard
         return
 
