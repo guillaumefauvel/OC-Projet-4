@@ -1,6 +1,6 @@
 import collections
 from tinydb import TinyDB, Query
-from code.controllers.controller_tournament import player_researcher
+from code.models.round import Round
 
 class Tournament:
 
@@ -39,7 +39,7 @@ class Tournament:
 
     def scoreboard_maker(self):
         self.scoreboard = TinyDB('scoreboard.json')
-        if (len(self.scoreboard)) < 1: ## BETA ONLY
+        if (len(self.scoreboard)) < 1: ## -DEVonly
             def add_to_database(rank,ref,ID):
                 self.scoreboard.insert({'Classement':rank,'Reference': ref, 'ID':ID, "Score": 0,
                                         "Classement-Score": 0, "Association(s)":[]})
@@ -77,8 +77,9 @@ class Tournament:
         for value in self.scoreboard:
             print(value)
 
-        return
+        Round(self.duel_list,self).make_match()
 
+        return self.duel_list
 
 
 
@@ -86,29 +87,10 @@ class Tournament:
         NUM_OF_DUEL = len(self.scoreboard)/2
 
 
-        # User = Query()
-        # def search():
-        #     results = self.scoreboard.search(User.Classement == 1)
-        #     print("")
-        #     print(results)
-        #     return
-
-
-        # search()
-
-        #
-        # def update():
-        #     scoreboard.update({'age': 26}, User.name == 'Max')
-        #
-        #     results = scoreboard.search(User.name == 'Max')
-        #     for res in results:
-        #         res['age'] = 27
-        #     scoreboard.write_back(results)
-        #
-        # self.scoreboard.purge()
-        pass
 
     def launch(self):
+        # -DEVonly [ Former launcher - will be remove ]
+        # -Replaced by "launch_from_controller"
 
         # Sort the player by making an ordered dict
         self.return_ranking()
@@ -118,7 +100,7 @@ class Tournament:
         self.scoreboard_maker() # -DEVonly
         # Generate the first series of duel thanks to the scoreboard
         self.first_draw()
-        # Write the duel association into the scoreboard
+        #
 
         # Generate the next series of duel thanks to the scoreboard
 

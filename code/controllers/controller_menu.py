@@ -7,7 +7,6 @@ def menu_attribution(response):
     # Launch a new tournament
     if response == 1:
         tournament_beta_purposes()
-
     # add a new player
     elif response == 2:
         adding_player()

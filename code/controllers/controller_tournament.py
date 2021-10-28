@@ -1,4 +1,6 @@
 from code.models.player import Player
+from code.views.view_tournament import show_duel
+
 
 def make_player_dict():
     """Explore all the player object.
@@ -19,3 +21,19 @@ def player_researcher(*player_reference):
                 researched_results.append(found_player)
                 print("found")
     return researched_results
+
+def launch_from_controller(tournament_object):
+    # Sort the player by making an ordered dict
+    tournament_object.return_ranking()
+    # Use the ordered dict in order to create the scoreboard
+    tournament_object.scoreboard_maker()
+    tournament_object.scoreboard.purge()  # -DEVonly
+    tournament_object.scoreboard_maker()  # -DEVonly
+    # Generate the first series of duel thanks to the scoreboard
+    # Show the user the list of duels
+    show_duel(tournament_object.first_draw())
+    # Ask the user the result of the match
+
+
+
+    # Generate the next series of duel thanks to the scoreboard
