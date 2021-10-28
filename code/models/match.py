@@ -10,6 +10,5 @@ class Match:
         self.parent = parent_reference
         self.winner = ""
         self.scoreboard = self.parent.scoreboard
-
         return
 

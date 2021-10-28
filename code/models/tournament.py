@@ -19,8 +19,8 @@ class Tournament:
         self.game_type = game_type
         self.notes = notes
         self.scoreboard = ""
-        self.nested_list = [] #
         self.ranked_dict = {}
+        self.object_dict = {}
 
     def return_ranking(self):
         """ Return a ordered dictionnary that contains participants informations
@@ -45,7 +45,6 @@ class Tournament:
                                         "Classement-Score": 0, "Association(s)":[]})
             for index in self.ranked_dict:
                 add_to_database(index,self.ranked_dict[index][0],index)
-
 
     def sort_score_rank(self):
         """Sort the json file based on his 'Classement-Score' key"""
@@ -73,38 +72,35 @@ class Tournament:
             self.scoreboard.update({'Association(s)': player_1[0]['ID']},
                                    Query().Reference == player_2[0]['Reference'])
 
-        # -DEVonly
-        for value in self.scoreboard:
-            print(value)
 
-        Round(self.duel_list,self).make_match()
+        # Create the round
+        self.object_dict[1] = Round(self.duel_list,self)
+        # Create the match attached to this round
+        self.object_dict[1].make_match()
 
         return self.duel_list
 
-
+    def updating_scoreboard_score(self, round):
+        """ Update the score of the scoreboard
+        Arg : the round index
+        Return : nothing, modification of the scoreboard file
+        """
+        for match in self.object_dict[round].attached_match:
+            if match.winner == "1":
+                old_score = self.scoreboard.search(Query().Reference == match.player_1)[0]['Score']
+                self.scoreboard.update({'Score':old_score + 1}, Query().Reference == match.player_1)
+            elif match.winner == "2":
+                old_score = self.scoreboard.search(Query().Reference == match.player_2)[0]['Score']
+                self.scoreboard.update({'Score': old_score + 1}, Query().Reference == match.player_2)
+                pass
+            else:
+                old_score_p1 = self.scoreboard.search(Query().Reference == match.player_1)[0]['Score']
+                old_score_p2 = self.scoreboard.search(Query().Reference == match.player_2)[0]['Score']
+                self.scoreboard.update({'Score':old_score_p1 + 0.5}, Query().Reference == match.player_1)
+                self.scoreboard.update({'Score':old_score_p2 + 0.5}, Query().Reference == match.player_2)
+                pass
 
     def duel_generator(self):
         NUM_OF_DUEL = len(self.scoreboard)/2
-
-
-
-    def launch(self):
-        # -DEVonly [ Former launcher - will be remove ]
-        # -Replaced by "launch_from_controller"
-
-        # Sort the player by making an ordered dict
-        self.return_ranking()
-        # Use the ordered dict in order to create the scoreboard
-        self.scoreboard_maker()
-        self.scoreboard.purge() # -DEVonly
-        self.scoreboard_maker() # -DEVonly
-        # Generate the first series of duel thanks to the scoreboard
-        self.first_draw()
-        #
-
-        # Generate the next series of duel thanks to the scoreboard
-
-        pass
-
 
 

@@ -15,9 +15,11 @@ def main():
     # from code.controllers.controller_menu import tournament_beta_purposes
     # tournament_beta_purposes()
 
+    # -DEVonly
     from code.controllers.controller_tournament import launch_from_controller
     launch_from_controller(Tournament._registry[-1])
 
 
 if __name__ == "__main__":
     main()
+
