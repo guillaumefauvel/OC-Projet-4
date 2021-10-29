@@ -45,7 +45,7 @@ class Tournament:
         if (len(self.scoreboard)) < 1: ## -DEVonly
             def add_to_database(rank,ref,ID):
                 self.scoreboard.insert({'Classement':rank,'Reference': ref, 'ID':ID, "Score": 0,
-                                        "Classement-Score": 0, "Association(s)":[]})
+                                        "ClassementScore": 0, "Association(s)":[]})
             for index in self.ranked_dict:
                 add_to_database(index,self.ranked_dict[index][0],index)
 
@@ -53,7 +53,7 @@ class Tournament:
         """Sort the json file based on his 'Classement-Score' key"""
         for line, rank in zip(sorted(self.scoreboard, key=lambda k: k['Score'],
                                      reverse=True),range(1,len(self.selected_players)+1)):
-            self.scoreboard.update({'Classement-Score': rank},
+            self.scoreboard.update({'ClassementScore': rank},
                                    Query().Reference == line['Reference'])
 
         return
@@ -74,9 +74,9 @@ class Tournament:
             self.duel_list.append(results)
 
             # Write the duel associations into the scoreboard
-            self.scoreboard.update({'Association(s)': player_2[0]['ID']},
+            self.scoreboard.update({'Association(s)': [player_2[0]['ID']]},
                                    Query().Reference == player_1[0]['Reference'])
-            self.scoreboard.update({'Association(s)': player_1[0]['ID']},
+            self.scoreboard.update({'Association(s)': [player_1[0]['ID']]},
                                    Query().Reference == player_2[0]['Reference'])
 
 
@@ -105,8 +105,53 @@ class Tournament:
                 old_score_p2 = self.scoreboard.search(Query().Reference == match.player_2)[0]['Score']
                 self.scoreboard.update({'Score':old_score_p1 + 0.5}, Query().Reference == match.player_1)
                 self.scoreboard.update({'Score':old_score_p2 + 0.5}, Query().Reference == match.player_2)
+
+    def generator(self,round_index):
+
+        dict = {}
+        duel_list = []
+        # Making the dict
+        for value, index in zip(sorted(self.scoreboard, key=lambda k: k['Score'],reverse=True),range(1,len(self.scoreboard)+1)):
+            dict[index] = value['ID'],value['Association(s)'],value['Reference']
+
+        for value in range(1,len(dict)+1):
+            try:
+                if dict[value][0] not in dict[value+1][1]:
+                    # print(f"{dict[value][2]} vs {dict[value+1][2]}")
+                    duel_list.append([dict[value][2],dict[value+1][2]])
+                    dict.pop(value)
+                    dict.pop(value+1)
+                    # print("It's a match")
+                else:
+                    print(f"{dict[value][2]} et {dict[value + 1][2]} ont déjà joué ensemble")
+
+            except:
+                # print("error")
                 pass
 
-    def duel_generator(self):
-        pass
+        # Create the round
+        self.object_dict[round_index] = Round(self.duel_list,self)
+        # Create the match attached to this round
+        self.object_dict[round_index].make_match()
 
+        return duel_list
+
+    def updating_scoreboard_associations(self,list_of_duel):
+
+        list_of_duel_plus = []
+
+        for value in list_of_duel:
+            list_of_duel_plus.append([value[0], value[1]])
+            list_of_duel_plus.append([value[1], value[0]])
+
+        for player, pair in zip(sorted(self.scoreboard, key=lambda k: k['Score'],reverse=True),list_of_duel_plus):
+            # Searching the old associations for the player
+            associations_p1 = self.scoreboard.search(Query().Reference == pair[0])[0]['Association(s)']
+            # finding the ID of the player2
+            p2_id = self.scoreboard.search(Query().Reference == pair[1])[0]['ID']
+            associations_p1.append(p2_id)
+            # updating the new asssociations to the scoreboard
+            self.scoreboard.update({'Association(s)': associations_p1}, Query().Reference == pair[0])
+
+
+        return

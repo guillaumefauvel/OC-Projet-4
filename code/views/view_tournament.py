@@ -5,6 +5,8 @@ def show_duel(list_of_duel):
     for player, index in zip(list_of_duel,range(len(list_of_duel))):
         print(f"{index+1}.{player[0]} affrontera {player[1]}.\n")
 
+    print('--------------------------------------------------------')
+
 
 def asking_match_result(duel):
     """ Ask the user wich of the player win.
@@ -30,4 +32,15 @@ def asking_match_result(duel):
             else:
                 "Merci de rentrer '1','2' ou '0'."
 
+    print('--------------------------------------------------------')
+
     return result_list
+
+
+# -DEVonly
+def show_scoreboard(tournament_object):
+
+    for value in tournament_object.scoreboard:
+        print(value)
+
+    print('--------------------------------------------------------')

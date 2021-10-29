@@ -1,6 +1,6 @@
 from code.models.player import Player
 from code.models.match import Match
-from code.views.view_tournament import show_duel, asking_match_result
+from code.views.view_tournament import show_duel, asking_match_result, show_scoreboard
 
 def make_player_dict():
     """Explore all the player object.
@@ -45,7 +45,21 @@ def launch_from_controller(tournament_object):
     adding_result_match(results, NUM_OF_MATCH)
     # Use these matchs objects to update the scoreboard
     tournament_object.updating_scoreboard_score(1)
-    # Show the scoreboard
+    # Sort the scoreboard
     tournament_object.sort_score_rank()
+    # Show the scoreboard ( a copy version where it's fully sorted )
+    #------
     # Generate the next series of duel thanks to the scoreboard
+    list_of_duel = tournament_object.generator(2)
+    show_scoreboard(tournament_object)
+    tournament_object.updating_scoreboard_associations(list_of_duel)
+    show_duel(list_of_duel)
+    results = asking_match_result(list_of_duel)
+    adding_result_match(results, NUM_OF_MATCH)
+    tournament_object.updating_scoreboard_score(2)
+    tournament_object.sort_score_rank()
+    show_scoreboard(tournament_object)
+
+
+
 
