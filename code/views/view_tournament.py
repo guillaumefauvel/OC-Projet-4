@@ -1,4 +1,5 @@
 """ View generated during the tournament """
+from prettytable import PrettyTable
 
 def show_duel(list_of_duel):
     """ Print the list of duel """
@@ -19,7 +20,7 @@ def asking_match_result(duel):
     for player in duel:
         while True:
             accepted_answer = ["0","1","2"]
-            print(f"1.{player[0]}, 2.{player[1]}\n"
+            print(f"\n1.{player[0]}, 2.{player[1]}\n"
                   f"Qui du joueur 1 ou du joueur 2 a gagné ? '0' si nul")
             winner = input("Réponse : ")
             if winner in accepted_answer:
@@ -46,3 +47,13 @@ def show_scoreboard(tournament_object):
         print(value)
 
     print('--------------------------------------------------------')
+
+def show_score(scoreboard,round_number):
+
+    table = PrettyTable(["Joueur","Classement","Score"])
+    for value in scoreboard:
+        table.add_row([value["Reference"], value["ClassementScore"], value["Score"]])
+    table = table.get_string(title=f"Round {round_number}")
+    print(table)
+
+

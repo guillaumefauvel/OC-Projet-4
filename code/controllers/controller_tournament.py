@@ -1,6 +1,6 @@
 from code.models.player import Player
 from code.models.match import Match
-from code.views.view_tournament import show_duel, asking_match_result, show_scoreboard
+from code.views.view_tournament import show_duel, asking_match_result, show_scoreboard, show_score
 
 def make_player_dict():
     """Explore all the player object.
@@ -47,21 +47,21 @@ def launch_from_controller(tournament_object):
     tournament_object.updating_scoreboard_score(1)
     # Sort the scoreboard
     tournament_object.sort_score_rank()
-    show_scoreboard(tournament_object)
+    # show_scoreboard(tournament_object)
     # Show the scoreboard ( a copy version where it's fully sorted )
-    #------
+    show_score(sorted(tournament_object.scoreboard, key=lambda k: k['Score'], reverse=True), 1)
 
     # Iterate on the number of round left
     for number_of_round in range(2,tournament_object.num_of_round+1):
         # Generate the next series of duel thanks to the scoreboard
         list_of_duel = tournament_object.generator(number_of_round)
         tournament_object.updating_scoreboard_associations(list_of_duel)
-        show_scoreboard(tournament_object)
+        # show_scoreboard(tournament_object)
         show_duel(list_of_duel)
         results = asking_match_result(list_of_duel)
         adding_result_match(results, NUM_OF_MATCH)
         tournament_object.updating_scoreboard_score(number_of_round)
         tournament_object.sort_score_rank()
-        show_scoreboard(tournament_object)
-
+        # show_scoreboard(tournament_object)
+        show_score(sorted(tournament_object.scoreboard, key=lambda k: k['Score'],reverse=True),number_of_round)
 
