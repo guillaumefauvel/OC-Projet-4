@@ -114,20 +114,49 @@ class Tournament:
         for value, index in zip(sorted(self.scoreboard, key=lambda k: k['Score'],reverse=True),range(1,len(self.scoreboard)+1)):
             dict[index] = value['ID'],value['Association(s)'],value['Reference']
 
-        for value in range(1,len(dict)+1):
-            try:
-                if dict[value][0] not in dict[value+1][1]:
-                    # print(f"{dict[value][2]} vs {dict[value+1][2]}")
-                    duel_list.append([dict[value][2],dict[value+1][2]])
-                    dict.pop(value)
-                    dict.pop(value+1)
-                    # print("It's a match")
-                else:
-                    print(f"{dict[value][2]} et {dict[value + 1][2]} ont déjà joué ensemble")
-
-            except:
-                # print("error")
+        for value in list(dict):
+            if value not in list(dict):
                 pass
+            else:
+                # print(f"Travaux sur la valeur : {dict[value][2]}")
+                try:
+                    condition = 0
+                    try:
+                        if dict[value][0] not in dict[value + 1][1]:
+                            duel_list.append([dict[value][2], dict[value + 1][2]])
+                            # print([dict[value][2], dict[value + 1][2]])
+                            dict.pop(value)
+                            dict.pop(value + 1)
+                            condition = 1
+                            # print("It's a match V1")
+                    except:
+                        # print("Erreur stade 1")
+                        pass
+                    if condition == 0:
+                        try:
+                            if dict[value][0] not in dict[value + 2][1]:
+                                duel_list.append([dict[value][2], dict[value + 2][2]])
+                                # print([dict[value][2], dict[value + 2][2]])
+                                dict.pop(value)
+                                dict.pop(value + 2)
+                                condition = 2
+                                # print("It's a match V2")
+                        except:
+                            # print("Erreur stade 2")
+                            pass
+                    if condition == 0:
+                        try:
+                            if dict[value][0] not in dict[value + 3][1]:
+                                duel_list.append([dict[value][2], dict[value + 3][2]])
+                                # print([dict[value][2], dict[value + 3][2]])
+                                dict.pop(value)
+                                dict.pop(value + 3)
+                                # print("It's a match V3")
+                        except:
+                            pass
+                except:
+                    print(f"--- {value} a rencontré un problème --- ") # -DEVonly
+                    pass
 
         # Create the round
         self.object_dict[round_index] = Round(self.duel_list,self)

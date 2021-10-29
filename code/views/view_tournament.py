@@ -40,7 +40,9 @@ def asking_match_result(duel):
 # -DEVonly
 def show_scoreboard(tournament_object):
 
-    for value in tournament_object.scoreboard:
+    print('--------------------------------------------------------')
+
+    for value in sorted(tournament_object.scoreboard, key=lambda k: k['Score'],reverse=True):
         print(value)
 
     print('--------------------------------------------------------')
