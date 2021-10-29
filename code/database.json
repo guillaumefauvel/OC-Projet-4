@@ -1,0 +1,69 @@
+{
+ "_default": {},
+ "Player": {
+  "1": {
+   "name": "Farse",
+   "first_name": "Bertrand",
+   "birthday": "18/04/1990",
+   "gender": "H",
+   "ranking": 4,
+   "reference": "Bertrand Farse"
+  },
+  "2": {
+   "name": "Godran",
+   "first_name": "Jean",
+   "birthday": "18/04/1995",
+   "gender": "H",
+   "ranking": 2,
+   "reference": "Jean Godran"
+  },
+  "3": {
+   "name": "Gadzish",
+   "first_name": "Sven",
+   "birthday": "18/04/1997",
+   "gender": "H",
+   "ranking": 3,
+   "reference": "Sven Gadzish"
+  },
+  "4": {
+   "name": "Bernard",
+   "first_name": "Martin",
+   "birthday": "18/04/1997",
+   "gender": "H",
+   "ranking": 5,
+   "reference": "Martin Bernard"
+  },
+  "5": {
+   "name": "Rousseau",
+   "first_name": "Jacques",
+   "birthday": "18/04/1997",
+   "gender": "H",
+   "ranking": 7,
+   "reference": "Jacques Rousseau"
+  },
+  "6": {
+   "name": "Noire",
+   "first_name": "Arnold",
+   "birthday": "18/04/1997",
+   "gender": "H",
+   "ranking": 9,
+   "reference": "Arnold Noire"
+  },
+  "7": {
+   "name": "De Galice",
+   "first_name": "Fran\u00e7ois",
+   "birthday": "18/04/1980",
+   "gender": "H",
+   "ranking": 10,
+   "reference": "Fran\u00e7ois De Galice"
+  },
+  "8": {
+   "name": "Kasparov",
+   "first_name": "Garry",
+   "birthday": "18/04/1956",
+   "gender": "H",
+   "ranking": 1,
+   "reference": "Garry Kasparov"
+  }
+ }
+}

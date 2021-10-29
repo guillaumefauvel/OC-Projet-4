@@ -4,17 +4,17 @@ from prettytable import PrettyTable
 def show_duel(list_of_duel):
     """ Print the list of duel """
     for player, index in zip(list_of_duel,range(len(list_of_duel))):
-        print(f"{index+1}.{player[0]} affrontera {player[1]}.\n")
+        print(f"\n{index+1}.{player[0]} affrontera {player[1]}.")
 
-    print('--------------------------------------------------------')
+    print('\n--------------------------------------------------------')
 
 
 def asking_match_result(duel):
     """ Ask the user wich of the player win.
-    Attrs:
+    Arg :
     - duel : the list of two players
-    Returns:
-    - A list where '1' or '2' = the winner ref, None if there is an equality
+    Return :
+    - A list where '1' or '2' equals the winner ref, None if there is an equality
     """
     result_list = []
     for player in duel:
@@ -36,7 +36,6 @@ def asking_match_result(duel):
     print('--------------------------------------------------------')
 
     return result_list
-
 
 # -DEVonly
 def show_scoreboard(tournament_object):

@@ -3,6 +3,7 @@
 class Player:
 
     _registry = []
+    _serialized_registry = []
 
     def __init__(self, name, first_name, birthday, gender, ranking ):
 
@@ -14,3 +15,12 @@ class Player:
         self.ranking = ranking
         # self.reference = (self.name+"."+self.first_name).replace(" ","").lower()
         self.reference = (f"{first_name} {name}")
+        serialized_version = {
+            'name': self.name,
+            'first_name': self.first_name,
+            'birthday': self.birthday,
+            'gender': self.gender,
+            'ranking': self.ranking,
+            'reference': self.reference
+        }
+        self._serialized_registry.append(serialized_version)

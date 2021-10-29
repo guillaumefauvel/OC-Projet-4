@@ -41,6 +41,7 @@ class Tournament:
         return
 
     def scoreboard_maker(self):
+        """ Create the scoreboard by using a sorting dict """
         self.scoreboard = TinyDB('scoreboard.json', indent=1)
         if (len(self.scoreboard)) < 1: ## -DEVonly
             def add_to_database(rank,ref,ID):
@@ -59,7 +60,7 @@ class Tournament:
         return
 
     def first_draw(self):
-        """ Generate the first list of duel """
+        """ Generate the first list of duel by analysing the scoreboard database """
 
         self.duel_list = []
 
@@ -107,10 +108,13 @@ class Tournament:
                 self.scoreboard.update({'Score':old_score_p2 + 0.5}, Query().Reference == match.player_2)
 
     def generator(self,round_index):
+        """ Generate a list of duel by analysing the scoreboard database, it also make a round and some matchs
+        Arg : The round index - in order to link the round to his tournament
+        Return : The list of the duels """
 
         dict = {}
         duel_list = []
-        # Making the dict
+
         for value, index in zip(sorted(self.scoreboard, key=lambda k: k['Score'],reverse=True),range(1,len(self.scoreboard)+1)):
             dict[index] = value['ID'],value['Association(s)'],value['Reference']
 
@@ -166,6 +170,9 @@ class Tournament:
         return duel_list
 
     def updating_scoreboard_associations(self,list_of_duel):
+        """ Add the new associations to the scoreboard in order to have a meetings history
+        Arg = A list of duels
+        """
 
         list_of_duel_plus = []
 
@@ -181,6 +188,5 @@ class Tournament:
             associations_p1.append(p2_id)
             # updating the new asssociations to the scoreboard
             self.scoreboard.update({'Association(s)': associations_p1}, Query().Reference == pair[0])
-
 
         return

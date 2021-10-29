@@ -1,5 +1,6 @@
 from code.models.player import Player
 from code.models.tournament import Tournament
+from tinydb import TinyDB
 
 def load_sample_datas():
 
@@ -28,4 +29,35 @@ def load_sample_datas():
           f"players and {len(Tournament._registry)} tournament(s)\n")
 
     return
+
+def player_maker(dict_to_transform):
+    """ Create player objects
+    Arg : The json file containing the player_infos
+    """
+    serialized_datas = []
+    for value in dict_to_transform:
+        serialized_datas.append(value)
+    # dict_to_transform.clear()
+    for value in serialized_datas:
+        name = value['name']
+        first_name = value['first_name']
+        birthday = value['birthday']
+        gender = value['gender']
+        ranking = value['ranking']
+        Player(name, first_name, birthday, gender, ranking)
+
+def save_data():
+    """ Save the player data into a json file """
+    database = TinyDB('database.json', indent=1)
+    player_table = database.purge_table("Player")
+    player_table = database.table("Player")
+    player_table.insert_multiple(Player._serialized_registry)
+    pass
+
+def load_from_save():
+    """ Create players from the json file """
+    database = TinyDB('database.json', indent=1)
+    player_table = database.table("Player")
+    player_maker(player_table.all())
+    print("The datas has been loaded")
 
