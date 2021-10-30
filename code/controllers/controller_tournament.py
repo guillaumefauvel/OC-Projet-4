@@ -11,12 +11,14 @@ def make_player_dict():
 
     return reference_dict
 
+
 def convert_to_reference(list_of_player_object):
     """ Convert a list of player object into a list of reference """
     players_references = []
     for object in list_of_player_object:
         players_references.append(object.reference)
     return players_references
+
 
 def convert_to_player_object(list_of_player_reference):
     """ Convert a list of player reference into a list of player object """
@@ -27,6 +29,20 @@ def convert_to_player_object(list_of_player_reference):
                 list_of_player_object.append(player_object)
     return list_of_player_object
 
+
+def round_conversion(list_of_round):
+    """ Convert a list of round object into a serialized dict
+    arg : a list of round object
+    return : a dict containing the duel list of a round and the result of those matchs
+    These informations are in order to serialized the content of the tournament """
+
+    serialized_dict = {}
+
+    for value, index in zip(list_of_round,range(1,len(list_of_round)+1)):
+        serialized_dict[index] = [list_of_round[value].duel_list,
+                                  [x.winner for x in list_of_round[value].attached_match]]
+
+    return serialized_dict
 
 def player_researcher(*player_reference):
     """ Return the objects of n number of player / Args : players references --> Controler ? """
@@ -70,15 +86,18 @@ def launch_from_controller(tournament_object):
 
     # Iterate on the number of round left
     for number_of_round in range(2,tournament_object.num_of_round+1):
+
         # Generate the next series of duel thanks to the scoreboard
         list_of_duel = tournament_object.generating_other_draw(number_of_round)
+
         tournament_object.updating_scoreboard_associations(list_of_duel)
-        # show_scoreboard(tournament_object)
         show_duel(list_of_duel)
         results = asking_match_result(list_of_duel)
         adding_result_match(results, NUM_OF_MATCH)
         tournament_object.updating_scoreboard_score(number_of_round)
         tournament_object.sort_score_rank()
-        # show_scoreboard(tournament_object)
         show_score(sorted(tournament_object.scoreboard, key=lambda k: k['Score'],reverse=True),number_of_round)
 
+
+    tournament_object.serialized_the_object()
+    print(tournament_object.serialized_object)

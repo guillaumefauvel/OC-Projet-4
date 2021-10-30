@@ -1,7 +1,7 @@
 import collections
 from tinydb import TinyDB, Query
 from code.models.round import Round
-from code.controllers.controller_tournament import convert_to_player_object
+from code.controllers.controller_tournament import convert_to_player_object, round_conversion
 
 class Tournament:
 
@@ -18,13 +18,14 @@ class Tournament:
         self.end_date = end_date
         self.num_of_round = num_of_round
         self.selected_players = selected_players
-        self.players_object = convert_to_player_object(self.selected_players) # - To see
+        self.players_object = convert_to_player_object(self.selected_players)
         self.game_type = game_type
         self.notes = notes
         self.num_of_duel = int(len(self.selected_players)/2)
         self.scoreboard = ""
         self.ranked_dict = {}
-        self.object_dict = {} # To translate in V2 - maybe by generating a random number
+        self.object_dict = {} # To translate in V2
+        self.serialized_object = {}
         serialized_version = {
             'name': self.name,
             'location': self.location,
@@ -94,7 +95,7 @@ class Tournament:
 
 
         # Create the round
-        self.object_dict[1] = Round(self.duel_list,self)
+        self.object_dict[1] = Round(self.duel_list)
         # Create the match attached to this round
         self.object_dict[1].make_match()
 
@@ -172,10 +173,9 @@ class Tournament:
                             pass
                 except:
                     print(f"--- {value} a rencontré un problème --- ") # -DEVonly
-                    pass
 
         # Create the round
-        self.object_dict[round_index] = Round(self.duel_list,self)
+        self.object_dict[round_index] = Round(duel_list)
         # Create the match attached to this round
         self.object_dict[round_index].make_match()
 
@@ -202,3 +202,6 @@ class Tournament:
             self.scoreboard.update({'Association(s)': associations_p1}, Query().Reference == pair[0])
 
         return
+
+    def serialized_the_object(self):
+        self.serialized_object = round_conversion(self.object_dict)

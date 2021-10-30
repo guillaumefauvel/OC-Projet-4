@@ -15,7 +15,7 @@ def new_tournament(player_dict):
     print("\n -- Lancement d'un nouveau tournoi. \n")
 
     tournament_caracteristics = ["Nom : ", "Lieu : ", "Date de début (JJ/MM/AAAA): ", "Date de fin (JJ/MM/AAAA): ",
-                                 "Nombre de tours : " , "Joueurs séléctionnés : ", "Type de jeu : " ,"Notes : " ]
+                                 "Nombre de tours : " , "\nJoueurs séléctionnés : ", "Type de jeu : " ,"Notes : " ]
     tournament_input = []
 
     for caraccteristic in tournament_caracteristics:
@@ -36,10 +36,10 @@ def new_tournament(player_dict):
                         tournament_input.append(answer)
                         break
                     else:
-                        print("Merci d'indiquer un entier supérieur à 0")
+                        print("-> Merci d'indiquer un entier supérieur à 0")
                 except ValueError:
-                    print("Merci d'indiquer un entier supérieur à 0")
-        elif caraccteristic == "Joueurs séléctionnés : ":
+                    print("-> Merci d'indiquer un entier supérieur à 0")
+        elif caraccteristic == "\nJoueurs séléctionnés : ":
             for player in player_dict:
                 print(f"{player}. {player_dict[player].reference}")
             selected_players = []
@@ -47,20 +47,25 @@ def new_tournament(player_dict):
             while True:
 
                 answer = input(caraccteristic)
-                try:
-                    answer_list = answer.split()
-                    answer_list_conversion = [int(value) for value in answer_list]
-                    verification = sum(answer_list_conversion)
-                    for player in answer_list_conversion:
-                        for index in player_dict:
-                            if player == index:
-                                selected_players.append(player_dict[index])
-                    tournament_input.append(selected_players)
-                    break
-                except TypeError:
-                    print('Merci de rentrer un index valide')
-                except ValueError:
-                    print('Merci de rentrer un index valide')
+                answer_list = answer.split()
+                if len(answer_list)%2 != 0:
+                    print("-> Merci de saisir un nombre pair")
+                if len(answer_list) != len(set(answer_list)):
+                    print("-> Merci de saisir un joueur une seul fois")
+                elif len(answer_list)%2 == 0 and len(answer_list) == len(set(answer_list)):
+                    try:
+                        answer_list_conversion = [int(value) for value in answer_list]
+                        verification = sum(answer_list_conversion)
+                        for player in answer_list_conversion:
+                            for index in player_dict:
+                                if player == index:
+                                    selected_players.append(player_dict[index])
+                        tournament_input.append(selected_players)
+                        break
+                    except TypeError:
+                        print('-> Merci de rentrer des index valides')
+                    except ValueError:
+                        print('-> Merci de rentrer des index valides')
 
         elif caraccteristic == "Type de jeu : ":
             print("\n   1. Bullet ( 1 min/j ) \n   2. Blitz ( 5 min/j ) \n   3. Coup rapide ( 10 min/j ) \n")
@@ -79,7 +84,7 @@ def new_tournament(player_dict):
                     tournament_input.append(game_type_choice)
                     break
                 else:
-                    print("\nMerci de répondre '1','2' ou '3' \n")
+                    print("\n-> Merci de répondre '1','2' ou '3' \n")
         else:
             answer = input(caraccteristic)
             tournament_input.append(answer)
