@@ -3,7 +3,7 @@ from code.models.tournament import Tournament
 from tinydb import TinyDB
 
 def load_sample_datas():
-
+    """ Load the informations needed to try the tournament mechanics """
     def adding_8_players():
         Player("Farse", "Bertrand", "18/04/1990", "H", 4)
         Player("Godran", "Jean", "18/04/1995", "H", 2)
@@ -45,19 +45,30 @@ def player_maker(dict_to_transform):
         gender = value['gender']
         ranking = value['ranking']
         Player(name, first_name, birthday, gender, ranking)
+        print(value['name'])
 
 def save_data():
     """ Save the player data into a json file """
     database = TinyDB('database.json', indent=1)
-    player_table = database.purge_table("Player")
+    database.purge_table("Player")
     player_table = database.table("Player")
     player_table.insert_multiple(Player._serialized_registry)
-    pass
+
+    return
 
 def load_from_save():
     """ Create players from the json file """
     database = TinyDB('database.json', indent=1)
     player_table = database.table("Player")
     player_maker(player_table.all())
-    print("The datas has been loaded")
 
+    return
+
+def save_date_tournament():
+
+    database = TinyDB('database.json', indent=1)
+    database.purge_table("Tournament")
+    tournament_table = database.table('Tournament')
+    tournament_table.insert_multiple(Tournament._serialized_registry)
+
+    return

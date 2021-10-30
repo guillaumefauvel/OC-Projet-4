@@ -6,6 +6,7 @@ import json
 class Tournament:
 
     _registry = []
+    _serialized_registry = []
 
     def __init__(self, name, location, start_date, end_date, num_of_round, selected_players, game_type, notes):
 
@@ -16,13 +17,29 @@ class Tournament:
         self.start_date = start_date
         self.end_date = end_date
         self.num_of_round = num_of_round
-        self.selected_players = selected_players
+        self.selected_players = selected_players # To translate in order to get player ref instead of player obj
+        self.players_references = [] # To translate in player object with the help of a function, check dependancies
         self.game_type = game_type
         self.notes = notes
         self.num_of_duel = int(len(self.selected_players)/2)
         self.scoreboard = ""
         self.ranked_dict = {}
-        self.object_dict = {}
+        self.object_dict = {} # To translate in V2 - maybe by generating a random number
+        serialized_version = {
+            'name': self.name,
+            'location': self.location,
+            'start_date': self.start_date,
+            'end_date': self.end_date,
+            'num_of_round': self.num_of_round,
+            'selected_players': self.selected_players,
+            'game_type':self.game_type,
+            'notes':self.notes
+        }
+        # self._serialized_registry.append(serialized_version)
+        for player in self.selected_players:
+            self.players_references.append(player.reference)
+        for player in self.players_references:
+            print(player)
 
 
     def return_ranking(self):

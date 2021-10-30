@@ -6,7 +6,7 @@ def make_player_dict():
     """Explore all the player object.
     Return a dictionnary : key=index, value=player_object """
     reference_dict = {}
-    for index, player in zip(range(1, len(Player._registry)), Player._registry):
+    for index, player in zip(range(1, len(Player._registry)+1), Player._registry):
         reference_dict[index] = player
 
     return reference_dict

@@ -2,11 +2,12 @@ from code.controllers import controller_tournament
 from code.models.tournament import Tournament
 from code.models.player import Player
 from code.views import view_menu, view_new_tournament, view_player_form
-
+from code.controllers.controller_tournament import launch_from_controller
 def menu_attribution(response):
     # Launch a new tournament
     if response == 1:
-        tournament_beta_purposes()
+        tournament_launching()
+        # tournament_beta_purposes()
     # add a new player
     elif response == 2:
         adding_player()
@@ -44,7 +45,7 @@ def tournament_launching():
     Tournament(name, location, start_date, end_date, num_of_round, selected_players, game_type, notes)
     # Launch the tournament
     last_tournament = (Tournament._registry[-1])
-    last_tournament.launch()
+    launch_from_controller(last_tournament)
     return
 
 def adding_player():

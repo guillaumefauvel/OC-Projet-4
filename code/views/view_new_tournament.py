@@ -58,9 +58,9 @@ def new_tournament(player_dict):
                     tournament_input.append(selected_players)
                     break
                 except TypeError:
-                    print('Merci de rentrer les index faisant référence aux joueur')
+                    print('Merci de rentrer un index valide')
                 except ValueError:
-                    print('Merci de rentrer les index faisant référence aux joueur')
+                    print('Merci de rentrer un index valide')
 
         elif caraccteristic == "Type de jeu : ":
             print("\n   1. Bullet ( 1 min/j ) \n   2. Blitz ( 5 min/j ) \n   3. Coup rapide ( 10 min/j ) \n")
