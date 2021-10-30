@@ -55,6 +55,7 @@ def player_researcher(*player_reference):
     return researched_results
 
 def adding_result_match(results, num_of_match):
+
     for match, result in zip(Match._registry[-num_of_match:], results):
         match.winner = result
     pass
@@ -75,7 +76,7 @@ def launch_from_controller(tournament_object):
     # Ask the user the result of the match
     results = asking_match_result(list_of_duel)
     # Add those result to the match object
-    adding_result_match(results, NUM_OF_MATCH)
+    adding_result_match(results, len(results))
     # Use these matchs objects to update the scoreboard
     tournament_object.updating_scoreboard_score(1)
     # Sort the scoreboard
@@ -93,7 +94,7 @@ def launch_from_controller(tournament_object):
         tournament_object.updating_scoreboard_associations(list_of_duel)
         show_duel(list_of_duel)
         results = asking_match_result(list_of_duel)
-        adding_result_match(results, NUM_OF_MATCH)
+        adding_result_match(results, len(results))
         tournament_object.updating_scoreboard_score(number_of_round)
         tournament_object.sort_score_rank()
         show_score(sorted(tournament_object.scoreboard, key=lambda k: k['Score'],reverse=True),number_of_round)

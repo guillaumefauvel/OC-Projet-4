@@ -24,7 +24,7 @@ class Tournament:
         self.num_of_duel = int(len(self.selected_players)/2)
         self.scoreboard = ""
         self.ranked_dict = {}
-        self.object_dict = {} # To translate in V2
+        self.object_dict = {}
         self.serialized_object = {}
         serialized_version = {
             'name': self.name,
@@ -34,7 +34,8 @@ class Tournament:
             'num_of_round': self.num_of_round,
             'selected_players': self.selected_players,
             'game_type':self.game_type,
-            'notes':self.notes
+            'notes':self.notes,
+            'serialized_object':self.serialized_object
         }
         self._serialized_registry.append(serialized_version)
 
