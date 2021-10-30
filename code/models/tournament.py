@@ -1,6 +1,8 @@
 import collections
 from tinydb import TinyDB, Query
 from code.models.round import Round
+from code.models.player import Player
+from code.controllers.controller_tournament import convert_to_player_object
 import json
 
 class Tournament:
@@ -17,8 +19,8 @@ class Tournament:
         self.start_date = start_date
         self.end_date = end_date
         self.num_of_round = num_of_round
-        self.selected_players = selected_players # To translate in order to get player ref instead of player obj
-        self.players_references = [] # To translate in player object with the help of a function, check dependancies
+        self.selected_players = selected_players
+        self.players_object = convert_to_player_object(self.selected_players) # - To see
         self.game_type = game_type
         self.notes = notes
         self.num_of_duel = int(len(self.selected_players)/2)
@@ -35,12 +37,7 @@ class Tournament:
             'game_type':self.game_type,
             'notes':self.notes
         }
-        # self._serialized_registry.append(serialized_version)
-        for player in self.selected_players:
-            self.players_references.append(player.reference)
-        for player in self.players_references:
-            print(player)
-
+        self._serialized_registry.append(serialized_version)
 
     def return_ranking(self):
         """ Return a ordered dictionnary that contains participants informations
@@ -48,11 +45,11 @@ class Tournament:
 
         raw_rank = {}
 
-        for player in self.selected_players:
+        for player in self.players_object:
             raw_rank[player.ranking] = player.reference
         ordered_dict = collections.OrderedDict(sorted(raw_rank.items()))
 
-        for player, index, in zip(ordered_dict, range(1, len(self.selected_players) + 1)):
+        for player, index, in zip(ordered_dict, range(1, len(self.players_object) + 1)):
             self.ranked_dict[index] = ordered_dict[player],
 
         return
@@ -70,7 +67,7 @@ class Tournament:
     def sort_score_rank(self):
         """Sort the json file based on his 'Classement-Score' key"""
         for line, rank in zip(sorted(self.scoreboard, key=lambda k: k['Score'],
-                                     reverse=True),range(1,len(self.selected_players)+1)):
+                                     reverse=True),range(1,len(self.players_object)+1)):
             self.scoreboard.update({'ClassementScore': rank},
                                    Query().Reference == line['Reference'])
 

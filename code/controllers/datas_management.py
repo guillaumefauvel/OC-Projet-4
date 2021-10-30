@@ -17,8 +17,8 @@ def load_sample_datas():
 
     adding_8_players()
 
-    player_list = [Player._registry[0],Player._registry[1],Player._registry[2],Player._registry[3],
-                   Player._registry[4],Player._registry[5],Player._registry[6],Player._registry[7]]
+    player_list = ["Garry Kasparov","Jean Godran","Bertrand Farse","Sven Gadzish","Arnold Noire","Martin Bernard",
+                   "Jacques Rousseau","François De Galice"]
 
     def add_1_tournament():
         Tournament("TEST1", "PARIS", "20/10/2020", "20/10/2020",4,player_list,"Blitz","Une note")
@@ -45,7 +45,6 @@ def player_maker(dict_to_transform):
         gender = value['gender']
         ranking = value['ranking']
         Player(name, first_name, birthday, gender, ranking)
-        print(value['name'])
 
 def save_data():
     """ Save the player data into a json file """
@@ -60,15 +59,38 @@ def load_from_save():
     """ Create players from the json file """
     database = TinyDB('database.json', indent=1)
     player_table = database.table("Player")
+    tournament_table = database.table("Tournament")
+
     player_maker(player_table.all())
+    tournament_maker(tournament_table.all())
 
     return
 
-def save_date_tournament():
+def save_data_tournament():
 
     database = TinyDB('database.json', indent=1)
-    database.purge_table("Tournament")
     tournament_table = database.table('Tournament')
     tournament_table.insert_multiple(Tournament._serialized_registry)
 
     return
+
+def tournament_maker(dict_to_transform):
+    """ Create player objects
+        Arg : The json file containing the player_infos
+        """
+    serialized_datas = []
+    for value in dict_to_transform:
+        serialized_datas.append(value)
+    # dict_to_transform.clear()
+    for value in serialized_datas:
+        name = value['name']
+        location = value['location']
+        start_date = value['start_date']
+        end_date = value['end_date']
+        num_of_round = value['num_of_round']
+        selected_players = value['selected_players']
+        game_type = value['game_type']
+        notes = value['notes']
+        Tournament(name, location, start_date, end_date, num_of_round,
+                   selected_players, game_type, notes)
+        return

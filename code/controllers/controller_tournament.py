@@ -11,6 +11,23 @@ def make_player_dict():
 
     return reference_dict
 
+def convert_to_reference(list_of_player_object):
+    """ Convert a list of player object into a list of reference """
+    players_references = []
+    for object in list_of_player_object:
+        players_references.append(object.reference)
+    return players_references
+
+def convert_to_player_object(list_of_player_reference):
+    """ Convert a list of player reference into a list of player object """
+    list_of_player_object = []
+    for player_ref in list_of_player_reference:
+        for player_object in Player._registry:
+            if player_ref == player_object.reference:
+                list_of_player_object.append(player_object)
+    return list_of_player_object
+
+
 def player_researcher(*player_reference):
     """ Return the objects of n number of player / Args : players references --> Controler ? """
 

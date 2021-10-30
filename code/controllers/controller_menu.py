@@ -2,7 +2,7 @@ from code.controllers import controller_tournament
 from code.models.tournament import Tournament
 from code.models.player import Player
 from code.views import view_menu, view_new_tournament, view_player_form
-from code.controllers.controller_tournament import launch_from_controller
+from code.controllers.controller_tournament import launch_from_controller, convert_to_reference
 def menu_attribution(response):
     # Launch a new tournament
     if response == 1:
@@ -42,6 +42,7 @@ def tournament_launching():
     name, location, start_date, end_date, num_of_round, selected_players, game_type, notes \
         = view_new_tournament.new_tournament(player_dict)
     # Create the tournament
+    selected_players = convert_to_reference(selected_players)
     Tournament(name, location, start_date, end_date, num_of_round, selected_players, game_type, notes)
     # Launch the tournament
     last_tournament = (Tournament._registry[-1])
