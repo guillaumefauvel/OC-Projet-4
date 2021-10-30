@@ -1,83 +1,5 @@
 {
  "_default": {},
- "Tournament": {
-  "1": {
-   "name": "TEST1",
-   "location": "PARIS",
-   "start_date": "20/10/2020",
-   "end_date": "20/10/2020",
-   "num_of_round": 4,
-   "selected_players": [
-    "Garry Kasparov",
-    "Jean Godran",
-    "Bertrand Farse",
-    "Sven Gadzish",
-    "Arnold Noire",
-    "Martin Bernard",
-    "Jacques Rousseau",
-    "Fran\u00e7ois De Galice"
-   ],
-   "game_type": "Blitz",
-   "notes": "Une note"
-  },
-  "2": {
-   "name": "ras",
-   "location": "ras",
-   "start_date": "20/12/2021",
-   "end_date": "20/12/2021",
-   "num_of_round": 4,
-   "selected_players": [
-    "Bertrand Farse",
-    "Jean Godran",
-    "Sven Gadzish",
-    "Martin Bernard",
-    "Jacques Rousseau",
-    "Arnold Noire",
-    "Fran\u00e7ois De Galice",
-    "Garry Kasparov"
-   ],
-   "game_type": "Bullet",
-   "notes": "ras"
-  },
-  "3": {
-   "name": "TEST1",
-   "location": "PARIS",
-   "start_date": "20/10/2020",
-   "end_date": "20/10/2020",
-   "num_of_round": 4,
-   "selected_players": [
-    "Garry Kasparov",
-    "Jean Godran",
-    "Bertrand Farse",
-    "Sven Gadzish",
-    "Arnold Noire",
-    "Martin Bernard",
-    "Jacques Rousseau",
-    "Fran\u00e7ois De Galice"
-   ],
-   "game_type": "Blitz",
-   "notes": "Une note"
-  },
-  "4": {
-   "name": "2",
-   "location": "",
-   "start_date": "20/12/2021",
-   "end_date": "20/12/2021",
-   "num_of_round": 4,
-   "selected_players": [
-    "Bertrand Farse",
-    "Jean Godran",
-    "Sven Gadzish",
-    "Martin Bernard",
-    "Jacques Rousseau",
-    "Arnold Noire",
-    "Fran\u00e7ois De Galice",
-    "Garry Kasparov"
-   ],
-   "game_type": "Bullet",
-   "notes": "ras"
-  }
- },
  "Player": {
   "1": {
    "name": "Farse",
@@ -142,6 +64,84 @@
    "gender": "H",
    "ranking": 1,
    "reference": "Garry Kasparov"
+  }
+ },
+ "Tournament": {
+  "1": {
+   "name": "TEST1",
+   "location": "PARIS",
+   "start_date": "20/10/2020",
+   "end_date": "20/10/2020",
+   "num_of_round": 4,
+   "selected_players": [
+    "Garry Kasparov",
+    "Jean Godran",
+    "Bertrand Farse",
+    "Sven Gadzish",
+    "Arnold Noire",
+    "Martin Bernard",
+    "Jacques Rousseau",
+    "Fran\u00e7ois De Galice"
+   ],
+   "game_type": "Blitz",
+   "notes": "Une note"
+  },
+  "2": {
+   "name": "1",
+   "location": "0",
+   "start_date": "18/05/2000",
+   "end_date": "18/05/2000",
+   "num_of_round": 4,
+   "selected_players": [
+    "Bertrand Farse",
+    "Jean Godran",
+    "Sven Gadzish",
+    "Martin Bernard",
+    "Jacques Rousseau",
+    "Arnold Noire",
+    "Fran\u00e7ois De Galice",
+    "Garry Kasparov"
+   ],
+   "game_type": "Bullet",
+   "notes": "ras"
+  },
+  "3": {
+   "name": "Tournoi3",
+   "location": "Online",
+   "start_date": "18/10/2002",
+   "end_date": "18/10/2020",
+   "num_of_round": 4,
+   "selected_players": [
+    "Bertrand Farse",
+    "Jean Godran",
+    "Sven Gadzish",
+    "Martin Bernard",
+    "Jacques Rousseau",
+    "Arnold Noire",
+    "Fran\u00e7ois De Galice",
+    "Garry Kasparov"
+   ],
+   "game_type": "Bullet",
+   "notes": "ras"
+  },
+  "4": {
+   "name": "",
+   "location": "",
+   "start_date": "18/05/1997",
+   "end_date": "18/05/1997",
+   "num_of_round": 4,
+   "selected_players": [
+    "Bertrand Farse",
+    "Jean Godran",
+    "Sven Gadzish",
+    "Martin Bernard",
+    "Jacques Rousseau",
+    "Arnold Noire",
+    "Fran\u00e7ois De Galice",
+    "Garry Kasparov"
+   ],
+   "game_type": "Bullet",
+   "notes": ""
   }
  }
 }

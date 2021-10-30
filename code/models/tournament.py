@@ -1,9 +1,7 @@
 import collections
 from tinydb import TinyDB, Query
 from code.models.round import Round
-from code.models.player import Player
 from code.controllers.controller_tournament import convert_to_player_object
-import json
 
 class Tournament:
 
@@ -121,7 +119,7 @@ class Tournament:
                 self.scoreboard.update({'Score':old_score_p1 + 0.5}, Query().Reference == match.player_1)
                 self.scoreboard.update({'Score':old_score_p2 + 0.5}, Query().Reference == match.player_2)
 
-    def generator(self,round_index):
+    def generating_other_draw(self,round_index):
         """ Generate a list of duel by analysing the scoreboard database, it also make a round and some matchs
         Arg : The round index - in order to link the round to his tournament
         Return : The list of the duels """

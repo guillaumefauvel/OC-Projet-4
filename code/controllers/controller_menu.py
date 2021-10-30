@@ -3,6 +3,7 @@ from code.models.tournament import Tournament
 from code.models.player import Player
 from code.views import view_menu, view_new_tournament, view_player_form
 from code.controllers.controller_tournament import launch_from_controller, convert_to_reference
+
 def menu_attribution(response):
     # Launch a new tournament
     if response == 1:

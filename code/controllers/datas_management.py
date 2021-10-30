@@ -32,7 +32,7 @@ def load_sample_datas():
 
 def player_maker(dict_to_transform):
     """ Create player objects
-    Arg : The json file containing the player_infos
+    Arg : A dict of serialized datas
     """
     serialized_datas = []
     for value in dict_to_transform:
@@ -50,13 +50,16 @@ def save_data():
     """ Save the player data into a json file """
     database = TinyDB('database.json', indent=1)
     database.purge_table("Player")
+    database.purge_table("Tournament")
     player_table = database.table("Player")
     player_table.insert_multiple(Player._serialized_registry)
+    tournament_table = database.table('Tournament')
+    tournament_table.insert_multiple(Tournament._serialized_registry)
 
     return
 
 def load_from_save():
-    """ Create players from the json file """
+    """ Recreate player and tournament object from the json file """
     database = TinyDB('database.json', indent=1)
     player_table = database.table("Player")
     tournament_table = database.table("Tournament")
@@ -66,23 +69,11 @@ def load_from_save():
 
     return
 
-def save_data_tournament():
-
-    database = TinyDB('database.json', indent=1)
-    tournament_table = database.table('Tournament')
-    tournament_table.insert_multiple(Tournament._serialized_registry)
-
-    return
-
 def tournament_maker(dict_to_transform):
-    """ Create player objects
-        Arg : The json file containing the player_infos
+    """ Create tournament object(s)
+        Arg : A dict of serialized datas
         """
-    serialized_datas = []
     for value in dict_to_transform:
-        serialized_datas.append(value)
-    # dict_to_transform.clear()
-    for value in serialized_datas:
         name = value['name']
         location = value['location']
         start_date = value['start_date']
@@ -93,4 +84,6 @@ def tournament_maker(dict_to_transform):
         notes = value['notes']
         Tournament(name, location, start_date, end_date, num_of_round,
                    selected_players, game_type, notes)
-        return
+
+    return
+

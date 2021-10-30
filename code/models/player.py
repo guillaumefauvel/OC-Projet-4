@@ -1,6 +1,4 @@
 """Player object"""
-import json
-
 
 class Player:
 
@@ -16,6 +14,7 @@ class Player:
         self.gender = gender
         self.ranking = ranking
         self.reference = (f"{first_name} {name}")
+
         serialized_version = {
             'name': self.name,
             'first_name': self.first_name,

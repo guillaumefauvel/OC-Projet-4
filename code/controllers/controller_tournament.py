@@ -71,7 +71,7 @@ def launch_from_controller(tournament_object):
     # Iterate on the number of round left
     for number_of_round in range(2,tournament_object.num_of_round+1):
         # Generate the next series of duel thanks to the scoreboard
-        list_of_duel = tournament_object.generator(number_of_round)
+        list_of_duel = tournament_object.generating_other_draw(number_of_round)
         tournament_object.updating_scoreboard_associations(list_of_duel)
         # show_scoreboard(tournament_object)
         show_duel(list_of_duel)

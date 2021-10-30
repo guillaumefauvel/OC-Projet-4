@@ -11,6 +11,8 @@ def main():
     # Launch the menu
     menu_attribution(menu_proposition())
 
+    # for value in Tournament._registry:
+    #     print(value)
 
     # from code.controllers.controller_menu import tournament_beta_purposes
     # tournament_beta_purposes()
@@ -20,7 +22,6 @@ def main():
     # launch_from_controller(Tournament._registry[-1])
 
     datas_management.save_data()
-    datas_management.save_data_tournament()
 
 if __name__ == "__main__":
     main()
