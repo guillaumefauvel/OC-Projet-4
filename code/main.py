@@ -1,6 +1,6 @@
-from code.controllers import datas_management
-from code.controllers.controller_menu import menu_attribution
-from code.views.view_menu import menu_proposition
+from controllers import datas_management
+from controllers.controller_menu import menu_attribution
+from views.view_menu import menu_proposition
 
 def main():
     # Load the data

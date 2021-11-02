@@ -1,7 +1,7 @@
 import collections
 from tinydb import TinyDB, Query
-from code.models.round import Round
-from code.controllers.controller_tournament import convert_to_player_object, round_conversion
+from models.round import Round
+from controllers.controller_tournament import convert_to_player_object, round_conversion
 
 class Tournament:
 
@@ -24,6 +24,7 @@ class Tournament:
         self.num_of_duel = int(len(self.selected_players)/2)
         self.scoreboard = ""
         self.ranked_dict = {}
+        self.ranked_dict_two = {}
         self.object_dict = {}
         self.serialized_object = {}
         serialized_version = {
@@ -51,6 +52,7 @@ class Tournament:
 
         for player, index, in zip(ordered_dict, range(1, len(self.players_object) + 1)):
             self.ranked_dict[index] = ordered_dict[player],
+            self.ranked_dict_two[index] = { "reference" : ordered_dict[player], "id" : index, "Score" : 0, "associations" : [] }
 
         return
 

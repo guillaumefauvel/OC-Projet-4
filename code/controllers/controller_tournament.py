@@ -1,6 +1,6 @@
-from code.models.player import Player
-from code.models.match import Match
-from code.views.view_tournament import show_duel, asking_match_result, show_scoreboard, show_score
+from models.player import Player
+from models.match import Match
+from views.view_tournament import show_duel, asking_match_result, show_scoreboard, show_score
 
 def make_player_dict():
     """Explore all the player object.
@@ -62,7 +62,7 @@ def adding_result_match(results, num_of_match):
 
 
 def launch_from_controller(tournament_object):
-    NUM_OF_MATCH = int(len(tournament_object.selected_players)/2)
+
     # Sort the player by making an ordered dict
     tournament_object.return_ranking()
     # Use the ordered dict in order to create the scoreboard

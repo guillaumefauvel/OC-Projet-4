@@ -1,4 +1,4 @@
-from code.models.match import Match
+from models.match import Match
 
 class Round:
 

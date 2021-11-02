@@ -1,5 +1,5 @@
-from code.models.player import Player
-from code.models.tournament import Tournament
+from models.player import Player
+from models.tournament import Tournament
 from tinydb import TinyDB
 
 def load_sample_datas():

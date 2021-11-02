@@ -40,8 +40,9 @@ def new_tournament(player_dict):
                 except ValueError:
                     print("-> Merci d'indiquer un entier supérieur à 0")
         elif caraccteristic == "\nJoueurs séléctionnés : ":
+            print("")
             for player in player_dict:
-                print(f"{player}. {player_dict[player].reference}")
+                print(f"   {player}. {player_dict[player].reference}")
             selected_players = []
 
             while True:
