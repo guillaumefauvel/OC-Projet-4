@@ -7,7 +7,6 @@ class Tournament:
 
     _registry = []
     _serialized_registry = []
-    _serialized_registry_two = []
 
     def __init__(self, name, location, start_date, end_date, num_of_round, selected_players, game_type, notes):
 
@@ -185,4 +184,4 @@ class Tournament:
             'notes': self.notes,
             'serialized_object': self.serialized_object
         }
-        self._serialized_registry_two.append(self.serialized_version)
+        self._serialized_registry.append(self.serialized_version)
