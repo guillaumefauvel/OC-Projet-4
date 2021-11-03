@@ -65,12 +65,8 @@ def launch_from_controller(tournament_object):
 
     # Sort the player by making an ordered dict
     tournament_object.return_ranking()
-    # Use the ordered dict in order to create the scoreboard
-    tournament_object.scoreboard_maker()
-    tournament_object.scoreboard.purge()  # -DEVonly
-    tournament_object.scoreboard_maker()  # -DEVonly
     # Generate the first series of duel thanks to the scoreboard
-    list_of_duel = tournament_object.first_draw()
+    list_of_duel = tournament_object.first_draw_two()
     # Show the user the list of duels
     show_duel(list_of_duel)
     # Ask the user the result of the match
@@ -78,27 +74,25 @@ def launch_from_controller(tournament_object):
     # Add those result to the match object
     adding_result_match(results, len(results))
     # Use these matchs objects to update the scoreboard
-    tournament_object.updating_scoreboard_score(1)
+    tournament_object.updating_scoreboard_score_two(1)
     # Sort the scoreboard
-    tournament_object.sort_score_rank()
-    # show_scoreboard(tournament_object)
-    # Show the scoreboard ( a copy version where it's fully sorted )
-    show_score(sorted(tournament_object.scoreboard, key=lambda k: k['Score'], reverse=True), 1)
+    tournament_object.sort_score_rank_two()
+    # Show the scoreboard
+    show_score(sorted(tournament_object.scoreboard.values(), key=lambda k: k['score'], reverse=True), 1)
 
     # Iterate on the number of round left
-    for number_of_round in range(2,tournament_object.num_of_round+1):
+    for number_of_round in range(2, tournament_object.num_of_round + 1):
 
         # Generate the next series of duel thanks to the scoreboard
-        list_of_duel = tournament_object.generating_other_draw(number_of_round)
+        list_of_duel = tournament_object.generating_other_draw_two(number_of_round)
 
-        tournament_object.updating_scoreboard_associations(list_of_duel)
+        tournament_object.updating_scoreboard_associations_two(list_of_duel)
         show_duel(list_of_duel)
         results = asking_match_result(list_of_duel)
         adding_result_match(results, len(results))
-        tournament_object.updating_scoreboard_score(number_of_round)
-        tournament_object.sort_score_rank()
-        show_score(sorted(tournament_object.scoreboard, key=lambda k: k['Score'],reverse=True),number_of_round)
+        tournament_object.updating_scoreboard_score_two(number_of_round)
+        tournament_object.sort_score_rank_two()
+        show_score(sorted(tournament_object.scoreboard.values(), key=lambda k: k['score'],reverse=True),number_of_round)
 
-
-    tournament_object.serialized_the_object()
-    print(tournament_object.serialized_object)
+    # tournament_object.serialized_the_object()
+    # print(tournament_object.serialized_object)

@@ -39,12 +39,12 @@ def asking_match_result(duel):
 
     return result_list
 
-# -DEVonly
+# -DEVonly-
 def show_scoreboard(tournament_object):
 
     print('--------------------------------------------------------')
 
-    for value in sorted(tournament_object.scoreboard, key=lambda k: k['Score'],reverse=True):
+    for value in sorted(tournament_object.scoreboard.values(), key=lambda k: k['score'],reverse=True):
         print(value)
 
     print('--------------------------------------------------------')
@@ -53,7 +53,7 @@ def show_score(scoreboard,round_number):
 
     table = PrettyTable(["Joueur","Classement","Score"])
     for value in scoreboard:
-        table.add_row([value["Reference"], value["ClassementScore"], value["Score"]])
+        table.add_row([value["reference"], value["scorerank"], value["score"]])
     table = table.get_string(title=f"Round {round_number}")
     print(table)
 
