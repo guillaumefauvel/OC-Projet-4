@@ -22,7 +22,6 @@ class Tournament:
         self.game_type = game_type
         self.notes = notes
         self.num_of_duel = int(len(self.selected_players)/2)
-        self.ranked_dict = {}
         self.scoreboard = {}
         self.object_dict = {}
         self.serialized_object = {}
@@ -50,18 +49,17 @@ class Tournament:
         ordered_dict = collections.OrderedDict(sorted(raw_rank.items()))
 
         for player, index, in zip(ordered_dict, range(1, len(self.players_object) + 1)):
-            self.ranked_dict[index] = ordered_dict[player],
             self.scoreboard[index] = { "reference" : ordered_dict[player], "id" : index,"scorerank" : 0,
                                             "score" : 0, "associations" : [] }
 
-    def sort_score_rank_two(self):
+    def sort_score_rank(self):
         # """Sort the json file based on his 'Classement-Score' key"""
         for line, rank in zip(sorted(self.scoreboard.values(), key=lambda k: k['score'],
                                      reverse=True),range(1,len(self.players_object)+1)):
             line['scorerank'] = rank
         return
 
-    def first_draw_two(self):
+    def first_draw(self):
         """ Generate the first list of duel by analysing the scoreboard database """
 
         self.duel_list = []
@@ -86,7 +84,7 @@ class Tournament:
 
         return self.duel_list
 
-    def updating_scoreboard_score_two(self, round):
+    def updating_scoreboard_score(self, round):
         """ Update the score of the scoreboard
         Arg : the round index
         Return : nothing, modification of the scoreboard file
@@ -103,13 +101,13 @@ class Tournament:
                 list_of_equality.append(match.player_1)
                 list_of_equality.append(match.player_2)
 
-        for k, v in self.scoreboard.items():
-            if v['reference'] in list_of_winner:
-                v['score'] = v['score']+1
-            if v['reference'] in list_of_equality:
-                v['score'] = v['score']+0.5
+        for player in self.scoreboard.values():
+            if player['reference'] in list_of_winner:
+                player['score'] = player['score']+1
+            if player['reference'] in list_of_equality:
+                player['score'] = player['score']+0.5
 
-    def generating_other_draw_two(self,round_index):
+    def generating_other_draw(self,round_index):
         """ Generate a list of duel by analysing the scoreboard database, it also make a round and some matchs
         Arg : The round index - in order to link the round to his tournament
         Return : The list of the duels """
@@ -161,20 +159,20 @@ class Tournament:
 
         return duel_list
 
-    def updating_scoreboard_associations_two(self,list_of_duel):
+    def updating_scoreboard_associations(self,list_of_duel):
         """ Add the new associations to the scoreboard in order to have a meetings history
         Arg = A list of duels
         """
         associations_list = []
 
         for duel in list_of_duel:
-            for value in self.scoreboard:
-                if duel[0] == self.scoreboard[value]['reference']:
-                    player2_id = self.scoreboard[value]['id']
+            for player in self.scoreboard:
+                if duel[0] == self.scoreboard[player]['reference']:
+                    player2_id = self.scoreboard[player]['id']
                     associations_list.append([duel[1],player2_id])
 
-                if duel[1] == self.scoreboard[value]['reference']:
-                    player1_id = self.scoreboard[value]['id']
+                if duel[1] == self.scoreboard[player]['reference']:
+                    player1_id = self.scoreboard[player]['id']
                     associations_list.append([duel[0],player1_id])
 
         for duel in associations_list:
