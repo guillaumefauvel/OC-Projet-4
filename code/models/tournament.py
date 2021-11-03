@@ -7,6 +7,7 @@ class Tournament:
 
     _registry = []
     _serialized_registry = []
+    _serialized_registry_two = []
 
     def __init__(self, name, location, start_date, end_date, num_of_round, selected_players, game_type, notes):
 
@@ -25,18 +26,6 @@ class Tournament:
         self.scoreboard = {}
         self.object_dict = {}
         self.serialized_object = {}
-        serialized_version = {
-            'name': self.name,
-            'location': self.location,
-            'start_date': self.start_date,
-            'end_date': self.end_date,
-            'num_of_round': self.num_of_round,
-            'selected_players': self.selected_players,
-            'game_type':self.game_type,
-            'notes':self.notes,
-            'serialized_object':self.serialized_object
-        }
-        self._serialized_registry.append(serialized_version)
 
     def return_ranking(self):
         """ Return a ordered dictionnary that contains participants informations
@@ -183,4 +172,17 @@ class Tournament:
         return
 
     def serialized_the_object(self):
+
         self.serialized_object = round_conversion(self.object_dict)
+        self.serialized_version = {
+            'name': self.name,
+            'location': self.location,
+            'start_date': self.start_date,
+            'end_date': self.end_date,
+            'num_of_round': self.num_of_round,
+            'selected_players': self.selected_players,
+            'game_type': self.game_type,
+            'notes': self.notes,
+            'serialized_object': self.serialized_object
+        }
+        self._serialized_registry_two.append(self.serialized_version)

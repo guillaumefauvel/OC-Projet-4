@@ -35,7 +35,6 @@ def round_conversion(list_of_round):
     arg : a list of round object
     return : a dict containing the duel list of a round and the result of those matchs
     These informations are in order to serialized the content of the tournament """
-
     serialized_dict = {}
 
     for value, index in zip(list_of_round,range(1,len(list_of_round)+1)):
@@ -94,5 +93,6 @@ def launch_from_controller(tournament_object):
         tournament_object.sort_score_rank()
         show_score(sorted(tournament_object.scoreboard.values(), key=lambda k: k['score'],reverse=True),number_of_round)
 
-    # tournament_object.serialized_the_object()
-    # print(tournament_object.serialized_object)
+    tournament_object.serialized_the_object()
+    # for value in tournament_object.serialized_object:
+    #     print(tournament_object.serialized_object[value])
