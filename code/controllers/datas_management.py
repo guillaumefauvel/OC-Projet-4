@@ -4,34 +4,6 @@ from models.round import Round
 from models.match import Match
 from tinydb import TinyDB
 
-def load_sample_datas():
-    """ Load the informations needed to try the tournament mechanics """
-    def adding_8_players():
-        Player("Farse", "Bertrand", "18/04/1990", "H", 4)
-        Player("Godran", "Jean", "18/04/1995", "H", 2)
-        Player("Gadzish", "Sven", "18/04/1997", "H", 3)
-        Player("Bernard", "Martin", "18/04/1997", "H", 5)
-        Player("Rousseau", "Jacques", "18/04/1997", "H", 7)
-        Player("Noire", "Arnold", "18/04/1997", "H", 9)
-        Player("De Galice", "François", "18/04/1980", "H", 10)
-        Player("Kasparov", "Garry", "18/04/1956", "H", 1)
-        pass
-
-    adding_8_players()
-
-    player_list = ["Garry Kasparov","Jean Godran","Bertrand Farse","Sven Gadzish","Arnold Noire","Martin Bernard",
-                   "Jacques Rousseau","François De Galice"]
-
-    def add_1_tournament():
-        Tournament("TEST1", "PARIS", "20/10/2020", "20/10/2020",4,player_list,"Blitz","Une note")
-
-    add_1_tournament()
-
-    print(f"\n-- We have loaded {len(Player._registry)} "
-          f"players and {len(Tournament._registry)} tournament(s)\n")
-
-    return
-
 def player_maker(dict_to_transform):
     """ Create player objects
     Arg : A dict of serialized datas
@@ -48,6 +20,7 @@ def player_maker(dict_to_transform):
         ranking = value['ranking']
         Player(name, first_name, birthday, gender, ranking)
 
+
 def save_data():
     """ Save the player data into a json file """
     database = TinyDB('database.json', indent=1)
@@ -58,6 +31,7 @@ def save_data():
     tournament_table.insert_multiple(Tournament._serialized_registry)
 
     return
+
 
 def load_from_save():
     """ Recreate player and tournament object from the json file """
