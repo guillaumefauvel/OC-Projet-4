@@ -9,7 +9,9 @@ def make_players_dict():
 
     players_dict = {}
 
-    for player, index in zip(Player._registry, range(1,len(Player._registry)+1)):
+    sorted_registry = sorted(Player._registry, key=lambda x: x.reference, reverse=False)
+
+    for player, index in zip(sorted_registry, range(1,len(Player._registry)+1)):
         players_dict[index] = [player.reference, player.ranking, player.birthday]
 
     return players_dict
@@ -22,9 +24,6 @@ def sort_by_rank():
 
     for value, new_index in zip(sorted_by_rank, range(1,len(sorted_by_rank)+1)):
         sorted_by_rank[value][1] = new_index
-
-    for value in sorted_by_rank:
-        print(sorted_by_rank[value])
 
     return sorted_by_rank
 

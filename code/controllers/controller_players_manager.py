@@ -1,7 +1,7 @@
 from models.player import Player
 from views import view_menu, view_new_tournament, view_players_manager, view_reports_manager
 from controllers.controller_reports_manager import make_players_dict
-from tinydb import TinyDB, operations, Query
+from tinydb import TinyDB, Query
 
 def players_manager():
     answer = view_players_manager.ask_choice()
@@ -23,8 +23,9 @@ def adding_player():
     Player(name, first_name, birthday, gender, ranking)
 
 def delete_player():
+    """ Remove a player from the database """
 
-    player_to_delete = view_players_manager.show_player_list(make_players_dict())
+    player_to_delete = view_players_manager.show_player_list(())
     database = TinyDB('database.json', indent=1)
     player_table = database.table("Player")
 
@@ -34,11 +35,11 @@ def delete_player():
             Player._serialized_registry.remove(value)
 
 def show_player_infos():
+    """ Show the informations of a player """
 
     selected_player = view_players_manager.show_player_list(make_players_dict())
 
     for player in Player._serialized_registry:
         if player['reference'] == selected_player:
             player_infos = player
-
     view_players_manager.show_player_infos(player_infos)

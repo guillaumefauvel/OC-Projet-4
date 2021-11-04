@@ -53,12 +53,16 @@ def player_researcher(*player_reference):
     return researched_results
 
 def adding_result_match(results, num_of_match):
+    """ Adding the result of the matchs into the matchs objects
+     Args : a list of the matchs results, the number of matches"""
 
     for match, result in zip(Match._registry[-num_of_match:], results):
         match.winner = result
     pass
 
 def adding_time_match(match_label_list, num_of_match):
+    """ Adding the start_time and the end_time to the match object
+    Args : a list of start_time/end_time, the number of match"""
 
     for match in Match._registry[-num_of_match:]:
         for time_infos in match_label_list:
@@ -69,6 +73,8 @@ def adding_time_match(match_label_list, num_of_match):
     return
 
 def updating_players_stats(tournament_object):
+    """ Update the players stats by using the result of the tournament
+    Arg : The tournament object """
 
     serialized_tournament = tournament_object.serialized_object
     for value in serialized_tournament:
@@ -118,9 +124,13 @@ def updating_general_rank():
     for player, rank in zip(sorted_by_wins,range(1,len(Player._registry)+1)):
         player_researcher(sorted_by_wins[player][0])[0].ranking = rank
 
+
     return
 
 def launch_from_controller(tournament_object):
+    """ Hold the logic behind a tournament
+    Arg : A tournament object """
+
 
     # Sort the player by making an ordered dict
     tournament_object.return_ranking()
