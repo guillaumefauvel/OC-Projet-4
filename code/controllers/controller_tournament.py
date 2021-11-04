@@ -63,13 +63,47 @@ def adding_time_match(match_label_list, num_of_match):
 
     for match in Match._registry[-num_of_match:]:
         for time_infos in match_label_list:
-            # player_1 = match_label_list[time_infos][0][0]['match'][0]
-            player_1 = str(match_label_list[time_infos][0][0]['match'][0])
+            player_1 = match_label_list[time_infos][0][0]['match'][0]
             if match.player_1 == player_1:
                 match.start_time = match_label_list[time_infos][0][1]['start_time']
                 match.end_time = match_label_list[time_infos][1]
 
     return
+def updating_players_stats(tournament_object):
+
+    serialized_tournament = tournament_object.serialized_object
+    for value in serialized_tournament:
+        duel_list = serialized_tournament[value][0]
+        result_list = serialized_tournament[value][1]
+        for match, result in zip(duel_list, result_list):
+            if result == "1":
+                player_researcher(match[0])[0].num_of_wins += 1
+                player_researcher(match[1])[0].num_of_losses += 1
+
+            elif result == "2":
+                player_researcher(match[1])[0].num_of_wins += 1
+                player_researcher(match[0])[0].num_of_losses += 1
+
+            else:
+                player_researcher(match[1])[0].num_of_draw += 1
+                player_researcher(match[0])[0].num_of_draw += 1
+
+
+    players_list = tournament_object._serialized_registry[-1]['selected_players']
+
+    for player in players_list:
+        player_object = player_researcher(player)[0]
+        player_object.num_of_tournaments += 1
+        num_of_match = player_object.num_of_wins + player_object.num_of_losses\
+                       + player_object.num_of_draw
+        player_object.num_of_match = num_of_match
+        try:
+            player_object.winloss_ratio = round(player_object.num_of_wins / player_object.num_of_losses,2)
+        except:
+            player_object.winloss_ratio = 0
+        player_object.update_player_datas()
+    pass
+
 
 def launch_from_controller(tournament_object):
 
@@ -86,6 +120,7 @@ def launch_from_controller(tournament_object):
     # Add those result to the match object
     adding_result_match(results, len(results))
     adding_time_match(time_informations, len(time_informations))
+
 
     # Use these matchs objects to update the scoreboard
     tournament_object.updating_scoreboard_score(1)
@@ -109,5 +144,4 @@ def launch_from_controller(tournament_object):
         show_score(sorted(tournament_object.scoreboard.values(), key=lambda k: k['score'],reverse=True),number_of_round)
 
     tournament_object.serialized_the_object()
-    # for value in tournament_object.serialized_object:
-    #     print(tournament_object.serialized_object[value])
+    updating_players_stats(tournament_object)

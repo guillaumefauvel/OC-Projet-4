@@ -41,8 +41,6 @@ def asking_end_match(duel_list):
                 print("\nMerci de rentrer un index encore présent dans la liste :\n")
                 print(''.join(['{0}.  {1}'.format(k, v) for k, v in short_term_dict.items()]))
 
-    for value in match_dict: print(match_dict[value])
-
     return match_dict
 
 def asking_match_result(duel):

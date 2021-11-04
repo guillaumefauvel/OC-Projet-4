@@ -10,6 +10,8 @@ def make_players_dict():
     return players_dict
 
 def sort_by_rank():
+    """ Use the player dict in order to etablish new rank
+    Return : Another dict with a coherent indexes """
 
     sorted_by_rank = dict(sorted(make_players_dict().items(), key=lambda item: item[1][1]))
 
@@ -22,6 +24,9 @@ def sort_by_rank():
     return sorted_by_rank
 
 def sort_by_age():
+    """ Use the birthday infos in the player dict in order to sort the player
+    by their age.
+    Return : A sorted dict with the name and the age of the player"""
 
     age_dict = {}
 

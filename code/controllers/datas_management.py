@@ -19,7 +19,16 @@ def player_maker(dict_to_transform):
         gender = value['gender']
         ranking = value['ranking']
         Player(name, first_name, birthday, gender, ranking)
-
+        try:
+            player = Player._registry[-1]
+            player.num_of_wins = value['num_of_wins']
+            player.num_of_losses = value['num_of_losses']
+            player.num_of_draw = value['num_of_draw']
+            player.winloss_ratio = value['win_loss_ratio']
+            player.num_of_match = value['num_of_match']
+            player.num_of_tournaments = value['num_of_tournaments']
+        except:
+            pass
 
 def save_data():
     """ Save the player data into a json file """
@@ -42,7 +51,6 @@ def load_from_save():
     tournament_maker(tournament_table.all())
 
     return
-
 
 def tournament_maker(dict_to_transform):
     """ Create tournament object(s)

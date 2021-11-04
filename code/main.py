@@ -13,14 +13,14 @@ def main():
     # menu_attribution(menu_proposition())
 
     # -DEVonly
-    # from code.controllers.controller_tournament import launch_from_controller
-    # launch_from_controller(Tournament._registry[-1])
+    from code.controllers.controller_tournament import launch_from_controller
+    launch_from_controller(Tournament._registry[-1])
+
     # -DEVonly
-    from controllers.controller_report_manager import sort_by_rank, sort_by_age
+    # from controllers.controller_report_manager import sort_by_rank, sort_by_age
     # sort_by_rank()
     # sort_by_age()
-    sort_by_age()
-
+    # sort_by_age()
 
     datas_management.save_data()
 
