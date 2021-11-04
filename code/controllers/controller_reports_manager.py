@@ -1,5 +1,10 @@
 from models.player import Player
 from datetime import datetime
+from views.view_reports_manager import ask_for_report_choice
+def reports_manager():
+    ask_for_report_choice()
+    pass
+
 def make_players_dict():
 
     players_dict = {}

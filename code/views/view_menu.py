@@ -16,9 +16,9 @@ def verify_menu_command():
 def menu_proposition():
     """ The general menu logic """
 
-    print("\nQue voulez-vous faire ? \n\n  1. Lancer un nouveau tournoi \n  2. Ajouter un nouveau joueur "
-          "\n  3. Générer un rapport \n  4. Consulter les informations d'un joueur \n  "
-          "5. Quitter le programme")
+    print("\nQue voulez-vous faire ? \n\n  1. Lancer un nouveau tournoi \n  2. Gestion des joueurs "
+          "\n  3. Gestion des rapports \n  "
+          "4. Quitter le programme")
     response = verify_menu_command()
 
     return response

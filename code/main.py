@@ -7,7 +7,9 @@ def main():
     # Load the data
     datas_management.load_from_save()
 
-
+    # DEVonly
+    from controllers.datas_management import serializing_tournament_player
+    serializing_tournament_player()
 
     # Launch the menu
     # menu_attribution(menu_proposition())

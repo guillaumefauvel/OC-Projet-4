@@ -1,27 +1,24 @@
 from controllers import controller_tournament
 from models.tournament import Tournament
-from models.player import Player
-from views import view_menu, view_new_tournament, view_player_form
+from views import view_menu, view_new_tournament, view_players_manager
 from controllers.controller_tournament import launch_from_controller, convert_to_reference
+from controllers.controller_reports_manager import reports_manager
+from controllers.controller_players_manager import players_manager
 
 def menu_attribution(response):
     # Launch a new tournament
     if response == 1:
         tournament_launching()
-        # tournament_beta_purposes()
-    # add a new player
+    # Go to the player manager
     elif response == 2:
-        adding_player()
-    # generate a report
+        players_manager()
+        pass
+    # Generate a report
     elif response == 3:
+        reports_manager()
         pass
-
-    # consult player infos
+    # Quit the program
     elif response == 4:
-        pass
-
-    # quit the program without saving
-    elif response == 5:
         pass
 
 
@@ -39,18 +36,6 @@ def tournament_launching():
     # Launch the tournament
     last_tournament = (Tournament._registry[-1])
     launch_from_controller(last_tournament)
-    return
-
-def adding_player():
-    """ Create a new player object from the gathered informations
-    If the user doesn't select menu return he can continue his players creations"""
-
-    name, first_name, birthday, gender, ranking = view_player_form.new_player()
-    Player(name, first_name, birthday, gender, ranking)
-    if view_menu.ask_menu_return() == True:
-        menu_attribution(view_menu.menu_proposition())
-    else:
-        return adding_player()
     return
 
 def tournament_beta_purposes():

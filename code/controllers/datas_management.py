@@ -79,3 +79,10 @@ def tournament_maker(dict_to_transform):
             # Adding the score to the round
             for match, result in zip(Match._registry[-num_of_round:],results):
                 match.winner = result
+
+def serializing_tournament_player():
+    for player in Player._registry:
+        player.update_player_datas()
+    for tournament in Tournament._registry:
+        tournament.serialized_the_object()
+    return

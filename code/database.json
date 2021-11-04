@@ -4521,6 +4521,2286 @@
      ]
     ]
    }
+  },
+  "38": {
+   "name": "ParisP\u00e9kin",
+   "location": "Paris/P\u00e9kib",
+   "start_date": "15/05/1996",
+   "end_date": "15/05/1996",
+   "num_of_round": 4,
+   "selected_players": [
+    "Bertrand Farse",
+    "Jean Godran",
+    "Sven Gadzish",
+    "Martin Bernard",
+    "Jacques Rousseau",
+    "Arnold Noire",
+    "Fran\u00e7ois De Galice",
+    "Garry Kasparov"
+   ],
+   "game_type": "Blitz",
+   "notes": "",
+   "serialized_object": {
+    "1": [
+     [
+      [
+       "Garry Kasparov",
+       "Martin Bernard"
+      ],
+      [
+       "Jean Godran",
+       "Jacques Rousseau"
+      ],
+      [
+       "Sven Gadzish",
+       "Arnold Noire"
+      ],
+      [
+       "Bertrand Farse",
+       "Fran\u00e7ois De Galice"
+      ]
+     ],
+     [
+      "2",
+      null,
+      "1",
+      "2"
+     ]
+    ],
+    "2": [
+     [
+      [
+       "Sven Gadzish",
+       "Martin Bernard"
+      ],
+      [
+       "Fran\u00e7ois De Galice",
+       "Jean Godran"
+      ],
+      [
+       "Jacques Rousseau",
+       "Garry Kasparov"
+      ],
+      [
+       "Bertrand Farse",
+       "Arnold Noire"
+      ]
+     ],
+     [
+      null,
+      "1",
+      null,
+      "2"
+     ]
+    ],
+    "3": [
+     [
+      [
+       "Fran\u00e7ois De Galice",
+       "Sven Gadzish"
+      ],
+      [
+       "Martin Bernard",
+       "Jacques Rousseau"
+      ],
+      [
+       "Arnold Noire",
+       "Garry Kasparov"
+      ],
+      [
+       "Jean Godran",
+       "Bertrand Farse"
+      ]
+     ],
+     [
+      null,
+      "1",
+      null,
+      "2"
+     ]
+    ],
+    "4": [
+     [
+      [
+       "Martin Bernard",
+       "Fran\u00e7ois De Galice"
+      ],
+      [
+       "Sven Gadzish",
+       "Garry Kasparov"
+      ],
+      [
+       "Arnold Noire",
+       "Jacques Rousseau"
+      ]
+     ],
+     [
+      null,
+      "1",
+      null
+     ]
+    ]
+   }
+  },
+  "39": {
+   "name": "ParisP\u00e9kin",
+   "location": "Paris/P\u00e9kib",
+   "start_date": "15/05/1996",
+   "end_date": "15/05/1996",
+   "num_of_round": 4,
+   "selected_players": [
+    "Bertrand Farse",
+    "Jean Godran",
+    "Sven Gadzish",
+    "Martin Bernard",
+    "Jacques Rousseau",
+    "Arnold Noire",
+    "Fran\u00e7ois De Galice",
+    "Garry Kasparov"
+   ],
+   "game_type": "Blitz",
+   "notes": "",
+   "serialized_object": {
+    "1": [
+     [
+      [
+       "Garry Kasparov",
+       "Martin Bernard"
+      ],
+      [
+       "Jean Godran",
+       "Jacques Rousseau"
+      ],
+      [
+       "Sven Gadzish",
+       "Arnold Noire"
+      ],
+      [
+       "Bertrand Farse",
+       "Fran\u00e7ois De Galice"
+      ]
+     ],
+     [
+      "2",
+      null,
+      "1",
+      "2"
+     ]
+    ],
+    "2": [
+     [
+      [
+       "Sven Gadzish",
+       "Martin Bernard"
+      ],
+      [
+       "Fran\u00e7ois De Galice",
+       "Jean Godran"
+      ],
+      [
+       "Jacques Rousseau",
+       "Garry Kasparov"
+      ],
+      [
+       "Bertrand Farse",
+       "Arnold Noire"
+      ]
+     ],
+     [
+      null,
+      "1",
+      null,
+      "2"
+     ]
+    ],
+    "3": [
+     [
+      [
+       "Fran\u00e7ois De Galice",
+       "Sven Gadzish"
+      ],
+      [
+       "Martin Bernard",
+       "Jacques Rousseau"
+      ],
+      [
+       "Arnold Noire",
+       "Garry Kasparov"
+      ],
+      [
+       "Jean Godran",
+       "Bertrand Farse"
+      ]
+     ],
+     [
+      null,
+      "1",
+      null,
+      "2"
+     ]
+    ],
+    "4": [
+     [
+      [
+       "Martin Bernard",
+       "Fran\u00e7ois De Galice"
+      ],
+      [
+       "Sven Gadzish",
+       "Garry Kasparov"
+      ],
+      [
+       "Arnold Noire",
+       "Jacques Rousseau"
+      ]
+     ],
+     [
+      null,
+      "1",
+      null
+     ]
+    ]
+   }
+  },
+  "40": {
+   "name": "ParisP\u00e9kin",
+   "location": "Paris/P\u00e9kib",
+   "start_date": "15/05/1996",
+   "end_date": "15/05/1996",
+   "num_of_round": 4,
+   "selected_players": [
+    "Bertrand Farse",
+    "Jean Godran",
+    "Sven Gadzish",
+    "Martin Bernard",
+    "Jacques Rousseau",
+    "Arnold Noire",
+    "Fran\u00e7ois De Galice",
+    "Garry Kasparov"
+   ],
+   "game_type": "Blitz",
+   "notes": "",
+   "serialized_object": {
+    "1": [
+     [
+      [
+       "Garry Kasparov",
+       "Martin Bernard"
+      ],
+      [
+       "Jean Godran",
+       "Jacques Rousseau"
+      ],
+      [
+       "Sven Gadzish",
+       "Arnold Noire"
+      ],
+      [
+       "Bertrand Farse",
+       "Fran\u00e7ois De Galice"
+      ]
+     ],
+     [
+      "2",
+      null,
+      "1",
+      "2"
+     ]
+    ],
+    "2": [
+     [
+      [
+       "Sven Gadzish",
+       "Martin Bernard"
+      ],
+      [
+       "Fran\u00e7ois De Galice",
+       "Jean Godran"
+      ],
+      [
+       "Jacques Rousseau",
+       "Garry Kasparov"
+      ],
+      [
+       "Bertrand Farse",
+       "Arnold Noire"
+      ]
+     ],
+     [
+      null,
+      "1",
+      null,
+      "2"
+     ]
+    ],
+    "3": [
+     [
+      [
+       "Fran\u00e7ois De Galice",
+       "Sven Gadzish"
+      ],
+      [
+       "Martin Bernard",
+       "Jacques Rousseau"
+      ],
+      [
+       "Arnold Noire",
+       "Garry Kasparov"
+      ],
+      [
+       "Jean Godran",
+       "Bertrand Farse"
+      ]
+     ],
+     [
+      null,
+      "1",
+      null,
+      "2"
+     ]
+    ],
+    "4": [
+     [
+      [
+       "Martin Bernard",
+       "Fran\u00e7ois De Galice"
+      ],
+      [
+       "Sven Gadzish",
+       "Garry Kasparov"
+      ],
+      [
+       "Arnold Noire",
+       "Jacques Rousseau"
+      ]
+     ],
+     [
+      null,
+      "1",
+      null
+     ]
+    ]
+   }
+  },
+  "41": {
+   "name": "ParisP\u00e9kin",
+   "location": "Paris/P\u00e9kib",
+   "start_date": "15/05/1996",
+   "end_date": "15/05/1996",
+   "num_of_round": 4,
+   "selected_players": [
+    "Bertrand Farse",
+    "Jean Godran",
+    "Sven Gadzish",
+    "Martin Bernard",
+    "Jacques Rousseau",
+    "Arnold Noire",
+    "Fran\u00e7ois De Galice",
+    "Garry Kasparov"
+   ],
+   "game_type": "Blitz",
+   "notes": "",
+   "serialized_object": {
+    "1": [
+     [
+      [
+       "Garry Kasparov",
+       "Martin Bernard"
+      ],
+      [
+       "Jean Godran",
+       "Jacques Rousseau"
+      ],
+      [
+       "Sven Gadzish",
+       "Arnold Noire"
+      ],
+      [
+       "Bertrand Farse",
+       "Fran\u00e7ois De Galice"
+      ]
+     ],
+     [
+      "2",
+      null,
+      "1",
+      "2"
+     ]
+    ],
+    "2": [
+     [
+      [
+       "Sven Gadzish",
+       "Martin Bernard"
+      ],
+      [
+       "Fran\u00e7ois De Galice",
+       "Jean Godran"
+      ],
+      [
+       "Jacques Rousseau",
+       "Garry Kasparov"
+      ],
+      [
+       "Bertrand Farse",
+       "Arnold Noire"
+      ]
+     ],
+     [
+      null,
+      "1",
+      null,
+      "2"
+     ]
+    ],
+    "3": [
+     [
+      [
+       "Fran\u00e7ois De Galice",
+       "Sven Gadzish"
+      ],
+      [
+       "Martin Bernard",
+       "Jacques Rousseau"
+      ],
+      [
+       "Arnold Noire",
+       "Garry Kasparov"
+      ],
+      [
+       "Jean Godran",
+       "Bertrand Farse"
+      ]
+     ],
+     [
+      null,
+      "1",
+      null,
+      "2"
+     ]
+    ],
+    "4": [
+     [
+      [
+       "Martin Bernard",
+       "Fran\u00e7ois De Galice"
+      ],
+      [
+       "Sven Gadzish",
+       "Garry Kasparov"
+      ],
+      [
+       "Arnold Noire",
+       "Jacques Rousseau"
+      ]
+     ],
+     [
+      null,
+      "1",
+      null
+     ]
+    ]
+   }
+  },
+  "42": {
+   "name": "ParisMonaco",
+   "location": "Paris/Monaco",
+   "start_date": "15/05/2020",
+   "end_date": "15/05/2020",
+   "num_of_round": 4,
+   "selected_players": [
+    "Bertrand Farse",
+    "Jean Godran",
+    "Sven Gadzish",
+    "Martin Bernard",
+    "Jacques Rousseau",
+    "Arnold Noire",
+    "Fran\u00e7ois De Galice",
+    "Garry Kasparov"
+   ],
+   "game_type": "Blitz",
+   "notes": "",
+   "serialized_object": {
+    "1": [
+     [
+      [
+       "Garry Kasparov",
+       "Martin Bernard"
+      ],
+      [
+       "Jean Godran",
+       "Jacques Rousseau"
+      ],
+      [
+       "Sven Gadzish",
+       "Arnold Noire"
+      ],
+      [
+       "Bertrand Farse",
+       "Fran\u00e7ois De Galice"
+      ]
+     ],
+     [
+      "2",
+      "1",
+      "2",
+      "1"
+     ]
+    ],
+    "2": [
+     [
+      [
+       "Jean Godran",
+       "Bertrand Farse"
+      ],
+      [
+       "Martin Bernard",
+       "Arnold Noire"
+      ],
+      [
+       "Garry Kasparov",
+       "Sven Gadzish"
+      ],
+      [
+       "Jacques Rousseau",
+       "Fran\u00e7ois De Galice"
+      ]
+     ],
+     [
+      "1",
+      "2",
+      "1",
+      "2"
+     ]
+    ],
+    "3": [
+     [
+      [
+       "Jean Godran",
+       "Arnold Noire"
+      ],
+      [
+       "Garry Kasparov",
+       "Bertrand Farse"
+      ],
+      [
+       "Martin Bernard",
+       "Fran\u00e7ois De Galice"
+      ],
+      [
+       "Sven Gadzish",
+       "Jacques Rousseau"
+      ]
+     ],
+     [
+      "1",
+      "2",
+      "1",
+      "1"
+     ]
+    ],
+    "4": [
+     [
+      [
+       "Jean Godran",
+       "Martin Bernard"
+      ],
+      [
+       "Bertrand Farse",
+       "Arnold Noire"
+      ],
+      [
+       "Garry Kasparov",
+       "Fran\u00e7ois De Galice"
+      ]
+     ],
+     [
+      "2",
+      "1",
+      ""
+     ]
+    ]
+   }
+  },
+  "43": {
+   "name": "ParisGeneve",
+   "location": "Paris/Genve",
+   "start_date": "15/05/1998",
+   "end_date": "15/05/1998",
+   "num_of_round": 4,
+   "selected_players": [
+    "Bertrand Farse",
+    "Jean Godran",
+    "Sven Gadzish",
+    "Martin Bernard",
+    "Jacques Rousseau",
+    "Arnold Noire",
+    "Fran\u00e7ois De Galice",
+    "Garry Kasparov"
+   ],
+   "game_type": "Bullet",
+   "notes": "2",
+   "serialized_object": {
+    "1": [
+     [
+      [
+       "Garry Kasparov",
+       "Martin Bernard"
+      ],
+      [
+       "Jean Godran",
+       "Jacques Rousseau"
+      ],
+      [
+       "Sven Gadzish",
+       "Arnold Noire"
+      ],
+      [
+       "Bertrand Farse",
+       "Fran\u00e7ois De Galice"
+      ]
+     ],
+     [
+      "2",
+      "2",
+      "2",
+      "2"
+     ]
+    ],
+    "2": [
+     [
+      [
+       "Martin Bernard",
+       "Jacques Rousseau"
+      ],
+      [
+       "Arnold Noire",
+       "Fran\u00e7ois De Galice"
+      ],
+      [
+       "Garry Kasparov",
+       "Jean Godran"
+      ],
+      [
+       "Sven Gadzish",
+       "Bertrand Farse"
+      ]
+     ],
+     [
+      "2",
+      "2",
+      "2",
+      "2"
+     ]
+    ],
+    "3": [
+     [
+      [
+       "Jacques Rousseau",
+       "Fran\u00e7ois De Galice"
+      ],
+      [
+       "Jean Godran",
+       "Bertrand Farse"
+      ],
+      [
+       "Martin Bernard",
+       "Arnold Noire"
+      ],
+      [
+       "Garry Kasparov",
+       "Sven Gadzish"
+      ]
+     ],
+     [
+      "2",
+      "2",
+      "2",
+      "2"
+     ]
+    ],
+    "4": [
+     [
+      [
+       "Bertrand Farse",
+       "Jacques Rousseau"
+      ],
+      [
+       "Arnold Noire",
+       "Jean Godran"
+      ],
+      [
+       "Sven Gadzish",
+       "Martin Bernard"
+      ]
+     ],
+     [
+      "2",
+      "2",
+      ""
+     ]
+    ]
+   }
+  },
+  "44": {
+   "name": "ParisP\u00e9kin",
+   "location": "Paris/P\u00e9kib",
+   "start_date": "15/05/1996",
+   "end_date": "15/05/1996",
+   "num_of_round": 4,
+   "selected_players": [
+    "Bertrand Farse",
+    "Jean Godran",
+    "Sven Gadzish",
+    "Martin Bernard",
+    "Jacques Rousseau",
+    "Arnold Noire",
+    "Fran\u00e7ois De Galice",
+    "Garry Kasparov"
+   ],
+   "game_type": "Blitz",
+   "notes": "",
+   "serialized_object": {
+    "1": [
+     [
+      [
+       "Garry Kasparov",
+       "Martin Bernard"
+      ],
+      [
+       "Jean Godran",
+       "Jacques Rousseau"
+      ],
+      [
+       "Sven Gadzish",
+       "Arnold Noire"
+      ],
+      [
+       "Bertrand Farse",
+       "Fran\u00e7ois De Galice"
+      ]
+     ],
+     [
+      "2",
+      null,
+      "1",
+      "2"
+     ]
+    ],
+    "2": [
+     [
+      [
+       "Sven Gadzish",
+       "Martin Bernard"
+      ],
+      [
+       "Fran\u00e7ois De Galice",
+       "Jean Godran"
+      ],
+      [
+       "Jacques Rousseau",
+       "Garry Kasparov"
+      ],
+      [
+       "Bertrand Farse",
+       "Arnold Noire"
+      ]
+     ],
+     [
+      null,
+      "1",
+      null,
+      "2"
+     ]
+    ],
+    "3": [
+     [
+      [
+       "Fran\u00e7ois De Galice",
+       "Sven Gadzish"
+      ],
+      [
+       "Martin Bernard",
+       "Jacques Rousseau"
+      ],
+      [
+       "Arnold Noire",
+       "Garry Kasparov"
+      ],
+      [
+       "Jean Godran",
+       "Bertrand Farse"
+      ]
+     ],
+     [
+      null,
+      "1",
+      null,
+      null
+     ]
+    ],
+    "4": [
+     [
+      [
+       "Martin Bernard",
+       "Fran\u00e7ois De Galice"
+      ],
+      [
+       "Sven Gadzish",
+       "Garry Kasparov"
+      ],
+      [
+       "Arnold Noire",
+       "Jacques Rousseau"
+      ]
+     ],
+     [
+      "1",
+      null,
+      ""
+     ]
+    ]
+   }
+  },
+  "45": {
+   "name": "ParisMonaco",
+   "location": "Paris/Monaco",
+   "start_date": "15/05/2020",
+   "end_date": "15/05/2020",
+   "num_of_round": 4,
+   "selected_players": [
+    "Bertrand Farse",
+    "Jean Godran",
+    "Sven Gadzish",
+    "Martin Bernard",
+    "Jacques Rousseau",
+    "Arnold Noire",
+    "Fran\u00e7ois De Galice",
+    "Garry Kasparov"
+   ],
+   "game_type": "Blitz",
+   "notes": "",
+   "serialized_object": {
+    "1": [
+     [
+      [
+       "Garry Kasparov",
+       "Martin Bernard"
+      ],
+      [
+       "Jean Godran",
+       "Jacques Rousseau"
+      ],
+      [
+       "Sven Gadzish",
+       "Arnold Noire"
+      ],
+      [
+       "Bertrand Farse",
+       "Fran\u00e7ois De Galice"
+      ]
+     ],
+     [
+      "2",
+      "1",
+      "2",
+      "1"
+     ]
+    ],
+    "2": [
+     [
+      [
+       "Jean Godran",
+       "Bertrand Farse"
+      ],
+      [
+       "Martin Bernard",
+       "Arnold Noire"
+      ],
+      [
+       "Garry Kasparov",
+       "Sven Gadzish"
+      ],
+      [
+       "Jacques Rousseau",
+       "Fran\u00e7ois De Galice"
+      ]
+     ],
+     [
+      "1",
+      "2",
+      "1",
+      "2"
+     ]
+    ],
+    "3": [
+     [
+      [
+       "Jean Godran",
+       "Arnold Noire"
+      ],
+      [
+       "Garry Kasparov",
+       "Bertrand Farse"
+      ],
+      [
+       "Martin Bernard",
+       "Fran\u00e7ois De Galice"
+      ],
+      [
+       "Sven Gadzish",
+       "Jacques Rousseau"
+      ]
+     ],
+     [
+      "1",
+      "2",
+      "1",
+      "2"
+     ]
+    ],
+    "4": [
+     [
+      [
+       "Jean Godran",
+       "Martin Bernard"
+      ],
+      [
+       "Bertrand Farse",
+       "Arnold Noire"
+      ],
+      [
+       "Garry Kasparov",
+       "Fran\u00e7ois De Galice"
+      ]
+     ],
+     [
+      "1",
+      "",
+      ""
+     ]
+    ]
+   }
+  },
+  "46": {
+   "name": "ParisGeneve",
+   "location": "Paris/Genve",
+   "start_date": "15/05/1998",
+   "end_date": "15/05/1998",
+   "num_of_round": 4,
+   "selected_players": [
+    "Bertrand Farse",
+    "Jean Godran",
+    "Sven Gadzish",
+    "Martin Bernard",
+    "Jacques Rousseau",
+    "Arnold Noire",
+    "Fran\u00e7ois De Galice",
+    "Garry Kasparov"
+   ],
+   "game_type": "Bullet",
+   "notes": "2",
+   "serialized_object": {
+    "1": [
+     [
+      [
+       "Garry Kasparov",
+       "Martin Bernard"
+      ],
+      [
+       "Jean Godran",
+       "Jacques Rousseau"
+      ],
+      [
+       "Sven Gadzish",
+       "Arnold Noire"
+      ],
+      [
+       "Bertrand Farse",
+       "Fran\u00e7ois De Galice"
+      ]
+     ],
+     [
+      "2",
+      "2",
+      "2",
+      "2"
+     ]
+    ],
+    "2": [
+     [
+      [
+       "Martin Bernard",
+       "Jacques Rousseau"
+      ],
+      [
+       "Arnold Noire",
+       "Fran\u00e7ois De Galice"
+      ],
+      [
+       "Garry Kasparov",
+       "Jean Godran"
+      ],
+      [
+       "Sven Gadzish",
+       "Bertrand Farse"
+      ]
+     ],
+     [
+      "2",
+      "2",
+      "2",
+      "2"
+     ]
+    ],
+    "3": [
+     [
+      [
+       "Jacques Rousseau",
+       "Fran\u00e7ois De Galice"
+      ],
+      [
+       "Jean Godran",
+       "Bertrand Farse"
+      ],
+      [
+       "Martin Bernard",
+       "Arnold Noire"
+      ],
+      [
+       "Garry Kasparov",
+       "Sven Gadzish"
+      ]
+     ],
+     [
+      "2",
+      "2",
+      "2",
+      "2"
+     ]
+    ],
+    "4": [
+     [
+      [
+       "Bertrand Farse",
+       "Jacques Rousseau"
+      ],
+      [
+       "Arnold Noire",
+       "Jean Godran"
+      ],
+      [
+       "Sven Gadzish",
+       "Martin Bernard"
+      ]
+     ],
+     [
+      "2",
+      "",
+      ""
+     ]
+    ]
+   }
+  },
+  "47": {
+   "name": "ParisP\u00e9kin",
+   "location": "Paris/P\u00e9kib",
+   "start_date": "15/05/1996",
+   "end_date": "15/05/1996",
+   "num_of_round": 4,
+   "selected_players": [
+    "Bertrand Farse",
+    "Jean Godran",
+    "Sven Gadzish",
+    "Martin Bernard",
+    "Jacques Rousseau",
+    "Arnold Noire",
+    "Fran\u00e7ois De Galice",
+    "Garry Kasparov"
+   ],
+   "game_type": "Blitz",
+   "notes": "",
+   "serialized_object": {
+    "1": [
+     [
+      [
+       "Garry Kasparov",
+       "Martin Bernard"
+      ],
+      [
+       "Jean Godran",
+       "Jacques Rousseau"
+      ],
+      [
+       "Sven Gadzish",
+       "Arnold Noire"
+      ],
+      [
+       "Bertrand Farse",
+       "Fran\u00e7ois De Galice"
+      ]
+     ],
+     [
+      "2",
+      null,
+      "1",
+      "2"
+     ]
+    ],
+    "2": [
+     [
+      [
+       "Sven Gadzish",
+       "Martin Bernard"
+      ],
+      [
+       "Fran\u00e7ois De Galice",
+       "Jean Godran"
+      ],
+      [
+       "Jacques Rousseau",
+       "Garry Kasparov"
+      ],
+      [
+       "Bertrand Farse",
+       "Arnold Noire"
+      ]
+     ],
+     [
+      null,
+      "1",
+      null,
+      "2"
+     ]
+    ],
+    "3": [
+     [
+      [
+       "Fran\u00e7ois De Galice",
+       "Sven Gadzish"
+      ],
+      [
+       "Martin Bernard",
+       "Jacques Rousseau"
+      ],
+      [
+       "Arnold Noire",
+       "Garry Kasparov"
+      ],
+      [
+       "Jean Godran",
+       "Bertrand Farse"
+      ]
+     ],
+     [
+      null,
+      "1",
+      null,
+      "1"
+     ]
+    ],
+    "4": [
+     [
+      [
+       "Martin Bernard",
+       "Fran\u00e7ois De Galice"
+      ],
+      [
+       "Sven Gadzish",
+       "Garry Kasparov"
+      ],
+      [
+       "Arnold Noire",
+       "Jacques Rousseau"
+      ]
+     ],
+     [
+      null,
+      "",
+      ""
+     ]
+    ]
+   }
+  },
+  "48": {
+   "name": "ParisMonaco",
+   "location": "Paris/Monaco",
+   "start_date": "15/05/2020",
+   "end_date": "15/05/2020",
+   "num_of_round": 4,
+   "selected_players": [
+    "Bertrand Farse",
+    "Jean Godran",
+    "Sven Gadzish",
+    "Martin Bernard",
+    "Jacques Rousseau",
+    "Arnold Noire",
+    "Fran\u00e7ois De Galice",
+    "Garry Kasparov"
+   ],
+   "game_type": "Blitz",
+   "notes": "",
+   "serialized_object": {
+    "1": [
+     [
+      [
+       "Garry Kasparov",
+       "Martin Bernard"
+      ],
+      [
+       "Jean Godran",
+       "Jacques Rousseau"
+      ],
+      [
+       "Sven Gadzish",
+       "Arnold Noire"
+      ],
+      [
+       "Bertrand Farse",
+       "Fran\u00e7ois De Galice"
+      ]
+     ],
+     [
+      "2",
+      "1",
+      "2",
+      "1"
+     ]
+    ],
+    "2": [
+     [
+      [
+       "Jean Godran",
+       "Bertrand Farse"
+      ],
+      [
+       "Martin Bernard",
+       "Arnold Noire"
+      ],
+      [
+       "Garry Kasparov",
+       "Sven Gadzish"
+      ],
+      [
+       "Jacques Rousseau",
+       "Fran\u00e7ois De Galice"
+      ]
+     ],
+     [
+      "1",
+      "2",
+      "1",
+      "2"
+     ]
+    ],
+    "3": [
+     [
+      [
+       "Jean Godran",
+       "Arnold Noire"
+      ],
+      [
+       "Garry Kasparov",
+       "Bertrand Farse"
+      ],
+      [
+       "Martin Bernard",
+       "Fran\u00e7ois De Galice"
+      ],
+      [
+       "Sven Gadzish",
+       "Jacques Rousseau"
+      ]
+     ],
+     [
+      "1",
+      "2",
+      "1",
+      "1"
+     ]
+    ],
+    "4": [
+     [
+      [
+       "Jean Godran",
+       "Martin Bernard"
+      ],
+      [
+       "Bertrand Farse",
+       "Arnold Noire"
+      ],
+      [
+       "Garry Kasparov",
+       "Fran\u00e7ois De Galice"
+      ]
+     ],
+     [
+      "",
+      "",
+      ""
+     ]
+    ]
+   }
+  },
+  "49": {
+   "name": "ParisGeneve",
+   "location": "Paris/Genve",
+   "start_date": "15/05/1998",
+   "end_date": "15/05/1998",
+   "num_of_round": 4,
+   "selected_players": [
+    "Bertrand Farse",
+    "Jean Godran",
+    "Sven Gadzish",
+    "Martin Bernard",
+    "Jacques Rousseau",
+    "Arnold Noire",
+    "Fran\u00e7ois De Galice",
+    "Garry Kasparov"
+   ],
+   "game_type": "Bullet",
+   "notes": "2",
+   "serialized_object": {
+    "1": [
+     [
+      [
+       "Garry Kasparov",
+       "Martin Bernard"
+      ],
+      [
+       "Jean Godran",
+       "Jacques Rousseau"
+      ],
+      [
+       "Sven Gadzish",
+       "Arnold Noire"
+      ],
+      [
+       "Bertrand Farse",
+       "Fran\u00e7ois De Galice"
+      ]
+     ],
+     [
+      "2",
+      "2",
+      "2",
+      "2"
+     ]
+    ],
+    "2": [
+     [
+      [
+       "Martin Bernard",
+       "Jacques Rousseau"
+      ],
+      [
+       "Arnold Noire",
+       "Fran\u00e7ois De Galice"
+      ],
+      [
+       "Garry Kasparov",
+       "Jean Godran"
+      ],
+      [
+       "Sven Gadzish",
+       "Bertrand Farse"
+      ]
+     ],
+     [
+      "2",
+      "2",
+      "2",
+      "2"
+     ]
+    ],
+    "3": [
+     [
+      [
+       "Jacques Rousseau",
+       "Fran\u00e7ois De Galice"
+      ],
+      [
+       "Jean Godran",
+       "Bertrand Farse"
+      ],
+      [
+       "Martin Bernard",
+       "Arnold Noire"
+      ],
+      [
+       "Garry Kasparov",
+       "Sven Gadzish"
+      ]
+     ],
+     [
+      "2",
+      "2",
+      "2",
+      "2"
+     ]
+    ],
+    "4": [
+     [
+      [
+       "Bertrand Farse",
+       "Jacques Rousseau"
+      ],
+      [
+       "Arnold Noire",
+       "Jean Godran"
+      ],
+      [
+       "Sven Gadzish",
+       "Martin Bernard"
+      ]
+     ],
+     [
+      "",
+      "",
+      ""
+     ]
+    ]
+   }
+  },
+  "50": {
+   "name": "ParisP\u00e9kin",
+   "location": "Paris/P\u00e9kib",
+   "start_date": "15/05/1996",
+   "end_date": "15/05/1996",
+   "num_of_round": 4,
+   "selected_players": [
+    "Bertrand Farse",
+    "Jean Godran",
+    "Sven Gadzish",
+    "Martin Bernard",
+    "Jacques Rousseau",
+    "Arnold Noire",
+    "Fran\u00e7ois De Galice",
+    "Garry Kasparov"
+   ],
+   "game_type": "Blitz",
+   "notes": "",
+   "serialized_object": {
+    "1": [
+     [
+      [
+       "Bertrand Farse",
+       "Jacques Rousseau"
+      ],
+      [
+       "Jean Godran",
+       "Arnold Noire"
+      ],
+      [
+       "Sven Gadzish",
+       "Fran\u00e7ois De Galice"
+      ],
+      [
+       "Martin Bernard",
+       "Garry Kasparov"
+      ]
+     ],
+     [
+      "2",
+      null,
+      "1",
+      "2"
+     ]
+    ],
+    "2": [
+     [
+      [
+       "Sven Gadzish",
+       "Jacques Rousseau"
+      ],
+      [
+       "Garry Kasparov",
+       "Jean Godran"
+      ],
+      [
+       "Arnold Noire",
+       "Bertrand Farse"
+      ],
+      [
+       "Martin Bernard",
+       "Fran\u00e7ois De Galice"
+      ]
+     ],
+     [
+      null,
+      "1",
+      null,
+      "1"
+     ]
+    ],
+    "3": [
+     [
+      [
+       "Garry Kasparov",
+       "Sven Gadzish"
+      ],
+      [
+       "Jacques Rousseau",
+       "Martin Bernard"
+      ],
+      [
+       "Arnold Noire",
+       "Fran\u00e7ois De Galice"
+      ],
+      [
+       "Bertrand Farse",
+       "Jean Godran"
+      ]
+     ],
+     [
+      null,
+      "2",
+      null,
+      "2"
+     ]
+    ],
+    "4": [
+     [
+      [
+       "Sven Gadzish",
+       "Martin Bernard"
+      ],
+      [
+       "Jean Godran",
+       "Jacques Rousseau"
+      ],
+      [
+       "Bertrand Farse",
+       "Fran\u00e7ois De Galice"
+      ]
+     ],
+     [
+      null,
+      "1",
+      null
+     ]
+    ]
+   }
+  },
+  "51": {
+   "name": "ParisMonaco",
+   "location": "Paris/Monaco",
+   "start_date": "15/05/2020",
+   "end_date": "15/05/2020",
+   "num_of_round": 4,
+   "selected_players": [
+    "Bertrand Farse",
+    "Jean Godran",
+    "Sven Gadzish",
+    "Martin Bernard",
+    "Jacques Rousseau",
+    "Arnold Noire",
+    "Fran\u00e7ois De Galice",
+    "Garry Kasparov"
+   ],
+   "game_type": "Blitz",
+   "notes": "",
+   "serialized_object": {
+    "1": [
+     [
+      [
+       "Garry Kasparov",
+       "Martin Bernard"
+      ],
+      [
+       "Jean Godran",
+       "Jacques Rousseau"
+      ],
+      [
+       "Sven Gadzish",
+       "Arnold Noire"
+      ],
+      [
+       "Bertrand Farse",
+       "Fran\u00e7ois De Galice"
+      ]
+     ],
+     [
+      "2",
+      "1",
+      "2",
+      "1"
+     ]
+    ],
+    "2": [
+     [
+      [
+       "Jean Godran",
+       "Bertrand Farse"
+      ],
+      [
+       "Martin Bernard",
+       "Arnold Noire"
+      ],
+      [
+       "Garry Kasparov",
+       "Sven Gadzish"
+      ],
+      [
+       "Jacques Rousseau",
+       "Fran\u00e7ois De Galice"
+      ]
+     ],
+     [
+      "1",
+      "2",
+      "1",
+      "2"
+     ]
+    ],
+    "3": [
+     [
+      [
+       "Jean Godran",
+       "Arnold Noire"
+      ],
+      [
+       "Garry Kasparov",
+       "Bertrand Farse"
+      ],
+      [
+       "Martin Bernard",
+       "Fran\u00e7ois De Galice"
+      ],
+      [
+       "Sven Gadzish",
+       "Jacques Rousseau"
+      ]
+     ],
+     [
+      "1",
+      "2",
+      "1",
+      ""
+     ]
+    ],
+    "4": [
+     [
+      [
+       "Jean Godran",
+       "Martin Bernard"
+      ],
+      [
+       "Bertrand Farse",
+       "Arnold Noire"
+      ],
+      [
+       "Garry Kasparov",
+       "Fran\u00e7ois De Galice"
+      ]
+     ],
+     [
+      "",
+      "",
+      ""
+     ]
+    ]
+   }
+  },
+  "52": {
+   "name": "ParisGeneve",
+   "location": "Paris/Genve",
+   "start_date": "15/05/1998",
+   "end_date": "15/05/1998",
+   "num_of_round": 4,
+   "selected_players": [
+    "Bertrand Farse",
+    "Jean Godran",
+    "Sven Gadzish",
+    "Martin Bernard",
+    "Jacques Rousseau",
+    "Arnold Noire",
+    "Fran\u00e7ois De Galice",
+    "Garry Kasparov"
+   ],
+   "game_type": "Bullet",
+   "notes": "2",
+   "serialized_object": {
+    "1": [
+     [
+      [
+       "Garry Kasparov",
+       "Martin Bernard"
+      ],
+      [
+       "Jean Godran",
+       "Jacques Rousseau"
+      ],
+      [
+       "Sven Gadzish",
+       "Arnold Noire"
+      ],
+      [
+       "Bertrand Farse",
+       "Fran\u00e7ois De Galice"
+      ]
+     ],
+     [
+      "2",
+      "2",
+      "2",
+      "2"
+     ]
+    ],
+    "2": [
+     [
+      [
+       "Martin Bernard",
+       "Jacques Rousseau"
+      ],
+      [
+       "Arnold Noire",
+       "Fran\u00e7ois De Galice"
+      ],
+      [
+       "Garry Kasparov",
+       "Jean Godran"
+      ],
+      [
+       "Sven Gadzish",
+       "Bertrand Farse"
+      ]
+     ],
+     [
+      "2",
+      "2",
+      "2",
+      "2"
+     ]
+    ],
+    "3": [
+     [
+      [
+       "Jacques Rousseau",
+       "Fran\u00e7ois De Galice"
+      ],
+      [
+       "Jean Godran",
+       "Bertrand Farse"
+      ],
+      [
+       "Martin Bernard",
+       "Arnold Noire"
+      ],
+      [
+       "Garry Kasparov",
+       "Sven Gadzish"
+      ]
+     ],
+     [
+      "2",
+      "2",
+      "2",
+      ""
+     ]
+    ],
+    "4": [
+     [
+      [
+       "Bertrand Farse",
+       "Jacques Rousseau"
+      ],
+      [
+       "Arnold Noire",
+       "Jean Godran"
+      ],
+      [
+       "Sven Gadzish",
+       "Martin Bernard"
+      ]
+     ],
+     [
+      "",
+      "",
+      ""
+     ]
+    ]
+   }
+  },
+  "53": {
+   "name": "ParisP\u00e9kin",
+   "location": "Paris/P\u00e9kib",
+   "start_date": "15/05/1996",
+   "end_date": "15/05/1996",
+   "num_of_round": 4,
+   "selected_players": [
+    "Bertrand Farse",
+    "Jean Godran",
+    "Sven Gadzish",
+    "Martin Bernard",
+    "Jacques Rousseau",
+    "Arnold Noire",
+    "Fran\u00e7ois De Galice",
+    "Garry Kasparov"
+   ],
+   "game_type": "Blitz",
+   "notes": "",
+   "serialized_object": {
+    "1": [
+     [
+      [
+       "Bertrand Farse",
+       "Jacques Rousseau"
+      ],
+      [
+       "Jean Godran",
+       "Arnold Noire"
+      ],
+      [
+       "Sven Gadzish",
+       "Fran\u00e7ois De Galice"
+      ],
+      [
+       "Martin Bernard",
+       "Garry Kasparov"
+      ]
+     ],
+     [
+      "2",
+      null,
+      "1",
+      "2"
+     ]
+    ],
+    "2": [
+     [
+      [
+       "Sven Gadzish",
+       "Jacques Rousseau"
+      ],
+      [
+       "Garry Kasparov",
+       "Jean Godran"
+      ],
+      [
+       "Arnold Noire",
+       "Bertrand Farse"
+      ],
+      [
+       "Martin Bernard",
+       "Fran\u00e7ois De Galice"
+      ]
+     ],
+     [
+      null,
+      "1",
+      null,
+      "1"
+     ]
+    ],
+    "3": [
+     [
+      [
+       "Garry Kasparov",
+       "Sven Gadzish"
+      ],
+      [
+       "Jacques Rousseau",
+       "Martin Bernard"
+      ],
+      [
+       "Arnold Noire",
+       "Fran\u00e7ois De Galice"
+      ],
+      [
+       "Bertrand Farse",
+       "Jean Godran"
+      ]
+     ],
+     [
+      null,
+      "2",
+      null,
+      null
+     ]
+    ],
+    "4": [
+     [
+      [
+       "Sven Gadzish",
+       "Martin Bernard"
+      ],
+      [
+       "Jean Godran",
+       "Jacques Rousseau"
+      ],
+      [
+       "Bertrand Farse",
+       "Fran\u00e7ois De Galice"
+      ]
+     ],
+     [
+      "1",
+      null,
+      ""
+     ]
+    ]
+   }
+  },
+  "54": {
+   "name": "ParisMonaco",
+   "location": "Paris/Monaco",
+   "start_date": "15/05/2020",
+   "end_date": "15/05/2020",
+   "num_of_round": 4,
+   "selected_players": [
+    "Bertrand Farse",
+    "Jean Godran",
+    "Sven Gadzish",
+    "Martin Bernard",
+    "Jacques Rousseau",
+    "Arnold Noire",
+    "Fran\u00e7ois De Galice",
+    "Garry Kasparov"
+   ],
+   "game_type": "Blitz",
+   "notes": "",
+   "serialized_object": {
+    "1": [
+     [
+      [
+       "Garry Kasparov",
+       "Martin Bernard"
+      ],
+      [
+       "Jean Godran",
+       "Jacques Rousseau"
+      ],
+      [
+       "Sven Gadzish",
+       "Arnold Noire"
+      ],
+      [
+       "Bertrand Farse",
+       "Fran\u00e7ois De Galice"
+      ]
+     ],
+     [
+      "2",
+      "1",
+      "2",
+      "1"
+     ]
+    ],
+    "2": [
+     [
+      [
+       "Jean Godran",
+       "Bertrand Farse"
+      ],
+      [
+       "Martin Bernard",
+       "Arnold Noire"
+      ],
+      [
+       "Garry Kasparov",
+       "Sven Gadzish"
+      ],
+      [
+       "Jacques Rousseau",
+       "Fran\u00e7ois De Galice"
+      ]
+     ],
+     [
+      "1",
+      "2",
+      "1",
+      "2"
+     ]
+    ],
+    "3": [
+     [
+      [
+       "Jean Godran",
+       "Arnold Noire"
+      ],
+      [
+       "Garry Kasparov",
+       "Bertrand Farse"
+      ],
+      [
+       "Martin Bernard",
+       "Fran\u00e7ois De Galice"
+      ],
+      [
+       "Sven Gadzish",
+       "Jacques Rousseau"
+      ]
+     ],
+     [
+      "1",
+      "2",
+      "1",
+      ""
+     ]
+    ],
+    "4": [
+     [
+      [
+       "Jean Godran",
+       "Martin Bernard"
+      ],
+      [
+       "Bertrand Farse",
+       "Arnold Noire"
+      ],
+      [
+       "Garry Kasparov",
+       "Fran\u00e7ois De Galice"
+      ]
+     ],
+     [
+      "",
+      "",
+      ""
+     ]
+    ]
+   }
+  },
+  "55": {
+   "name": "ParisGeneve",
+   "location": "Paris/Genve",
+   "start_date": "15/05/1998",
+   "end_date": "15/05/1998",
+   "num_of_round": 4,
+   "selected_players": [
+    "Bertrand Farse",
+    "Jean Godran",
+    "Sven Gadzish",
+    "Martin Bernard",
+    "Jacques Rousseau",
+    "Arnold Noire",
+    "Fran\u00e7ois De Galice",
+    "Garry Kasparov"
+   ],
+   "game_type": "Bullet",
+   "notes": "2",
+   "serialized_object": {
+    "1": [
+     [
+      [
+       "Garry Kasparov",
+       "Martin Bernard"
+      ],
+      [
+       "Jean Godran",
+       "Jacques Rousseau"
+      ],
+      [
+       "Sven Gadzish",
+       "Arnold Noire"
+      ],
+      [
+       "Bertrand Farse",
+       "Fran\u00e7ois De Galice"
+      ]
+     ],
+     [
+      "2",
+      "2",
+      "2",
+      "2"
+     ]
+    ],
+    "2": [
+     [
+      [
+       "Martin Bernard",
+       "Jacques Rousseau"
+      ],
+      [
+       "Arnold Noire",
+       "Fran\u00e7ois De Galice"
+      ],
+      [
+       "Garry Kasparov",
+       "Jean Godran"
+      ],
+      [
+       "Sven Gadzish",
+       "Bertrand Farse"
+      ]
+     ],
+     [
+      "2",
+      "2",
+      "2",
+      "2"
+     ]
+    ],
+    "3": [
+     [
+      [
+       "Jacques Rousseau",
+       "Fran\u00e7ois De Galice"
+      ],
+      [
+       "Jean Godran",
+       "Bertrand Farse"
+      ],
+      [
+       "Martin Bernard",
+       "Arnold Noire"
+      ],
+      [
+       "Garry Kasparov",
+       "Sven Gadzish"
+      ]
+     ],
+     [
+      "2",
+      "2",
+      "2",
+      ""
+     ]
+    ],
+    "4": [
+     [
+      [
+       "Bertrand Farse",
+       "Jacques Rousseau"
+      ],
+      [
+       "Arnold Noire",
+       "Jean Godran"
+      ],
+      [
+       "Sven Gadzish",
+       "Martin Bernard"
+      ]
+     ],
+     [
+      "",
+      "",
+      ""
+     ]
+    ]
+   }
+  },
+  "56": {
+   "name": "ParisP\u00e9kin",
+   "location": "Paris/P\u00e9kib",
+   "start_date": "15/05/1996",
+   "end_date": "15/05/1996",
+   "num_of_round": 4,
+   "selected_players": [
+    "Bertrand Farse",
+    "Jean Godran",
+    "Sven Gadzish",
+    "Martin Bernard",
+    "Jacques Rousseau",
+    "Arnold Noire",
+    "Fran\u00e7ois De Galice",
+    "Garry Kasparov"
+   ],
+   "game_type": "Blitz",
+   "notes": "",
+   "serialized_object": {
+    "1": [
+     [
+      [
+       "Bertrand Farse",
+       "Jacques Rousseau"
+      ],
+      [
+       "Jean Godran",
+       "Arnold Noire"
+      ],
+      [
+       "Sven Gadzish",
+       "Fran\u00e7ois De Galice"
+      ],
+      [
+       "Martin Bernard",
+       "Garry Kasparov"
+      ]
+     ],
+     [
+      "2",
+      null,
+      "1",
+      "2"
+     ]
+    ],
+    "2": [
+     [
+      [
+       "Sven Gadzish",
+       "Jacques Rousseau"
+      ],
+      [
+       "Garry Kasparov",
+       "Jean Godran"
+      ],
+      [
+       "Arnold Noire",
+       "Bertrand Farse"
+      ],
+      [
+       "Martin Bernard",
+       "Fran\u00e7ois De Galice"
+      ]
+     ],
+     [
+      null,
+      "1",
+      null,
+      "1"
+     ]
+    ],
+    "3": [
+     [
+      [
+       "Garry Kasparov",
+       "Sven Gadzish"
+      ],
+      [
+       "Jacques Rousseau",
+       "Martin Bernard"
+      ],
+      [
+       "Arnold Noire",
+       "Fran\u00e7ois De Galice"
+      ],
+      [
+       "Bertrand Farse",
+       "Jean Godran"
+      ]
+     ],
+     [
+      null,
+      "2",
+      null,
+      "1"
+     ]
+    ],
+    "4": [
+     [
+      [
+       "Sven Gadzish",
+       "Martin Bernard"
+      ],
+      [
+       "Jean Godran",
+       "Jacques Rousseau"
+      ],
+      [
+       "Bertrand Farse",
+       "Fran\u00e7ois De Galice"
+      ]
+     ],
+     [
+      null,
+      "",
+      ""
+     ]
+    ]
+   }
   }
  },
  "Player": {
@@ -4529,7 +6809,7 @@
    "first_name": "Dorian",
    "birthday": "12/03/1990",
    "gender": "H",
-   "ranking": 3,
+   "ranking": 1,
    "reference": "Dorian Lario",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -4543,7 +6823,7 @@
    "first_name": "Pascal",
    "birthday": "19/09/1962",
    "gender": "H",
-   "ranking": 4,
+   "ranking": 2,
    "reference": "Pascal Allizard",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -4557,7 +6837,7 @@
    "first_name": "Jean-Claude",
    "birthday": "20/02/1961",
    "gender": "H",
-   "ranking": 2,
+   "ranking": 3,
    "reference": "Jean-Claude Anglars",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -4571,7 +6851,7 @@
    "first_name": "Maurice",
    "birthday": "22/06/1953",
    "gender": "H",
-   "ranking": 3,
+   "ranking": 4,
    "reference": "Maurice Antiste",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -4599,7 +6879,7 @@
    "first_name": "Jean-Michel",
    "birthday": "28/04/1966",
    "gender": "H",
-   "ranking": 7,
+   "ranking": 6,
    "reference": "Jean-Michel Arnaud",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -4613,7 +6893,7 @@
    "first_name": "St\u00e9phane",
    "birthday": "09/03/1973",
    "gender": "H",
-   "ranking": 9,
+   "ranking": 7,
    "reference": "St\u00e9phane Artano",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -4627,7 +6907,7 @@
    "first_name": "Viviane",
    "birthday": "22/10/1956",
    "gender": "F",
-   "ranking": 10,
+   "ranking": 8,
    "reference": "Viviane Artigalas",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -4641,7 +6921,7 @@
    "first_name": "David",
    "birthday": "16/06/1959",
    "gender": "H",
-   "ranking": 1,
+   "ranking": 9,
    "reference": "David Assouline",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -4655,7 +6935,7 @@
    "first_name": "Serge",
    "birthday": "16/07/1946",
    "gender": "H",
-   "ranking": 12,
+   "ranking": 10,
    "reference": "Serge Barbary",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -4669,7 +6949,7 @@
    "first_name": "J\u00e9r\u00e9my",
    "birthday": "18/04/1956",
    "gender": "H",
-   "ranking": 15,
+   "ranking": 11,
    "reference": "J\u00e9r\u00e9my Bacchi",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -4683,7 +6963,7 @@
    "first_name": "Jean",
    "birthday": "18/03/1963",
    "gender": "H",
-   "ranking": 16,
+   "ranking": 12,
    "reference": "Jean Bacci",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -4697,7 +6977,7 @@
    "first_name": "Julien",
    "birthday": "15/02/1956",
    "gender": "H",
-   "ranking": 7,
+   "ranking": 13,
    "reference": "Julien Bargeton",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -4711,7 +6991,7 @@
    "first_name": "Philippe",
    "birthday": "02/01/1956",
    "gender": "H",
-   "ranking": 20,
+   "ranking": 14,
    "reference": "Philippe Bas",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -4725,7 +7005,7 @@
    "first_name": "J\u00e9r\u00f4me",
    "birthday": "04/08/1962",
    "gender": "H",
-   "ranking": 100,
+   "ranking": 15,
    "reference": "J\u00e9r\u00f4me Bascher",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -4739,7 +7019,7 @@
    "first_name": "Arnaud",
    "birthday": "08/03/1965",
    "gender": "H",
-   "ranking": 120,
+   "ranking": 16,
    "reference": "Arnaud Bazin",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -4753,7 +7033,7 @@
    "first_name": "Arnaud",
    "birthday": "12/08/1968",
    "gender": "H",
-   "ranking": 11,
+   "ranking": 17,
    "reference": "Arnaud De Belenet",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -4767,7 +7047,7 @@
    "first_name": "Bruno",
    "birthday": "18/07/1972",
    "gender": "H",
-   "ranking": 123,
+   "ranking": 18,
    "reference": "Bruno Belin",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -4781,7 +7061,7 @@
    "first_name": "Nadine",
    "birthday": "22/06/1957",
    "gender": "F",
-   "ranking": 125,
+   "ranking": 19,
    "reference": "Nadine Bellurot",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -4795,7 +7075,7 @@
    "first_name": "Catherine",
    "birthday": "23/09/1958",
    "gender": "F",
-   "ranking": 54,
+   "ranking": 20,
    "reference": "Catherine Belrhiti",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -4809,7 +7089,7 @@
    "first_name": "Guy",
    "birthday": "24/10/1959",
    "gender": "H",
-   "ranking": 65,
+   "ranking": 21,
    "reference": "Guy Benarroche",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -4823,7 +7103,7 @@
    "first_name": "Esther",
    "birthday": "25/11/1960",
    "gender": "F",
-   "ranking": 97,
+   "ranking": 22,
    "reference": "Esther Benbassa",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -4837,7 +7117,7 @@
    "first_name": "Martine",
    "birthday": "26/12/1956",
    "gender": "F",
-   "ranking": 56,
+   "ranking": 23,
    "reference": "Martine Berthet",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -4851,7 +7131,7 @@
    "first_name": "Jo\u00ebl",
    "birthday": "27/08/1980",
    "gender": "H",
-   "ranking": 65,
+   "ranking": 24,
    "reference": "Jo\u00ebl Bigot",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -4865,7 +7145,7 @@
    "first_name": "Christian",
    "birthday": "28/09/1943",
    "gender": "H",
-   "ranking": 32,
+   "ranking": 25,
    "reference": "Christian Bilhac",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -4879,7 +7159,7 @@
    "first_name": "Annick",
    "birthday": "29/10/1957",
    "gender": "F",
-   "ranking": 12,
+   "ranking": 26,
    "reference": "Annick Billon",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -4893,7 +7173,7 @@
    "first_name": "Jean",
    "birthday": "30/11/1959",
    "gender": "H",
-   "ranking": 45,
+   "ranking": 27,
    "reference": "Jean Bizet",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -4907,7 +7187,7 @@
    "first_name": "Etienne",
    "birthday": "30/12/1958",
    "gender": "H",
-   "ranking": 56,
+   "ranking": 28,
    "reference": "Etienne Blanc",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -4921,7 +7201,7 @@
    "first_name": "Jean-Baptiste",
    "birthday": "01/10/1978",
    "gender": "H",
-   "ranking": 58,
+   "ranking": 29,
    "reference": "Jean-Baptiste Blanc",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -4935,7 +7215,7 @@
    "first_name": "Florence",
    "birthday": "02/08/1978",
    "gender": "F",
-   "ranking": 89,
+   "ranking": 30,
    "reference": "Florence Blatix-Contat",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -4949,7 +7229,7 @@
    "first_name": "Florence",
    "birthday": "03/08/1977",
    "gender": "F",
-   "ranking": 8,
+   "ranking": 31,
    "reference": "Florence Bocquet",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -4963,7 +7243,7 @@
    "first_name": "Eric",
    "birthday": "04/07/1957",
    "gender": "H",
-   "ranking": 3,
+   "ranking": 32,
    "reference": "Eric Bocquet",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -4977,7 +7257,7 @@
    "first_name": "Christine",
    "birthday": "05/04/1976",
    "gender": "F",
-   "ranking": 45,
+   "ranking": 33,
    "reference": "Christine Bonfanti-Dossat",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -4991,7 +7271,7 @@
    "first_name": "Fran\u00e7ois",
    "birthday": "06/03/1991",
    "gender": "H",
-   "ranking": 56,
+   "ranking": 34,
    "reference": "Fran\u00e7ois Bonhomme",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -5005,7 +7285,7 @@
    "first_name": "Fran\u00e7ois",
    "birthday": "07/04/1952",
    "gender": "H",
-   "ranking": 86,
+   "ranking": 35,
    "reference": "Fran\u00e7ois Bonneau",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -5019,7 +7299,7 @@
    "first_name": "Bernard",
    "birthday": "08/05/1955",
    "gender": "H",
-   "ranking": 23,
+   "ranking": 36,
    "reference": "Bernard Bonne",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -5033,7 +7313,7 @@
    "first_name": "Philippe",
    "birthday": "09/06/1966",
    "gender": "H",
-   "ranking": 58,
+   "ranking": 37,
    "reference": "Philippe Bonnecarr\u00e8re",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -5047,7 +7327,7 @@
    "first_name": "Nicole",
    "birthday": "10/04/1957",
    "gender": "F",
-   "ranking": 56,
+   "ranking": 38,
    "reference": "Nicole Bonnefoy",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -5061,7 +7341,7 @@
    "first_name": "Michel",
    "birthday": "11/04/1958",
    "gender": "H",
-   "ranking": 23,
+   "ranking": 39,
    "reference": "Michel Bonnus",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -5075,7 +7355,7 @@
    "first_name": "Alexandra",
    "birthday": "12/04/1951",
    "gender": "F",
-   "ranking": 5,
+   "ranking": 40,
    "reference": "Alexandra Borchio-Fontimp",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -5089,7 +7369,7 @@
    "first_name": "Patrick",
    "birthday": "13/04/1952",
    "gender": "H",
-   "ranking": 23,
+   "ranking": 41,
    "reference": "Patrick Bor\u00e9",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -5103,7 +7383,7 @@
    "first_name": "Denis",
    "birthday": "14/04/1953",
    "gender": "H",
-   "ranking": 21,
+   "ranking": 42,
    "reference": "Denis Bouad",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -5117,7 +7397,7 @@
    "first_name": "Gilbert",
    "birthday": "15/04/1958",
    "gender": "H",
-   "ranking": 31,
+   "ranking": 43,
    "reference": "Gilbert Bouchet",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -5131,7 +7411,7 @@
    "first_name": "C\u00e9line",
    "birthday": "16/04/1976",
    "gender": "F",
-   "ranking": 45,
+   "ranking": 44,
    "reference": "C\u00e9line Boulay-Esperonnier",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -5159,7 +7439,7 @@
    "first_name": "Hussein",
    "birthday": "18/04/1996",
    "gender": "H",
-   "ranking": 45,
+   "ranking": 46,
    "reference": "Hussein Bourgi",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -5173,7 +7453,7 @@
    "first_name": "Toine",
    "birthday": "19/04/1956",
    "gender": "H",
-   "ranking": 48,
+   "ranking": 47,
    "reference": "Toine Bourrat",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -5187,7 +7467,7 @@
    "first_name": "Jean-Marc",
    "birthday": "20/04/1966",
    "gender": "H",
-   "ranking": 68,
+   "ranking": 48,
    "reference": "Jean-Marc Boyer",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -5201,7 +7481,7 @@
    "first_name": "Val\u00e9rie",
    "birthday": "21/04/1966",
    "gender": "F",
-   "ranking": 45,
+   "ranking": 49,
    "reference": "Val\u00e9rie Boyer",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -5215,7 +7495,7 @@
    "first_name": "Isabelle",
    "birthday": "22/04/1952",
    "gender": "F",
-   "ranking": 15,
+   "ranking": 50,
    "reference": "Isabelle Briquet",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -5229,7 +7509,7 @@
    "first_name": "Max",
    "birthday": "23/04/1957",
    "gender": "H",
-   "ranking": 23,
+   "ranking": 51,
    "reference": "Max Brisson",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -5243,7 +7523,7 @@
    "first_name": "C\u00e9line",
    "birthday": "24/04/1957",
    "gender": "F",
-   "ranking": 14,
+   "ranking": 52,
    "reference": "C\u00e9line Brulin",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -5257,7 +7537,7 @@
    "first_name": "Fran\u00e7ois-No\u00ebl",
    "birthday": "25/04/1957",
    "gender": "H",
-   "ranking": 23,
+   "ranking": 53,
    "reference": "Fran\u00e7ois-No\u00ebl Buffet",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -5271,7 +7551,7 @@
    "first_name": "Bernard",
    "birthday": "26/04/1959",
    "gender": "H",
-   "ranking": 35,
+   "ranking": 54,
    "reference": "Bernard Buis",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -5285,7 +7565,7 @@
    "first_name": "Laurent",
    "birthday": "27/04/1996",
    "gender": "H",
-   "ranking": 33,
+   "ranking": 55,
    "reference": "Laurent Burgoa",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -5299,7 +7579,7 @@
    "first_name": "Henri",
    "birthday": "28/04/1976",
    "gender": "H",
-   "ranking": 89,
+   "ranking": 56,
    "reference": "Henri Cabanel",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -5313,7 +7593,7 @@
    "first_name": "Olivier",
    "birthday": "29/04/1986",
    "gender": "H",
-   "ranking": 56,
+   "ranking": 57,
    "reference": "Olivier Cadec",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -5327,7 +7607,7 @@
    "first_name": "Fran\u00e7ois",
    "birthday": "30/04/1996",
    "gender": "H",
-   "ranking": 31,
+   "ranking": 58,
    "reference": "Fran\u00e7ois Calvet",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -5341,7 +7621,7 @@
    "first_name": "Christian",
    "birthday": "01/04/1966",
    "gender": "H",
-   "ranking": 53,
+   "ranking": 59,
    "reference": "Christian Cambon",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -5355,7 +7635,7 @@
    "first_name": "Agn\u00e8s",
    "birthday": "02/04/1976",
    "gender": "F",
-   "ranking": 47,
+   "ranking": 60,
    "reference": "Agn\u00e8s Canayer",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -5369,7 +7649,7 @@
    "first_name": "Michel",
    "birthday": "03/04/1986",
    "gender": "H",
-   "ranking": 15,
+   "ranking": 61,
    "reference": "Michel Canev\u00e8t",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -5383,7 +7663,7 @@
    "first_name": "Vincent",
    "birthday": "04/04/1987",
    "gender": "H",
-   "ranking": 54,
+   "ranking": 62,
    "reference": "Vincent Capo-Canellas",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -5397,112 +7677,112 @@
    "first_name": "Bertrand",
    "birthday": "18/04/1990",
    "gender": "H",
-   "ranking": 4,
+   "ranking": 63,
    "reference": "Bertrand Farse",
-   "num_of_wins": 6,
-   "num_of_losses": 6,
-   "num_of_draw": 7,
-   "win_loss_ratio": 1.0,
-   "num_of_match": 19,
-   "num_of_tournaments": 5
+   "num_of_wins": 0,
+   "num_of_losses": 2,
+   "num_of_draw": 2,
+   "win_loss_ratio": 0.0,
+   "num_of_match": 4,
+   "num_of_tournaments": 1
   },
   "64": {
    "name": "Godran",
    "first_name": "Jean",
    "birthday": "18/04/1995",
    "gender": "H",
-   "ranking": 2,
+   "ranking": 64,
    "reference": "Jean Godran",
-   "num_of_wins": 4,
-   "num_of_losses": 9,
-   "num_of_draw": 6,
-   "win_loss_ratio": 0.44,
-   "num_of_match": 19,
-   "num_of_tournaments": 5
+   "num_of_wins": 2,
+   "num_of_losses": 1,
+   "num_of_draw": 1,
+   "win_loss_ratio": 2.0,
+   "num_of_match": 4,
+   "num_of_tournaments": 1
   },
   "65": {
    "name": "Gadzish",
    "first_name": "Sven",
    "birthday": "18/04/1997",
    "gender": "H",
-   "ranking": 3,
+   "ranking": 65,
    "reference": "Sven Gadzish",
-   "num_of_wins": 5,
-   "num_of_losses": 3,
-   "num_of_draw": 12,
-   "win_loss_ratio": 1.67,
-   "num_of_match": 20,
-   "num_of_tournaments": 5
+   "num_of_wins": 1,
+   "num_of_losses": 0,
+   "num_of_draw": 3,
+   "win_loss_ratio": 0,
+   "num_of_match": 4,
+   "num_of_tournaments": 1
   },
   "66": {
    "name": "Bernard",
    "first_name": "Martin",
    "birthday": "18/04/1997",
    "gender": "H",
-   "ranking": 5,
+   "ranking": 66,
    "reference": "Martin Bernard",
-   "num_of_wins": 9,
-   "num_of_losses": 2,
-   "num_of_draw": 9,
-   "win_loss_ratio": 4.5,
-   "num_of_match": 20,
-   "num_of_tournaments": 5
+   "num_of_wins": 2,
+   "num_of_losses": 1,
+   "num_of_draw": 1,
+   "win_loss_ratio": 2.0,
+   "num_of_match": 4,
+   "num_of_tournaments": 1
   },
   "67": {
    "name": "Rousseau",
    "first_name": "Jacques",
    "birthday": "18/04/1997",
    "gender": "H",
-   "ranking": 7,
+   "ranking": 67,
    "reference": "Jacques Rousseau",
-   "num_of_wins": 6,
-   "num_of_losses": 7,
-   "num_of_draw": 5,
-   "win_loss_ratio": 0.86,
-   "num_of_match": 18,
-   "num_of_tournaments": 5
+   "num_of_wins": 1,
+   "num_of_losses": 2,
+   "num_of_draw": 1,
+   "win_loss_ratio": 0.5,
+   "num_of_match": 4,
+   "num_of_tournaments": 1
   },
   "68": {
    "name": "Noire",
    "first_name": "Arnold",
    "birthday": "18/04/1997",
    "gender": "H",
-   "ranking": 9,
+   "ranking": 68,
    "reference": "Arnold Noire",
-   "num_of_wins": 6,
-   "num_of_losses": 6,
-   "num_of_draw": 6,
-   "win_loss_ratio": 1.0,
-   "num_of_match": 18,
-   "num_of_tournaments": 5
+   "num_of_wins": 0,
+   "num_of_losses": 0,
+   "num_of_draw": 3,
+   "win_loss_ratio": 0,
+   "num_of_match": 3,
+   "num_of_tournaments": 1
   },
   "69": {
    "name": "De Galice",
    "first_name": "Fran\u00e7ois",
    "birthday": "18/04/1980",
    "gender": "H",
-   "ranking": 10,
+   "ranking": 69,
    "reference": "Fran\u00e7ois De Galice",
-   "num_of_wins": 9,
-   "num_of_losses": 8,
-   "num_of_draw": 3,
-   "win_loss_ratio": 1.12,
-   "num_of_match": 20,
-   "num_of_tournaments": 5
+   "num_of_wins": 0,
+   "num_of_losses": 2,
+   "num_of_draw": 2,
+   "win_loss_ratio": 0.0,
+   "num_of_match": 4,
+   "num_of_tournaments": 1
   },
   "70": {
    "name": "Kasparov",
    "first_name": "Garry",
    "birthday": "18/04/1956",
    "gender": "H",
-   "ranking": 1,
+   "ranking": 70,
    "reference": "Garry Kasparov",
-   "num_of_wins": 5,
-   "num_of_losses": 6,
-   "num_of_draw": 4,
-   "win_loss_ratio": 0.83,
-   "num_of_match": 15,
-   "num_of_tournaments": 4
+   "num_of_wins": 2,
+   "num_of_losses": 0,
+   "num_of_draw": 1,
+   "win_loss_ratio": 0,
+   "num_of_match": 3,
+   "num_of_tournaments": 1
   }
  }
 }

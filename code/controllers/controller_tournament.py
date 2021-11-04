@@ -11,7 +11,6 @@ def make_player_dict():
 
     return reference_dict
 
-
 def convert_to_reference(list_of_player_object):
     """ Convert a list of player object into a list of reference """
     players_references = []
@@ -67,8 +66,8 @@ def adding_time_match(match_label_list, num_of_match):
             if match.player_1 == player_1:
                 match.start_time = match_label_list[time_infos][0][1]['start_time']
                 match.end_time = match_label_list[time_infos][1]
-
     return
+
 def updating_players_stats(tournament_object):
 
     serialized_tournament = tournament_object.serialized_object
@@ -102,8 +101,24 @@ def updating_players_stats(tournament_object):
         except:
             player_object.winloss_ratio = 0
         player_object.update_player_datas()
-    pass
 
+    return
+
+def updating_general_rank():
+    """ Use the player registry in order to reorganize the player's rank
+    the 1st player is the one with the most victory """
+
+    players_dict = {}
+
+    for player, index in zip(Player._registry, range(1, len(Player._registry) + 1)):
+        players_dict[index] = [player.reference, player.ranking, player.num_of_wins]
+
+    sorted_by_wins = dict(sorted(players_dict.items(), key=lambda item: item[1][2], reverse=True))
+
+    for player, rank in zip(sorted_by_wins,range(1,len(Player._registry)+1)):
+        player_researcher(sorted_by_wins[player][0])[0].ranking = rank
+
+    return
 
 def launch_from_controller(tournament_object):
 
@@ -120,28 +135,29 @@ def launch_from_controller(tournament_object):
     # Add those result to the match object
     adding_result_match(results, len(results))
     adding_time_match(time_informations, len(time_informations))
-
-
     # Use these matchs objects to update the scoreboard
     tournament_object.updating_scoreboard_score(1)
     # Sort the scoreboard
     tournament_object.sort_score_rank()
     # Show the scoreboard
     show_score(sorted(tournament_object.scoreboard.values(), key=lambda k: k['score'], reverse=True), 1)
-
     # Iterate on the number of round left
     for number_of_round in range(2, tournament_object.num_of_round + 1):
 
         # Generate the next series of duel thanks to the scoreboard
         list_of_duel = tournament_object.generating_other_draw(number_of_round)
-
         tournament_object.updating_scoreboard_associations(list_of_duel)
         show_duel(list_of_duel)
         results = asking_match_result(list_of_duel)
         adding_result_match(results, len(results))
+        adding_time_match(time_informations, len(time_informations))
         tournament_object.updating_scoreboard_score(number_of_round)
         tournament_object.sort_score_rank()
         show_score(sorted(tournament_object.scoreboard.values(), key=lambda k: k['score'],reverse=True),number_of_round)
 
     tournament_object.serialized_the_object()
     updating_players_stats(tournament_object)
+    updating_general_rank()
+    tournament_object.serialized_the_object()
+
+    return

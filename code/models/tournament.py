@@ -31,7 +31,6 @@ class Tournament:
         key=index, value1 = player.reference """
 
         raw_rank = {}
-
         for player in self.players_object:
             raw_rank[player.ranking] = player.reference
         ordered_dict = collections.OrderedDict(sorted(raw_rank.items()))
@@ -183,4 +182,8 @@ class Tournament:
             'notes': self.notes,
             'serialized_object': self.serialized_object
         }
+        # Deleting the old version
+        for value in self._serialized_registry:
+            if value['name'] == self.name:
+                self._serialized_registry.remove(value)
         self._serialized_registry.append(self.serialized_version)
