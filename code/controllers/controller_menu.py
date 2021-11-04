@@ -12,25 +12,16 @@ def menu_attribution(response):
     # add a new player
     elif response == 2:
         adding_player()
-
-    # save the system state
+    # generate a report
     elif response == 3:
         pass
 
-    # load a save
+    # consult player infos
     elif response == 4:
         pass
 
-    # generate a report
-    elif response == 5:
-        pass
-
-    # consult player infos
-    elif response == 6:
-        pass
-
     # quit the program without saving
-    elif response == 7:
+    elif response == 5:
         pass
 
 
@@ -58,7 +49,9 @@ def adding_player():
     Player(name, first_name, birthday, gender, ranking)
     if view_menu.ask_menu_return() == True:
         menu_attribution(view_menu.menu_proposition())
-    return adding_player()
+    else:
+        return adding_player()
+    return
 
 def tournament_beta_purposes():
     last_tournament = (Tournament._registry[-1])

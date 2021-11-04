@@ -54,7 +54,6 @@ class Tournament:
 
         for index in range(1,self.num_of_duel+1):
             results = []
-
             player_1 = self.scoreboard[index]
             player_2 = self.scoreboard[index+self.num_of_duel]
 

@@ -52,14 +52,10 @@ def save_data():
     """ Save the player data into a json file """
     database = TinyDB('database.json', indent=1)
     database.purge_table("Player")
-    database.purge_table("Tournament2")
-    database.purge_table("Tournament")
     player_table = database.table("Player")
     player_table.insert_multiple(Player._serialized_registry)
     tournament_table = database.table('Tournament')
     tournament_table.insert_multiple(Tournament._serialized_registry)
-
-
 
     return
 

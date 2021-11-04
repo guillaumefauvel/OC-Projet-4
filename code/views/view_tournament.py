@@ -1,5 +1,6 @@
 """ View generated during the tournament """
 from prettytable import PrettyTable
+import datetime
 
 def show_duel(list_of_duel):
     """ Print the list of duel """
@@ -10,6 +11,39 @@ def show_duel(list_of_duel):
 
     print('\n--------------------------------------------------------')
 
+def asking_end_match(duel_list):
+    """ Ask the user wich match has ended in
+    order to track the end time of a match
+    Args : The list of the duel
+    Return : A dict containing each match,
+    the start_time and the end_time (dt_object)
+    """
+    start_time = datetime.datetime.now()
+    match_dict = {}
+    short_term_dict = {}
+
+    for match, index in zip(duel_list,range(1, len(duel_list)+1)):
+        print(f"{index}. {match[0]} contre {match[1]}")
+        match_dict[index] = {'match':match} ,{'start_time':start_time}
+        short_term_dict[index] = ""
+    print("\nUn match viens de se terminer ? Merci d'entrer son numéro")
+
+    for value in range(len(duel_list)):
+        while True:
+            try:
+                answer = int(input("\nNuméro du match : "))
+                match_dict[answer] = match_dict[answer],datetime.datetime.now()
+                short_term_dict.pop(answer)
+                break
+            except ValueError:
+                print("\nMerci d'entrer un index correct")
+            except KeyError:
+                print("\nMerci de rentrer un index encore présent dans la liste :\n")
+                print(''.join(['{0}.  {1}'.format(k, v) for k, v in short_term_dict.items()]))
+
+    for value in match_dict: print(match_dict[value])
+
+    return match_dict
 
 def asking_match_result(duel):
     """ Ask the user wich of the player win.

@@ -1,6 +1,6 @@
 from models.player import Player
 from models.match import Match
-from views.view_tournament import show_duel, asking_match_result, show_scoreboard, show_score
+from views.view_tournament import show_duel, asking_match_result, show_scoreboard, show_score, asking_end_match
 
 def make_player_dict():
     """Explore all the player object.
@@ -59,6 +59,17 @@ def adding_result_match(results, num_of_match):
         match.winner = result
     pass
 
+def adding_time_match(match_label_list, num_of_match):
+
+    for match in Match._registry[-num_of_match:]:
+        for time_infos in match_label_list:
+            # player_1 = match_label_list[time_infos][0][0]['match'][0]
+            player_1 = str(match_label_list[time_infos][0][0]['match'][0])
+            if match.player_1 == player_1:
+                match.start_time = match_label_list[time_infos][0][1]['start_time']
+                match.end_time = match_label_list[time_infos][1]
+
+    return
 
 def launch_from_controller(tournament_object):
 
@@ -68,10 +79,14 @@ def launch_from_controller(tournament_object):
     list_of_duel = tournament_object.first_draw()
     # Show the user the list of duels
     show_duel(list_of_duel)
+    # Ask the user to end the match
+    time_informations = asking_end_match(list_of_duel)
     # Ask the user the result of the match
     results = asking_match_result(list_of_duel)
     # Add those result to the match object
     adding_result_match(results, len(results))
+    adding_time_match(time_informations, len(time_informations))
+
     # Use these matchs objects to update the scoreboard
     tournament_object.updating_scoreboard_score(1)
     # Sort the scoreboard
