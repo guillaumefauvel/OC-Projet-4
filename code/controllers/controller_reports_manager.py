@@ -1,16 +1,17 @@
 from models.player import Player
 from datetime import datetime
 from views.view_reports_manager import ask_for_report_choice, show_list
+from controllers.controller_tournament import updating_general_rank_by_ratio
 def reports_manager():
     answer = int(ask_for_report_choice())
     if answer == 1:
         show_list(make_players_dict())
-        pass
+
     elif answer == 2:
         show_list(sort_by_rank())
 
-        pass
     elif answer == 3:
+
         pass
     elif answer == 4:
         pass
@@ -37,15 +38,14 @@ def make_players_dict():
 def sort_by_rank():
     """ Use the player dict in order to etablish new rank
     Return : Another dict with a coherent indexes """
-
+    updating_general_rank_by_ratio()
     sorted_by_rank = dict(sorted(make_players_dict().items(), key=lambda item: item[1][1]))
+    fully_sorted = {}
 
     for value, new_index in zip(sorted_by_rank, range(1,len(sorted_by_rank)+1)):
-        sorted_by_rank[new_index] = sorted_by_rank[value]
+        fully_sorted[new_index] = sorted_by_rank[value]
 
-    sorted_by_rank = dict(sorted(sorted_by_rank.items()))
-
-    return sorted_by_rank
+    return fully_sorted
 
 def sort_by_age():
     """ Use the birthday infos in the player dict in order to sort the player

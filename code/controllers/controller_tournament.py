@@ -104,7 +104,10 @@ def updating_players_stats(tournament_object):
         try:
             player_object.winloss_ratio = round(player_object.num_of_wins / player_object.num_of_losses,2)
         except:
-            player_object.winloss_ratio = 0
+            if player_object.num_of_wins > 0:
+                player_object.winloss_ratio = player_object.num_of_wins
+            else:
+                player_object.winloss_ratio = 0
         player_object.update_player_datas()
 
     return
