@@ -1,8 +1,26 @@
 from models.player import Player
 from datetime import datetime
-from views.view_reports_manager import ask_for_report_choice
+from views.view_reports_manager import ask_for_report_choice, show_list
 def reports_manager():
-    ask_for_report_choice()
+    answer = int(ask_for_report_choice())
+    if answer == 1:
+        show_list(make_players_dict())
+        pass
+    elif answer == 2:
+        show_list(sort_by_rank())
+
+        pass
+    elif answer == 3:
+        pass
+    elif answer == 4:
+        pass
+    elif answer == 5:
+        pass
+    elif answer == 6:
+        pass
+    elif answer == 7:
+        pass
+
     pass
 
 def make_players_dict():
@@ -23,7 +41,9 @@ def sort_by_rank():
     sorted_by_rank = dict(sorted(make_players_dict().items(), key=lambda item: item[1][1]))
 
     for value, new_index in zip(sorted_by_rank, range(1,len(sorted_by_rank)+1)):
-        sorted_by_rank[value][1] = new_index
+        sorted_by_rank[new_index] = sorted_by_rank[value]
+
+    sorted_by_rank = dict(sorted(sorted_by_rank.items()))
 
     return sorted_by_rank
 

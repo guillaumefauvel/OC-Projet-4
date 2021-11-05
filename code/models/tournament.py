@@ -169,7 +169,6 @@ class Tournament:
         return
 
     def serialized_the_object(self):
-
         self.serialized_object = round_conversion(self.object_dict)
         self.serialized_version = {
             'name': self.name,
@@ -186,4 +185,5 @@ class Tournament:
         for value in self._serialized_registry:
             if value['name'] == self.name:
                 self._serialized_registry.remove(value)
+
         self._serialized_registry.append(self.serialized_version)

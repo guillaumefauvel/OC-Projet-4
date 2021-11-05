@@ -24,7 +24,6 @@ def main():
     # sort_by_age()
     # sort_by_age()
 
-
     datas_management.serializing_tournament_player()
     datas_management.save_data()
 

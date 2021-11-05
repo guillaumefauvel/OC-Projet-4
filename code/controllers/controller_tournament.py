@@ -52,19 +52,18 @@ def player_researcher(*player_reference):
                 researched_results.append(found_player)
     return researched_results
 
-def adding_result_match(results, num_of_match):
+def adding_result_match(results):
     """ Adding the result of the matchs into the matchs objects
-     Args : a list of the matchs results, the number of matches"""
-
-    for match, result in zip(Match._registry[-num_of_match:], results):
+     Args : a list of the matchs results """
+    for match, result in zip(Match._registry[-len(results):], results):
         match.winner = result
     pass
 
-def adding_time_match(match_label_list, num_of_match):
+def adding_time_match(match_label_list):
     """ Adding the start_time and the end_time to the match object
-    Args : a list of start_time/end_time, the number of match"""
+    Arg : a list of start_time/end_time """
 
-    for match in Match._registry[-num_of_match:]:
+    for match in Match._registry[-len(match_label_list):]:
         for time_infos in match_label_list:
             player_1 = match_label_list[time_infos][0][0]['match'][0]
             if match.player_1 == player_1:
@@ -110,20 +109,19 @@ def updating_players_stats(tournament_object):
 
     return
 
-def updating_general_rank():
+def updating_general_rank_by_ratio():
     """ Use the player registry in order to reorganize the player's rank
-    the 1st player is the one with the most victory """
+    the 1st player is the one with the best ratio """
 
     players_dict = {}
 
     for player, index in zip(Player._registry, range(1, len(Player._registry) + 1)):
-        players_dict[index] = [player.reference, player.ranking, player.num_of_wins]
+        players_dict[index] = [player.reference, player.ranking, player.winloss_ratio]
 
     sorted_by_wins = dict(sorted(players_dict.items(), key=lambda item: item[1][2], reverse=True))
 
     for player, rank in zip(sorted_by_wins,range(1,len(Player._registry)+1)):
         player_researcher(sorted_by_wins[player][0])[0].ranking = rank
-
 
     return
 
@@ -143,8 +141,8 @@ def launch_from_controller(tournament_object):
     # Ask the user the result of the match
     results = asking_match_result(list_of_duel)
     # Add those result to the match object
-    adding_result_match(results, len(results))
-    adding_time_match(time_informations, len(time_informations))
+    adding_result_match(results)
+    adding_time_match(time_informations)
     # Use these matchs objects to update the scoreboard
     tournament_object.updating_scoreboard_score(1)
     # Sort the scoreboard
@@ -159,15 +157,15 @@ def launch_from_controller(tournament_object):
         tournament_object.updating_scoreboard_associations(list_of_duel)
         show_duel(list_of_duel)
         results = asking_match_result(list_of_duel)
-        adding_result_match(results, len(results))
-        adding_time_match(time_informations, len(time_informations))
+        adding_result_match(results)
+        adding_time_match(time_informations)
         tournament_object.updating_scoreboard_score(number_of_round)
         tournament_object.sort_score_rank()
         show_score(sorted(tournament_object.scoreboard.values(), key=lambda k: k['score'],reverse=True),number_of_round)
 
     tournament_object.serialized_the_object()
     updating_players_stats(tournament_object)
-    updating_general_rank()
+    updating_general_rank_by_ratio()
     tournament_object.serialized_the_object()
 
     return

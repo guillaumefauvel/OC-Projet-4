@@ -2,7 +2,7 @@ from models.player import Player
 from models.tournament import Tournament
 from models.round import Round
 from models.match import Match
-from tinydb import TinyDB
+from tinydb import TinyDB, Query
 
 def player_maker(dict_to_transform):
     """ Create player objects
@@ -86,3 +86,23 @@ def serializing_tournament_player():
     for tournament in Tournament._registry:
         tournament.serialized_the_object()
     return
+
+# -DEVonly
+# def delete_duplicates():
+#     """ Remove a player from the database """
+#
+#     database = TinyDB('database.json', indent=1)
+#     tournament_table = database.table("Tournament")
+#     list_of_tournament_names = []
+#     for value in tournament_table:
+#         if value['name'] not in list_of_tournament_names:
+#             list_of_tournament_names.append(value['name'])
+#         else:
+#             tournament_table.remove(Query().name == value['name'])
+#             print("Already in")
+#
+#     for value in Tournament._serialized_registry:
+#         if value['name'] == tournament_table:
+#             Tournament._serialized_registry.remove(value)
+#
+#     pass
