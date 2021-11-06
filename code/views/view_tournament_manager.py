@@ -93,3 +93,37 @@ def new_tournament(player_dict):
     name, location, start_date, end_date, num_of_round, selected_players, game_type, notes = tournament_input
 
     return name, location, start_date, end_date, num_of_round, selected_players, game_type, notes
+
+
+def ask_choice():
+    print("\n----- GESTION DES TOURNOIS -----")
+    print("\nQue souhaitez faire ? \n\n  1. Lancer un nouveau tournoi \n  2."
+          " Supprimer un tournoi")
+    while True:
+        answer = input("\nRéponse : ")
+        if answer in ["1","2"]:
+            break
+        else:
+            print("->Merci de rentrer 1 ou 2.")
+    return answer
+
+def show_tournament_list(dict):
+    """ Show a list of tournament and ask the index of the selected tournament
+    Arg : a tournament dict"""
+    print("")
+    for value in dict:
+        print(f"{value}. {dict[value]}")
+
+    while True:
+        try:
+            selected_tournament = int(input("\nQuel tournoi voulez-vous sélectionner ? "))
+            if selected_tournament in dict.keys():
+                break
+            else:
+                print("->Merci de rentrer un index valide")
+        except ValueError:
+            print("->Merci de rentrer un index valide")
+
+    selected_tournament = dict[selected_tournament]
+
+    return selected_tournament

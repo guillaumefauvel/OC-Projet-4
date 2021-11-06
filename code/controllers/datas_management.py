@@ -114,3 +114,4 @@ def delete_duplicates():
             tournament_table.remove(Query().name == value['name'])
             print("Already in")
     pass
+

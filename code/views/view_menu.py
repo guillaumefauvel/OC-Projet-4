@@ -6,17 +6,17 @@ def verify_menu_command():
         response = input("\nVotre choix : ")
         try:
             response = int(response)
-            if response > 0 and response < 8:
+            if response > 0 and response < 5:
                 return response
             else:
-                print("Veuillez saisir un entier entre 1 et 5")
+                print("Veuillez saisir un entier entre 1 et 4")
         except ValueError:
-            print("Veuillez saisir un entier entre 1 et 5")
+            print("Veuillez saisir un entier entre 1 et 4")
 
 def menu_proposition():
     """ The general menu logic """
 
-    print("\nQue voulez-vous faire ? \n\n  1. Lancer un nouveau tournoi \n  2. Gestion des joueurs "
+    print("\nQue voulez-vous faire ? \n\n  1. Gestion des tournois \n  2. Gestion des joueurs "
           "\n  3. Gestion des rapports \n  "
           "4. Quitter le programme")
     response = verify_menu_command()

@@ -7,6 +7,7 @@ def main():
 
     # Load the data
     datas_management.load_from_save()
+    datas_management.serializing_tournament_player()
 
     # -DEVonly
     # datas_management.delete_duplicates()

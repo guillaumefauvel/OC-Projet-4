@@ -92,8 +92,7 @@ def show_player_infos(player_infos):
         else:
             pass
 
-
-    pass
+    return
 
 
 

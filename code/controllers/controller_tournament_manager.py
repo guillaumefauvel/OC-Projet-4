@@ -1,6 +1,36 @@
 from models.player import Player
 from models.match import Match
+from models.tournament import Tournament
+
 from views.view_tournament import show_duel, asking_match_result, show_scoreboard, show_score, asking_end_match
+from views.view_tournament_manager import ask_choice, show_tournament_list
+from views import view_menu, view_tournament_manager, view_players_manager
+
+from tinydb import TinyDB, Query
+
+def tournament_manager():
+    answer = ask_choice()
+    if answer == "1":
+        tournament_launching()
+    elif answer == "2":
+        delete_tournament()
+    return
+
+def tournament_launching():
+    """ Create and launch a new tournament """
+
+    # Make a dict of all the listed player
+    player_dict = make_player_dict()
+    # Give that dict as an argument for the user view and gather the tournaments informations
+    name, location, start_date, end_date, num_of_round, selected_players, game_type, notes \
+        = view_tournament_manager.new_tournament(player_dict)
+    # Create the tournament
+    selected_players = convert_to_reference(selected_players)
+    Tournament(name, location, start_date, end_date, num_of_round, selected_players, game_type, notes)
+    # Launch the tournament
+    last_tournament = (Tournament._registry[-1])
+    launch_from_controller(last_tournament)
+    return
 
 def make_player_dict():
     """Explore all the player object.
@@ -11,36 +41,21 @@ def make_player_dict():
 
     return reference_dict
 
+def make_tournament_dict():
+
+    tournament_dict = {}
+
+    for index, tournament in zip(range(1, len(Tournament._registry)+1),Tournament._registry):
+        tournament_dict[index] = tournament.name
+
+    return tournament_dict
+
 def convert_to_reference(list_of_player_object):
     """ Convert a list of player object into a list of reference """
     players_references = []
     for object in list_of_player_object:
         players_references.append(object.reference)
     return players_references
-
-
-def convert_to_player_object(list_of_player_reference):
-    """ Convert a list of player reference into a list of player object """
-    list_of_player_object = []
-    for player_ref in list_of_player_reference:
-        for player_object in Player._registry:
-            if player_ref == player_object.reference:
-                list_of_player_object.append(player_object)
-    return list_of_player_object
-
-
-def round_conversion(list_of_round):
-    """ Convert a list of round object into a serialized dict
-    arg : a list of round object
-    return : a dict containing the duel list of a round and the result of those matchs
-    These informations are in order to serialized the content of the tournament """
-    serialized_dict = {}
-
-    for value, index in zip(list_of_round,range(1,len(list_of_round)+1)):
-        serialized_dict[index] = [list_of_round[value].duel_list,
-                                  [x.winner for x in list_of_round[value].attached_match]]
-
-    return serialized_dict
 
 def player_researcher(*player_reference):
     """ Return the objects of n number of player / Args : players references --> Controler ? """
@@ -132,7 +147,6 @@ def launch_from_controller(tournament_object):
     """ Hold the logic behind a tournament
     Arg : A tournament object """
 
-
     # Sort the player by making an ordered dict
     tournament_object.return_ranking()
     # Generate the first series of duel thanks to the scoreboard
@@ -171,4 +185,21 @@ def launch_from_controller(tournament_object):
     updating_general_rank_by_ratio()
     tournament_object.serialized_the_object()
 
+    return
+
+def delete_tournament():
+    """ Remove a tournament from the database """
+
+    tournament_to_delete = view_tournament_manager.show_tournament_list(make_tournament_dict())
+    database = TinyDB('database.json', indent=1)
+    tournament_table = database.table("Tournament")
+
+    tournament_table.remove(Query().name == tournament_to_delete)
+
+    for value in Tournament._serialized_registry:
+        if value['name'] == tournament_to_delete:
+            Tournament._serialized_registry.remove(value)
+    for tournament in Tournament._registry:
+        if tournament.name == tournament_to_delete:
+            Tournament._registry.remove(tournament)
     return

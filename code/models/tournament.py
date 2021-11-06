@@ -1,7 +1,6 @@
 import collections
-from tinydb import TinyDB, Query
 from models.round import Round
-from controllers.controller_tournament import convert_to_player_object, round_conversion
+from controllers.controller_conversion import convert_to_player_object, round_conversion
 
 class Tournament:
 

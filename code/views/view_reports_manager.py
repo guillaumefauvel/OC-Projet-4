@@ -9,7 +9,7 @@ def ask_for_report_choice():
     print("  2. Une liste de tous les joueurs classée par classement")
     print("  3. Une liste de tous les joueurs d'un tournoi classée par ordre alphabétique")
     print("  4. Une liste de tous les joueurs d'un tournoi classée par classement")
-    print("  5. Le tableau des scores d'un tournois")
+    print("  5. Le tableau des scores d'un tournoi")
     print("  6. Une liste de tous les tournois")
     print("  7. Une liste de tous les tours d'un tournoi")
     print("  8. Une liste de tous les matchs d'un tournoi")
@@ -90,3 +90,5 @@ def show_scoreboard(scoreboard, tournament_name):
     table = table.get_string(title=f"{tournament_name}")
 
     print(table)
+
+    return

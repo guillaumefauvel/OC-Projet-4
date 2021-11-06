@@ -4,7 +4,7 @@ from datetime import datetime
 from views.view_reports_manager import ask_for_report_choice, show_list, \
     ask_tournament_choice, show_tournament_players_by_alpha, show_tournament_players_by_rank,\
     show_tournaments_infos, show_scoreboard
-from controllers.controller_tournament import updating_general_rank_by_ratio, player_researcher
+from controllers.controller_tournament_manager import updating_general_rank_by_ratio, player_researcher
 
 def reports_manager():
     answer = int(ask_for_report_choice())
@@ -24,7 +24,7 @@ def reports_manager():
         tournament_scoreboard()
 
     elif answer == 6:
-        tournament_synthesis()
+        show_tournaments_infos(make_tournament_dict())
 
     elif answer == 7:
         pass
@@ -109,12 +109,6 @@ def tournament_players_by_rank():
         player_dict[value.reference] = value.ranking
     player_dict = dict(sorted(player_dict.items(),key=lambda item: item[1]))
     show_tournament_players_by_rank(player_dict)
-
-def tournament_synthesis():
-
-    show_tournaments_infos(make_tournament_dict())
-
-    return
 
 def tournament_scoreboard():
 
