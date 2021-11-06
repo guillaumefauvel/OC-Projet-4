@@ -1,7 +1,11 @@
 from models.player import Player
+from models.tournament import Tournament
 from datetime import datetime
-from views.view_reports_manager import ask_for_report_choice, show_list
-from controllers.controller_tournament import updating_general_rank_by_ratio
+from views.view_reports_manager import ask_for_report_choice, show_list, \
+    ask_tournament_choice, show_tournament_players_by_alpha, show_tournament_players_by_rank,\
+    show_tournaments_infos, show_scoreboard
+from controllers.controller_tournament import updating_general_rank_by_ratio, player_researcher
+
 def reports_manager():
     answer = int(ask_for_report_choice())
     if answer == 1:
@@ -11,18 +15,24 @@ def reports_manager():
         show_list(sort_by_rank())
 
     elif answer == 3:
+        tournament_players_by_alpha()
 
-        pass
     elif answer == 4:
-        pass
+        tournament_players_by_rank()
+
     elif answer == 5:
-        pass
+        tournament_scoreboard()
+
     elif answer == 6:
-        pass
+        tournament_synthesis()
+
     elif answer == 7:
         pass
 
-    pass
+    elif answer == 8:
+        pass
+
+    return
 
 def make_players_dict():
 
@@ -34,6 +44,18 @@ def make_players_dict():
         players_dict[index] = [player.reference, player.ranking, player.birthday]
 
     return players_dict
+
+def make_tournament_dict():
+
+    tournament_dict = {}
+
+    for index, tournament in zip(range(1, len(Tournament._registry)+1),Tournament._registry):
+        tournament_dict[index] = tournament.name, tournament.selected_players, \
+                                 tournament.serialized_object, tournament.scoreboard, \
+                                 tournament.location, tournament.start_date, \
+                                 tournament.end_date, tournament.num_of_round
+
+    return tournament_dict
 
 def sort_by_rank():
     """ Use the player dict in order to etablish new rank
@@ -63,3 +85,41 @@ def sort_by_age():
     sorted_by_age = dict(sorted(age_dict.items(), key=lambda item: item[1][1]))
 
     return sorted_by_age
+
+
+def tournament_players_by_alpha():
+
+    show_list(make_tournament_dict())
+    tournament_choice = ask_tournament_choice(make_tournament_dict())
+    show_tournament_players_by_alpha(make_tournament_dict()[tournament_choice])
+
+
+def tournament_players_by_rank():
+
+    updating_general_rank_by_ratio()
+
+    show_list(make_tournament_dict())
+    tournament_choice = ask_tournament_choice(make_tournament_dict())
+    players_list = make_tournament_dict()[tournament_choice][1]
+    player_object = []
+    for value in players_list:
+        player_object.append(player_researcher(value)[0])
+    player_dict = {}
+    for value in player_object:
+        player_dict[value.reference] = value.ranking
+    player_dict = dict(sorted(player_dict.items(),key=lambda item: item[1]))
+    show_tournament_players_by_rank(player_dict)
+
+def tournament_synthesis():
+
+    show_tournaments_infos(make_tournament_dict())
+
+    return
+
+def tournament_scoreboard():
+
+    show_list(make_tournament_dict())
+    tournament_choice = ask_tournament_choice(make_tournament_dict())
+    tournament_name = make_tournament_dict()[tournament_choice][0]
+    scoreboard = make_tournament_dict()[tournament_choice][3]
+    show_scoreboard(sorted(scoreboard.values(), key=lambda k: k['score'],reverse=True), tournament_name)

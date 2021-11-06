@@ -67,7 +67,6 @@ class Tournament:
         self.object_dict[1] = Round(self.duel_list)
         # Create the match attached to this round
         self.object_dict[1].make_match()
-
         return self.duel_list
 
     def updating_scoreboard_score(self, round):
@@ -179,7 +178,8 @@ class Tournament:
             'selected_players': self.selected_players,
             'game_type': self.game_type,
             'notes': self.notes,
-            'serialized_object': self.serialized_object
+            'serialized_object': self.serialized_object,
+            'scoreboard':self.scoreboard
         }
         # Deleting the old version
         for value in self._serialized_registry:
