@@ -168,6 +168,7 @@ class Tournament:
 
     def serialized_the_object(self):
         self.serialized_object = round_conversion(self.object_dict)
+
         self.serialized_version = {
             'name': self.name,
             'location': self.location,

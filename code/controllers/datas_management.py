@@ -81,7 +81,7 @@ def tournament_maker(dict_to_transform):
                 Tournament._registry[-1].object_dict[index] = Round(duel_list)
                 Tournament._registry[-1].object_dict[index].make_match()
                 # Adding the score to the round
-                for match, result in zip(Match._registry[-num_of_round:],results):
+                for match, result in zip(Match._registry[-len(results):],results):
                     match.winner = result
             # Adding the scoreboard
             Tournament._registry[-1].scoreboard = value['scoreboard']
@@ -91,13 +91,17 @@ def serializing_tournament_player():
     players_reference_list = []
     tournaments_name_list = []
     for player in Player._registry:
-        if player.reference not in players_reference_list:
-            players_reference_list.append(player.reference)
-            player.update_player_datas()
+        # if player.reference not in players_reference_list:
+        #     players_reference_list.append(player.reference)
+
+        player.update_player_datas()
+
     for tournament in Tournament._registry:
-        if tournament.name not in tournaments_name_list:
-            tournaments_name_list.append(tournament.name)
-            tournament.serialized_the_object()
+        # if tournament.name not in tournaments_name_list:
+        #     tournaments_name_list.append(tournament.name)
+
+        tournament.serialized_the_object()
+
     return
 
 # -DEVonly

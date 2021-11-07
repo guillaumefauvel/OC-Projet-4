@@ -110,6 +110,7 @@ def tournament_players_by_rank():
     player_dict = dict(sorted(player_dict.items(),key=lambda item: item[1]))
     show_tournament_players_by_rank(player_dict)
 
+
 def tournament_scoreboard():
 
     show_list(make_tournament_dict())
@@ -117,3 +118,5 @@ def tournament_scoreboard():
     tournament_name = make_tournament_dict()[tournament_choice][0]
     scoreboard = make_tournament_dict()[tournament_choice][3]
     show_scoreboard(sorted(scoreboard.values(), key=lambda k: k['score'],reverse=True), tournament_name)
+
+

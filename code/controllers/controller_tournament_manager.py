@@ -72,7 +72,7 @@ def adding_result_match(results):
      Args : a list of the matchs results """
     for match, result in zip(Match._registry[-len(results):], results):
         match.winner = result
-    pass
+    return
 
 def adding_time_match(match_label_list):
     """ Adding the start_time and the end_time to the match object
@@ -166,6 +166,7 @@ def launch_from_controller(tournament_object):
     tournament_object.sort_score_rank()
     # Show the scoreboard
     show_score(sorted(tournament_object.scoreboard.values(), key=lambda k: k['score'], reverse=True), 1)
+
     # Iterate on the number of round left
     for number_of_round in range(2, tournament_object.num_of_round + 1):
 
@@ -175,6 +176,7 @@ def launch_from_controller(tournament_object):
         show_duel(list_of_duel)
         results = asking_match_result(list_of_duel)
         adding_result_match(results)
+        print(results)
         adding_time_match(time_informations)
         tournament_object.updating_scoreboard_score(number_of_round)
         tournament_object.sort_score_rank()

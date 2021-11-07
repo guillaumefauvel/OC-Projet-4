@@ -16,6 +16,7 @@ def round_conversion(list_of_round):
     These informations are in order to serialized the content of the tournament """
     serialized_dict = {}
 
+
     for value, index in zip(list_of_round, range(1, len(list_of_round) + 1)):
         serialized_dict[index] = [list_of_round[value].duel_list,
                                   [x.winner for x in list_of_round[value].attached_match]]

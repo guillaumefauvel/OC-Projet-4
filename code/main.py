@@ -8,6 +8,12 @@ def main():
     # Load the data
     datas_management.load_from_save()
     datas_management.serializing_tournament_player()
+    # print(Tournament._serialized_registry[-1])
+
+
+    # for tournament in Tournament._registry:
+    #     print(tournament.name)
+    #     print(tournament.serialized_object)
 
     # -DEVonly
     # datas_management.delete_duplicates()
