@@ -94,10 +94,11 @@ class Tournament:
     def generating_other_draw(self,round_index):
         """ Generate a list of duel by analysing the scoreboard database, it also make a round and some matchs
         Arg : The round index - in order to link the round to his tournament
-        Return : The list of the duels """
+        Return : The list of the next duels """
 
         dict = {}
         duel_list = []
+        player_to_match = []
 
         for value, index in zip(sorted(self.scoreboard.values(), key=lambda k: k['score'],reverse=True),range(1,len(self.scoreboard)+1)):
             dict[index] = value['id'],value['associations'],value['reference']
@@ -106,35 +107,20 @@ class Tournament:
             if value not in list(dict):
                 pass
             else:
-                try:
-                    condition = 0
+                index = 0
+                while True:
+                    index += 1
                     try:
-                        if dict[value][0] not in dict[value + 1][1]:
-                            duel_list.append([dict[value][2], dict[value + 1][2]])
+                        if index > len(self.scoreboard):
+                            player_to_match.append(value)
+                            break
+                        if dict[value][0] not in dict[value + index][1]:
+                            duel_list.append([dict[value][2], dict[value + index][2]])
                             dict.pop(value)
-                            dict.pop(value + 1)
-                            condition = 1
+                            dict.pop(value + index)
+                            break
                     except:
                         pass
-                    if condition == 0:
-                        try:
-                            if dict[value][0] not in dict[value + 2][1]:
-                                duel_list.append([dict[value][2], dict[value + 2][2]])
-                                dict.pop(value)
-                                dict.pop(value + 2)
-                                condition = 2
-                        except:
-                            pass
-                    if condition == 0:
-                        try:
-                            if dict[value][0] not in dict[value + 3][1]:
-                                duel_list.append([dict[value][2], dict[value + 3][2]])
-                                dict.pop(value)
-                                dict.pop(value + 3)
-                        except:
-                            pass
-                except:
-                    print(f"--- {value} a rencontré un problème --- ") # -DEVonly
 
         # Create the round
         self.object_dict[round_index] = Round(duel_list)

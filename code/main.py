@@ -8,8 +8,6 @@ def main():
     # Load the data
     datas_management.load_from_save()
     datas_management.serializing_tournament_player()
-    # print(Tournament._serialized_registry[-1])
-
 
     # for tournament in Tournament._registry:
     #     print(tournament.name)
@@ -22,7 +20,7 @@ def main():
     menu_attribution(menu_proposition())
 
     # -DEVonly
-    # from code.controllers.controller_tournament import launch_from_controller
+    # from code.controllers.controller_tournament_manager import launch_from_controller
     # launch_from_controller(Tournament._registry[-1])
 
     datas_management.serializing_tournament_player()

@@ -176,7 +176,6 @@ def launch_from_controller(tournament_object):
         show_duel(list_of_duel)
         results = asking_match_result(list_of_duel)
         adding_result_match(results)
-        print(results)
         adding_time_match(time_informations)
         tournament_object.updating_scoreboard_score(number_of_round)
         tournament_object.sort_score_rank()
