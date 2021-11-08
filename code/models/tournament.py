@@ -3,7 +3,7 @@ import copy
 from models.round import Round
 from controllers.controller_conversion import convert_to_player_object, round_conversion
 
-from itertools import permutations
+import itertools
 
 class Tournament:
 
@@ -176,22 +176,25 @@ class Tournament:
         for association, score, index in zip(general_list, general_score, range(1,len(general_list)+1)):
             new_dict[index] = association, score
 
-        perm = permutations([v for v in range(1, len(self.selected_players)+1, 1)])
+        # perm = permutations([v for v in range(1, len(self.selected_players)+1, 1)])
 
         lowest_score = 200
         best_combination = []
-        for i in list(perm):
-            score = 0
-            output = [i[v:v + 2] for v in range(0, len(i), 2)]
-            for value in output:
-                for combi in new_dict:
-                    if new_dict[combi][0] == list(value):
-                        score += (new_dict[combi][1])
-            if score < lowest_score and score > 0 :
-                lowest_score = score
-                best_combination = output
-
+        for i in itertools.permutations([v for v in range(1, len(self.selected_players)+1, 1)]):
+            if i[0] == 1:
+                score = 0
+                output = [i[v:v + 2] for v in range(0, len(i), 2)]
+                for value in output:
+                    for combi in new_dict:
+                        if new_dict[combi][0] == list(value):
+                            score += (new_dict[combi][1])
+                if score < lowest_score and score > 0 :
+                    lowest_score = score
+                    best_combination = output
+            else:
+                break
         return best_combination
+
 
     def scoreboard_converter(self, best_combination):
         """ Convert a list of duel logged as scoreboard_index into a list of player_reference

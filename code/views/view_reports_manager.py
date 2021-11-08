@@ -11,12 +11,12 @@ def ask_for_report_choice():
     print("  2. Une liste de tous les joueurs classée par classement")
     print("  3. Une liste de tous les joueurs d'un tournoi classée par ordre alphabétique")
     print("  4. Une liste de tous les joueurs d'un tournoi classée par classement")
-    print("  5. Le tableau des scores d'un tournoi")
-    print("  6. Une liste de tous les tournois")
-    print("  7. Une liste de tous les tours d'un tournoi")
-    print("  8. Une liste de tous les matchs d'un tournoi")
+    print("  5. Une liste de tous les tournois")
+    print("  6. Le tableau des scores d'un tournoi")
+    print("  7. Le récapitulatif d'un tournoi")
 
-    possible_choice = ["1","2","3","4","5","6","7"]
+
+    possible_choice = ["1","2","3","4","5","6","7","8","9"]
 
     while True:
         answer = input("\nRéponse : ")
@@ -92,5 +92,25 @@ def show_scoreboard(scoreboard, tournament_name):
     table = table.get_string(title=f"{tournament_name}")
 
     print(table)
+
+    return
+
+def show_scoreboard_with_round(scoreboard,round_number):
+
+    table = PrettyTable(["Joueur","Classement","Score","Résulat-Round"])
+    for value in scoreboard:
+        table.add_row([scoreboard[value]["reference"], scoreboard[value]["rank"],
+                       scoreboard[value]["score"], scoreboard[value]['round_result']])
+    table = table.get_string(title=f"Round N°{round_number}")
+
+    print(table)
+
+    return
+
+def show_duel(list_of_duel):
+    print("")
+    for duel in list_of_duel:
+        print(f"{duel[0]} affrontais {duel[1]}")
+    print("")
 
     return

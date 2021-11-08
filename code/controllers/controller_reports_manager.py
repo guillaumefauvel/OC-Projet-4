@@ -1,9 +1,10 @@
+
 from models.player import Player
 from models.tournament import Tournament
 from datetime import datetime
 from views.view_reports_manager import ask_for_report_choice, show_list, \
     ask_tournament_choice, show_tournament_players_by_alpha, show_tournament_players_by_rank,\
-    show_tournaments_infos, show_scoreboard
+    show_tournaments_infos, show_scoreboard, show_scoreboard_with_round, show_duel
 from controllers.controller_tournament_manager import updating_general_rank_by_ratio, player_researcher
 from controllers.controller_menu_auxiliary import navigator
 
@@ -27,17 +28,17 @@ def reports_manager():
         navigator(3)
 
     elif answer == 5:
-        tournament_scoreboard()
-        navigator(3)
-
-    elif answer == 6:
         show_tournaments_infos(make_tournament_dict())
         navigator(3)
 
-    elif answer == 7:
-        pass
+    elif answer == 6:
+        tournament_scoreboard()
+        navigator(3)
 
-    elif answer == 8:
+    elif answer == 7:
+        tournament_history()
+        navigator(3)
+
         pass
 
     return
@@ -129,3 +130,41 @@ def tournament_scoreboard():
     show_scoreboard(sorted(scoreboard.values(), key=lambda k: k['score'],reverse=True), tournament_name)
 
 
+def tournament_history_auxiliary(scoreboard,searched_reference,value_to_assign,results_indication):
+
+    for player in scoreboard:
+        if (scoreboard[player]['reference']) == searched_reference:
+            scoreboard[player]['score'] += value_to_assign
+            scoreboard[player]['round_result'] = results_indication
+
+    return
+
+def tournament_history():
+
+    show_list(make_tournament_dict())
+    tournament_choice = ask_tournament_choice(make_tournament_dict())
+    round_list = make_tournament_dict()[tournament_choice][2]
+    players_list = make_tournament_dict()[tournament_choice][1]
+    scoreboard = {}
+
+    for player, index in zip(players_list,range(1,len(players_list)+1)):
+        scoreboard[index] = {"reference":player,"score":0,"rank":index,"round_result":""}
+
+    for round in round_list:
+        for duel, result in zip(round_list[round][0],round_list[round][1]):
+            player_1 = duel[0]
+            player_2 = duel[1]
+            if result == "1":
+                tournament_history_auxiliary(scoreboard, player_1,1,"G")
+                tournament_history_auxiliary(scoreboard, player_2,0,"-")
+            elif result == "2":
+                tournament_history_auxiliary(scoreboard, player_2,1,"G")
+                tournament_history_auxiliary(scoreboard, player_1,0,"-")
+            else:
+                tournament_history_auxiliary(scoreboard, player_1, 0.5,"E")
+                tournament_history_auxiliary(scoreboard, player_2, 0.5,"E")
+
+        show_duel(round_list[round][0])
+        show_scoreboard_with_round(scoreboard,round)
+
+    return
