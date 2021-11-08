@@ -5,26 +5,34 @@ from views.view_reports_manager import ask_for_report_choice, show_list, \
     ask_tournament_choice, show_tournament_players_by_alpha, show_tournament_players_by_rank,\
     show_tournaments_infos, show_scoreboard
 from controllers.controller_tournament_manager import updating_general_rank_by_ratio, player_researcher
+from controllers.controller_menu_auxiliary import navigator
 
 def reports_manager():
     answer = int(ask_for_report_choice())
+
     if answer == 1:
         show_list(make_players_dict())
+        navigator(3)
 
     elif answer == 2:
         show_list(sort_by_rank())
+        navigator(3)
 
     elif answer == 3:
         tournament_players_by_alpha()
+        navigator(3)
 
     elif answer == 4:
         tournament_players_by_rank()
+        navigator(3)
 
     elif answer == 5:
         tournament_scoreboard()
+        navigator(3)
 
     elif answer == 6:
         show_tournaments_infos(make_tournament_dict())
+        navigator(3)
 
     elif answer == 7:
         pass
@@ -33,6 +41,7 @@ def reports_manager():
         pass
 
     return
+
 
 def make_players_dict():
 

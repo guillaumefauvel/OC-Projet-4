@@ -3,7 +3,9 @@ from prettytable import PrettyTable
 
 
 def ask_for_report_choice():
-    print("\n----- GESTION DES RAPPORTS -----")
+    print("\n-------------------------------")
+    print("---- GESTION DES RAPPORTS -----")
+    print("-------------------------------")
     print("\nQuel type de rapport voulez-vous générer ? \n")
     print("  1. Une liste de tous les joueurs classée par ordre alphabétique")
     print("  2. Une liste de tous les joueurs classée par classement")

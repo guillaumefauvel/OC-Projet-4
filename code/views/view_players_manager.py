@@ -1,5 +1,8 @@
 def ask_choice():
-    print("\n----- GESTION DES JOUEURS -----")
+    print("\n-------------------------------")
+    print("----- GESTION DES JOUEURS -----")
+    print("-------------------------------")
+
     print("\nQue souhaitez faire ? \n\n  1. Ajouter un nouveau joueur\n  2."
           " Supprimer un joueur \n  3. Rechercher les informations d'un joueur")
 

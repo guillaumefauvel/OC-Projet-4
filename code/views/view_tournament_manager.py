@@ -96,7 +96,9 @@ def new_tournament(player_dict):
 
 
 def ask_choice():
-    print("\n----- GESTION DES TOURNOIS -----")
+    print("\n-------------------------------")
+    print("---- GESTION DES TOURNOIS -----")
+    print("-------------------------------")
     print("\nQue souhaitez faire ? \n\n  1. Lancer un nouveau tournoi \n  2."
           " Supprimer un tournoi")
     while True:

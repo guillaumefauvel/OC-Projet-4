@@ -2,21 +2,23 @@ from models.player import Player
 from views import view_menu, view_tournament_manager, view_players_manager, view_reports_manager
 from controllers.controller_reports_manager import make_players_dict
 from controllers.controller_tournament_manager import updating_general_rank_by_ratio, player_researcher
+from controllers.controller_menu_auxiliary import menu_loop
+
 
 from tinydb import TinyDB, Query
 
 def players_manager():
     answer = view_players_manager.ask_choice()
     if answer == "1":
-        adding_player()
+        menu_loop(adding_player)
 
     elif answer == "2":
 
-        delete_player()
+        menu_loop(delete_player)
 
     elif answer == "3":
 
-        show_player_infos()
+        menu_loop(show_player_infos)
 
 def adding_player():
     """ Create a new player object from the gathered informations"""

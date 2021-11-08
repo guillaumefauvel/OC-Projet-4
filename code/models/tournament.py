@@ -176,7 +176,7 @@ class Tournament:
         for association, score, index in zip(general_list, general_score, range(1,len(general_list)+1)):
             new_dict[index] = association, score
 
-        perm = permutations([v for v in range(1, len(self.selected_players), 1)])
+        perm = permutations([v for v in range(1, len(self.selected_players)+1, 1)])
 
         lowest_score = 200
         best_combination = []

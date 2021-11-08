@@ -6,15 +6,20 @@ from views.view_tournament import show_duel, asking_match_result, show_scoreboar
 from views.view_tournament_manager import ask_choice, show_tournament_list
 from views import view_menu, view_tournament_manager, view_players_manager
 
+from controllers.controller_menu_auxiliary import menu_loop
+
 from tinydb import TinyDB, Query
+
 
 def tournament_manager():
     answer = ask_choice()
     if answer == "1":
         tournament_launching()
     elif answer == "2":
-        delete_tournament()
+        menu_loop(delete_tournament)
+        pass
     return
+
 
 def tournament_launching():
     """ Create and launch a new tournament """
@@ -30,7 +35,9 @@ def tournament_launching():
     # Launch the tournament
     last_tournament = (Tournament._registry[-1])
     launch_from_controller(last_tournament)
+
     return
+
 
 def make_player_dict():
     """Explore all the player object.
@@ -50,12 +57,14 @@ def make_tournament_dict():
 
     return tournament_dict
 
+
 def convert_to_reference(list_of_player_object):
     """ Convert a list of player object into a list of reference """
     players_references = []
     for object in list_of_player_object:
         players_references.append(object.reference)
     return players_references
+
 
 def player_researcher(*player_reference):
     """ Return the objects of n number of player / Args : players references --> Controler ? """
@@ -67,12 +76,14 @@ def player_researcher(*player_reference):
                 researched_results.append(found_player)
     return researched_results
 
+
 def adding_result_match(results):
     """ Adding the result of the matchs into the matchs objects
      Args : a list of the matchs results """
     for match, result in zip(Match._registry[-len(results):], results):
         match.winner = result
     return
+
 
 def adding_time_match(match_label_list):
     """ Adding the start_time and the end_time to the match object
@@ -85,6 +96,7 @@ def adding_time_match(match_label_list):
                 match.start_time = match_label_list[time_infos][0][1]['start_time']
                 match.end_time = match_label_list[time_infos][1]
     return
+
 
 def updating_players_stats(tournament_object):
     """ Update the players stats by using the result of the tournament
@@ -107,7 +119,6 @@ def updating_players_stats(tournament_object):
                 player_researcher(match[1])[0].num_of_draw += 1
                 player_researcher(match[0])[0].num_of_draw += 1
 
-
     players_list = tournament_object._serialized_registry[-1]['selected_players']
 
     for player in players_list:
@@ -127,6 +138,7 @@ def updating_players_stats(tournament_object):
 
     return
 
+
 def updating_general_rank_by_ratio():
     """ Use the player registry in order to reorganize the player's rank
     the 1st player is the one with the best ratio """
@@ -142,6 +154,7 @@ def updating_general_rank_by_ratio():
         player_researcher(sorted_by_wins[player][0])[0].ranking = rank
 
     return
+
 
 def launch_from_controller(tournament_object):
     """ Hold the logic behind a tournament
@@ -187,6 +200,7 @@ def launch_from_controller(tournament_object):
     tournament_object.serialized_the_object()
 
     return
+
 
 def delete_tournament():
     """ Remove a tournament from the database """
