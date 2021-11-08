@@ -7,84 +7,84 @@
    "first_name": "Dorian",
    "birthday": "12/03/1990",
    "gender": "H",
-   "ranking": 6,
+   "ranking": 11,
    "reference": "Dorian Lario",
-   "num_of_wins": 98,
-   "num_of_losses": 93,
-   "num_of_draw": 66,
-   "win_loss_ratio": 1.05,
-   "num_of_match": 257,
-   "num_of_tournaments": 62
+   "num_of_wins": 119,
+   "num_of_losses": 119,
+   "num_of_draw": 76,
+   "win_loss_ratio": 1.0,
+   "num_of_match": 314,
+   "num_of_tournaments": 74
   },
   "2": {
    "name": "Allizard",
    "first_name": "Pascal",
    "birthday": "19/09/1962",
    "gender": "H",
-   "ranking": 17,
+   "ranking": 15,
    "reference": "Pascal Allizard",
-   "num_of_wins": 99,
-   "num_of_losses": 100,
-   "num_of_draw": 63,
-   "win_loss_ratio": 0.99,
-   "num_of_match": 262,
-   "num_of_tournaments": 62
+   "num_of_wins": 121,
+   "num_of_losses": 123,
+   "num_of_draw": 74,
+   "win_loss_ratio": 0.98,
+   "num_of_match": 318,
+   "num_of_tournaments": 74
   },
   "3": {
    "name": "Anglars",
    "first_name": "Jean-Claude",
    "birthday": "20/02/1961",
    "gender": "H",
-   "ranking": 9,
+   "ranking": 10,
    "reference": "Jean-Claude Anglars",
-   "num_of_wins": 105,
-   "num_of_losses": 103,
-   "num_of_draw": 61,
-   "win_loss_ratio": 1.02,
-   "num_of_match": 269,
-   "num_of_tournaments": 62
+   "num_of_wins": 130,
+   "num_of_losses": 129,
+   "num_of_draw": 68,
+   "win_loss_ratio": 1.01,
+   "num_of_match": 327,
+   "num_of_tournaments": 74
   },
   "4": {
    "name": "Antiste",
    "first_name": "Maurice",
    "birthday": "22/06/1953",
    "gender": "H",
-   "ranking": 19,
+   "ranking": 16,
    "reference": "Maurice Antiste",
-   "num_of_wins": 96,
-   "num_of_losses": 105,
-   "num_of_draw": 66,
-   "win_loss_ratio": 0.91,
-   "num_of_match": 267,
-   "num_of_tournaments": 62
+   "num_of_wins": 124,
+   "num_of_losses": 126,
+   "num_of_draw": 76,
+   "win_loss_ratio": 0.98,
+   "num_of_match": 326,
+   "num_of_tournaments": 74
   },
   "5": {
    "name": "Apourceau-Poly",
    "first_name": "Cathy",
    "birthday": "18/04/1965",
    "gender": "F",
-   "ranking": 10,
+   "ranking": 17,
    "reference": "Cathy Apourceau-Poly",
-   "num_of_wins": 101,
-   "num_of_losses": 101,
-   "num_of_draw": 62,
-   "win_loss_ratio": 1.0,
-   "num_of_match": 264,
-   "num_of_tournaments": 62
+   "num_of_wins": 120,
+   "num_of_losses": 123,
+   "num_of_draw": 78,
+   "win_loss_ratio": 0.98,
+   "num_of_match": 321,
+   "num_of_tournaments": 74
   },
   "6": {
    "name": "Arnaud",
    "first_name": "Jean-Michel",
    "birthday": "28/04/1966",
    "gender": "H",
-   "ranking": 7,
+   "ranking": 8,
    "reference": "Jean-Michel Arnaud",
-   "num_of_wins": 102,
-   "num_of_losses": 99,
-   "num_of_draw": 69,
-   "win_loss_ratio": 1.03,
-   "num_of_match": 270,
-   "num_of_tournaments": 62
+   "num_of_wins": 130,
+   "num_of_losses": 122,
+   "num_of_draw": 77,
+   "win_loss_ratio": 1.07,
+   "num_of_match": 329,
+   "num_of_tournaments": 74
   },
   "7": {
    "name": "Artano",
@@ -93,26 +93,26 @@
    "gender": "H",
    "ranking": 18,
    "reference": "St\u00e9phane Artano",
-   "num_of_wins": 101,
-   "num_of_losses": 107,
-   "num_of_draw": 60,
-   "win_loss_ratio": 0.94,
-   "num_of_match": 268,
-   "num_of_tournaments": 62
+   "num_of_wins": 123,
+   "num_of_losses": 126,
+   "num_of_draw": 76,
+   "win_loss_ratio": 0.98,
+   "num_of_match": 325,
+   "num_of_tournaments": 74
   },
   "8": {
    "name": "Artigalas",
    "first_name": "Viviane",
    "birthday": "22/10/1956",
    "gender": "F",
-   "ranking": 8,
+   "ranking": 19,
    "reference": "Viviane Artigalas",
-   "num_of_wins": 92,
-   "num_of_losses": 89,
-   "num_of_draw": 69,
-   "win_loss_ratio": 1.03,
-   "num_of_match": 250,
-   "num_of_tournaments": 62
+   "num_of_wins": 114,
+   "num_of_losses": 117,
+   "num_of_draw": 77,
+   "win_loss_ratio": 0.97,
+   "num_of_match": 308,
+   "num_of_tournaments": 74
   },
   "9": {
    "name": "Assouline",
@@ -121,26 +121,26 @@
    "gender": "H",
    "ranking": 20,
    "reference": "David Assouline",
-   "num_of_wins": 19,
-   "num_of_losses": 21,
-   "num_of_draw": 25,
-   "win_loss_ratio": 0.9,
-   "num_of_match": 65,
-   "num_of_tournaments": 13
+   "num_of_wins": 25,
+   "num_of_losses": 27,
+   "num_of_draw": 27,
+   "win_loss_ratio": 0.93,
+   "num_of_match": 79,
+   "num_of_tournaments": 16
   },
   "10": {
    "name": "Barbary",
    "first_name": "Serge",
    "birthday": "16/07/1946",
    "gender": "H",
-   "ranking": 11,
+   "ranking": 9,
    "reference": "Serge Barbary",
-   "num_of_wins": 22,
-   "num_of_losses": 22,
-   "num_of_draw": 25,
-   "win_loss_ratio": 1.0,
-   "num_of_match": 69,
-   "num_of_tournaments": 13
+   "num_of_wins": 29,
+   "num_of_losses": 28,
+   "num_of_draw": 27,
+   "win_loss_ratio": 1.04,
+   "num_of_match": 84,
+   "num_of_tournaments": 16
   },
   "11": {
    "name": "Bacchi",
@@ -161,7 +161,7 @@
    "first_name": "Jean",
    "birthday": "18/03/1963",
    "gender": "H",
-   "ranking": 3,
+   "ranking": 1,
    "reference": "Jean Bacci",
    "num_of_wins": 24,
    "num_of_losses": 12,
@@ -203,7 +203,7 @@
    "first_name": "J\u00e9r\u00f4me",
    "birthday": "04/08/1962",
    "gender": "H",
-   "ranking": 22,
+   "ranking": 24,
    "reference": "J\u00e9r\u00f4me Bascher",
    "num_of_wins": 7,
    "num_of_losses": 17,
@@ -217,7 +217,7 @@
    "first_name": "Arnaud",
    "birthday": "08/03/1965",
    "gender": "H",
-   "ranking": 5,
+   "ranking": 2,
    "reference": "Arnaud Bazin",
    "num_of_wins": 9,
    "num_of_losses": 6,
@@ -231,7 +231,7 @@
    "first_name": "Arnaud",
    "birthday": "12/08/1968",
    "gender": "H",
-   "ranking": 24,
+   "ranking": 25,
    "reference": "Arnaud De Belenet",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -245,7 +245,7 @@
    "first_name": "Bruno",
    "birthday": "18/07/1972",
    "gender": "H",
-   "ranking": 25,
+   "ranking": 26,
    "reference": "Bruno Belin",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -259,7 +259,7 @@
    "first_name": "Nadine",
    "birthday": "22/06/1957",
    "gender": "F",
-   "ranking": 26,
+   "ranking": 27,
    "reference": "Nadine Bellurot",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -273,7 +273,7 @@
    "first_name": "Catherine",
    "birthday": "23/09/1958",
    "gender": "F",
-   "ranking": 27,
+   "ranking": 28,
    "reference": "Catherine Belrhiti",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -287,7 +287,7 @@
    "first_name": "Guy",
    "birthday": "24/10/1959",
    "gender": "H",
-   "ranking": 28,
+   "ranking": 29,
    "reference": "Guy Benarroche",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -301,7 +301,7 @@
    "first_name": "Esther",
    "birthday": "25/11/1960",
    "gender": "F",
-   "ranking": 29,
+   "ranking": 30,
    "reference": "Esther Benbassa",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -315,7 +315,7 @@
    "first_name": "Martine",
    "birthday": "26/12/1956",
    "gender": "F",
-   "ranking": 30,
+   "ranking": 31,
    "reference": "Martine Berthet",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -329,7 +329,7 @@
    "first_name": "Jo\u00ebl",
    "birthday": "27/08/1980",
    "gender": "H",
-   "ranking": 31,
+   "ranking": 32,
    "reference": "Jo\u00ebl Bigot",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -343,7 +343,7 @@
    "first_name": "Christian",
    "birthday": "28/09/1943",
    "gender": "H",
-   "ranking": 32,
+   "ranking": 33,
    "reference": "Christian Bilhac",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -357,7 +357,7 @@
    "first_name": "Annick",
    "birthday": "29/10/1957",
    "gender": "F",
-   "ranking": 33,
+   "ranking": 34,
    "reference": "Annick Billon",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -371,7 +371,7 @@
    "first_name": "Jean",
    "birthday": "30/11/1959",
    "gender": "H",
-   "ranking": 34,
+   "ranking": 35,
    "reference": "Jean Bizet",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -385,7 +385,7 @@
    "first_name": "Etienne",
    "birthday": "30/12/1958",
    "gender": "H",
-   "ranking": 35,
+   "ranking": 36,
    "reference": "Etienne Blanc",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -399,7 +399,7 @@
    "first_name": "Jean-Baptiste",
    "birthday": "01/10/1978",
    "gender": "H",
-   "ranking": 36,
+   "ranking": 37,
    "reference": "Jean-Baptiste Blanc",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -413,7 +413,7 @@
    "first_name": "Florence",
    "birthday": "02/08/1978",
    "gender": "F",
-   "ranking": 37,
+   "ranking": 38,
    "reference": "Florence Blatix-Contat",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -427,7 +427,7 @@
    "first_name": "Florence",
    "birthday": "03/08/1977",
    "gender": "F",
-   "ranking": 38,
+   "ranking": 39,
    "reference": "Florence Bocquet",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -441,7 +441,7 @@
    "first_name": "Eric",
    "birthday": "04/07/1957",
    "gender": "H",
-   "ranking": 39,
+   "ranking": 40,
    "reference": "Eric Bocquet",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -455,7 +455,7 @@
    "first_name": "Christine",
    "birthday": "05/04/1976",
    "gender": "F",
-   "ranking": 40,
+   "ranking": 41,
    "reference": "Christine Bonfanti-Dossat",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -469,7 +469,7 @@
    "first_name": "Fran\u00e7ois",
    "birthday": "06/03/1991",
    "gender": "H",
-   "ranking": 41,
+   "ranking": 42,
    "reference": "Fran\u00e7ois Bonhomme",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -483,7 +483,7 @@
    "first_name": "Fran\u00e7ois",
    "birthday": "07/04/1952",
    "gender": "H",
-   "ranking": 42,
+   "ranking": 43,
    "reference": "Fran\u00e7ois Bonneau",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -497,7 +497,7 @@
    "first_name": "Bernard",
    "birthday": "08/05/1955",
    "gender": "H",
-   "ranking": 43,
+   "ranking": 44,
    "reference": "Bernard Bonne",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -511,7 +511,7 @@
    "first_name": "Philippe",
    "birthday": "09/06/1966",
    "gender": "H",
-   "ranking": 44,
+   "ranking": 45,
    "reference": "Philippe Bonnecarr\u00e8re",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -525,7 +525,7 @@
    "first_name": "Nicole",
    "birthday": "10/04/1957",
    "gender": "F",
-   "ranking": 45,
+   "ranking": 46,
    "reference": "Nicole Bonnefoy",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -539,7 +539,7 @@
    "first_name": "Michel",
    "birthday": "11/04/1958",
    "gender": "H",
-   "ranking": 46,
+   "ranking": 47,
    "reference": "Michel Bonnus",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -553,7 +553,7 @@
    "first_name": "Alexandra",
    "birthday": "12/04/1951",
    "gender": "F",
-   "ranking": 47,
+   "ranking": 48,
    "reference": "Alexandra Borchio-Fontimp",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -567,7 +567,7 @@
    "first_name": "Patrick",
    "birthday": "13/04/1952",
    "gender": "H",
-   "ranking": 48,
+   "ranking": 49,
    "reference": "Patrick Bor\u00e9",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -581,7 +581,7 @@
    "first_name": "Denis",
    "birthday": "14/04/1953",
    "gender": "H",
-   "ranking": 49,
+   "ranking": 50,
    "reference": "Denis Bouad",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -595,7 +595,7 @@
    "first_name": "Gilbert",
    "birthday": "15/04/1958",
    "gender": "H",
-   "ranking": 50,
+   "ranking": 51,
    "reference": "Gilbert Bouchet",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -609,7 +609,7 @@
    "first_name": "C\u00e9line",
    "birthday": "16/04/1976",
    "gender": "F",
-   "ranking": 51,
+   "ranking": 52,
    "reference": "C\u00e9line Boulay-Esperonnier",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -623,7 +623,7 @@
    "first_name": "Yves",
    "birthday": "17/04/1986",
    "gender": "H",
-   "ranking": 52,
+   "ranking": 53,
    "reference": "Yves Bouloux",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -637,7 +637,7 @@
    "first_name": "Hussein",
    "birthday": "18/04/1996",
    "gender": "H",
-   "ranking": 53,
+   "ranking": 54,
    "reference": "Hussein Bourgi",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -651,7 +651,7 @@
    "first_name": "Toine",
    "birthday": "19/04/1956",
    "gender": "H",
-   "ranking": 54,
+   "ranking": 55,
    "reference": "Toine Bourrat",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -665,7 +665,7 @@
    "first_name": "Jean-Marc",
    "birthday": "20/04/1966",
    "gender": "H",
-   "ranking": 55,
+   "ranking": 56,
    "reference": "Jean-Marc Boyer",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -679,7 +679,7 @@
    "first_name": "Val\u00e9rie",
    "birthday": "21/04/1966",
    "gender": "F",
-   "ranking": 56,
+   "ranking": 57,
    "reference": "Val\u00e9rie Boyer",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -693,7 +693,7 @@
    "first_name": "Isabelle",
    "birthday": "22/04/1952",
    "gender": "F",
-   "ranking": 57,
+   "ranking": 58,
    "reference": "Isabelle Briquet",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -707,7 +707,7 @@
    "first_name": "Max",
    "birthday": "23/04/1957",
    "gender": "H",
-   "ranking": 58,
+   "ranking": 59,
    "reference": "Max Brisson",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -721,7 +721,7 @@
    "first_name": "C\u00e9line",
    "birthday": "24/04/1957",
    "gender": "F",
-   "ranking": 59,
+   "ranking": 60,
    "reference": "C\u00e9line Brulin",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -735,7 +735,7 @@
    "first_name": "Fran\u00e7ois-No\u00ebl",
    "birthday": "25/04/1957",
    "gender": "H",
-   "ranking": 60,
+   "ranking": 61,
    "reference": "Fran\u00e7ois-No\u00ebl Buffet",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -749,7 +749,7 @@
    "first_name": "Bernard",
    "birthday": "26/04/1959",
    "gender": "H",
-   "ranking": 61,
+   "ranking": 62,
    "reference": "Bernard Buis",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -763,7 +763,7 @@
    "first_name": "Laurent",
    "birthday": "27/04/1996",
    "gender": "H",
-   "ranking": 62,
+   "ranking": 63,
    "reference": "Laurent Burgoa",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -777,7 +777,7 @@
    "first_name": "Henri",
    "birthday": "28/04/1976",
    "gender": "H",
-   "ranking": 63,
+   "ranking": 64,
    "reference": "Henri Cabanel",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -791,7 +791,7 @@
    "first_name": "Olivier",
    "birthday": "29/04/1986",
    "gender": "H",
-   "ranking": 64,
+   "ranking": 65,
    "reference": "Olivier Cadec",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -805,7 +805,7 @@
    "first_name": "Fran\u00e7ois",
    "birthday": "30/04/1996",
    "gender": "H",
-   "ranking": 65,
+   "ranking": 66,
    "reference": "Fran\u00e7ois Calvet",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -819,7 +819,7 @@
    "first_name": "Christian",
    "birthday": "01/04/1966",
    "gender": "H",
-   "ranking": 66,
+   "ranking": 67,
    "reference": "Christian Cambon",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -833,7 +833,7 @@
    "first_name": "Agn\u00e8s",
    "birthday": "02/04/1976",
    "gender": "F",
-   "ranking": 67,
+   "ranking": 68,
    "reference": "Agn\u00e8s Canayer",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -847,7 +847,7 @@
    "first_name": "Michel",
    "birthday": "03/04/1986",
    "gender": "H",
-   "ranking": 68,
+   "ranking": 69,
    "reference": "Michel Canev\u00e8t",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -861,7 +861,7 @@
    "first_name": "Vincent",
    "birthday": "04/04/1987",
    "gender": "H",
-   "ranking": 69,
+   "ranking": 70,
    "reference": "Vincent Capo-Canellas",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -875,112 +875,112 @@
    "first_name": "Bertrand",
    "birthday": "18/04/1990",
    "gender": "H",
-   "ranking": 70,
+   "ranking": 21,
    "reference": "Bertrand Farse",
-   "num_of_wins": 0,
-   "num_of_losses": 5,
-   "num_of_draw": 3,
-   "win_loss_ratio": 0.0,
-   "num_of_match": 8,
-   "num_of_tournaments": 2
+   "num_of_wins": 18,
+   "num_of_losses": 22,
+   "num_of_draw": 14,
+   "win_loss_ratio": 0.82,
+   "num_of_match": 54,
+   "num_of_tournaments": 14
   },
   "64": {
    "name": "Godran",
    "first_name": "Jean",
    "birthday": "18/04/1995",
    "gender": "H",
-   "ranking": 4,
+   "ranking": 6,
    "reference": "Jean Godran",
-   "num_of_wins": 4,
-   "num_of_losses": 2,
-   "num_of_draw": 2,
-   "win_loss_ratio": 2.0,
-   "num_of_match": 8,
-   "num_of_tournaments": 2
+   "num_of_wins": 21,
+   "num_of_losses": 18,
+   "num_of_draw": 17,
+   "win_loss_ratio": 1.17,
+   "num_of_match": 56,
+   "num_of_tournaments": 14
   },
   "65": {
    "name": "Gadzish",
    "first_name": "Sven",
    "birthday": "18/04/1997",
    "gender": "H",
-   "ranking": 1,
+   "ranking": 7,
    "reference": "Sven Gadzish",
-   "num_of_wins": 4,
-   "num_of_losses": 0,
-   "num_of_draw": 4,
-   "win_loss_ratio": 4,
-   "num_of_match": 8,
-   "num_of_tournaments": 2
+   "num_of_wins": 22,
+   "num_of_losses": 20,
+   "num_of_draw": 14,
+   "win_loss_ratio": 1.1,
+   "num_of_match": 56,
+   "num_of_tournaments": 14
   },
   "66": {
    "name": "Bernard",
    "first_name": "Martin",
    "birthday": "18/04/1997",
    "gender": "H",
-   "ranking": 15,
+   "ranking": 5,
    "reference": "Martin Bernard",
-   "num_of_wins": 2,
-   "num_of_losses": 2,
-   "num_of_draw": 4,
-   "win_loss_ratio": 1.0,
-   "num_of_match": 8,
-   "num_of_tournaments": 2
+   "num_of_wins": 21,
+   "num_of_losses": 17,
+   "num_of_draw": 18,
+   "win_loss_ratio": 1.24,
+   "num_of_match": 56,
+   "num_of_tournaments": 14
   },
   "67": {
    "name": "Rousseau",
    "first_name": "Jacques",
    "birthday": "18/04/1997",
    "gender": "H",
-   "ranking": 21,
+   "ranking": 23,
    "reference": "Jacques Rousseau",
-   "num_of_wins": 2,
-   "num_of_losses": 3,
-   "num_of_draw": 3,
-   "win_loss_ratio": 0.67,
-   "num_of_match": 8,
-   "num_of_tournaments": 2
+   "num_of_wins": 15,
+   "num_of_losses": 23,
+   "num_of_draw": 17,
+   "win_loss_ratio": 0.65,
+   "num_of_match": 55,
+   "num_of_tournaments": 14
   },
   "68": {
    "name": "Noire",
    "first_name": "Arnold",
    "birthday": "18/04/1997",
    "gender": "H",
-   "ranking": 16,
+   "ranking": 3,
    "reference": "Arnold Noire",
-   "num_of_wins": 1,
-   "num_of_losses": 1,
-   "num_of_draw": 5,
-   "win_loss_ratio": 1.0,
-   "num_of_match": 7,
-   "num_of_tournaments": 2
+   "num_of_wins": 20,
+   "num_of_losses": 15,
+   "num_of_draw": 18,
+   "win_loss_ratio": 1.33,
+   "num_of_match": 53,
+   "num_of_tournaments": 14
   },
   "69": {
    "name": "De Galice",
    "first_name": "Fran\u00e7ois",
    "birthday": "18/04/1980",
    "gender": "H",
-   "ranking": 23,
+   "ranking": 22,
    "reference": "Fran\u00e7ois De Galice",
-   "num_of_wins": 1,
-   "num_of_losses": 4,
-   "num_of_draw": 3,
-   "win_loss_ratio": 0.25,
-   "num_of_match": 8,
-   "num_of_tournaments": 2
+   "num_of_wins": 17,
+   "num_of_losses": 23,
+   "num_of_draw": 16,
+   "win_loss_ratio": 0.74,
+   "num_of_match": 56,
+   "num_of_tournaments": 14
   },
   "70": {
    "name": "Kasparov",
    "first_name": "Garry",
    "birthday": "18/04/1956",
    "gender": "H",
-   "ranking": 2,
+   "ranking": 4,
    "reference": "Garry Kasparov",
-   "num_of_wins": 4,
-   "num_of_losses": 1,
-   "num_of_draw": 2,
-   "win_loss_ratio": 4.0,
-   "num_of_match": 7,
-   "num_of_tournaments": 2
+   "num_of_wins": 20,
+   "num_of_losses": 16,
+   "num_of_draw": 18,
+   "win_loss_ratio": 1.25,
+   "num_of_match": 54,
+   "num_of_tournaments": 14
   }
  },
  "Tournament": {
@@ -1203,6 +1203,2836 @@
       2,
       3,
       5
+     ]
+    }
+   }
+  },
+  "2": {
+   "name": "ParisParisParis",
+   "location": "",
+   "start_date": "15/05/2020",
+   "end_date": "15/05/2020",
+   "num_of_round": 5,
+   "selected_players": [
+    "Dorian Lario",
+    "Pascal Allizard",
+    "Jean-Claude Anglars",
+    "Maurice Antiste",
+    "Cathy Apourceau-Poly",
+    "Jean-Michel Arnaud",
+    "St\u00e9phane Artano",
+    "Viviane Artigalas"
+   ],
+   "game_type": "Bullet",
+   "notes": "",
+   "serialized_object": {
+    "1": [
+     [
+      [
+       "Dorian Lario",
+       "Cathy Apourceau-Poly"
+      ],
+      [
+       "Jean-Michel Arnaud",
+       "Pascal Allizard"
+      ],
+      [
+       "Viviane Artigalas",
+       "St\u00e9phane Artano"
+      ],
+      [
+       "Jean-Claude Anglars",
+       "Maurice Antiste"
+      ]
+     ],
+     [
+      "2",
+      null,
+      "1",
+      "2"
+     ]
+    ],
+    "2": [
+     [
+      [
+       "Viviane Artigalas",
+       "Cathy Apourceau-Poly"
+      ],
+      [
+       "Maurice Antiste",
+       "Jean-Michel Arnaud"
+      ],
+      [
+       "Pascal Allizard",
+       "Dorian Lario"
+      ],
+      [
+       "Jean-Claude Anglars",
+       "St\u00e9phane Artano"
+      ]
+     ],
+     [
+      null,
+      "1",
+      "2",
+      null
+     ]
+    ],
+    "3": [
+     [
+      [
+       "Maurice Antiste",
+       "Viviane Artigalas"
+      ],
+      [
+       "Cathy Apourceau-Poly",
+       "Jean-Michel Arnaud"
+      ],
+      [
+       "Dorian Lario",
+       "Jean-Claude Anglars"
+      ],
+      [
+       "Pascal Allizard",
+       "St\u00e9phane Artano"
+      ]
+     ],
+     [
+      "1",
+      "2",
+      null,
+      "1"
+     ]
+    ],
+    "4": [
+     [
+      [
+       "Maurice Antiste",
+       "Dorian Lario"
+      ],
+      [
+       "Jean-Michel Arnaud",
+       "Viviane Artigalas"
+      ],
+      [
+       "Cathy Apourceau-Poly",
+       "Pascal Allizard"
+      ]
+     ],
+     [
+      null,
+      "2",
+      "1"
+     ]
+    ],
+    "5": [
+     [
+      [
+       "Maurice Antiste",
+       "Cathy Apourceau-Poly"
+      ],
+      [
+       "Viviane Artigalas",
+       "Dorian Lario"
+      ],
+      [
+       "Jean-Michel Arnaud",
+       "Jean-Claude Anglars"
+      ]
+     ],
+     [
+      null,
+      "2",
+      "1"
+     ]
+    ]
+   },
+   "scoreboard": {
+    "1": {
+     "reference": "Dorian Lario",
+     "id": 1,
+     "scorerank": 2,
+     "score": 3.0,
+     "associations": [
+      5,
+      6,
+      4,
+      8,
+      3
+     ]
+    },
+    "2": {
+     "reference": "Jean-Michel Arnaud",
+     "id": 2,
+     "scorerank": 4,
+     "score": 2.5,
+     "associations": [
+      6,
+      8,
+      5,
+      3,
+      4
+     ]
+    },
+    "3": {
+     "reference": "Viviane Artigalas",
+     "id": 3,
+     "scorerank": 5,
+     "score": 2.5,
+     "associations": [
+      7,
+      5,
+      8,
+      2,
+      1
+     ]
+    },
+    "4": {
+     "reference": "Jean-Claude Anglars",
+     "id": 4,
+     "scorerank": 7,
+     "score": 1.0,
+     "associations": [
+      8,
+      7,
+      1,
+      2
+     ]
+    },
+    "5": {
+     "reference": "Cathy Apourceau-Poly",
+     "id": 5,
+     "scorerank": 3,
+     "score": 3.0,
+     "associations": [
+      1,
+      3,
+      2,
+      6,
+      8
+     ]
+    },
+    "6": {
+     "reference": "Pascal Allizard",
+     "id": 6,
+     "scorerank": 6,
+     "score": 1.5,
+     "associations": [
+      2,
+      1,
+      7,
+      5
+     ]
+    },
+    "7": {
+     "reference": "St\u00e9phane Artano",
+     "id": 7,
+     "scorerank": 8,
+     "score": 0.5,
+     "associations": [
+      3,
+      4,
+      6
+     ]
+    },
+    "8": {
+     "reference": "Maurice Antiste",
+     "id": 8,
+     "scorerank": 1,
+     "score": 4.0,
+     "associations": [
+      4,
+      2,
+      3,
+      1,
+      5
+     ]
+    }
+   }
+  },
+  "3": {
+   "name": "SUIS",
+   "location": "",
+   "start_date": "15/05/2020",
+   "end_date": "15/05/2020",
+   "num_of_round": 4,
+   "selected_players": [
+    "Dorian Lario",
+    "Pascal Allizard",
+    "Jean-Claude Anglars",
+    "Maurice Antiste",
+    "Cathy Apourceau-Poly",
+    "Jean-Michel Arnaud",
+    "St\u00e9phane Artano",
+    "Viviane Artigalas"
+   ],
+   "game_type": "Bullet",
+   "notes": "",
+   "serialized_object": {
+    "1": [
+     [
+      [
+       "Dorian Lario",
+       "Jean-Claude Anglars"
+      ],
+      [
+       "Jean-Michel Arnaud",
+       "Pascal Allizard"
+      ],
+      [
+       "Viviane Artigalas",
+       "Maurice Antiste"
+      ],
+      [
+       "Cathy Apourceau-Poly",
+       "St\u00e9phane Artano"
+      ]
+     ],
+     [
+      "2",
+      "2",
+      "2",
+      "2"
+     ]
+    ],
+    "2": [
+     [
+      [
+       "Jean-Claude Anglars",
+       "Pascal Allizard"
+      ],
+      [
+       "Maurice Antiste",
+       "St\u00e9phane Artano"
+      ],
+      [
+       "Dorian Lario",
+       "Jean-Michel Arnaud"
+      ],
+      [
+       "Viviane Artigalas",
+       "Cathy Apourceau-Poly"
+      ]
+     ],
+     [
+      "2",
+      "2",
+      "2",
+      "2"
+     ]
+    ],
+    "3": [
+     [
+      [
+       "Pascal Allizard",
+       "St\u00e9phane Artano"
+      ],
+      [
+       "Jean-Michel Arnaud",
+       "Cathy Apourceau-Poly"
+      ],
+      [
+       "Jean-Claude Anglars",
+       "Maurice Antiste"
+      ],
+      [
+       "Dorian Lario",
+       "Viviane Artigalas"
+      ]
+     ],
+     [
+      "2",
+      "2",
+      "2",
+      "2"
+     ]
+    ],
+    "4": [
+     [
+      [
+       "St\u00e9phane Artano",
+       "Jean-Michel Arnaud"
+      ],
+      [
+       "Cathy Apourceau-Poly",
+       "Pascal Allizard"
+      ],
+      [
+       "Maurice Antiste",
+       "Dorian Lario"
+      ],
+      [
+       "Viviane Artigalas",
+       "Jean-Claude Anglars"
+      ]
+     ],
+     [
+      "2",
+      "2",
+      "2",
+      "2"
+     ]
+    ]
+   },
+   "scoreboard": {
+    "1": {
+     "reference": "Dorian Lario",
+     "id": 1,
+     "scorerank": 7,
+     "score": 1,
+     "associations": [
+      5,
+      2,
+      3,
+      7
+     ]
+    },
+    "2": {
+     "reference": "Jean-Michel Arnaud",
+     "id": 2,
+     "scorerank": 3,
+     "score": 2,
+     "associations": [
+      6,
+      1,
+      4,
+      8
+     ]
+    },
+    "3": {
+     "reference": "Viviane Artigalas",
+     "id": 3,
+     "scorerank": 8,
+     "score": 1,
+     "associations": [
+      7,
+      4,
+      1,
+      5
+     ]
+    },
+    "4": {
+     "reference": "Cathy Apourceau-Poly",
+     "id": 4,
+     "scorerank": 4,
+     "score": 2,
+     "associations": [
+      8,
+      3,
+      2,
+      6
+     ]
+    },
+    "5": {
+     "reference": "Jean-Claude Anglars",
+     "id": 5,
+     "scorerank": 5,
+     "score": 2,
+     "associations": [
+      1,
+      6,
+      7,
+      3
+     ]
+    },
+    "6": {
+     "reference": "Pascal Allizard",
+     "id": 6,
+     "scorerank": 1,
+     "score": 3,
+     "associations": [
+      2,
+      5,
+      8,
+      4
+     ]
+    },
+    "7": {
+     "reference": "Maurice Antiste",
+     "id": 7,
+     "scorerank": 6,
+     "score": 2,
+     "associations": [
+      3,
+      8,
+      5,
+      1
+     ]
+    },
+    "8": {
+     "reference": "St\u00e9phane Artano",
+     "id": 8,
+     "scorerank": 2,
+     "score": 3,
+     "associations": [
+      4,
+      7,
+      6,
+      2
+     ]
+    }
+   }
+  },
+  "4": {
+   "name": "Sw",
+   "location": "",
+   "start_date": "15/05/2020",
+   "end_date": "15/05/2020",
+   "num_of_round": 5,
+   "selected_players": [
+    "Dorian Lario",
+    "Pascal Allizard",
+    "Jean-Claude Anglars",
+    "Maurice Antiste",
+    "Cathy Apourceau-Poly",
+    "Jean-Michel Arnaud",
+    "St\u00e9phane Artano",
+    "Viviane Artigalas"
+   ],
+   "game_type": "Bullet",
+   "notes": "",
+   "serialized_object": {
+    "1": [
+     [
+      [
+       "Dorian Lario",
+       "Pascal Allizard"
+      ],
+      [
+       "Jean-Michel Arnaud",
+       "Jean-Claude Anglars"
+      ],
+      [
+       "Cathy Apourceau-Poly",
+       "St\u00e9phane Artano"
+      ],
+      [
+       "Viviane Artigalas",
+       "Maurice Antiste"
+      ]
+     ],
+     [
+      "2",
+      "2",
+      "2",
+      "2"
+     ]
+    ],
+    "2": [
+     [
+      [
+       "Pascal Allizard",
+       "Jean-Claude Anglars"
+      ],
+      [
+       "St\u00e9phane Artano",
+       "Maurice Antiste"
+      ],
+      [
+       "Dorian Lario",
+       "Jean-Michel Arnaud"
+      ],
+      [
+       "Cathy Apourceau-Poly",
+       "Viviane Artigalas"
+      ]
+     ],
+     [
+      "2",
+      "2",
+      "2",
+      "2"
+     ]
+    ],
+    "3": [
+     [
+      [
+       "Jean-Claude Anglars",
+       "Maurice Antiste"
+      ],
+      [
+       "Jean-Michel Arnaud",
+       "Viviane Artigalas"
+      ],
+      [
+       "Pascal Allizard",
+       "St\u00e9phane Artano"
+      ],
+      [
+       "Dorian Lario",
+       "Cathy Apourceau-Poly"
+      ]
+     ],
+     [
+      "2",
+      "2",
+      "2",
+      "2"
+     ]
+    ],
+    "4": [
+     [
+      [
+       "Maurice Antiste",
+       "Jean-Michel Arnaud"
+      ],
+      [
+       "Viviane Artigalas",
+       "Jean-Claude Anglars"
+      ],
+      [
+       "St\u00e9phane Artano",
+       "Dorian Lario"
+      ],
+      [
+       "Cathy Apourceau-Poly",
+       "Pascal Allizard"
+      ]
+     ],
+     [
+      "2",
+      "2",
+      "2",
+      "2"
+     ]
+    ],
+    "5": [
+     [
+      [
+       "Jean-Claude Anglars",
+       "St\u00e9phane Artano"
+      ],
+      [
+       "Maurice Antiste",
+       "Pascal Allizard"
+      ],
+      [
+       "Jean-Michel Arnaud",
+       "Cathy Apourceau-Poly"
+      ],
+      [
+       "Viviane Artigalas",
+       "Dorian Lario"
+      ]
+     ],
+     [
+      "2",
+      "2",
+      "2",
+      "2"
+     ]
+    ]
+   },
+   "scoreboard": {
+    "1": {
+     "reference": "Dorian Lario",
+     "id": 1,
+     "scorerank": 5,
+     "score": 2,
+     "associations": [
+      5,
+      2,
+      3,
+      7,
+      4
+     ]
+    },
+    "2": {
+     "reference": "Jean-Michel Arnaud",
+     "id": 2,
+     "scorerank": 6,
+     "score": 2,
+     "associations": [
+      6,
+      1,
+      4,
+      8,
+      3
+     ]
+    },
+    "3": {
+     "reference": "Cathy Apourceau-Poly",
+     "id": 3,
+     "scorerank": 7,
+     "score": 2,
+     "associations": [
+      7,
+      4,
+      1,
+      5,
+      2
+     ]
+    },
+    "4": {
+     "reference": "Viviane Artigalas",
+     "id": 4,
+     "scorerank": 8,
+     "score": 2,
+     "associations": [
+      8,
+      3,
+      2,
+      6,
+      1
+     ]
+    },
+    "5": {
+     "reference": "Pascal Allizard",
+     "id": 5,
+     "scorerank": 1,
+     "score": 3,
+     "associations": [
+      1,
+      6,
+      7,
+      3,
+      8
+     ]
+    },
+    "6": {
+     "reference": "Jean-Claude Anglars",
+     "id": 6,
+     "scorerank": 2,
+     "score": 3,
+     "associations": [
+      2,
+      5,
+      8,
+      4,
+      7
+     ]
+    },
+    "7": {
+     "reference": "St\u00e9phane Artano",
+     "id": 7,
+     "scorerank": 3,
+     "score": 3,
+     "associations": [
+      3,
+      8,
+      5,
+      1,
+      6
+     ]
+    },
+    "8": {
+     "reference": "Maurice Antiste",
+     "id": 8,
+     "scorerank": 4,
+     "score": 3,
+     "associations": [
+      4,
+      7,
+      6,
+      2,
+      5
+     ]
+    }
+   }
+  },
+  "5": {
+   "name": "Pas",
+   "location": "",
+   "start_date": "15/05/1997",
+   "end_date": "15/05/1997",
+   "num_of_round": 5,
+   "selected_players": [
+    "Dorian Lario",
+    "Pascal Allizard",
+    "Jean-Claude Anglars",
+    "Maurice Antiste",
+    "Cathy Apourceau-Poly",
+    "Jean-Michel Arnaud",
+    "St\u00e9phane Artano",
+    "Viviane Artigalas"
+   ],
+   "game_type": "Bullet",
+   "notes": "",
+   "serialized_object": {
+    "1": [
+     [
+      [
+       "Dorian Lario",
+       "Cathy Apourceau-Poly"
+      ],
+      [
+       "Jean-Claude Anglars",
+       "St\u00e9phane Artano"
+      ],
+      [
+       "Pascal Allizard",
+       "Viviane Artigalas"
+      ],
+      [
+       "Jean-Michel Arnaud",
+       "Maurice Antiste"
+      ]
+     ],
+     [
+      "2",
+      "2",
+      "2",
+      "2"
+     ]
+    ],
+    "2": [
+     [
+      [
+       "Cathy Apourceau-Poly",
+       "St\u00e9phane Artano"
+      ],
+      [
+       "Viviane Artigalas",
+       "Maurice Antiste"
+      ],
+      [
+       "Dorian Lario",
+       "Jean-Claude Anglars"
+      ],
+      [
+       "Pascal Allizard",
+       "Jean-Michel Arnaud"
+      ]
+     ],
+     [
+      "2",
+      "2",
+      "2",
+      "2"
+     ]
+    ],
+    "3": [
+     [
+      [
+       "St\u00e9phane Artano",
+       "Maurice Antiste"
+      ],
+      [
+       "Jean-Claude Anglars",
+       "Jean-Michel Arnaud"
+      ],
+      [
+       "Cathy Apourceau-Poly",
+       "Viviane Artigalas"
+      ],
+      [
+       "Dorian Lario",
+       "Pascal Allizard"
+      ]
+     ],
+     [
+      "2",
+      "2",
+      "2",
+      "2"
+     ]
+    ],
+    "4": [
+     [
+      [
+       "Maurice Antiste",
+       "Jean-Claude Anglars"
+      ],
+      [
+       "Jean-Michel Arnaud",
+       "St\u00e9phane Artano"
+      ],
+      [
+       "Viviane Artigalas",
+       "Dorian Lario"
+      ],
+      [
+       "Pascal Allizard",
+       "Cathy Apourceau-Poly"
+      ]
+     ],
+     [
+      "2",
+      "2",
+      "2",
+      "2"
+     ]
+    ],
+    "5": [
+     [
+      [
+       "St\u00e9phane Artano",
+       "Viviane Artigalas"
+      ],
+      [
+       "Maurice Antiste",
+       "Cathy Apourceau-Poly"
+      ],
+      [
+       "Jean-Claude Anglars",
+       "Pascal Allizard"
+      ],
+      [
+       "Jean-Michel Arnaud",
+       "Dorian Lario"
+      ]
+     ],
+     [
+      "2",
+      "2",
+      "2",
+      "2"
+     ]
+    ]
+   },
+   "scoreboard": {
+    "1": {
+     "reference": "Dorian Lario",
+     "id": 1,
+     "scorerank": 5,
+     "score": 2,
+     "associations": [
+      5,
+      2,
+      3,
+      7,
+      4
+     ]
+    },
+    "2": {
+     "reference": "Jean-Claude Anglars",
+     "id": 2,
+     "scorerank": 6,
+     "score": 2,
+     "associations": [
+      6,
+      1,
+      4,
+      8,
+      3
+     ]
+    },
+    "3": {
+     "reference": "Pascal Allizard",
+     "id": 3,
+     "scorerank": 7,
+     "score": 2,
+     "associations": [
+      7,
+      4,
+      1,
+      5,
+      2
+     ]
+    },
+    "4": {
+     "reference": "Jean-Michel Arnaud",
+     "id": 4,
+     "scorerank": 8,
+     "score": 2,
+     "associations": [
+      8,
+      3,
+      2,
+      6,
+      1
+     ]
+    },
+    "5": {
+     "reference": "Cathy Apourceau-Poly",
+     "id": 5,
+     "scorerank": 1,
+     "score": 3,
+     "associations": [
+      1,
+      6,
+      7,
+      3,
+      8
+     ]
+    },
+    "6": {
+     "reference": "St\u00e9phane Artano",
+     "id": 6,
+     "scorerank": 2,
+     "score": 3,
+     "associations": [
+      2,
+      5,
+      8,
+      4,
+      7
+     ]
+    },
+    "7": {
+     "reference": "Viviane Artigalas",
+     "id": 7,
+     "scorerank": 3,
+     "score": 3,
+     "associations": [
+      3,
+      8,
+      5,
+      1,
+      6
+     ]
+    },
+    "8": {
+     "reference": "Maurice Antiste",
+     "id": 8,
+     "scorerank": 4,
+     "score": 3,
+     "associations": [
+      4,
+      7,
+      6,
+      2,
+      5
+     ]
+    }
+   }
+  },
+  "6": {
+   "name": "TEST",
+   "location": "",
+   "start_date": "18/05/1997",
+   "end_date": "18/05/1997",
+   "num_of_round": 5,
+   "selected_players": [
+    "Dorian Lario",
+    "Pascal Allizard",
+    "Jean-Claude Anglars",
+    "Maurice Antiste",
+    "Cathy Apourceau-Poly",
+    "Jean-Michel Arnaud",
+    "St\u00e9phane Artano",
+    "Viviane Artigalas"
+   ],
+   "game_type": "Bullet",
+   "notes": "",
+   "serialized_object": {
+    "1": [
+     [
+      [
+       "Dorian Lario",
+       "Cathy Apourceau-Poly"
+      ],
+      [
+       "Jean-Claude Anglars",
+       "Viviane Artigalas"
+      ],
+      [
+       "Pascal Allizard",
+       "Maurice Antiste"
+      ],
+      [
+       "Jean-Michel Arnaud",
+       "St\u00e9phane Artano"
+      ]
+     ],
+     [
+      "2",
+      "2",
+      "2",
+      "2"
+     ]
+    ],
+    "2": [
+     [
+      [
+       "Cathy Apourceau-Poly",
+       "Viviane Artigalas"
+      ],
+      [
+       "Maurice Antiste",
+       "St\u00e9phane Artano"
+      ],
+      [
+       "Dorian Lario",
+       "Jean-Claude Anglars"
+      ],
+      [
+       "Pascal Allizard",
+       "Jean-Michel Arnaud"
+      ]
+     ],
+     [
+      "2",
+      "2",
+      "2",
+      "2"
+     ]
+    ],
+    "3": [
+     [
+      [
+       "Viviane Artigalas",
+       "St\u00e9phane Artano"
+      ],
+      [
+       "Jean-Claude Anglars",
+       "Jean-Michel Arnaud"
+      ],
+      [
+       "Cathy Apourceau-Poly",
+       "Maurice Antiste"
+      ],
+      [
+       "Dorian Lario",
+       "Pascal Allizard"
+      ]
+     ],
+     [
+      "2",
+      "2",
+      "2",
+      "2"
+     ]
+    ],
+    "4": [
+     [
+      [
+       "St\u00e9phane Artano",
+       "Jean-Claude Anglars"
+      ],
+      [
+       "Jean-Michel Arnaud",
+       "Viviane Artigalas"
+      ],
+      [
+       "Maurice Antiste",
+       "Dorian Lario"
+      ],
+      [
+       "Pascal Allizard",
+       "Cathy Apourceau-Poly"
+      ]
+     ],
+     [
+      "2",
+      "2",
+      "2",
+      "2"
+     ]
+    ],
+    "5": [
+     [
+      [
+       "Viviane Artigalas",
+       "Maurice Antiste"
+      ],
+      [
+       "St\u00e9phane Artano",
+       "Cathy Apourceau-Poly"
+      ],
+      [
+       "Jean-Claude Anglars",
+       "Pascal Allizard"
+      ],
+      [
+       "Jean-Michel Arnaud",
+       "Dorian Lario"
+      ]
+     ],
+     [
+      "2",
+      "2",
+      "2",
+      "2"
+     ]
+    ]
+   },
+   "scoreboard": {
+    "1": {
+     "reference": "Dorian Lario",
+     "id": 1,
+     "scorerank": 5,
+     "score": 2,
+     "associations": [
+      5,
+      2,
+      3,
+      7,
+      4
+     ]
+    },
+    "2": {
+     "reference": "Jean-Claude Anglars",
+     "id": 2,
+     "scorerank": 6,
+     "score": 2,
+     "associations": [
+      6,
+      1,
+      4,
+      8,
+      3
+     ]
+    },
+    "3": {
+     "reference": "Pascal Allizard",
+     "id": 3,
+     "scorerank": 7,
+     "score": 2,
+     "associations": [
+      7,
+      4,
+      1,
+      5,
+      2
+     ]
+    },
+    "4": {
+     "reference": "Jean-Michel Arnaud",
+     "id": 4,
+     "scorerank": 8,
+     "score": 2,
+     "associations": [
+      8,
+      3,
+      2,
+      6,
+      1
+     ]
+    },
+    "5": {
+     "reference": "Cathy Apourceau-Poly",
+     "id": 5,
+     "scorerank": 1,
+     "score": 3,
+     "associations": [
+      1,
+      6,
+      7,
+      3,
+      8
+     ]
+    },
+    "6": {
+     "reference": "Viviane Artigalas",
+     "id": 6,
+     "scorerank": 2,
+     "score": 3,
+     "associations": [
+      2,
+      5,
+      8,
+      4,
+      7
+     ]
+    },
+    "7": {
+     "reference": "Maurice Antiste",
+     "id": 7,
+     "scorerank": 3,
+     "score": 3,
+     "associations": [
+      3,
+      8,
+      5,
+      1,
+      6
+     ]
+    },
+    "8": {
+     "reference": "St\u00e9phane Artano",
+     "id": 8,
+     "scorerank": 4,
+     "score": 3,
+     "associations": [
+      4,
+      7,
+      6,
+      2,
+      5
+     ]
+    }
+   }
+  },
+  "7": {
+   "name": "po",
+   "location": "",
+   "start_date": "15/05/2020",
+   "end_date": "15/05/2020",
+   "num_of_round": 5,
+   "selected_players": [
+    "Dorian Lario",
+    "Pascal Allizard",
+    "Jean-Claude Anglars",
+    "Maurice Antiste",
+    "Cathy Apourceau-Poly",
+    "Jean-Michel Arnaud",
+    "St\u00e9phane Artano",
+    "Viviane Artigalas"
+   ],
+   "game_type": "Bullet",
+   "notes": "",
+   "serialized_object": {
+    "1": [
+     [
+      [
+       "Dorian Lario",
+       "Jean-Michel Arnaud"
+      ],
+      [
+       "Jean-Claude Anglars",
+       "Viviane Artigalas"
+      ],
+      [
+       "Cathy Apourceau-Poly",
+       "Maurice Antiste"
+      ],
+      [
+       "Pascal Allizard",
+       "St\u00e9phane Artano"
+      ]
+     ],
+     [
+      "2",
+      "2",
+      "2",
+      "2"
+     ]
+    ],
+    "2": [
+     [
+      [
+       "Jean-Michel Arnaud",
+       "Viviane Artigalas"
+      ],
+      [
+       "Maurice Antiste",
+       "St\u00e9phane Artano"
+      ],
+      [
+       "Dorian Lario",
+       "Jean-Claude Anglars"
+      ],
+      [
+       "Cathy Apourceau-Poly",
+       "Pascal Allizard"
+      ]
+     ],
+     [
+      "2",
+      "2",
+      "2",
+      "2"
+     ]
+    ],
+    "3": [
+     [
+      [
+       "Viviane Artigalas",
+       "St\u00e9phane Artano"
+      ],
+      [
+       "Jean-Claude Anglars",
+       "Pascal Allizard"
+      ],
+      [
+       "Jean-Michel Arnaud",
+       "Maurice Antiste"
+      ],
+      [
+       "Dorian Lario",
+       "Cathy Apourceau-Poly"
+      ]
+     ],
+     [
+      "2",
+      "2",
+      "2",
+      "2"
+     ]
+    ],
+    "4": [
+     [
+      [
+       "St\u00e9phane Artano",
+       "Jean-Claude Anglars"
+      ],
+      [
+       "Pascal Allizard",
+       "Viviane Artigalas"
+      ],
+      [
+       "Maurice Antiste",
+       "Dorian Lario"
+      ],
+      [
+       "Cathy Apourceau-Poly",
+       "Jean-Michel Arnaud"
+      ]
+     ],
+     [
+      "2",
+      "2",
+      "2",
+      "2"
+     ]
+    ],
+    "5": [
+     [
+      [
+       "Viviane Artigalas",
+       "Maurice Antiste"
+      ],
+      [
+       "St\u00e9phane Artano",
+       "Jean-Michel Arnaud"
+      ],
+      [
+       "Jean-Claude Anglars",
+       "Cathy Apourceau-Poly"
+      ],
+      [
+       "Pascal Allizard",
+       "Dorian Lario"
+      ]
+     ],
+     [
+      "2",
+      "2",
+      "2",
+      "2"
+     ]
+    ]
+   },
+   "scoreboard": {
+    "1": {
+     "reference": "Dorian Lario",
+     "id": 1,
+     "scorerank": 5,
+     "score": 2,
+     "associations": [
+      5,
+      2,
+      3,
+      7,
+      4
+     ]
+    },
+    "2": {
+     "reference": "Jean-Claude Anglars",
+     "id": 2,
+     "scorerank": 6,
+     "score": 2,
+     "associations": [
+      6,
+      1,
+      4,
+      8,
+      3
+     ]
+    },
+    "3": {
+     "reference": "Cathy Apourceau-Poly",
+     "id": 3,
+     "scorerank": 7,
+     "score": 2,
+     "associations": [
+      7,
+      4,
+      1,
+      5,
+      2
+     ]
+    },
+    "4": {
+     "reference": "Pascal Allizard",
+     "id": 4,
+     "scorerank": 8,
+     "score": 2,
+     "associations": [
+      8,
+      3,
+      2,
+      6,
+      1
+     ]
+    },
+    "5": {
+     "reference": "Jean-Michel Arnaud",
+     "id": 5,
+     "scorerank": 1,
+     "score": 3,
+     "associations": [
+      1,
+      6,
+      7,
+      3,
+      8
+     ]
+    },
+    "6": {
+     "reference": "Viviane Artigalas",
+     "id": 6,
+     "scorerank": 2,
+     "score": 3,
+     "associations": [
+      2,
+      5,
+      8,
+      4,
+      7
+     ]
+    },
+    "7": {
+     "reference": "Maurice Antiste",
+     "id": 7,
+     "scorerank": 3,
+     "score": 3,
+     "associations": [
+      3,
+      8,
+      5,
+      1,
+      6
+     ]
+    },
+    "8": {
+     "reference": "St\u00e9phane Artano",
+     "id": 8,
+     "scorerank": 4,
+     "score": 3,
+     "associations": [
+      4,
+      7,
+      6,
+      2,
+      5
+     ]
+    }
+   }
+  },
+  "8": {
+   "name": "P",
+   "location": "",
+   "start_date": "18/05/1997",
+   "end_date": "15/05/1977",
+   "num_of_round": 5,
+   "selected_players": [
+    "Dorian Lario",
+    "Pascal Allizard",
+    "Jean-Claude Anglars",
+    "Maurice Antiste",
+    "Cathy Apourceau-Poly",
+    "Jean-Michel Arnaud",
+    "St\u00e9phane Artano",
+    "Viviane Artigalas"
+   ],
+   "game_type": "Bullet",
+   "notes": "",
+   "serialized_object": {
+    "1": [
+     [
+      [
+       "Dorian Lario",
+       "Pascal Allizard"
+      ],
+      [
+       "Jean-Michel Arnaud",
+       "Viviane Artigalas"
+      ],
+      [
+       "Jean-Claude Anglars",
+       "Maurice Antiste"
+      ],
+      [
+       "Cathy Apourceau-Poly",
+       "St\u00e9phane Artano"
+      ]
+     ],
+     [
+      "2",
+      null,
+      "2",
+      null
+     ]
+    ],
+    "2": [
+     [
+      [
+       "Pascal Allizard",
+       "Maurice Antiste"
+      ],
+      [
+       "Jean-Michel Arnaud",
+       "Cathy Apourceau-Poly"
+      ],
+      [
+       "Viviane Artigalas",
+       "St\u00e9phane Artano"
+      ],
+      [
+       "Dorian Lario",
+       "Jean-Claude Anglars"
+      ]
+     ],
+     [
+      "1",
+      "2",
+      null,
+      "2"
+     ]
+    ],
+    "3": [
+     [
+      [
+       "Pascal Allizard",
+       "Cathy Apourceau-Poly"
+      ],
+      [
+       "Jean-Claude Anglars",
+       "Viviane Artigalas"
+      ],
+      [
+       "Maurice Antiste",
+       "St\u00e9phane Artano"
+      ],
+      [
+       "Jean-Michel Arnaud",
+       "Dorian Lario"
+      ]
+     ],
+     [
+      null,
+      "1",
+      null,
+      "1"
+     ]
+    ],
+    "4": [
+     [
+      [
+       "Pascal Allizard",
+       "Jean-Claude Anglars"
+      ],
+      [
+       "Cathy Apourceau-Poly",
+       "Maurice Antiste"
+      ],
+      [
+       "Jean-Michel Arnaud",
+       "St\u00e9phane Artano"
+      ],
+      [
+       "Viviane Artigalas",
+       "Dorian Lario"
+      ]
+     ],
+     [
+      "2",
+      null,
+      "1",
+      null
+     ]
+    ],
+    "5": [
+     [
+      [
+       "Jean-Claude Anglars",
+       "Jean-Michel Arnaud"
+      ],
+      [
+       "Cathy Apourceau-Poly",
+       "Viviane Artigalas"
+      ],
+      [
+       "Pascal Allizard",
+       "St\u00e9phane Artano"
+      ],
+      [
+       "Maurice Antiste",
+       "Dorian Lario"
+      ]
+     ],
+     [
+      "2",
+      "1",
+      null,
+      "2"
+     ]
+    ]
+   },
+   "scoreboard": {
+    "1": {
+     "reference": "Dorian Lario",
+     "id": 1,
+     "scorerank": 7,
+     "score": 1.5,
+     "associations": [
+      5,
+      3,
+      2,
+      6,
+      7
+     ]
+    },
+    "2": {
+     "reference": "Jean-Michel Arnaud",
+     "id": 2,
+     "scorerank": 1,
+     "score": 3.5,
+     "associations": [
+      6,
+      4,
+      1,
+      8,
+      3
+     ]
+    },
+    "3": {
+     "reference": "Jean-Claude Anglars",
+     "id": 3,
+     "scorerank": 3,
+     "score": 3,
+     "associations": [
+      7,
+      1,
+      6,
+      5,
+      2
+     ]
+    },
+    "4": {
+     "reference": "Cathy Apourceau-Poly",
+     "id": 4,
+     "scorerank": 2,
+     "score": 3.5,
+     "associations": [
+      8,
+      2,
+      5,
+      7,
+      6
+     ]
+    },
+    "5": {
+     "reference": "Pascal Allizard",
+     "id": 5,
+     "scorerank": 4,
+     "score": 3.0,
+     "associations": [
+      1,
+      7,
+      4,
+      3,
+      8
+     ]
+    },
+    "6": {
+     "reference": "Viviane Artigalas",
+     "id": 6,
+     "scorerank": 8,
+     "score": 1.5,
+     "associations": [
+      2,
+      8,
+      3,
+      1,
+      4
+     ]
+    },
+    "7": {
+     "reference": "Maurice Antiste",
+     "id": 7,
+     "scorerank": 5,
+     "score": 2.0,
+     "associations": [
+      3,
+      5,
+      8,
+      4,
+      1
+     ]
+    },
+    "8": {
+     "reference": "St\u00e9phane Artano",
+     "id": 8,
+     "scorerank": 6,
+     "score": 2.0,
+     "associations": [
+      4,
+      6,
+      7,
+      2,
+      5
+     ]
+    }
+   }
+  },
+  "9": {
+   "name": "",
+   "location": "",
+   "start_date": "18/05/2000",
+   "end_date": "18/05/2000",
+   "num_of_round": 5,
+   "selected_players": [
+    "Dorian Lario",
+    "Pascal Allizard",
+    "Jean-Claude Anglars",
+    "Maurice Antiste",
+    "Cathy Apourceau-Poly",
+    "Jean-Michel Arnaud",
+    "St\u00e9phane Artano",
+    "Viviane Artigalas"
+   ],
+   "game_type": "Bullet",
+   "notes": "",
+   "serialized_object": {
+    "1": [
+     [
+      [
+       "Jean-Michel Arnaud",
+       "Pascal Allizard"
+      ],
+      [
+       "Cathy Apourceau-Poly",
+       "Maurice Antiste"
+      ],
+      [
+       "Jean-Claude Anglars",
+       "St\u00e9phane Artano"
+      ],
+      [
+       "Dorian Lario",
+       "Viviane Artigalas"
+      ]
+     ],
+     [
+      "2",
+      null,
+      "1",
+      "2"
+     ]
+    ],
+    "2": [
+     [
+      [
+       "Jean-Claude Anglars",
+       "Pascal Allizard"
+      ],
+      [
+       "Viviane Artigalas",
+       "Cathy Apourceau-Poly"
+      ],
+      [
+       "Maurice Antiste",
+       "Jean-Michel Arnaud"
+      ],
+      [
+       "Dorian Lario",
+       "St\u00e9phane Artano"
+      ]
+     ],
+     [
+      null,
+      "1",
+      null,
+      "2"
+     ]
+    ],
+    "3": [
+     [
+      [
+       "Viviane Artigalas",
+       "Jean-Claude Anglars"
+      ],
+      [
+       "Pascal Allizard",
+       "Maurice Antiste"
+      ],
+      [
+       "St\u00e9phane Artano",
+       "Jean-Michel Arnaud"
+      ],
+      [
+       "Cathy Apourceau-Poly",
+       "Dorian Lario"
+      ]
+     ],
+     [
+      null,
+      "1",
+      null,
+      "2"
+     ]
+    ],
+    "4": [
+     [
+      [
+       "Pascal Allizard",
+       "Viviane Artigalas"
+      ],
+      [
+       "Jean-Claude Anglars",
+       "Jean-Michel Arnaud"
+      ],
+      [
+       "St\u00e9phane Artano",
+       "Maurice Antiste"
+      ]
+     ],
+     [
+      null,
+      "1",
+      null
+     ]
+    ],
+    "5": [
+     [
+      [
+       "Jean-Claude Anglars",
+       "Maurice Antiste"
+      ],
+      [
+       "Pascal Allizard",
+       "St\u00e9phane Artano"
+      ],
+      [
+       "Viviane Artigalas",
+       "Jean-Michel Arnaud"
+      ]
+     ],
+     [
+      "2",
+      null,
+      "1"
+     ]
+    ]
+   },
+   "scoreboard": {
+    "1": {
+     "reference": "Jean-Michel Arnaud",
+     "id": 1,
+     "scorerank": 6,
+     "score": 1.0,
+     "associations": [
+      5,
+      6,
+      7,
+      3,
+      8
+     ]
+    },
+    "2": {
+     "reference": "Cathy Apourceau-Poly",
+     "id": 2,
+     "scorerank": 8,
+     "score": 0.5,
+     "associations": [
+      6,
+      8,
+      4
+     ]
+    },
+    "3": {
+     "reference": "Jean-Claude Anglars",
+     "id": 3,
+     "scorerank": 3,
+     "score": 3.0,
+     "associations": [
+      7,
+      5,
+      8,
+      1,
+      6
+     ]
+    },
+    "4": {
+     "reference": "Dorian Lario",
+     "id": 4,
+     "scorerank": 7,
+     "score": 1,
+     "associations": [
+      8,
+      7,
+      2
+     ]
+    },
+    "5": {
+     "reference": "Pascal Allizard",
+     "id": 5,
+     "scorerank": 2,
+     "score": 3.5,
+     "associations": [
+      1,
+      3,
+      6,
+      8,
+      7
+     ]
+    },
+    "6": {
+     "reference": "Maurice Antiste",
+     "id": 6,
+     "scorerank": 4,
+     "score": 2.5,
+     "associations": [
+      2,
+      1,
+      5,
+      7,
+      3
+     ]
+    },
+    "7": {
+     "reference": "St\u00e9phane Artano",
+     "id": 7,
+     "scorerank": 5,
+     "score": 2.5,
+     "associations": [
+      3,
+      4,
+      1,
+      6,
+      5
+     ]
+    },
+    "8": {
+     "reference": "Viviane Artigalas",
+     "id": 8,
+     "scorerank": 1,
+     "score": 4.0,
+     "associations": [
+      4,
+      2,
+      3,
+      5,
+      1
+     ]
+    }
+   }
+  },
+  "10": {
+   "name": "TEST1",
+   "location": "PARIS",
+   "start_date": "20/10/2020",
+   "end_date": "20/10/2020",
+   "num_of_round": 4,
+   "selected_players": [
+    "Garry Kasparov",
+    "Jean Godran",
+    "Bertrand Farse",
+    "Sven Gadzish",
+    "Arnold Noire",
+    "Martin Bernard",
+    "Jacques Rousseau",
+    "Fran\u00e7ois De Galice"
+   ],
+   "game_type": "Blitz",
+   "notes": "Une note",
+   "serialized_object": {
+    "1": [
+     [
+      [
+       "Martin Bernard",
+       "Garry Kasparov"
+      ],
+      [
+       "Arnold Noire",
+       "Bertrand Farse"
+      ],
+      [
+       "Jean Godran",
+       "Jacques Rousseau"
+      ],
+      [
+       "Sven Gadzish",
+       "Fran\u00e7ois De Galice"
+      ]
+     ],
+     [
+      "2",
+      null,
+      "1",
+      null
+     ]
+    ],
+    "2": [
+     [
+      [
+       "Jean Godran",
+       "Garry Kasparov"
+      ],
+      [
+       "Arnold Noire",
+       "Sven Gadzish"
+      ],
+      [
+       "Bertrand Farse",
+       "Fran\u00e7ois De Galice"
+      ],
+      [
+       "Martin Bernard",
+       "Jacques Rousseau"
+      ]
+     ],
+     [
+      "2",
+      "1",
+      "2",
+      "1"
+     ]
+    ],
+    "3": [
+     [
+      [
+       "Garry Kasparov",
+       "Arnold Noire"
+      ],
+      [
+       "Fran\u00e7ois De Galice",
+       "Martin Bernard"
+      ],
+      [
+       "Jean Godran",
+       "Sven Gadzish"
+      ],
+      [
+       "Bertrand Farse",
+       "Jacques Rousseau"
+      ]
+     ],
+     [
+      null,
+      "1",
+      "2",
+      null
+     ]
+    ],
+    "4": [
+     [
+      [
+       "Garry Kasparov",
+       "Fran\u00e7ois De Galice"
+      ],
+      [
+       "Arnold Noire",
+       "Jacques Rousseau"
+      ],
+      [
+       "Sven Gadzish",
+       "Martin Bernard"
+      ],
+      [
+       "Jean Godran",
+       "Bertrand Farse"
+      ]
+     ],
+     [
+      "1",
+      "1",
+      "2",
+      "1"
+     ]
+    ]
+   },
+   "scoreboard": {
+    "1": {
+     "reference": "Martin Bernard",
+     "id": 1,
+     "scorerank": 4,
+     "score": 2,
+     "associations": [
+      5,
+      7,
+      8,
+      4
+     ]
+    },
+    "2": {
+     "reference": "Arnold Noire",
+     "id": 2,
+     "scorerank": 2,
+     "score": 3.0,
+     "associations": [
+      6,
+      4,
+      5,
+      7
+     ]
+    },
+    "3": {
+     "reference": "Jean Godran",
+     "id": 3,
+     "scorerank": 5,
+     "score": 2,
+     "associations": [
+      7,
+      5,
+      4,
+      6
+     ]
+    },
+    "4": {
+     "reference": "Sven Gadzish",
+     "id": 4,
+     "scorerank": 6,
+     "score": 1.5,
+     "associations": [
+      8,
+      2,
+      3,
+      1
+     ]
+    },
+    "5": {
+     "reference": "Garry Kasparov",
+     "id": 5,
+     "scorerank": 1,
+     "score": 3.5,
+     "associations": [
+      1,
+      3,
+      2,
+      8
+     ]
+    },
+    "6": {
+     "reference": "Bertrand Farse",
+     "id": 6,
+     "scorerank": 7,
+     "score": 1.0,
+     "associations": [
+      2,
+      8,
+      7,
+      3
+     ]
+    },
+    "7": {
+     "reference": "Jacques Rousseau",
+     "id": 7,
+     "scorerank": 8,
+     "score": 0.5,
+     "associations": [
+      3,
+      1,
+      6,
+      2
+     ]
+    },
+    "8": {
+     "reference": "Fran\u00e7ois De Galice",
+     "id": 8,
+     "scorerank": 3,
+     "score": 2.5,
+     "associations": [
+      4,
+      6,
+      1,
+      5
+     ]
+    }
+   }
+  },
+  "11": {
+   "name": "ParisBerlin",
+   "location": "Paris",
+   "start_date": "15/05/2020",
+   "end_date": "15/05/2020",
+   "num_of_round": 5,
+   "selected_players": [
+    "Dorian Lario",
+    "Pascal Allizard",
+    "Jean-Claude Anglars",
+    "Maurice Antiste",
+    "Cathy Apourceau-Poly",
+    "Jean-Michel Arnaud",
+    "St\u00e9phane Artano",
+    "Viviane Artigalas",
+    "David Assouline",
+    "Serge Barbary"
+   ],
+   "game_type": "Bullet",
+   "notes": "",
+   "serialized_object": {
+    "1": [
+     [
+      [
+       "Serge Barbary",
+       "Dorian Lario"
+      ],
+      [
+       "Jean-Claude Anglars",
+       "St\u00e9phane Artano"
+      ],
+      [
+       "Jean-Michel Arnaud",
+       "Viviane Artigalas"
+      ],
+      [
+       "Pascal Allizard",
+       "Maurice Antiste"
+      ],
+      [
+       "Cathy Apourceau-Poly",
+       "David Assouline"
+      ]
+     ],
+     [
+      "1",
+      "2",
+      "1",
+      "2",
+      "1"
+     ]
+    ],
+    "2": [
+     [
+      [
+       "Serge Barbary",
+       "Jean-Michel Arnaud"
+      ],
+      [
+       "Cathy Apourceau-Poly",
+       "St\u00e9phane Artano"
+      ],
+      [
+       "Maurice Antiste",
+       "Jean-Claude Anglars"
+      ],
+      [
+       "Pascal Allizard",
+       "Dorian Lario"
+      ],
+      [
+       "Viviane Artigalas",
+       "David Assouline"
+      ]
+     ],
+     [
+      "2",
+      null,
+      "1",
+      "2",
+      null
+     ]
+    ],
+    "3": [
+     [
+      [
+       "Jean-Michel Arnaud",
+       "Maurice Antiste"
+      ],
+      [
+       "Cathy Apourceau-Poly",
+       "Serge Barbary"
+      ],
+      [
+       "St\u00e9phane Artano",
+       "Dorian Lario"
+      ],
+      [
+       "Viviane Artigalas",
+       "Jean-Claude Anglars"
+      ],
+      [
+       "David Assouline",
+       "Pascal Allizard"
+      ]
+     ],
+     [
+      "1",
+      "2",
+      null,
+      "1",
+      "2"
+     ]
+    ],
+    "4": [
+     [
+      [
+       "Jean-Michel Arnaud",
+       "St\u00e9phane Artano"
+      ],
+      [
+       "Serge Barbary",
+       "Maurice Antiste"
+      ],
+      [
+       "Cathy Apourceau-Poly",
+       "Dorian Lario"
+      ],
+      [
+       "Viviane Artigalas",
+       "Pascal Allizard"
+      ],
+      [
+       "David Assouline",
+       "Jean-Claude Anglars"
+      ]
+     ],
+     [
+      "1",
+      "2",
+      null,
+      "1",
+      "2"
+     ]
+    ],
+    "5": [
+     [
+      [
+       "Jean-Michel Arnaud",
+       "Cathy Apourceau-Poly"
+      ],
+      [
+       "Maurice Antiste",
+       "Viviane Artigalas"
+      ],
+      [
+       "Serge Barbary",
+       "St\u00e9phane Artano"
+      ],
+      [
+       "Dorian Lario",
+       "Jean-Claude Anglars"
+      ]
+     ],
+     [
+      "1",
+      "2",
+      null,
+      "2"
+     ]
+    ]
+   },
+   "scoreboard": {
+    "1": {
+     "reference": "Serge Barbary",
+     "id": 1,
+     "scorerank": 4,
+     "score": 2.5,
+     "associations": [
+      6,
+      3,
+      5,
+      9,
+      7
+     ]
+    },
+    "2": {
+     "reference": "Jean-Claude Anglars",
+     "id": 2,
+     "scorerank": 6,
+     "score": 2,
+     "associations": [
+      7,
+      9,
+      8,
+      10,
+      6
+     ]
+    },
+    "3": {
+     "reference": "Jean-Michel Arnaud",
+     "id": 3,
+     "scorerank": 1,
+     "score": 5,
+     "associations": [
+      8,
+      1,
+      9,
+      7,
+      5
+     ]
+    },
+    "4": {
+     "reference": "Pascal Allizard",
+     "id": 4,
+     "scorerank": 9,
+     "score": 1,
+     "associations": [
+      9,
+      6,
+      10,
+      8
+     ]
+    },
+    "5": {
+     "reference": "Cathy Apourceau-Poly",
+     "id": 5,
+     "scorerank": 7,
+     "score": 2.0,
+     "associations": [
+      10,
+      7,
+      1,
+      6,
+      3
+     ]
+    },
+    "6": {
+     "reference": "Dorian Lario",
+     "id": 6,
+     "scorerank": 8,
+     "score": 2.0,
+     "associations": [
+      1,
+      4,
+      7,
+      5,
+      2
+     ]
+    },
+    "7": {
+     "reference": "St\u00e9phane Artano",
+     "id": 7,
+     "scorerank": 5,
+     "score": 2.5,
+     "associations": [
+      2,
+      5,
+      6,
+      3,
+      1
+     ]
+    },
+    "8": {
+     "reference": "Viviane Artigalas",
+     "id": 8,
+     "scorerank": 2,
+     "score": 3.5,
+     "associations": [
+      3,
+      10,
+      2,
+      4,
+      9
+     ]
+    },
+    "9": {
+     "reference": "Maurice Antiste",
+     "id": 9,
+     "scorerank": 3,
+     "score": 3,
+     "associations": [
+      4,
+      2,
+      3,
+      1,
+      8
+     ]
+    },
+    "10": {
+     "reference": "David Assouline",
+     "id": 10,
+     "scorerank": 10,
+     "score": 0.5,
+     "associations": [
+      5,
+      8,
+      4,
+      2
+     ]
+    }
+   }
+  },
+  "12": {
+   "name": "ParisJ",
+   "location": "",
+   "start_date": "15/05/2020",
+   "end_date": "15/05/2020",
+   "num_of_round": 5,
+   "selected_players": [
+    "Dorian Lario",
+    "Pascal Allizard",
+    "Jean-Claude Anglars",
+    "Maurice Antiste",
+    "Cathy Apourceau-Poly",
+    "Jean-Michel Arnaud",
+    "St\u00e9phane Artano",
+    "Viviane Artigalas",
+    "David Assouline",
+    "Serge Barbary"
+   ],
+   "game_type": "Bullet",
+   "notes": "",
+   "serialized_object": {
+    "1": [
+     [
+      [
+       "Serge Barbary",
+       "Maurice Antiste"
+      ],
+      [
+       "Jean-Michel Arnaud",
+       "Cathy Apourceau-Poly"
+      ],
+      [
+       "Jean-Claude Anglars",
+       "St\u00e9phane Artano"
+      ],
+      [
+       "Viviane Artigalas",
+       "Dorian Lario"
+      ],
+      [
+       "Pascal Allizard",
+       "David Assouline"
+      ]
+     ],
+     [
+      "2",
+      null,
+      "1",
+      "2",
+      null
+     ]
+    ],
+    "2": [
+     [
+      [
+       "Jean-Claude Anglars",
+       "Maurice Antiste"
+      ],
+      [
+       "Dorian Lario",
+       "Jean-Michel Arnaud"
+      ],
+      [
+       "Pascal Allizard",
+       "Cathy Apourceau-Poly"
+      ],
+      [
+       "David Assouline",
+       "Serge Barbary"
+      ],
+      [
+       "Viviane Artigalas",
+       "St\u00e9phane Artano"
+      ]
+     ],
+     [
+      "1",
+      "2",
+      null,
+      "1",
+      "2"
+     ]
+    ],
+    "3": [
+     [
+      [
+       "Jean-Claude Anglars",
+       "Jean-Michel Arnaud"
+      ],
+      [
+       "David Assouline",
+       "Maurice Antiste"
+      ],
+      [
+       "Pascal Allizard",
+       "St\u00e9phane Artano"
+      ],
+      [
+       "Cathy Apourceau-Poly",
+       "Dorian Lario"
+      ],
+      [
+       "Serge Barbary",
+       "Viviane Artigalas"
+      ]
+     ],
+     [
+      "2",
+      "2",
+      "2",
+      "2",
+      "2"
+     ]
+    ],
+    "4": [
+     [
+      [
+       "Jean-Michel Arnaud",
+       "Maurice Antiste"
+      ],
+      [
+       "Jean-Claude Anglars",
+       "Dorian Lario"
+      ],
+      [
+       "St\u00e9phane Artano",
+       "David Assouline"
+      ],
+      [
+       "Viviane Artigalas",
+       "Pascal Allizard"
+      ],
+      [
+       "Cathy Apourceau-Poly",
+       "Serge Barbary"
+      ]
+     ],
+     [
+      "2",
+      "2",
+      "2",
+      "2",
+      "2"
+     ]
+    ],
+    "5": [
+     [
+      [
+       "Maurice Antiste",
+       "Dorian Lario"
+      ],
+      [
+       "Jean-Michel Arnaud",
+       "David Assouline"
+      ],
+      [
+       "Jean-Claude Anglars",
+       "Pascal Allizard"
+      ],
+      [
+       "St\u00e9phane Artano",
+       "Serge Barbary"
+      ],
+      [
+       "Viviane Artigalas",
+       "Cathy Apourceau-Poly"
+      ]
+     ],
+     [
+      "2",
+      "2",
+      "2",
+      "2",
+      "2"
+     ]
+    ]
+   },
+   "scoreboard": {
+    "1": {
+     "reference": "Serge Barbary",
+     "id": 1,
+     "scorerank": 6,
+     "score": 2,
+     "associations": [
+      6,
+      10,
+      4,
+      7,
+      8
+     ]
+    },
+    "2": {
+     "reference": "Jean-Michel Arnaud",
+     "id": 2,
+     "scorerank": 5,
+     "score": 2.5,
+     "associations": [
+      7,
+      9,
+      3,
+      6,
+      10
+     ]
+    },
+    "3": {
+     "reference": "Jean-Claude Anglars",
+     "id": 3,
+     "scorerank": 7,
+     "score": 2,
+     "associations": [
+      8,
+      6,
+      2,
+      9,
+      5
+     ]
+    },
+    "4": {
+     "reference": "Viviane Artigalas",
+     "id": 4,
+     "scorerank": 10,
+     "score": 1,
+     "associations": [
+      9,
+      8,
+      1,
+      5,
+      7
+     ]
+    },
+    "5": {
+     "reference": "Pascal Allizard",
+     "id": 5,
+     "scorerank": 3,
+     "score": 3.0,
+     "associations": [
+      10,
+      7,
+      8,
+      4,
+      3
+     ]
+    },
+    "6": {
+     "reference": "Maurice Antiste",
+     "id": 6,
+     "scorerank": 4,
+     "score": 3,
+     "associations": [
+      1,
+      3,
+      10,
+      2,
+      9
+     ]
+    },
+    "7": {
+     "reference": "Cathy Apourceau-Poly",
+     "id": 7,
+     "scorerank": 8,
+     "score": 2.0,
+     "associations": [
+      2,
+      5,
+      9,
+      1,
+      4
+     ]
+    },
+    "8": {
+     "reference": "St\u00e9phane Artano",
+     "id": 8,
+     "scorerank": 9,
+     "score": 2,
+     "associations": [
+      3,
+      4,
+      5,
+      10,
+      1
+     ]
+    },
+    "9": {
+     "reference": "Dorian Lario",
+     "id": 9,
+     "scorerank": 1,
+     "score": 4,
+     "associations": [
+      4,
+      2,
+      7,
+      3,
+      6
+     ]
+    },
+    "10": {
+     "reference": "David Assouline",
+     "id": 10,
+     "scorerank": 2,
+     "score": 3.5,
+     "associations": [
+      5,
+      1,
+      6,
+      8,
+      2
      ]
     }
    }

@@ -9,9 +9,11 @@ def main():
     datas_management.load_from_save()
     datas_management.serializing_tournament_player()
 
-    # for tournament in Tournament._registry:
-    #     print(tournament.name)
-    #     print(tournament.serialized_object)
+    # player_list = ["Garry Kasparov","Jean Godran","Bertrand Farse","Sven Gadzish","Arnold Noire","Martin Bernard",
+    #                "Jacques Rousseau","François De Galice"]
+    # def add_1_tournament():
+    #     Tournament("TEST1", "PARIS", "20/10/2020", "20/10/2020",4,player_list,"Blitz","Une note")
+    # add_1_tournament()
 
     # -DEVonly
     # datas_management.delete_duplicates()
@@ -25,6 +27,7 @@ def main():
 
     datas_management.serializing_tournament_player()
     datas_management.save_data()
+
 
 if __name__ == "__main__":
     main()
