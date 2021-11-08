@@ -48,11 +48,12 @@ def make_player_dict():
 
     return reference_dict
 
+
 def make_tournament_dict():
 
     tournament_dict = {}
 
-    for index, tournament in zip(range(1, len(Tournament._registry)+1),Tournament._registry):
+    for index, tournament in zip(range(1, len(Tournament._registry)+1), Tournament._registry):
         tournament_dict[index] = tournament.name
 
     return tournament_dict
@@ -61,8 +62,8 @@ def make_tournament_dict():
 def convert_to_reference(list_of_player_object):
     """ Convert a list of player object into a list of reference """
     players_references = []
-    for object in list_of_player_object:
-        players_references.append(object.reference)
+    for player_object in list_of_player_object:
+        players_references.append(player_object.reference)
     return players_references
 
 
@@ -125,11 +126,11 @@ def updating_players_stats(tournament_object):
         player_object = player_researcher(player)[0]
         player_object.num_of_tournaments += 1
         num_of_match = player_object.num_of_wins + player_object.num_of_losses\
-                       + player_object.num_of_draw
+                        + player_object.num_of_draw
         player_object.num_of_match = num_of_match
         try:
-            player_object.winloss_ratio = round(player_object.num_of_wins / player_object.num_of_losses,2)
-        except:
+            player_object.winloss_ratio = round(player_object.num_of_wins / player_object.num_of_losses, 2)
+        except ZeroDivisionError:
             if player_object.num_of_wins > 0:
                 player_object.winloss_ratio = player_object.num_of_wins
             else:
@@ -150,7 +151,7 @@ def updating_general_rank_by_ratio():
 
     sorted_by_wins = dict(sorted(players_dict.items(), key=lambda item: item[1][2], reverse=True))
 
-    for player, rank in zip(sorted_by_wins,range(1,len(Player._registry)+1)):
+    for player, rank in zip(sorted_by_wins, range(1, len(Player._registry)+1)):
         player_researcher(sorted_by_wins[player][0])[0].ranking = rank
 
     return
@@ -192,7 +193,8 @@ def launch_from_controller(tournament_object):
         adding_time_match(time_informations)
         tournament_object.updating_scoreboard_score(number_of_round)
         tournament_object.sort_score_rank()
-        show_score(sorted(tournament_object.scoreboard.values(), key=lambda k: k['score'],reverse=True),number_of_round)
+        show_score(sorted(tournament_object.scoreboard.values(), key=lambda k: k['score'],
+                          reverse=True), number_of_round)
 
     tournament_object.serialized_the_object()
     updating_players_stats(tournament_object)

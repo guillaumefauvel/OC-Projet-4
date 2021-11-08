@@ -12,4 +12,3 @@ class Match:
         self.end_time = ""
 
         return
-

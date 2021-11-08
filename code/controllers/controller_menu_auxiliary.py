@@ -2,10 +2,12 @@
 import views.view_menu
 import controllers.controller_menu
 
+
 def launch_the_menu():
     controllers.controller_menu.menu_attribution(views.view_menu.menu_proposition())
 
     return
+
 
 def navigator(num_of_the_manager):
 
@@ -17,14 +19,14 @@ def navigator(num_of_the_manager):
 
     return
 
+
 def menu_loop(function):
     while True:
         function()
         response = views.view_menu.ask_menu_return()
 
-        if response == True:
+        if response is True:
             launch_the_menu()
             break
-        elif response == False:
+        elif response is False:
             continue
-

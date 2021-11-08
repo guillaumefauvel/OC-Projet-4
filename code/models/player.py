@@ -1,11 +1,12 @@
 """Player object"""
 
+
 class Player:
 
     _registry = []
     _serialized_registry = []
 
-    def __init__(self, name, first_name, birthday, gender, ranking ):
+    def __init__(self, name, first_name, birthday, gender, ranking):
 
         self._registry.append(self)
         self.name = name
@@ -13,7 +14,7 @@ class Player:
         self.birthday = birthday
         self.gender = gender
         self.ranking = ranking
-        self.reference = (f"{first_name} {name}")
+        self.reference = f"{first_name} {name}"
         self.num_of_wins = 0
         self.num_of_losses = 0
         self.num_of_draw = 0
@@ -58,5 +59,3 @@ class Player:
                 self._serialized_registry.remove(value)
 
         self._serialized_registry.append(self.serialized_version)
-
-

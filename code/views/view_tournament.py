@@ -2,14 +2,16 @@
 from prettytable import PrettyTable
 import datetime
 
+
 def show_duel(list_of_duel):
     """ Print the list of duel """
     print('\n--------------------------------------------------------')
 
-    for player, index in zip(list_of_duel,range(len(list_of_duel))):
+    for player, index in zip(list_of_duel, range(len(list_of_duel))):
         print(f"\n{index+1}.{player[0]} affrontera {player[1]}.")
 
     print('\n--------------------------------------------------------')
+
 
 def asking_end_match(duel_list):
     """ Ask the user wich match has ended in
@@ -22,9 +24,9 @@ def asking_end_match(duel_list):
     match_dict = {}
     short_term_dict = {}
 
-    for match, index in zip(duel_list,range(1, len(duel_list)+1)):
+    for match, index in zip(duel_list, range(1, len(duel_list)+1)):
         print(f"{index}. {match[0]} contre {match[1]}")
-        match_dict[index] = {'match':match} ,{'start_time':start_time}
+        match_dict[index] = {'match': match}, {'start_time': start_time}
         short_term_dict[index] = ""
     print("\nUn match viens de se terminer ? Merci d'entrer son numéro")
 
@@ -32,7 +34,7 @@ def asking_end_match(duel_list):
         while True:
             try:
                 answer = int(input("\nNuméro du match : "))
-                match_dict[answer] = match_dict[answer],datetime.datetime.now()
+                match_dict[answer] = match_dict[answer], datetime.datetime.now()
                 short_term_dict.pop(answer)
                 break
             except ValueError:
@@ -42,6 +44,7 @@ def asking_end_match(duel_list):
                 print(''.join(['{0}.  {1}'.format(k, v) for k, v in short_term_dict.items()]))
 
     return match_dict
+
 
 def asking_match_result(duel):
     """ Ask the user wich of the player win.
@@ -53,7 +56,7 @@ def asking_match_result(duel):
     result_list = []
     for player in duel:
         while True:
-            accepted_answer = ["0","1","2"]
+            accepted_answer = ["0", "1", "2"]
             print(f"\n1.{player[0]}, 2.{player[1]}\n"
                   f"Qui du joueur 1 ou du joueur 2 a gagné ? '0' si nul")
             winner = input("Réponse : ")
@@ -71,22 +74,22 @@ def asking_match_result(duel):
 
     return result_list
 
-# -DEVonly-
+
 def show_scoreboard(tournament_object):
+    """ DEVonly """
 
     print('--------------------------------------------------------')
 
-    for value in sorted(tournament_object.scoreboard.values(), key=lambda k: k['score'],reverse=True):
+    for value in sorted(tournament_object.scoreboard.values(), key=lambda k: k['score'], reverse=True):
         print(value)
 
     print('--------------------------------------------------------')
 
-def show_score(scoreboard,round_number):
 
-    table = PrettyTable(["Joueur","Classement","Score"])
+def show_score(scoreboard, round_number):
+
+    table = PrettyTable(["Joueur", "Classement", "Score"])
     for value in scoreboard:
         table.add_row([value["reference"], value["scorerank"], value["score"]])
     table = table.get_string(title=f"Round {round_number}")
     print(table)
-
-

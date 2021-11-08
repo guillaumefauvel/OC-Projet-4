@@ -1,11 +1,11 @@
 from models.player import Player
 from views import view_menu, view_tournament_manager, view_players_manager, view_reports_manager
 from controllers.controller_reports_manager import make_players_dict
-from controllers.controller_tournament_manager import updating_general_rank_by_ratio, player_researcher
 from controllers.controller_menu_auxiliary import menu_loop
 
 
 from tinydb import TinyDB, Query
+
 
 def players_manager():
     answer = view_players_manager.ask_choice()
@@ -20,10 +20,12 @@ def players_manager():
 
         menu_loop(show_player_infos)
 
+
 def adding_player():
     """ Create a new player object from the gathered informations"""
     name, first_name, birthday, gender, ranking = view_players_manager.new_player()
     Player(name, first_name, birthday, gender, ranking)
+
 
 def delete_player():
     """ Remove a player from the database """
@@ -41,6 +43,7 @@ def delete_player():
             player._registry.remove(player)
 
     return
+
 
 def show_player_infos():
     """ Show the informations of a player """

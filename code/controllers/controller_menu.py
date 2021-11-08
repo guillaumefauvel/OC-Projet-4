@@ -3,6 +3,7 @@ from controllers.controller_tournament_manager import tournament_manager
 from controllers.controller_reports_manager import reports_manager
 from controllers.controller_players_manager import players_manager
 
+
 def menu_attribution(response):
     # Launch a new tournament
     if response == 1:

@@ -1,3 +1,5 @@
+
+
 def ask_choice():
     print("\n-------------------------------")
     print("----- GESTION DES JOUEURS -----")
@@ -8,11 +10,12 @@ def ask_choice():
 
     while True:
         answer = input("\nRéponse : ")
-        if answer in ["1","2","3"]:
+        if answer in ["1", "2", "3"]:
             break
         else:
             print("->Merci de rentrer 1,2 ou 3.")
     return answer
+
 
 def new_player():
     """ Form that gather player informations
@@ -58,26 +61,28 @@ def new_player():
 
     return name, first_name, birthday, gender, ranking
 
-def show_player_list(dict):
+
+def show_player_list(player_dict):
     """ Show a list of players and ask the index of the selected players
     Arg : a player dict"""
     print("")
-    for value in dict:
-        print(f"{value}. {dict[value][0]}")
+    for value in player_dict:
+        print(f"{value}. {player_dict[value][0]}")
 
     while True:
         try:
             selected_player = int(input("\nQuel joueur voulez-vous sélectionner ? "))
-            if selected_player in dict.keys():
+            if selected_player in player_dict.keys():
                 break
             else:
                 print("->Merci de rentrer un index valide")
         except ValueError:
             print("->Merci de rentrer un index valide")
 
-    selected_player = dict[selected_player][0]
+    selected_player = player_dict[selected_player][0]
 
     return selected_player
+
 
 def show_player_infos(player_infos):
     print("")
@@ -85,17 +90,14 @@ def show_player_infos(player_infos):
         print(f"--- informations du joueur : {player_infos['reference']} ---\n")
     else:
         print(f"--- informations de la joueuse : {player_infos['reference']} ---\n")
-    list_of_infos = ['Nom','Prénom','Date de naissance','Genre','Classement','',
-                    'Nombre de match gagnés','Nombre de match perdus',
-                    'Nombre de match nuls','Ratio Victoires/Défaites','Nombre de match joués',
-                    'Nombre de tournois joués',]
-    for infos_type, value in zip(list_of_infos,player_infos):
+    list_of_infos = ['Nom', 'Prénom', 'Date de naissance', 'Genre', 'Classement', '',
+                    'Nombre de match gagnés', 'Nombre de match perdus',
+                    'Nombre de match nuls', 'Ratio Victoires/Défaites', 'Nombre de match joués',
+                    'Nombre de tournois joués', ]
+    for infos_type, value in zip(list_of_infos, player_infos):
         if len(infos_type) > 2:
             print(f"{infos_type}: {player_infos[value]}")
         else:
             pass
 
     return
-
-
-

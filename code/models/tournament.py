@@ -1,9 +1,9 @@
 import collections
-import copy
 from models.round import Round
 from controllers.controller_conversion import convert_to_player_object, round_conversion
 
 import itertools
+
 
 class Tournament:
 
@@ -38,38 +38,38 @@ class Tournament:
         ordered_dict = collections.OrderedDict(sorted(raw_rank.items()))
 
         for player, index, in zip(ordered_dict, range(1, len(self.players_object) + 1)):
-            self.scoreboard[index] = { "reference" : ordered_dict[player], "id" : index,"scorerank" : 0,
-                                            "score" : 0, "associations" : [] }
+            self.scoreboard[index] = {"reference": ordered_dict[player], "id": index, "scorerank": 0,
+                                      "score": 0, "associations": []}
 
     def sort_score_rank(self):
         # """Sort the json file based on his 'Classement-Score' key"""
         for line, rank in zip(sorted(self.scoreboard.values(), key=lambda k: k['score'],
-                                     reverse=True),range(1,len(self.players_object)+1)):
+                                     reverse=True), range(1, len(self.players_object)+1)):
             line['scorerank'] = rank
         return
 
     def first_draw(self):
         """ Generate the first list of duel by analysing the scoreboard database """
 
-        self.duel_list = []
+        duel_list = []
 
-        for index in range(1,self.num_of_duel+1):
+        for index in range(1, self.num_of_duel+1):
             results = []
             player_1 = self.scoreboard[index]
-            player_2 = self.scoreboard[index+self.num_of_duel]
+            player_2 = self.scoreboard[index + self.num_of_duel]
 
             results.append(player_1['reference'])
             results.append(player_2['reference'])
-            self.duel_list.append(results)
+            duel_list.append(results)
 
             player_1['associations'].append(player_2['id'])
             player_2['associations'].append(player_1['id'])
 
         # Create the round
-        self.object_dict[1] = Round(self.duel_list)
+        self.object_dict[1] = Round(duel_list)
         # Create the match attached to this round
         self.object_dict[1].make_match()
-        return self.duel_list
+        return duel_list
 
     def updating_scoreboard_score(self, round):
         """ Update the score of the scoreboard
@@ -81,9 +81,9 @@ class Tournament:
         list_of_equality = []
 
         for match in self.object_dict[round].attached_match:
-            if match.winner == "1" :
+            if match.winner == "1":
                 list_of_winner.append(match.player_1)
-            elif match.winner == "2" :
+            elif match.winner == "2":
                 list_of_winner.append(match.player_2)
             else:
                 list_of_equality.append(match.player_1)
@@ -95,7 +95,7 @@ class Tournament:
             if player['reference'] in list_of_equality:
                 player['score'] = player['score']+0.5
 
-    def generating_other_draw(self,round_index):
+    def generating_other_draw(self, round_index):
         """ Generate a list of duel by analysing the scoreboard database, it also make a round and some matchs
         Arg : The round index - in order to link the round to his tournament
         Return : The list of the next duels """
@@ -104,8 +104,9 @@ class Tournament:
         duel_list = []
         player_to_match = []
 
-        for value, index in zip(sorted(self.scoreboard.values(), key=lambda k: k['score'],reverse=True),range(1,len(self.scoreboard)+1)):
-            dict[index] = value['id'],value['associations'],value['reference']
+        for value, index in zip(sorted(self.scoreboard.values(), key=lambda k: k['score'], reverse=True),
+                                range(1, len(self.scoreboard)+1)):
+            dict[index] = value['id'], value['associations'], value['reference']
 
         for value in list(dict):
             if value not in list(dict):
@@ -123,7 +124,7 @@ class Tournament:
                             dict.pop(value)
                             dict.pop(value + index)
                             break
-                    except:
+                    except KeyError:
                         pass
 
         # If the fastest attribution method didn't work we use another method.
@@ -143,13 +144,14 @@ class Tournament:
 
         dict = {}
 
-        for value, index in zip(sorted(self.scoreboard.values(), key=lambda k: k['score'],reverse=True),range(1,len(self.scoreboard)+1)):
-            dict[index] = value['id'],value['associations'],value['reference'], value['score']
+        for value, index in zip(sorted(self.scoreboard.values(), key=lambda k: k['score'], reverse=True),
+                                range(1, len(self.scoreboard)+1)):
+            dict[index] = value['id'], value['associations'], value['reference'], value['score']
 
         general_list = []
         general_score = []
 
-        for index in range(1,len(self.scoreboard)+1):
+        for index in range(1, len(self.scoreboard)+1):
             for index2 in range(1, len(self.scoreboard) + 1):
                 general_list.append([index, index2])
 
@@ -173,7 +175,7 @@ class Tournament:
                 general_score.append(association_score)
 
         new_dict = {}
-        for association, score, index in zip(general_list, general_score, range(1,len(general_list)+1)):
+        for association, score, index in zip(general_list, general_score, range(1, len(general_list)+1)):
             new_dict[index] = association, score
 
         # perm = permutations([v for v in range(1, len(self.selected_players)+1, 1)])
@@ -188,13 +190,12 @@ class Tournament:
                     for combi in new_dict:
                         if new_dict[combi][0] == list(value):
                             score += (new_dict[combi][1])
-                if score < lowest_score and score > 0 :
+                if 0 < score < lowest_score:
                     lowest_score = score
                     best_combination = output
             else:
                 break
         return best_combination
-
 
     def scoreboard_converter(self, best_combination):
         """ Convert a list of duel logged as scoreboard_index into a list of player_reference
@@ -216,7 +217,7 @@ class Tournament:
 
         return duel_list
 
-    def updating_scoreboard_associations(self,list_of_duel):
+    def updating_scoreboard_associations(self, list_of_duel):
         """ Add the new associations to the scoreboard in order to have a meetings history
         Arg = A list of duels
         """
@@ -226,11 +227,11 @@ class Tournament:
             for player in self.scoreboard:
                 if duel[0] == self.scoreboard[player]['reference']:
                     player2_id = self.scoreboard[player]['id']
-                    associations_list.append([duel[1],player2_id])
+                    associations_list.append([duel[1], player2_id])
 
                 if duel[1] == self.scoreboard[player]['reference']:
                     player1_id = self.scoreboard[player]['id']
-                    associations_list.append([duel[0],player1_id])
+                    associations_list.append([duel[0], player1_id])
 
         for duel in associations_list:
             for player in self.scoreboard:
@@ -252,7 +253,7 @@ class Tournament:
             'game_type': self.game_type,
             'notes': self.notes,
             'serialized_object': self.serialized_object,
-            'scoreboard':self.scoreboard
+            'scoreboard': self.scoreboard
         }
         # Deleting the old version
         for value in self._serialized_registry:
