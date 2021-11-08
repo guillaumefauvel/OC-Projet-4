@@ -4,7 +4,7 @@ from models.tournament import Tournament
 from datetime import datetime
 from views.view_reports_manager import ask_for_report_choice, show_list, \
     ask_tournament_choice, show_tournament_players_by_alpha, show_tournament_players_by_rank,\
-    show_tournaments_infos, show_scoreboard, show_scoreboard_with_round, show_duel
+    show_tournaments_infos, show_scoreboard, show_scoreboard_with_round, show_duel, show_general_scoreboard
 from controllers.controller_tournament_manager import updating_general_rank_by_ratio, player_researcher
 from controllers.controller_menu_auxiliary import navigator
 
@@ -38,14 +38,17 @@ def reports_manager():
     elif answer == 7:
         tournament_history()
         navigator(3)
-
-        pass
+    elif answer == 8:
+        general_scoreboard()
+        navigator(3)
 
     return
 
 
 def make_players_dict():
-
+    """ Make a player dictionnary by using the Player registry
+    Return : A dictionnary with key = index, value_1 = player_reference,
+    value_2 = player_ranking, value_3 = player_birthday"""
     players_dict = {}
 
     sorted_registry = sorted(Player._registry, key=lambda x: x.reference, reverse=False)
@@ -56,6 +59,7 @@ def make_players_dict():
     return players_dict
 
 def make_tournament_dict():
+    """ Create a tournament dictionnary by using the Tournament registry"""
 
     tournament_dict = {}
 
@@ -98,6 +102,8 @@ def sort_by_age():
 
 
 def tournament_players_by_alpha():
+    """ Sort alphabetically and return to the user the list of all
+    the player of a given tournament """
 
     show_list(make_tournament_dict())
     tournament_choice = ask_tournament_choice(make_tournament_dict())
@@ -105,6 +111,8 @@ def tournament_players_by_alpha():
 
 
 def tournament_players_by_rank():
+    """ Sort the player of a given tournament by rank and return them to the user
+    by specifying their rank in the general scoreboard"""
 
     updating_general_rank_by_ratio()
 
@@ -122,6 +130,7 @@ def tournament_players_by_rank():
 
 
 def tournament_scoreboard():
+    """ Show the final scorebaord of the selected tournament """
 
     show_list(make_tournament_dict())
     tournament_choice = ask_tournament_choice(make_tournament_dict())
@@ -131,16 +140,15 @@ def tournament_scoreboard():
 
 
 def tournament_history_auxiliary(scoreboard,searched_reference,value_to_assign,results_indication):
-
+    """ Auxiliary function used by tournament_history() in order to modify the scoreboard """
     for player in scoreboard:
-        if (scoreboard[player]['reference']) == searched_reference:
+        if scoreboard[player]['reference'] == searched_reference:
             scoreboard[player]['score'] += value_to_assign
             scoreboard[player]['round_result'] = results_indication
-
     return
 
 def tournament_history():
-
+    """ Show to the user the details of a selected tournament """
     show_list(make_tournament_dict())
     tournament_choice = ask_tournament_choice(make_tournament_dict())
     round_list = make_tournament_dict()[tournament_choice][2]
@@ -164,7 +172,21 @@ def tournament_history():
                 tournament_history_auxiliary(scoreboard, player_1, 0.5,"E")
                 tournament_history_auxiliary(scoreboard, player_2, 0.5,"E")
 
+        sorted_version = sorted(scoreboard.values(), key=lambda k: k['score'],reverse=True)
+
+        for player, new_rank in zip(sorted_version,range(1,len(sorted_version)+1)):
+            player['rank'] = new_rank
+
         show_duel(round_list[round][0])
-        show_scoreboard_with_round(scoreboard,round)
+        show_scoreboard_with_round(sorted_version,round)
+
+    return
+
+def general_scoreboard():
+    """ Show the general scoreboard """
+
+    sorted_list = sorted(Player._serialized_registry, key=lambda d: d['ranking'])
+    filtered_list = [d for d in sorted_list if d['num_of_match'] > 0]
+    show_general_scoreboard(filtered_list)
 
     return

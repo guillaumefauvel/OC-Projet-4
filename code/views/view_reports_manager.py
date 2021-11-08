@@ -3,6 +3,7 @@ from prettytable import PrettyTable
 
 
 def ask_for_report_choice():
+
     print("\n-------------------------------")
     print("---- GESTION DES RAPPORTS -----")
     print("-------------------------------")
@@ -14,6 +15,8 @@ def ask_for_report_choice():
     print("  5. Une liste de tous les tournois")
     print("  6. Le tableau des scores d'un tournoi")
     print("  7. Le récapitulatif d'un tournoi")
+    print("  8. Le tableau des scores")
+
 
 
     possible_choice = ["1","2","3","4","5","6","7","8","9"]
@@ -99,9 +102,22 @@ def show_scoreboard_with_round(scoreboard,round_number):
 
     table = PrettyTable(["Joueur","Classement","Score","Résulat-Round"])
     for value in scoreboard:
-        table.add_row([scoreboard[value]["reference"], scoreboard[value]["rank"],
-                       scoreboard[value]["score"], scoreboard[value]['round_result']])
+        table.add_row([value["reference"], value["rank"],
+                       value["score"], value['round_result']])
     table = table.get_string(title=f"Round N°{round_number}")
+
+    print(table)
+    return
+
+def show_general_scoreboard(scoreboard):
+
+    table = PrettyTable(["Joueur", "Classement", "RatioG/P", "Matchs joués",
+                         "Matchs gagnés","Matchs perdus","Egalité","Tournois joués"])
+    for value in scoreboard:
+        table.add_row([value["reference"], value["ranking"],value["win_loss_ratio"],
+                       value["num_of_match"], value["num_of_wins"], value["num_of_losses"],
+                       value["num_of_draw"], value["num_of_tournaments"]])
+    table = table.get_string(title=f"-Tableau des scores-")
 
     print(table)
 
