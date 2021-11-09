@@ -2,46 +2,46 @@
 from models.player import Player
 from models.tournament import Tournament
 from datetime import datetime
-from views.view_reports_manager import ask_for_report_choice, show_list, \
-    ask_tournament_choice, show_tournament_players_by_alpha, show_tournament_players_by_rank,\
-    show_tournaments_infos, show_scoreboard, show_scoreboard_with_round, show_duel, show_general_scoreboard
+import views.view_reports_manager as vrm
 from controllers.controller_tournament_manager import updating_general_rank_by_ratio, player_researcher
-from controllers.controller_menu_auxiliary import navigator
-
+import controllers.controller_menu
 
 def reports_manager():
-    answer = int(ask_for_report_choice())
+    """ Show the user the possibilities and gathered his answer.
+    He is redirected in order to fulfill is choice."""
+
+    answer = int(vrm.ask_for_report_choice())
 
     if answer == 1:
-        show_list(make_players_dict())
-        navigator(3)
+        vrm.show_list(make_players_dict())
+        controllers.controller_menu.navigator(3)
 
     elif answer == 2:
-        show_list(sort_by_rank())
-        navigator(3)
+        vrm.show_list(sort_by_rank())
+        controllers.controller_menu.navigator(3)
 
     elif answer == 3:
         tournament_players_by_alpha()
-        navigator(3)
+        controllers.controller_menu.navigator(3)
 
     elif answer == 4:
         tournament_players_by_rank()
-        navigator(3)
+        controllers.controller_menu.navigator(3)
 
     elif answer == 5:
-        show_tournaments_infos(make_tournament_dict())
-        navigator(3)
+        vrm.show_tournaments_infos(make_tournament_dict())
+        controllers.controller_menu.navigator(3)
 
     elif answer == 6:
         tournament_scoreboard()
-        navigator(3)
+        controllers.controller_menu.navigator(3)
 
     elif answer == 7:
         tournament_history()
-        navigator(3)
+        controllers.controller_menu.navigator(3)
     elif answer == 8:
         general_scoreboard()
-        navigator(3)
+        controllers.controller_menu.navigator(3)
 
     return
 
@@ -109,9 +109,9 @@ def tournament_players_by_alpha():
     """ Sort alphabetically and return to the user the list of all
     the player of a given tournament """
 
-    show_list(make_tournament_dict())
-    tournament_choice = ask_tournament_choice(make_tournament_dict())
-    show_tournament_players_by_alpha(make_tournament_dict()[tournament_choice])
+    vrm.show_list(make_tournament_dict())
+    tournament_choice = vrm.ask_tournament_choice(make_tournament_dict())
+    vrm.show_tournament_players_by_alpha(make_tournament_dict()[tournament_choice])
 
 
 def tournament_players_by_rank():
@@ -120,8 +120,8 @@ def tournament_players_by_rank():
 
     updating_general_rank_by_ratio()
 
-    show_list(make_tournament_dict())
-    tournament_choice = ask_tournament_choice(make_tournament_dict())
+    vrm.show_list(make_tournament_dict())
+    tournament_choice = vrm.ask_tournament_choice(make_tournament_dict())
     players_list = make_tournament_dict()[tournament_choice][1]
     player_object = []
     for value in players_list:
@@ -130,21 +130,22 @@ def tournament_players_by_rank():
     for value in player_object:
         player_dict[value.reference] = value.ranking
     player_dict = dict(sorted(player_dict.items(), key=lambda item: item[1]))
-    show_tournament_players_by_rank(player_dict)
+    vrm.show_tournament_players_by_rank(player_dict)
 
 
 def tournament_scoreboard():
     """ Show the final scorebaord of the selected tournament """
 
-    show_list(make_tournament_dict())
-    tournament_choice = ask_tournament_choice(make_tournament_dict())
+    vrm.show_list(make_tournament_dict())
+    tournament_choice = vrm.ask_tournament_choice(make_tournament_dict())
     tournament_name = make_tournament_dict()[tournament_choice][0]
     scoreboard = make_tournament_dict()[tournament_choice][3]
-    show_scoreboard(sorted(scoreboard.values(), key=lambda k: k['score'], reverse=True), tournament_name)
+    vrm.show_scoreboard(sorted(scoreboard.values(), key=lambda k: k['score'], reverse=True), tournament_name)
 
 
 def tournament_history_auxiliary(scoreboard, searched_reference, value_to_assign, results_indication):
     """ Auxiliary function used by tournament_history() in order to modify the scoreboard """
+
     for player in scoreboard:
         if scoreboard[player]['reference'] == searched_reference:
             scoreboard[player]['score'] += value_to_assign
@@ -154,8 +155,9 @@ def tournament_history_auxiliary(scoreboard, searched_reference, value_to_assign
 
 def tournament_history():
     """ Show to the user the details of a selected tournament """
-    show_list(make_tournament_dict())
-    tournament_choice = ask_tournament_choice(make_tournament_dict())
+
+    vrm.show_list(make_tournament_dict())
+    tournament_choice = vrm.ask_tournament_choice(make_tournament_dict())
     round_list = make_tournament_dict()[tournament_choice][2]
     players_list = make_tournament_dict()[tournament_choice][1]
     scoreboard = {}
@@ -182,17 +184,18 @@ def tournament_history():
         for player, new_rank in zip(sorted_version, range(1, len(sorted_version)+1)):
             player['rank'] = new_rank
 
-        show_duel(round_list[round][0])
-        show_scoreboard_with_round(sorted_version, round)
+        vrm.show_duel(round_list[round][0])
+        vrm.show_scoreboard_with_round(sorted_version, round)
 
     return
 
 
 def general_scoreboard():
-    """ Show the general scoreboard """
+    """ Show the general scoreboard, it is sorted by ranking and it
+    filters out every players that never played """
 
     sorted_list = sorted(Player._serialized_registry, key=lambda d: d['ranking'])
     filtered_list = [d for d in sorted_list if d['num_of_match'] > 0]
-    show_general_scoreboard(filtered_list)
+    vrm.show_general_scoreboard(filtered_list)
 
     return

@@ -6,7 +6,7 @@ import itertools
 
 
 class Tournament:
-
+    """ A tournament object is initialised by the user """
     _registry = []
     _serialized_registry = []
 
@@ -131,9 +131,7 @@ class Tournament:
         if len(dict) > 0:
             duel_list = self.scoreboard_converter(self.swiss_pairing())
 
-        # Create the round
         self.object_dict[round_index] = Round(duel_list)
-        # Create the match attached to this round
         self.object_dict[round_index].make_match()
 
         return duel_list
@@ -195,6 +193,7 @@ class Tournament:
                     best_combination = output
             else:
                 break
+
         return best_combination
 
     def scoreboard_converter(self, best_combination):
@@ -241,6 +240,8 @@ class Tournament:
         return
 
     def serialized_the_object(self):
+        """ Replace the former serialized tournament by an updated version """
+
         self.serialized_object = round_conversion(self.object_dict)
 
         self.serialized_version = {

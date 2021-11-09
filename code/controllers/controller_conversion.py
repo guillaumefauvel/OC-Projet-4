@@ -2,7 +2,9 @@ from models.player import Player
 
 
 def convert_to_player_object(list_of_player_reference):
-    """ Convert a list of player reference into a list of player object """
+    """ Convert a list of player reference into a list of player object
+    Arg : A list of player reference (ie: 'Garry Kasparov')
+    Return : A list of player object for each player reference"""
     list_of_player_object = []
     for player_ref in list_of_player_reference:
         for player_object in Player._registry:

@@ -12,7 +12,7 @@ def player_maker(dict_to_transform):
     serialized_datas = []
     for value in dict_to_transform:
         serialized_datas.append(value)
-    # dict_to_transform.clear()
+
     for value in serialized_datas:
         name = value['name']
         first_name = value['first_name']
@@ -30,7 +30,7 @@ def player_maker(dict_to_transform):
 
 
 def save_data():
-    """ Save the player data into a json file """
+    """ Save the player and the tournament data into a json file """
     database = TinyDB('database.json', indent=1)
     database.purge_table("Player")
     database.purge_table("Tournament")
@@ -80,14 +80,17 @@ def tournament_maker(dict_to_transform):
                 results = value['serialized_object'][str(index)][1]
                 Tournament._registry[-1].object_dict[index] = Round(duel_list)
                 Tournament._registry[-1].object_dict[index].make_match()
+
                 # Adding the score to the round
                 for match, result in zip(Match._registry[-len(results):], results):
                     match.winner = result
+
             # Adding the scoreboard
             Tournament._registry[-1].scoreboard = value['scoreboard']
 
 
 def serializing_tournament_player():
+    """ Serialize the players and the tournaments"""
 
     for player in Player._registry:
         player.update_player_datas()
@@ -109,5 +112,4 @@ def delete_duplicates():
             list_of_tournament_names.append(value['name'])
         else:
             tournament_table.remove(Query().name == value['name'])
-            print("Already in")
     return

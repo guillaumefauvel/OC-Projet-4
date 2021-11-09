@@ -1,6 +1,6 @@
 
 class Match:
-
+    """The Match object is created by the Round object """
     _registry = []
 
     def __init__(self, player_1, player_2):

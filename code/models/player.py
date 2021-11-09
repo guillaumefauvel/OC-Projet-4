@@ -2,7 +2,7 @@
 
 
 class Player:
-
+    """ Players objects are used in every tournament. """
     _registry = []
     _serialized_registry = []
 
@@ -39,6 +39,7 @@ class Player:
         self._serialized_registry.append(self.serialized_version)
 
     def update_player_datas(self):
+        """ Replace the former serialized player by an updated version """
         self.serialized_version = {
             'name': self.name,
             'first_name': self.first_name,
@@ -53,7 +54,6 @@ class Player:
             'num_of_match': self.num_of_match,
             'num_of_tournaments': self.num_of_tournaments
         }
-        # Deleting the old version
         for value in self._serialized_registry:
             if value['reference'] == self.reference:
                 self._serialized_registry.remove(value)

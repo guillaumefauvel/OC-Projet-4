@@ -6,17 +6,19 @@ from views.view_tournament import show_duel, asking_match_result, show_scoreboar
 from views.view_tournament_manager import ask_choice, show_tournament_list
 from views import view_menu, view_tournament_manager, view_players_manager
 
-from controllers.controller_menu_auxiliary import menu_loop
-
+import controllers.controller_menu
 from tinydb import TinyDB, Query
 
 
 def tournament_manager():
+    """ Show the user the possibilities and gathered his answer.
+    He is redirected in order to fulfill is choice."""
+
     answer = ask_choice()
     if answer == "1":
         tournament_launching()
     elif answer == "2":
-        menu_loop(delete_tournament)
+        controllers.controller_menu.menu_loop(delete_tournament)
         pass
     return
 
@@ -24,15 +26,13 @@ def tournament_manager():
 def tournament_launching():
     """ Create and launch a new tournament """
 
-    # Make a dict of all the listed player
     player_dict = make_player_dict()
-    # Give that dict as an argument for the user view and gather the tournaments informations
     name, location, start_date, end_date, num_of_round, selected_players, game_type, notes \
         = view_tournament_manager.new_tournament(player_dict)
-    # Create the tournament
+
     selected_players = convert_to_reference(selected_players)
     Tournament(name, location, start_date, end_date, num_of_round, selected_players, game_type, notes)
-    # Launch the tournament
+
     last_tournament = (Tournament._registry[-1])
     launch_from_controller(last_tournament)
 
@@ -50,6 +50,8 @@ def make_player_dict():
 
 
 def make_tournament_dict():
+    """ Make a dictionnary of tournament
+    Return : A dictionnary with key=index, value=tournament_name"""
 
     tournament_dict = {}
 
@@ -60,15 +62,20 @@ def make_tournament_dict():
 
 
 def convert_to_reference(list_of_player_object):
-    """ Convert a list of player object into a list of reference """
+    """ Convert a list of player object into a list of reference
+    Arg : A list of player object
+    Return : A list of player reference (ie : 'Garry Kasparov') """
+
     players_references = []
     for player_object in list_of_player_object:
         players_references.append(player_object.reference)
+
     return players_references
 
 
 def player_researcher(*player_reference):
-    """ Return the objects of n number of player / Args : players references --> Controler ? """
+    """ Return the objects of n number of player
+    Args : players references """
 
     researched_results = []
     for player in player_reference:
@@ -205,7 +212,7 @@ def launch_from_controller(tournament_object):
 
 
 def delete_tournament():
-    """ Remove a tournament from the database """
+    """ Remove a selected tournament from the database """
 
     tournament_to_delete = view_tournament_manager.show_tournament_list(make_tournament_dict())
     database = TinyDB('database.json', indent=1)

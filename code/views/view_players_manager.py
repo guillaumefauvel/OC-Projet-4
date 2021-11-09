@@ -1,6 +1,8 @@
 
 
 def ask_choice():
+    """ Query the user choice
+    Return : An int that correspond to the user choice """
     print("\n-------------------------------")
     print("----- GESTION DES JOUEURS -----")
     print("-------------------------------")
@@ -85,6 +87,8 @@ def show_player_list(player_dict):
 
 
 def show_player_infos(player_infos):
+    """ Show the informations of a selected player
+    Arg : The serialized infos of the selected player """
     print("")
     if player_infos['gender'] == "H":
         print(f"--- informations du joueur : {player_infos['reference']} ---\n")

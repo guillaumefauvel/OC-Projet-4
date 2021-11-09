@@ -87,6 +87,8 @@ def show_scoreboard(tournament_object):
 
 
 def show_score(scoreboard, round_number):
+    """ Show the scoreboard
+    Args : A scoreboard ( which is a dict ), a round number"""
 
     table = PrettyTable(["Joueur", "Classement", "Score"])
     for value in scoreboard:

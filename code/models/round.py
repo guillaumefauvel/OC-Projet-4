@@ -2,7 +2,7 @@ from models.match import Match
 
 
 class Round:
-
+    """ A Round object is created by a tournament """
     _registry = []
 
     def __init__(self, duel_list):
@@ -12,6 +12,7 @@ class Round:
         return
 
     def make_match(self):
+        """ The Round object uses his own list in order to create Matchs objects """
 
         for duel in self.duel_list:
             player_1, player_2 = duel

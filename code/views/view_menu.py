@@ -16,7 +16,8 @@ def verify_menu_command():
 
 
 def menu_proposition():
-    """ The general menu logic """
+    """ Show the user the menu possibilities and ask his choice
+    Return : A int associated to the user anwser """
 
     print("\nQue voulez-vous faire ? \n\n  1. Gestion des tournois \n  2. Gestion des joueurs "
           "\n  3. Gestion des rapports \n  "

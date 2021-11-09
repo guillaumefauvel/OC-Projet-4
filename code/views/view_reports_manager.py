@@ -3,7 +3,8 @@ from prettytable import PrettyTable
 
 
 def ask_for_report_choice():
-
+    """ Show the possible reports and ask the user his selection
+    Return : An int that correspond to the user choice"""
     print("\n-------------------------------")
     print("---- GESTION DES RAPPORTS -----")
     print("-------------------------------")
@@ -17,7 +18,7 @@ def ask_for_report_choice():
     print("  7. Le récapitulatif d'un tournoi")
     print("  8. Le tableau des scores")
 
-    possible_choice = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+    possible_choice = ["1", "2", "3", "4", "5", "6", "7", "8"]
 
     while True:
         answer = input("\nRéponse : ")
@@ -30,6 +31,8 @@ def ask_for_report_choice():
 
 
 def show_list(dictionnary):
+    """ Show the key and the value of a dictionnary
+    Arg : A dictionnary """
     print("")
     for value in dictionnary:
         print(f"{value}. {dictionnary[value][0]}")
@@ -38,6 +41,9 @@ def show_list(dictionnary):
 
 
 def ask_tournament_choice(dictionnary):
+    """ Ask for the key of a dictionnary
+    Arg : A dictionnary with index key
+    Return : The selected key ( an int )"""
     while True:
         answer = input("\nQuel tournois désirer vous consulter ? ")
         try:
@@ -52,7 +58,8 @@ def ask_tournament_choice(dictionnary):
 
 
 def show_tournament_players_by_alpha(selected_tournament):
-
+    """ Show every player of a tournament by their alphabetical order
+    Arg : The dictionnary of a tournament """
     print("")
     player_list = []
     for value in selected_tournament[1]:
@@ -65,7 +72,8 @@ def show_tournament_players_by_alpha(selected_tournament):
 
 
 def show_tournament_players_by_rank(selected_tournament):
-
+    """ Show every player of a tournament sorted by their rank
+    Arg : The dictionnary of a tournament """
     print("")
     for player in selected_tournament:
         print(f"{selected_tournament[player]}. {player}")
@@ -74,7 +82,8 @@ def show_tournament_players_by_rank(selected_tournament):
 
 
 def show_tournaments_infos(tournament_dict):
-
+    """ Show the informations of a tournament
+    Arg : The dictionnary of a tournament """
     print("")
     for tournament in tournament_dict:
         name = tournament_dict[tournament][0]
@@ -94,7 +103,8 @@ def show_tournaments_infos(tournament_dict):
 
 
 def show_scoreboard(scoreboard, tournament_name):
-
+    """ Show the final scoreboard of a tournament
+    Args : The scoreboard ( a dict ), the name of the tournament """
     table = PrettyTable(["Joueur", "Classement", "Score"])
     for value in scoreboard:
         table.add_row([value["reference"], value["scorerank"], value["score"]])
@@ -106,7 +116,8 @@ def show_scoreboard(scoreboard, tournament_name):
 
 
 def show_scoreboard_with_round(scoreboard, round_number):
-
+    """ Show the scoreboard of a tournament at the end of a round
+    Args : The scoreboard ( a dict ), the round number """
     table = PrettyTable(["Joueur", "Classement", "Score", "Résulat-Round"])
     for value in scoreboard:
         table.add_row([value["reference"], value["rank"],
@@ -114,11 +125,13 @@ def show_scoreboard_with_round(scoreboard, round_number):
     table = table.get_string(title=f"Round N°{round_number}")
 
     print(table)
+
     return
 
 
 def show_general_scoreboard(scoreboard):
-
+    """ Show the general scoreboard
+    Arg : A scoreboard ( dict ) """
     table = PrettyTable(["Joueur", "Classement", "RatioG/P", "Matchs joués",
                          "Matchs gagnés", "Matchs perdus", "Egalité", "Tournois joués"])
     for value in scoreboard:
@@ -133,6 +146,8 @@ def show_general_scoreboard(scoreboard):
 
 
 def show_duel(list_of_duel):
+    """ Show a formated list of duel
+    Arg : A list of duel ( a duel is a list of 2 player references ) """
     print("")
     for duel in list_of_duel:
         print(f"{duel[0]} affrontais {duel[1]}")

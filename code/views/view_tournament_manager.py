@@ -10,7 +10,9 @@ def check_date(caraccteristic):
     pass
 
 def new_tournament(player_dict):
-    """ Form that gather informations from the user in order to make a tournament """
+    """ Form that gather informations from the user in order to make a tournament
+    Arg : A dictionnary of all the listed players
+    Return : All the informations needed to create a tournament"""
 
     print("\n -- Lancement d'un nouveau tournoi. \n")
 
@@ -96,6 +98,7 @@ def new_tournament(player_dict):
 
 
 def ask_choice():
+    """ Show the user his possible choices and ask him his selection """
     print("\n-------------------------------")
     print("---- GESTION DES TOURNOIS -----")
     print("-------------------------------")
