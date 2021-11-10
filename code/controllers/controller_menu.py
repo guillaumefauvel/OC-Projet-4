@@ -1,6 +1,7 @@
 
-import views.view_menu
-import controllers.controller_menu
+import views.view_menu as vm
+import controllers.controller_menu as cm
+
 from controllers.controller_tournament_manager import tournament_manager
 from controllers.controller_reports_manager import reports_manager
 from controllers.controller_players_manager import players_manager
@@ -21,10 +22,16 @@ def menu_attribution(response):
 def launch_the_menu():
     """ Show the menu proposition to the user and ask for their answer """
 
-    controllers.controller_menu.menu_attribution(views.view_menu.menu_proposition())
+    cm.menu_attribution(vm.menu_proposition())
 
     return
 
+def menu_if_nothing(input):
+    """ Redirect to the menu if nothing has been enter """
+    if len(input) == 0:
+        return cm.menu_attribution(vm.menu_proposition())
+    else:
+        return input
 
 def navigator(num_of_the_manager):
     """ Provide a navigation solution by either going back to the
@@ -34,9 +41,9 @@ def navigator(num_of_the_manager):
     Arg : The index of the manager """
     user_input = input("")
     if len(user_input) > 0:
-        controllers.controller_menu.menu_attribution(views.view_menu.menu_proposition())
+        cm.menu_attribution(vm.menu_proposition())
     else:
-        controllers.controller_menu.menu_attribution(num_of_the_manager)
+        cm.menu_attribution(num_of_the_manager)
 
     return
 
@@ -47,7 +54,7 @@ def menu_loop(function):
     Arg : a function"""
     while True:
         function()
-        response = views.view_menu.ask_menu_return()
+        response = vm.ask_menu_return()
 
         if response is True:
             launch_the_menu()

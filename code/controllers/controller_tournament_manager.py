@@ -2,13 +2,12 @@ from models.player import Player
 from models.match import Match
 from models.tournament import Tournament
 
-from views.view_tournament import show_duel, show_scoreboard, show_score, asking_end_match, asking_match_result,\
-    asking_end_of_day
-from views.view_tournament_manager import ask_choice, show_tournament_list, no_unfinished_tournament
-from views import view_menu, view_tournament_manager, view_players_manager
+import views.view_tournament as vt
+import views.view_tournament_manager as vtm
+from views import view_menu
 
 import controllers.controller_reports_manager as crm
-import controllers.controller_menu
+import controllers.controller_menu as cm
 
 from tinydb import TinyDB, Query
 
@@ -17,20 +16,20 @@ def tournament_manager():
     """ Show the user the possibilities and gathered his answer.
     He is redirected in order to fulfill is choice."""
 
-    answer = ask_choice()
+    answer = vtm.ask_choice()
     if answer == "1":
         tournament_launching()
     elif answer == "2":
         if len(unfinished_tournaments()) != 0:
-            selected_tournament = show_tournament_list(unfinished_tournaments(),2)
+            selected_tournament = vtm.show_tournament_list(unfinished_tournaments(),2)
             name, finished_round, tournament_object, round_left = selected_tournament
             tournament_continuation(tournament_object,finished_round)
         else:
-            no_unfinished_tournament()
+            vtm.no_unfinished_tournament()
             tournament_manager()
 
     elif answer == "3":
-        controllers.controller_menu.menu_loop(delete_tournament)
+        cm.menu_loop(delete_tournament)
 
     return
 
@@ -40,7 +39,7 @@ def tournament_launching():
 
     player_dict = crm.make_players_dict()
     name, location, start_date, end_date, num_of_round, selected_players, game_type, notes \
-        = view_tournament_manager.new_tournament(player_dict)
+        = vtm.new_tournament(player_dict)
 
     selected_players = [x[0] for x in selected_players]
     Tournament(name, location, start_date, end_date, num_of_round, selected_players, game_type, notes)
@@ -53,7 +52,7 @@ def tournament_launching():
 def delete_tournament():
     """ Remove a selected tournament from the database """
 
-    tournament_to_delete = view_tournament_manager.show_tournament_list(crm.make_tournament_dict(),1)[0]
+    tournament_to_delete = vtm.show_tournament_list(crm.make_tournament_dict(),1)[0]
     database = TinyDB('database.json', indent=1)
     tournament_table = database.table("Tournament")
 
@@ -90,7 +89,7 @@ def tournament_status_treatment(bool, tournament_object):
         return True
     elif bool is True:
         tournament_object.serialized_the_object()
-        controllers.controller_menu.menu_attribution(view_menu.menu_proposition())
+        cm.menu_attribution(view_menu.menu_proposition())
         return False
 
 
@@ -191,15 +190,16 @@ def launch_from_controller(tournament_object):
 
     tournament_object.return_ranking()
     list_of_duel = tournament_object.first_draw()
-    show_duel(list_of_duel)
-    time_informations = asking_end_match(list_of_duel)
-    results = asking_match_result(list_of_duel)
+    vt.show_duel(list_of_duel)
+    time_informations = vt.asking_end_match(list_of_duel)
+    results = vt.asking_match_result(list_of_duel)
     adding_result_match(results)
     adding_time_match(time_informations)
     tournament_object.updating_scoreboard_score(1)
     tournament_object.sort_score_rank()
-    show_score(sorted(tournament_object.scoreboard.values(), key=lambda k: k['score'], reverse=True), 1)
-    if not tournament_status_treatment(asking_end_of_day(),tournament_object):
+    vt.show_score(sorted(tournament_object.scoreboard.values(),
+                             key=lambda k: k['score'], reverse=True), 1)
+    if not tournament_status_treatment(vt.asking_end_of_day(),tournament_object):
         return
 
     tournament_continuation(tournament_object,1)
@@ -214,19 +214,19 @@ def tournament_continuation(tournament_object,finished_round):
         # Generate the next series of duel thanks to the scoreboard
         list_of_duel = tournament_object.generating_other_draw(number_of_round)
         tournament_object.updating_scoreboard_associations(list_of_duel)
-        show_duel(list_of_duel)
-        time_informations = asking_end_match(list_of_duel)
-        results = asking_match_result(list_of_duel)
+        vt.show_duel(list_of_duel)
+        time_informations = vt.asking_end_match(list_of_duel)
+        results = vt.asking_match_result(list_of_duel)
         adding_result_match(results)
         adding_time_match(time_informations)
         tournament_object.updating_scoreboard_score(number_of_round)
         tournament_object.sort_score_rank()
-        show_score(sorted(tournament_object.scoreboard.values(), key=lambda k: k['score'],
+        vt.show_score(sorted(tournament_object.scoreboard.values(), key=lambda k: k['score'],
                           reverse=True), number_of_round)
 
         tournament_object.serialized_the_object()
         if len(tournament_object.serialized_object) != tournament_object.num_of_round:
-            if tournament_status_treatment(asking_end_of_day(), tournament_object) == False:
+            if tournament_status_treatment(vt.asking_end_of_day(), tournament_object) == False:
                 return
 
     updating_players_stats(tournament_object)

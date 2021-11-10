@@ -2,6 +2,7 @@ from models.player import Player
 from models.tournament import Tournament
 from models.round import Round
 from models.match import Match
+
 from tinydb import TinyDB, Query
 from datetime import datetime
 

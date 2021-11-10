@@ -34,15 +34,14 @@ def asking_end_match(duel_list):
         while True:
             try:
                 answer = int(input("\nNuméro du match : "))
-                match_dict[answer] = match_dict[answer], datetime.datetime.now()
                 short_term_dict.pop(answer)
+                match_dict[answer] = match_dict[answer], datetime.datetime.now()
                 break
             except ValueError:
                 print("\nMerci d'entrer un index correct")
             except KeyError:
                 print("\nMerci de rentrer un index encore présent dans la liste :\n")
                 print(''.join(['{0}.  {1}'.format(k, v) for k, v in short_term_dict.items()]))
-
     return match_dict
 
 

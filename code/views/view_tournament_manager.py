@@ -114,7 +114,7 @@ def ask_choice():
 
 def show_tournament_list(dict,mode):
     """ Show a list of tournament and ask the index of the selected tournament
-    Arg : a tournament dict"""
+    Arg : a tournament dict, a mode that use a variant of the origin function"""
     print("")
     if mode == 1:
         for value in dict:

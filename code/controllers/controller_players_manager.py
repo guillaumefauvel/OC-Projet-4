@@ -1,32 +1,32 @@
-from models.player import Player
-from views import view_menu, view_tournament_manager, view_players_manager, view_reports_manager
-from controllers.controller_reports_manager import make_players_dict
-import controllers.controller_menu
 
 from tinydb import TinyDB, Query
+from models.player import Player
+from controllers.controller_reports_manager import make_players_dict
+import controllers.controller_menu as cm
+import views.view_players_manager as vpm
 
 
 def players_manager():
     """ Show the user the possibilities and gathered his answer.
     He is redirected in order to fulfill is choice."""
 
-    answer = view_players_manager.ask_choice()
+    answer = vpm.ask_choice()
     if answer == "1":
-        controllers.controller_menu.menu_loop(adding_player)
+        cm.menu_loop(adding_player)
 
     elif answer == "2":
 
-        controllers.controller_menu.menu_loop(delete_player)
+        cm.menu_loop(delete_player)
 
     elif answer == "3":
 
-        controllers.controller_menu.menu_loop(show_player_infos)
+        cm.menu_loop(show_player_infos)
 
 
 def adding_player():
     """ Create a new player object from the gathered informations"""
 
-    name, first_name, birthday, gender, ranking = view_players_manager.new_player()
+    name, first_name, birthday, gender, ranking = vpm.new_player()
     Player(name, first_name, birthday, gender, ranking)
 
 
@@ -34,7 +34,7 @@ def delete_player():
 
     """ Remove a player from the database """
 
-    player_to_delete = view_players_manager.show_player_list(make_players_dict())
+    player_to_delete = vpm.show_player_list(make_players_dict())
     database = TinyDB('database.json', indent=1)
     player_table = database.table("Player")
 
@@ -52,9 +52,9 @@ def delete_player():
 def show_player_infos():
     """ Show the informations of a player """
 
-    selected_player = view_players_manager.show_player_list(make_players_dict())
-
+    selected_player = vpm.show_player_list(make_players_dict())
+    print(selected_player)
     for player in Player._serialized_registry:
         if player['reference'] == selected_player:
             player_infos = player
-    view_players_manager.show_player_infos(player_infos)
+    vpm.show_player_infos(player_infos)
