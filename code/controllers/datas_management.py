@@ -75,7 +75,7 @@ def tournament_maker(dict_to_transform):
                        selected_players, game_type, notes)
 
             # Making the round and the match
-            for index in range(1, num_of_round+1):
+            for index in range(1, len(value['serialized_object'])+1):
                 duel_list = value['serialized_object'][str(index)][0]
                 results = value['serialized_object'][str(index)][1]
                 start_times = value['serialized_object'][str(index)][2]

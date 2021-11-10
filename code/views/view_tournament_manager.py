@@ -112,12 +112,16 @@ def ask_choice():
             print("->Merci de rentrer 1, 2 ou 3.")
     return answer
 
-def show_tournament_list(dict):
+def show_tournament_list(dict,mode):
     """ Show a list of tournament and ask the index of the selected tournament
     Arg : a tournament dict"""
     print("")
-    for value in dict:
-        print(f"{value}. {dict[value][0]}")
+    if mode == 1:
+        for value in dict:
+            print(f"{value}. {dict[value][0]}")
+    if mode == 2:
+        for value in dict:
+            print(f"{value}. {dict[value][0]} - [{dict[value][3]} round(s) restant(s)]")
 
     while True:
         try:
@@ -132,3 +136,8 @@ def show_tournament_list(dict):
     selected_tournament = dict[selected_tournament]
 
     return selected_tournament
+
+def no_unfinished_tournament():
+    """ Indicate to the user that there is no unfinished tournament """
+    print("-> Tout les tournois ont été terminé")
+    return

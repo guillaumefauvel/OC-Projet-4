@@ -4,7 +4,7 @@ from models.tournament import Tournament
 
 from views.view_tournament import show_duel, show_scoreboard, show_score, asking_end_match, asking_match_result,\
     asking_end_of_day
-from views.view_tournament_manager import ask_choice, show_tournament_list
+from views.view_tournament_manager import ask_choice, show_tournament_list, no_unfinished_tournament
 from views import view_menu, view_tournament_manager, view_players_manager
 
 import controllers.controller_reports_manager as crm
@@ -21,10 +21,17 @@ def tournament_manager():
     if answer == "1":
         tournament_launching()
     elif answer == "2":
-        pass
+        if len(unfinished_tournaments()) != 0:
+            selected_tournament = show_tournament_list(unfinished_tournaments(),2)
+            name, finished_round, tournament_object, round_left = selected_tournament
+            tournament_continuation(tournament_object,finished_round)
+        else:
+            no_unfinished_tournament()
+            tournament_manager()
+
     elif answer == "3":
         controllers.controller_menu.menu_loop(delete_tournament)
-        pass
+
     return
 
 
@@ -42,6 +49,49 @@ def tournament_launching():
     launch_from_controller(last_tournament)
 
     return
+
+def delete_tournament():
+    """ Remove a selected tournament from the database """
+
+    tournament_to_delete = view_tournament_manager.show_tournament_list(crm.make_tournament_dict(),1)[0]
+    database = TinyDB('database.json', indent=1)
+    tournament_table = database.table("Tournament")
+
+    tournament_table.remove(Query().name == tournament_to_delete)
+    for value in Tournament._serialized_registry:
+        if value['name'] == tournament_to_delete:
+            Tournament._serialized_registry.remove(value)
+    for tournament in Tournament._registry:
+        if tournament.name == tournament_to_delete:
+            Tournament._registry.remove(tournament)
+    return
+
+
+def unfinished_tournaments():
+    """ Return a dict of all the unfinished_tournament
+    Return : A dict with key=index and value1=tournament_name,
+    value2=int of round finished, value3=tournament=object"""
+    tournament_dict = {}
+    index = 0
+    for tournament in Tournament._registry:
+        if tournament.num_of_round != len(tournament.serialized_object):
+            index = index + 1
+            round_left = tournament.num_of_round - len(tournament.serialized_object)
+            tournament_dict[index] = tournament.name, len(tournament.serialized_object), \
+                                     tournament, round_left
+
+    return tournament_dict
+
+
+def tournament_status_treatment(bool, tournament_object):
+    """ Serialized and stop a tournament if the day has ended """
+
+    if bool is False:
+        return True
+    elif bool is True:
+        tournament_object.serialized_the_object()
+        controllers.controller_menu.menu_attribution(view_menu.menu_proposition())
+        return False
 
 
 def player_researcher(*player_reference):
@@ -139,30 +189,28 @@ def launch_from_controller(tournament_object):
     """ Hold the logic behind a tournament
     Arg : A tournament object """
 
-    # Sort the player by making an ordered dict
     tournament_object.return_ranking()
-    # Generate the first series of duel thanks to the scoreboard
     list_of_duel = tournament_object.first_draw()
-    # Show the list of duels
     show_duel(list_of_duel)
-    # Ask the user to end the match
     time_informations = asking_end_match(list_of_duel)
-    # Ask the user the result of the match
     results = asking_match_result(list_of_duel)
-    # Add those result to the match object
     adding_result_match(results)
     adding_time_match(time_informations)
-    # Use these matchs objects to update the scoreboard
     tournament_object.updating_scoreboard_score(1)
-    # Sort the scoreboard
     tournament_object.sort_score_rank()
-    # Show the scoreboard
     show_score(sorted(tournament_object.scoreboard.values(), key=lambda k: k['score'], reverse=True), 1)
-    asking_end_of_day()
+    if not tournament_status_treatment(asking_end_of_day(),tournament_object):
+        return
 
+    tournament_continuation(tournament_object,1)
+
+    return
+
+def tournament_continuation(tournament_object,finished_round):
+    """ Hold the mechanic behind the continuation of a tournament """
     # Iterate on the number of round left
-    for number_of_round in range(2, tournament_object.num_of_round + 1):
 
+    for number_of_round in range(finished_round+1, tournament_object.num_of_round + 1):
         # Generate the next series of duel thanks to the scoreboard
         list_of_duel = tournament_object.generating_other_draw(number_of_round)
         tournament_object.updating_scoreboard_associations(list_of_duel)
@@ -176,27 +224,13 @@ def launch_from_controller(tournament_object):
         show_score(sorted(tournament_object.scoreboard.values(), key=lambda k: k['score'],
                           reverse=True), number_of_round)
 
-    tournament_object.serialized_the_object()
+        tournament_object.serialized_the_object()
+        if len(tournament_object.serialized_object) != tournament_object.num_of_round:
+            if tournament_status_treatment(asking_end_of_day(), tournament_object) == False:
+                return
+
     updating_players_stats(tournament_object)
     updating_general_rank_by_ratio()
     tournament_object.serialized_the_object()
 
-    return
-
-
-def delete_tournament():
-    """ Remove a selected tournament from the database """
-
-    tournament_to_delete = view_tournament_manager.show_tournament_list(crm.make_tournament_dict())
-    database = TinyDB('database.json', indent=1)
-    tournament_table = database.table("Tournament")
-
-    tournament_table.remove(Query().name == tournament_to_delete)
-
-    for value in Tournament._serialized_registry:
-        if value['name'] == tournament_to_delete:
-            Tournament._serialized_registry.remove(value)
-    for tournament in Tournament._registry:
-        if tournament.name == tournament_to_delete:
-            Tournament._registry.remove(tournament)
     return

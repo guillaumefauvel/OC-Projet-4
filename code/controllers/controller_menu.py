@@ -19,7 +19,7 @@ def menu_attribution(response):
         pass
 
 def launch_the_menu():
-    """ Show the menu proposition to the user and for their answer """
+    """ Show the menu proposition to the user and ask for their answer """
 
     controllers.controller_menu.menu_attribution(views.view_menu.menu_proposition())
 
