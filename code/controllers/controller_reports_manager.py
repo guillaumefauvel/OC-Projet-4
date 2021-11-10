@@ -3,7 +3,7 @@ from models.player import Player
 from models.tournament import Tournament
 from datetime import datetime
 import views.view_reports_manager as vrm
-from controllers.controller_tournament_manager import updating_general_rank_by_ratio, player_researcher
+import controllers.controller_tournament_manager as ctm
 import controllers.controller_menu
 
 def reports_manager():
@@ -77,7 +77,7 @@ def make_tournament_dict():
 def sort_by_rank():
     """ Use the player dict in order to etablish new rank
     Return : Another dict with a coherent indexes """
-    updating_general_rank_by_ratio()
+    ctm.updating_general_rank_by_ratio()
     sorted_by_rank = dict(sorted(make_players_dict().items(), key=lambda item: item[1][1]))
     fully_sorted = {}
 
@@ -118,14 +118,14 @@ def tournament_players_by_rank():
     """ Sort the player of a given tournament by rank and return them to the user
     by specifying their rank in the general scoreboard"""
 
-    updating_general_rank_by_ratio()
+    ctm.updating_general_rank_by_ratio()
 
     vrm.show_list(make_tournament_dict())
     tournament_choice = vrm.ask_tournament_choice(make_tournament_dict())
     players_list = make_tournament_dict()[tournament_choice][1]
     player_object = []
     for value in players_list:
-        player_object.append(player_researcher(value)[0])
+        player_object.append(ctm.player_researcher(value)[0])
     player_dict = {}
     for value in player_object:
         player_dict[value.reference] = value.ranking

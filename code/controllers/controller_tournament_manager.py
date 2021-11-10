@@ -2,11 +2,14 @@ from models.player import Player
 from models.match import Match
 from models.tournament import Tournament
 
-from views.view_tournament import show_duel, asking_match_result, show_scoreboard, show_score, asking_end_match
+from views.view_tournament import show_duel, show_scoreboard, show_score, asking_end_match, asking_match_result,\
+    asking_end_of_day
 from views.view_tournament_manager import ask_choice, show_tournament_list
 from views import view_menu, view_tournament_manager, view_players_manager
 
+import controllers.controller_reports_manager as crm
 import controllers.controller_menu
+
 from tinydb import TinyDB, Query
 
 
@@ -18,6 +21,8 @@ def tournament_manager():
     if answer == "1":
         tournament_launching()
     elif answer == "2":
+        pass
+    elif answer == "3":
         controllers.controller_menu.menu_loop(delete_tournament)
         pass
     return
@@ -26,51 +31,17 @@ def tournament_manager():
 def tournament_launching():
     """ Create and launch a new tournament """
 
-    player_dict = make_player_dict()
+    player_dict = crm.make_players_dict()
     name, location, start_date, end_date, num_of_round, selected_players, game_type, notes \
         = view_tournament_manager.new_tournament(player_dict)
 
-    selected_players = convert_to_reference(selected_players)
+    selected_players = [x[0] for x in selected_players]
     Tournament(name, location, start_date, end_date, num_of_round, selected_players, game_type, notes)
 
     last_tournament = (Tournament._registry[-1])
     launch_from_controller(last_tournament)
 
     return
-
-
-def make_player_dict():
-    """Explore all the player object.
-    Return a dictionnary : key=index, value=player_object """
-    reference_dict = {}
-    for index, player in zip(range(1, len(Player._registry)+1), Player._registry):
-        reference_dict[index] = player
-
-    return reference_dict
-
-
-def make_tournament_dict():
-    """ Make a dictionnary of tournament
-    Return : A dictionnary with key=index, value=tournament_name"""
-
-    tournament_dict = {}
-
-    for index, tournament in zip(range(1, len(Tournament._registry)+1), Tournament._registry):
-        tournament_dict[index] = tournament.name
-
-    return tournament_dict
-
-
-def convert_to_reference(list_of_player_object):
-    """ Convert a list of player object into a list of reference
-    Arg : A list of player object
-    Return : A list of player reference (ie : 'Garry Kasparov') """
-
-    players_references = []
-    for player_object in list_of_player_object:
-        players_references.append(player_object.reference)
-
-    return players_references
 
 
 def player_researcher(*player_reference):
@@ -172,7 +143,7 @@ def launch_from_controller(tournament_object):
     tournament_object.return_ranking()
     # Generate the first series of duel thanks to the scoreboard
     list_of_duel = tournament_object.first_draw()
-    # Show the user the list of duels
+    # Show the list of duels
     show_duel(list_of_duel)
     # Ask the user to end the match
     time_informations = asking_end_match(list_of_duel)
@@ -187,6 +158,7 @@ def launch_from_controller(tournament_object):
     tournament_object.sort_score_rank()
     # Show the scoreboard
     show_score(sorted(tournament_object.scoreboard.values(), key=lambda k: k['score'], reverse=True), 1)
+    asking_end_of_day()
 
     # Iterate on the number of round left
     for number_of_round in range(2, tournament_object.num_of_round + 1):
@@ -195,6 +167,7 @@ def launch_from_controller(tournament_object):
         list_of_duel = tournament_object.generating_other_draw(number_of_round)
         tournament_object.updating_scoreboard_associations(list_of_duel)
         show_duel(list_of_duel)
+        time_informations = asking_end_match(list_of_duel)
         results = asking_match_result(list_of_duel)
         adding_result_match(results)
         adding_time_match(time_informations)
@@ -214,7 +187,7 @@ def launch_from_controller(tournament_object):
 def delete_tournament():
     """ Remove a selected tournament from the database """
 
-    tournament_to_delete = view_tournament_manager.show_tournament_list(make_tournament_dict())
+    tournament_to_delete = view_tournament_manager.show_tournament_list(crm.make_tournament_dict())
     database = TinyDB('database.json', indent=1)
     tournament_table = database.table("Tournament")
 

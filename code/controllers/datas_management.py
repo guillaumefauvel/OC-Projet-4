@@ -3,7 +3,7 @@ from models.tournament import Tournament
 from models.round import Round
 from models.match import Match
 from tinydb import TinyDB, Query
-
+from datetime import datetime
 
 def player_maker(dict_to_transform):
     """ Create player objects
@@ -78,12 +78,17 @@ def tournament_maker(dict_to_transform):
             for index in range(1, num_of_round+1):
                 duel_list = value['serialized_object'][str(index)][0]
                 results = value['serialized_object'][str(index)][1]
+                start_times = value['serialized_object'][str(index)][2]
+                end_times = value['serialized_object'][str(index)][3]
+
                 Tournament._registry[-1].object_dict[index] = Round(duel_list)
                 Tournament._registry[-1].object_dict[index].make_match()
 
-                # Adding the score to the round
-                for match, result in zip(Match._registry[-len(results):], results):
+                for match, result, start_time, end_time in zip(Match._registry[-len(results):],
+                                                               results, start_times, end_times):
                     match.winner = result
+                    match.start_time = datetime.strptime(start_time, '%d-%b-%Y (%H:%M:%S.%f)')
+                    match.end_time = datetime.strptime(end_time, '%d-%b-%Y (%H:%M:%S.%f)')
 
             # Adding the scoreboard
             Tournament._registry[-1].scoreboard = value['scoreboard']

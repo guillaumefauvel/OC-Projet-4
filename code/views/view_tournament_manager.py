@@ -44,7 +44,7 @@ def new_tournament(player_dict):
         elif caraccteristic == "\nJoueurs séléctionnés : ":
             print("")
             for player in player_dict:
-                print(f"   {player}. {player_dict[player].reference}")
+                print(f"   {player}. {player_dict[player][0]}")
             selected_players = []
 
             while True:
@@ -103,13 +103,13 @@ def ask_choice():
     print("---- GESTION DES TOURNOIS -----")
     print("-------------------------------")
     print("\nQue souhaitez faire ? \n\n  1. Lancer un nouveau tournoi \n  2."
-          " Supprimer un tournoi")
+          " Reprendre un tournoi en cours \n  3. Supprimer un tournoi")
     while True:
         answer = input("\nRéponse : ")
-        if answer in ["1","2"]:
+        if answer in ["1","2","3"]:
             break
         else:
-            print("->Merci de rentrer 1 ou 2.")
+            print("->Merci de rentrer 1, 2 ou 3.")
     return answer
 
 def show_tournament_list(dict):
@@ -117,7 +117,7 @@ def show_tournament_list(dict):
     Arg : a tournament dict"""
     print("")
     for value in dict:
-        print(f"{value}. {dict[value]}")
+        print(f"{value}. {dict[value][0]}")
 
     while True:
         try:

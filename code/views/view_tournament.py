@@ -95,3 +95,16 @@ def show_score(scoreboard, round_number):
         table.add_row([value["reference"], value["scorerank"], value["score"]])
     table = table.get_string(title=f"Round {round_number}")
     print(table)
+
+def asking_end_of_day():
+    """ Ask the user if the tournament is finish for the day
+    Return : a bool """
+    print("La journée est t'elle terminée ? y/n ")
+    while True:
+        answer = input("Réponse : ")
+        if answer.lower() == 'y':
+            return True
+        elif answer.lower() == 'n':
+            return False
+        else:
+            print("Merci de rentrer 'y' (oui) ou 'n' (non).")

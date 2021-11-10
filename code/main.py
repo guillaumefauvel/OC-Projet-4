@@ -18,7 +18,6 @@ def main():
     # from code.controllers.controller_tournament_manager import launch_from_controller
     # launch_from_controller(Tournament._registry[-1])
 
-
     datas_management.serializing_tournament_player()
     datas_management.save_data()
 
