@@ -1,6 +1,6 @@
 """ Report Manager - View """
 from prettytable import PrettyTable
-
+import math
 
 def ask_for_report_choice():
     """ Show the possible reports and ask the user his selection
@@ -154,3 +154,33 @@ def show_duel(list_of_duel):
     print("")
 
     return
+
+def show_list_of_players(player_dict):
+    """ Show a list of player in a compact way
+    Arg : A player dict """
+    new_dict = {}
+    table = PrettyTable(["C1","C2","C3"])
+    div = len(player_dict)//3
+    remainder = len(player_dict)%3
+
+    for value in range(1,div+1):
+        first_player = f"{value}. {player_dict[value][0]}"
+        second_player = f"{value+div}. {player_dict[value+div][0]}"
+        third_player = f"{value+div*2}. {player_dict[value+div*2][0]}"
+        # new_dict[value] = [player_dict()[value][0], player_dict()[value+div][0], player_dict()[value+div*2][0]]
+        new_dict[value] = [first_player, second_player, third_player]
+    if remainder == 1:
+        first_player = f"{len(player_dict)}. {player_dict[len(player_dict)][0]}"
+        new_dict[div+1] = [first_player,"",""]
+    else:
+        first_player = f"{len(player_dict)-1}. {player_dict[len(player_dict-1)][0]}"
+        second_player = f"{len(player_dict)}. {player_dict[len(player_dict)][0]}"
+        new_dict[div+1] = [first_player,second_player,""]
+
+    for value in new_dict:
+        table.add_row(new_dict[value])
+
+    print(table)
+
+    return
+

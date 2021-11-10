@@ -38,3 +38,24 @@ def ask_menu_return():
             return False
         else:
             print("Merci de répondre par oui 'y' ou par non 'n'")
+
+def view_header(header_ref):
+    """ Show a header
+    Arg : an int, the header reference """
+    dict_of_header = {1:"-- Reprise d'un tournoi --",
+                      2:"-- Suppression d'un tournoi --",
+                      3:"-- Suppression d'un joueur --",
+                      4:"-- Informations d'un joueur --",
+                      5:"-- Joueurs classés par ordre alphabétique --",
+                      6:"-- Joueurs classés par rang --",
+                      7:"-- Liste de tout les tournois --",
+                      8:"-- Tableau des scores d'un tournoi --",
+                      9:"-- Récapitulatif d'un tournois --"}
+
+    print("\n\n"+len(dict_of_header[header_ref])*"-")
+    print(dict_of_header[header_ref])
+    print(len(dict_of_header[header_ref])*"-")
+
+    return
+
+

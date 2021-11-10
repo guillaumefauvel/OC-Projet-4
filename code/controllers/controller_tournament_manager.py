@@ -21,14 +21,16 @@ def tournament_manager():
         tournament_launching()
     elif answer == "2":
         if len(unfinished_tournaments()) != 0:
+            view_menu.view_header(1)
             selected_tournament = vtm.show_tournament_list(unfinished_tournaments(),2)
             name, finished_round, tournament_object, round_left = selected_tournament
             tournament_continuation(tournament_object,finished_round)
         else:
-            vtm.no_unfinished_tournament()
+            view_menu.view_header(2)
             tournament_manager()
 
     elif answer == "3":
+        vtm.deleting_a_tournament()
         cm.menu_loop(delete_tournament)
 
     return

@@ -1,3 +1,4 @@
+import views.view_reports_manager as vrm
 
 def check_date(caraccteristic):
     """Check if the input date fit the asked format, if not it show an error and ask again"""
@@ -14,7 +15,9 @@ def new_tournament(player_dict):
     Arg : A dictionnary of all the listed players
     Return : All the informations needed to create a tournament"""
 
-    print("\n -- Lancement d'un nouveau tournoi. \n")
+    print("\n\n-------------------------------------")
+    print("-- Lancement d'un nouveau tournoi. --")
+    print("-------------------------------------\n")
 
     tournament_caracteristics = ["Nom : ", "Lieu : ", "Date de début (JJ/MM/AAAA): ", "Date de fin (JJ/MM/AAAA): ",
                                  "Nombre de tours : " , "\nJoueurs séléctionnés : ", "Type de jeu : " ,"Notes : " ]
@@ -43,8 +46,9 @@ def new_tournament(player_dict):
                     print("-> Merci d'indiquer un entier supérieur à 0")
         elif caraccteristic == "\nJoueurs séléctionnés : ":
             print("")
-            for player in player_dict:
-                print(f"   {player}. {player_dict[player][0]}")
+
+            vrm.show_list_of_players(player_dict)
+
             selected_players = []
 
             while True:

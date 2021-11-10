@@ -5,6 +5,7 @@ from datetime import datetime
 import views.view_reports_manager as vrm
 import controllers.controller_tournament_manager as ctm
 import controllers.controller_menu as cm
+import views.view_menu as vm
 
 def reports_manager():
     """ Show the user the possibilities and gathered his answer.
@@ -13,30 +14,37 @@ def reports_manager():
     answer = int(vrm.ask_for_report_choice())
 
     if answer == 1:
-        vrm.show_list(make_players_dict())
+        vm.view_header(5)
+        vrm.show_list_of_players(make_players_dict())
         cm.navigator(3)
 
     elif answer == 2:
-        vrm.show_list(sort_by_rank())
+        vm.view_header(6)
+        vrm.show_list_of_players(sort_by_rank())
         cm.navigator(3)
 
     elif answer == 3:
+        vm.view_header(5)
         tournament_players_by_alpha()
         cm.navigator(3)
 
     elif answer == 4:
+        vm.view_header(6)
         tournament_players_by_rank()
         cm.navigator(3)
 
     elif answer == 5:
+        vm.view_header(7)
         vrm.show_tournaments_infos(make_tournament_dict())
         cm.navigator(3)
 
     elif answer == 6:
+        vm.view_header(8)
         tournament_scoreboard()
         cm.navigator(3)
 
     elif answer == 7:
+        vm.view_header(9)
         tournament_history()
         cm.navigator(3)
     elif answer == 8:

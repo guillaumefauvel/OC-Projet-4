@@ -23,6 +23,10 @@ def new_player():
     """ Form that gather player informations
     Return : Informations that are needed to create a player object"""
 
+    print("\n\n-------------------------------")
+    print("-- Ajout d'un nouveau joueur --")
+    print("-------------------------------\n")
+
     print("\n--- Ajout d'un nouveau joueur ---\n ")
     player_infos = []
     player_type = ["Nom : ", "Prénom : ", "Date de naissance : ", "Genre [H/F]: ", "Classement : "]
@@ -64,12 +68,9 @@ def new_player():
     return name, first_name, birthday, gender, ranking
 
 
-def show_player_list(player_dict):
+def ask_player_selection(player_dict):
     """ Show a list of players and ask the index of the selected players
     Arg : a player dict"""
-    print("")
-    for value in player_dict:
-        print(f"{value}. {player_dict[value][0]}")
 
     while True:
         try:
