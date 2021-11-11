@@ -1,4 +1,5 @@
 import views.view_reports_manager as vrm
+from datetime import datetime
 
 def ask_choice():
     """ Show the user his possible choices and ask him his selection """
@@ -19,9 +20,10 @@ def check_date(caraccteristic):
     """Check if the input date fit the asked format, if not it show an error and ask again"""
     while True:
         answer = input(caraccteristic)
-        if len(answer) == 10 and answer[2] == "/" and answer[5] == "/":
+        try:
+            datetime.strptime(answer, "%d/%m/%Y")
             return answer
-        else:
+        except ValueError:
             print("---< Merci d'entrer une date au format 'JJ/MM/AAAA'. ")
     pass
 

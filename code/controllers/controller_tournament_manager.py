@@ -65,6 +65,7 @@ def tournament_launching():
 
 def delete_tournament():
     """ Remove a selected tournament from the database """
+
     try:
         tournament_to_delete = vtm.show_tournament_list(crm.make_tournament_dict(),1)[0]
     except TypeError:
@@ -89,7 +90,8 @@ def delete_tournament():
 def unfinished_tournaments():
     """ Return a dict of all the unfinished_tournament
     Return : A dict with key=index and value1=tournament_name,
-    value2=int of round finished, value3=tournament=object"""
+    value2=int of round finished, value3=tournament=object,
+    value4=round_left"""
     tournament_dict = {}
     index = 0
     for tournament in Tournament._registry:
@@ -102,13 +104,12 @@ def unfinished_tournaments():
     return tournament_dict
 
 
-def tournament_status_treatment(bool, tournament_object):
-    """ Serialized and stop a tournament if the day has ended """
+def tournament_status_treatment(bool):
+    """ Stop a tournament if the day has ended """
 
     if bool is False:
         return True
     elif bool is True:
-        tournament_object.serialized_the_object()
         cm.menu_attribution(view_menu.menu_proposition())
         return False
 
@@ -196,10 +197,10 @@ def updating_general_rank_by_ratio():
     for player, index in zip(Player._registry, range(1, len(Player._registry) + 1)):
         players_dict[index] = [player.reference, player.ranking, player.winloss_ratio]
 
-    sorted_by_wins = dict(sorted(players_dict.items(), key=lambda item: item[1][2], reverse=True))
+    sorted_by_ratio = dict(sorted(players_dict.items(), key=lambda item: item[1][2], reverse=True))
 
-    for player, rank in zip(sorted_by_wins, range(1, len(Player._registry)+1)):
-        player_researcher(sorted_by_wins[player][0])[0].ranking = rank
+    for player, rank in zip(sorted_by_ratio, range(1, len(Player._registry)+1)):
+        player_researcher(sorted_by_ratio[player][0])[0].ranking = rank
 
     return
 
@@ -219,7 +220,7 @@ def launch_from_controller(tournament_object):
     tournament_object.sort_score_rank()
     vt.show_score(sorted(tournament_object.scoreboard.values(),
                              key=lambda k: k['score'], reverse=True), 1)
-    if not tournament_status_treatment(vt.asking_end_of_day(),tournament_object):
+    if not tournament_status_treatment(vt.asking_end_of_day()):
         return
 
     tournament_continuation(tournament_object,1)
@@ -246,12 +247,11 @@ def tournament_continuation(tournament_object,finished_round):
 
         tournament_object.serialized_the_object()
         if len(tournament_object.serialized_object) != tournament_object.num_of_round:
-            if tournament_status_treatment(vt.asking_end_of_day(), tournament_object) == False:
+            if tournament_status_treatment(vt.asking_end_of_day()) == False:
                 return
 
     updating_players_stats(tournament_object)
     updating_general_rank_by_ratio()
-    tournament_object.serialized_the_object()
     view_menu.view_header(16)
     cm.launch_the_menu()
 

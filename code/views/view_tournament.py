@@ -25,7 +25,6 @@ def asking_end_match(duel_list):
     short_term_dict = {}
 
     for match, index in zip(duel_list, range(1, len(duel_list)+1)):
-        print(f"{index}. {match[0]} contre {match[1]}")
         match_dict[index] = {'match': match}, {'start_time': start_time}
         short_term_dict[index] = ""
     print("\nUn match viens de se terminer ? Merci d'entrer son numéro")
@@ -52,6 +51,8 @@ def asking_match_result(duel):
     Return :
     - A list where '1' or '2' equals the winner ref, None if there is an equality
     """
+    print('\n--------------------------------------------------------')
+
     result_list = []
     for player in duel:
         while True:
@@ -67,22 +68,11 @@ def asking_match_result(duel):
                     result_list.append(winner)
                     break
             else:
-                "Merci de rentrer '1','2' ou '0'."
+                print("Merci de rentrer '1','2' ou '0'.")
 
-    print('--------------------------------------------------------')
+    print('\n--------------------------------------------------------')
 
     return result_list
-
-
-def show_scoreboard(tournament_object):
-    """ DEVonly """
-
-    print('--------------------------------------------------------')
-
-    for value in sorted(tournament_object.scoreboard.values(), key=lambda k: k['score'], reverse=True):
-        print(value)
-
-    print('--------------------------------------------------------')
 
 
 def show_score(scoreboard, round_number):
@@ -93,12 +83,12 @@ def show_score(scoreboard, round_number):
     for value in scoreboard:
         table.add_row([value["reference"], value["scorerank"], value["score"]])
     table = table.get_string(title=f"Round {round_number}")
-    print(table)
+    print("\n"+table)
 
 def asking_end_of_day():
     """ Ask the user if the tournament is finish for the day
     Return : a bool """
-    print("La journée est t'elle terminée ? y/n ")
+    print("\nLa journée est t'elle terminée ? y/n ")
     while True:
         answer = input("Réponse : ")
         if answer.lower() == 'y':

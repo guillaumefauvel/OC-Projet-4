@@ -7,7 +7,7 @@
    "first_name": "Dorian",
    "birthday": "12/03/1990",
    "gender": "H",
-   "ranking": 13,
+   "ranking": 17,
    "reference": "Dorian Lario",
    "num_of_wins": 154,
    "num_of_losses": 153,
@@ -21,7 +21,7 @@
    "first_name": "Pascal",
    "birthday": "19/09/1962",
    "gender": "H",
-   "ranking": 21,
+   "ranking": 25,
    "reference": "Pascal Allizard",
    "num_of_wins": 158,
    "num_of_losses": 161,
@@ -35,7 +35,7 @@
    "first_name": "Jean-Claude",
    "birthday": "20/02/1961",
    "gender": "H",
-   "ranking": 10,
+   "ranking": 13,
    "reference": "Jean-Claude Anglars",
    "num_of_wins": 167,
    "num_of_losses": 158,
@@ -49,7 +49,7 @@
    "first_name": "Maurice",
    "birthday": "22/06/1953",
    "gender": "H",
-   "ranking": 22,
+   "ranking": 26,
    "reference": "Maurice Antiste",
    "num_of_wins": 156,
    "num_of_losses": 160,
@@ -63,7 +63,7 @@
    "first_name": "Cathy",
    "birthday": "18/04/1965",
    "gender": "F",
-   "ranking": 14,
+   "ranking": 19,
    "reference": "Cathy Apourceau-Poly",
    "num_of_wins": 157,
    "num_of_losses": 157,
@@ -77,7 +77,7 @@
    "first_name": "Jean-Michel",
    "birthday": "28/04/1966",
    "gender": "H",
-   "ranking": 20,
+   "ranking": 24,
    "reference": "Jean-Michel Arnaud",
    "num_of_wins": 156,
    "num_of_losses": 157,
@@ -91,7 +91,7 @@
    "first_name": "St\u00e9phane",
    "birthday": "09/03/1973",
    "gender": "H",
-   "ranking": 23,
+   "ranking": 27,
    "reference": "St\u00e9phane Artano",
    "num_of_wins": 152,
    "num_of_losses": 158,
@@ -105,35 +105,35 @@
    "first_name": "Viviane",
    "birthday": "22/10/1956",
    "gender": "F",
-   "ranking": 15,
+   "ranking": 18,
    "reference": "Viviane Artigalas",
-   "num_of_wins": 148,
+   "num_of_wins": 149,
    "num_of_losses": 148,
-   "num_of_draw": 99,
-   "win_loss_ratio": 1.0,
-   "num_of_match": 395,
-   "num_of_tournaments": 94
+   "num_of_draw": 102,
+   "win_loss_ratio": 1.01,
+   "num_of_match": 399,
+   "num_of_tournaments": 95
   },
   "9": {
    "name": "Assouline",
    "first_name": "David",
    "birthday": "16/06/1959",
    "gender": "H",
-   "ranking": 24,
+   "ranking": 28,
    "reference": "David Assouline",
-   "num_of_wins": 25,
-   "num_of_losses": 27,
-   "num_of_draw": 27,
-   "win_loss_ratio": 0.93,
-   "num_of_match": 79,
-   "num_of_tournaments": 16
+   "num_of_wins": 27,
+   "num_of_losses": 28,
+   "num_of_draw": 28,
+   "win_loss_ratio": 0.96,
+   "num_of_match": 83,
+   "num_of_tournaments": 17
   },
   "10": {
    "name": "Barbary",
    "first_name": "Serge",
    "birthday": "16/07/1946",
    "gender": "H",
-   "ranking": 12,
+   "ranking": 16,
    "reference": "Serge Barbary",
    "num_of_wins": 29,
    "num_of_losses": 28,
@@ -147,7 +147,7 @@
    "first_name": "J\u00e9r\u00e9my",
    "birthday": "18/04/1956",
    "gender": "H",
-   "ranking": 16,
+   "ranking": 20,
    "reference": "J\u00e9r\u00e9my Bacchi",
    "num_of_wins": 11,
    "num_of_losses": 11,
@@ -175,7 +175,7 @@
    "first_name": "Julien",
    "birthday": "15/02/1956",
    "gender": "H",
-   "ranking": 17,
+   "ranking": 21,
    "reference": "Julien Bargeton",
    "num_of_wins": 9,
    "num_of_losses": 9,
@@ -189,7 +189,7 @@
    "first_name": "Philippe",
    "birthday": "02/01/1956",
    "gender": "H",
-   "ranking": 18,
+   "ranking": 22,
    "reference": "Philippe Bas",
    "num_of_wins": 10,
    "num_of_losses": 10,
@@ -203,7 +203,7 @@
    "first_name": "J\u00e9r\u00f4me",
    "birthday": "04/08/1962",
    "gender": "H",
-   "ranking": 30,
+   "ranking": 33,
    "reference": "J\u00e9r\u00f4me Bascher",
    "num_of_wins": 7,
    "num_of_losses": 17,
@@ -217,35 +217,35 @@
    "first_name": "Arnaud",
    "birthday": "08/03/1965",
    "gender": "H",
-   "ranking": 2,
+   "ranking": 5,
    "reference": "Arnaud Bazin",
-   "num_of_wins": 29,
-   "num_of_losses": 22,
-   "num_of_draw": 36,
-   "win_loss_ratio": 1.32,
-   "num_of_match": 87,
-   "num_of_tournaments": 16
+   "num_of_wins": 30,
+   "num_of_losses": 23,
+   "num_of_draw": 38,
+   "win_loss_ratio": 1.3,
+   "num_of_match": 91,
+   "num_of_tournaments": 17
   },
   "17": {
    "name": "De Belenet",
    "first_name": "Arnaud",
    "birthday": "12/08/1968",
    "gender": "H",
-   "ranking": 7,
+   "ranking": 10,
    "reference": "Arnaud De Belenet",
-   "num_of_wins": 20,
-   "num_of_losses": 17,
-   "num_of_draw": 10,
-   "win_loss_ratio": 1.18,
-   "num_of_match": 47,
-   "num_of_tournaments": 11
+   "num_of_wins": 21,
+   "num_of_losses": 19,
+   "num_of_draw": 11,
+   "win_loss_ratio": 1.11,
+   "num_of_match": 51,
+   "num_of_tournaments": 12
   },
   "18": {
    "name": "Belin",
    "first_name": "Bruno",
    "birthday": "18/07/1972",
    "gender": "H",
-   "ranking": 31,
+   "ranking": 34,
    "reference": "Bruno Belin",
    "num_of_wins": 1,
    "num_of_losses": 3,
@@ -259,7 +259,7 @@
    "first_name": "Nadine",
    "birthday": "22/06/1957",
    "gender": "F",
-   "ranking": 32,
+   "ranking": 37,
    "reference": "Nadine Bellurot",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -273,7 +273,7 @@
    "first_name": "Catherine",
    "birthday": "23/09/1958",
    "gender": "F",
-   "ranking": 33,
+   "ranking": 38,
    "reference": "Catherine Belrhiti",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -287,7 +287,7 @@
    "first_name": "Guy",
    "birthday": "24/10/1959",
    "gender": "H",
-   "ranking": 34,
+   "ranking": 39,
    "reference": "Guy Benarroche",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -301,7 +301,7 @@
    "first_name": "Esther",
    "birthday": "25/11/1960",
    "gender": "F",
-   "ranking": 35,
+   "ranking": 40,
    "reference": "Esther Benbassa",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -315,7 +315,7 @@
    "first_name": "Martine",
    "birthday": "26/12/1956",
    "gender": "F",
-   "ranking": 36,
+   "ranking": 41,
    "reference": "Martine Berthet",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -329,7 +329,7 @@
    "first_name": "Jo\u00ebl",
    "birthday": "27/08/1980",
    "gender": "H",
-   "ranking": 37,
+   "ranking": 42,
    "reference": "Jo\u00ebl Bigot",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -343,7 +343,7 @@
    "first_name": "Christian",
    "birthday": "28/09/1943",
    "gender": "H",
-   "ranking": 38,
+   "ranking": 43,
    "reference": "Christian Bilhac",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -357,21 +357,21 @@
    "first_name": "Annick",
    "birthday": "29/10/1957",
    "gender": "F",
-   "ranking": 26,
+   "ranking": 23,
    "reference": "Annick Billon",
-   "num_of_wins": 13,
+   "num_of_wins": 17,
    "num_of_losses": 17,
    "num_of_draw": 17,
-   "win_loss_ratio": 0.76,
-   "num_of_match": 47,
-   "num_of_tournaments": 11
+   "win_loss_ratio": 1.0,
+   "num_of_match": 51,
+   "num_of_tournaments": 12
   },
   "27": {
    "name": "Bizet",
    "first_name": "Jean",
    "birthday": "30/11/1959",
    "gender": "H",
-   "ranking": 39,
+   "ranking": 44,
    "reference": "Jean Bizet",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -385,7 +385,7 @@
    "first_name": "Etienne",
    "birthday": "30/12/1958",
    "gender": "H",
-   "ranking": 40,
+   "ranking": 45,
    "reference": "Etienne Blanc",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -399,7 +399,7 @@
    "first_name": "Jean-Baptiste",
    "birthday": "01/10/1978",
    "gender": "H",
-   "ranking": 41,
+   "ranking": 46,
    "reference": "Jean-Baptiste Blanc",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -413,7 +413,7 @@
    "first_name": "Florence",
    "birthday": "02/08/1978",
    "gender": "F",
-   "ranking": 42,
+   "ranking": 47,
    "reference": "Florence Blatix-Contat",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -427,7 +427,7 @@
    "first_name": "Florence",
    "birthday": "03/08/1977",
    "gender": "F",
-   "ranking": 43,
+   "ranking": 48,
    "reference": "Florence Bocquet",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -441,7 +441,7 @@
    "first_name": "Eric",
    "birthday": "04/07/1957",
    "gender": "H",
-   "ranking": 44,
+   "ranking": 49,
    "reference": "Eric Bocquet",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -455,21 +455,21 @@
    "first_name": "Christine",
    "birthday": "05/04/1976",
    "gender": "F",
-   "ranking": 45,
+   "ranking": 35,
    "reference": "Christine Bonfanti-Dossat",
-   "num_of_wins": 0,
-   "num_of_losses": 0,
+   "num_of_wins": 1,
+   "num_of_losses": 3,
    "num_of_draw": 0,
-   "win_loss_ratio": 0,
-   "num_of_match": 0,
-   "num_of_tournaments": 0
+   "win_loss_ratio": 0.33,
+   "num_of_match": 4,
+   "num_of_tournaments": 1
   },
   "34": {
    "name": "Bonhomme",
    "first_name": "Fran\u00e7ois",
    "birthday": "06/03/1991",
    "gender": "H",
-   "ranking": 46,
+   "ranking": 50,
    "reference": "Fran\u00e7ois Bonhomme",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -483,7 +483,7 @@
    "first_name": "Fran\u00e7ois",
    "birthday": "07/04/1952",
    "gender": "H",
-   "ranking": 47,
+   "ranking": 51,
    "reference": "Fran\u00e7ois Bonneau",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -497,21 +497,21 @@
    "first_name": "Bernard",
    "birthday": "08/05/1955",
    "gender": "H",
-   "ranking": 25,
+   "ranking": 31,
    "reference": "Bernard Bonne",
    "num_of_wins": 15,
-   "num_of_losses": 19,
-   "num_of_draw": 13,
-   "win_loss_ratio": 0.79,
-   "num_of_match": 47,
-   "num_of_tournaments": 11
+   "num_of_losses": 22,
+   "num_of_draw": 14,
+   "win_loss_ratio": 0.68,
+   "num_of_match": 51,
+   "num_of_tournaments": 12
   },
   "37": {
    "name": "Bonnecarr\u00e8re",
    "first_name": "Philippe",
    "birthday": "09/06/1966",
    "gender": "H",
-   "ranking": 48,
+   "ranking": 52,
    "reference": "Philippe Bonnecarr\u00e8re",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -525,7 +525,7 @@
    "first_name": "Nicole",
    "birthday": "10/04/1957",
    "gender": "F",
-   "ranking": 49,
+   "ranking": 53,
    "reference": "Nicole Bonnefoy",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -539,7 +539,7 @@
    "first_name": "Michel",
    "birthday": "11/04/1958",
    "gender": "H",
-   "ranking": 50,
+   "ranking": 54,
    "reference": "Michel Bonnus",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -553,21 +553,21 @@
    "first_name": "Alexandra",
    "birthday": "12/04/1951",
    "gender": "F",
-   "ranking": 3,
+   "ranking": 9,
    "reference": "Alexandra Borchio-Fontimp",
-   "num_of_wins": 15,
-   "num_of_losses": 12,
-   "num_of_draw": 20,
-   "win_loss_ratio": 1.25,
-   "num_of_match": 47,
-   "num_of_tournaments": 11
+   "num_of_wins": 16,
+   "num_of_losses": 14,
+   "num_of_draw": 21,
+   "win_loss_ratio": 1.14,
+   "num_of_match": 51,
+   "num_of_tournaments": 12
   },
   "41": {
    "name": "Bor\u00e9",
    "first_name": "Patrick",
    "birthday": "13/04/1952",
    "gender": "H",
-   "ranking": 51,
+   "ranking": 55,
    "reference": "Patrick Bor\u00e9",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -581,7 +581,7 @@
    "first_name": "Denis",
    "birthday": "14/04/1953",
    "gender": "H",
-   "ranking": 52,
+   "ranking": 56,
    "reference": "Denis Bouad",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -595,35 +595,35 @@
    "first_name": "Gilbert",
    "birthday": "15/04/1958",
    "gender": "H",
-   "ranking": 53,
+   "ranking": 2,
    "reference": "Gilbert Bouchet",
-   "num_of_wins": 0,
-   "num_of_losses": 0,
-   "num_of_draw": 0,
-   "win_loss_ratio": 0,
-   "num_of_match": 0,
-   "num_of_tournaments": 0
+   "num_of_wins": 2,
+   "num_of_losses": 1,
+   "num_of_draw": 1,
+   "win_loss_ratio": 2.0,
+   "num_of_match": 4,
+   "num_of_tournaments": 1
   },
   "44": {
    "name": "Boulay-Esperonnier",
    "first_name": "C\u00e9line",
    "birthday": "16/04/1976",
    "gender": "F",
-   "ranking": 54,
+   "ranking": 3,
    "reference": "C\u00e9line Boulay-Esperonnier",
-   "num_of_wins": 0,
-   "num_of_losses": 0,
-   "num_of_draw": 0,
-   "win_loss_ratio": 0,
-   "num_of_match": 0,
-   "num_of_tournaments": 0
+   "num_of_wins": 2,
+   "num_of_losses": 1,
+   "num_of_draw": 1,
+   "win_loss_ratio": 2.0,
+   "num_of_match": 4,
+   "num_of_tournaments": 1
   },
   "45": {
    "name": "Bouloux",
    "first_name": "Yves",
    "birthday": "17/04/1986",
    "gender": "H",
-   "ranking": 55,
+   "ranking": 57,
    "reference": "Yves Bouloux",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -637,7 +637,7 @@
    "first_name": "Hussein",
    "birthday": "18/04/1996",
    "gender": "H",
-   "ranking": 56,
+   "ranking": 58,
    "reference": "Hussein Bourgi",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -651,21 +651,21 @@
    "first_name": "Toine",
    "birthday": "19/04/1956",
    "gender": "H",
-   "ranking": 57,
+   "ranking": 36,
    "reference": "Toine Bourrat",
-   "num_of_wins": 0,
-   "num_of_losses": 0,
+   "num_of_wins": 1,
+   "num_of_losses": 3,
    "num_of_draw": 0,
-   "win_loss_ratio": 0,
-   "num_of_match": 0,
-   "num_of_tournaments": 0
+   "win_loss_ratio": 0.33,
+   "num_of_match": 4,
+   "num_of_tournaments": 1
   },
   "48": {
    "name": "Boyer",
    "first_name": "Jean-Marc",
    "birthday": "20/04/1966",
    "gender": "H",
-   "ranking": 58,
+   "ranking": 59,
    "reference": "Jean-Marc Boyer",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -679,7 +679,7 @@
    "first_name": "Val\u00e9rie",
    "birthday": "21/04/1966",
    "gender": "F",
-   "ranking": 59,
+   "ranking": 60,
    "reference": "Val\u00e9rie Boyer",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -693,7 +693,7 @@
    "first_name": "Isabelle",
    "birthday": "22/04/1952",
    "gender": "F",
-   "ranking": 60,
+   "ranking": 61,
    "reference": "Isabelle Briquet",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -707,7 +707,7 @@
    "first_name": "Max",
    "birthday": "23/04/1957",
    "gender": "H",
-   "ranking": 61,
+   "ranking": 62,
    "reference": "Max Brisson",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -721,7 +721,7 @@
    "first_name": "C\u00e9line",
    "birthday": "24/04/1957",
    "gender": "F",
-   "ranking": 62,
+   "ranking": 63,
    "reference": "C\u00e9line Brulin",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -735,7 +735,7 @@
    "first_name": "Fran\u00e7ois-No\u00ebl",
    "birthday": "25/04/1957",
    "gender": "H",
-   "ranking": 63,
+   "ranking": 64,
    "reference": "Fran\u00e7ois-No\u00ebl Buffet",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -749,21 +749,21 @@
    "first_name": "Bernard",
    "birthday": "26/04/1959",
    "gender": "H",
-   "ranking": 19,
+   "ranking": 14,
    "reference": "Bernard Buis",
-   "num_of_wins": 18,
+   "num_of_wins": 19,
    "num_of_losses": 18,
-   "num_of_draw": 11,
-   "win_loss_ratio": 1.0,
-   "num_of_match": 47,
-   "num_of_tournaments": 11
+   "num_of_draw": 14,
+   "win_loss_ratio": 1.06,
+   "num_of_match": 51,
+   "num_of_tournaments": 12
   },
   "55": {
    "name": "Burgoa",
    "first_name": "Laurent",
    "birthday": "27/04/1996",
    "gender": "H",
-   "ranking": 64,
+   "ranking": 65,
    "reference": "Laurent Burgoa",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -777,7 +777,7 @@
    "first_name": "Henri",
    "birthday": "28/04/1976",
    "gender": "H",
-   "ranking": 65,
+   "ranking": 66,
    "reference": "Henri Cabanel",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -791,7 +791,7 @@
    "first_name": "Olivier",
    "birthday": "29/04/1986",
    "gender": "H",
-   "ranking": 66,
+   "ranking": 67,
    "reference": "Olivier Cadec",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -805,7 +805,7 @@
    "first_name": "Fran\u00e7ois",
    "birthday": "30/04/1996",
    "gender": "H",
-   "ranking": 67,
+   "ranking": 68,
    "reference": "Fran\u00e7ois Calvet",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -819,7 +819,7 @@
    "first_name": "Christian",
    "birthday": "01/04/1966",
    "gender": "H",
-   "ranking": 68,
+   "ranking": 69,
    "reference": "Christian Cambon",
    "num_of_wins": 0,
    "num_of_losses": 0,
@@ -833,28 +833,28 @@
    "first_name": "Agn\u00e8s",
    "birthday": "02/04/1976",
    "gender": "F",
-   "ranking": 11,
+   "ranking": 15,
    "reference": "Agn\u00e8s Canayer",
-   "num_of_wins": 17,
-   "num_of_losses": 16,
+   "num_of_wins": 19,
+   "num_of_losses": 18,
    "num_of_draw": 14,
    "win_loss_ratio": 1.06,
-   "num_of_match": 47,
-   "num_of_tournaments": 11
+   "num_of_match": 51,
+   "num_of_tournaments": 12
   },
   "61": {
    "name": "Canev\u00e8t",
    "first_name": "Michel",
    "birthday": "03/04/1986",
    "gender": "H",
-   "ranking": 69,
+   "ranking": 4,
    "reference": "Michel Canev\u00e8t",
-   "num_of_wins": 0,
+   "num_of_wins": 2,
    "num_of_losses": 0,
-   "num_of_draw": 0,
-   "win_loss_ratio": 0,
-   "num_of_match": 0,
-   "num_of_tournaments": 0
+   "num_of_draw": 2,
+   "win_loss_ratio": 2,
+   "num_of_match": 4,
+   "num_of_tournaments": 1
   },
   "62": {
    "name": "Capo-Canellas",
@@ -875,7 +875,7 @@
    "first_name": "Bertrand",
    "birthday": "18/04/1990",
    "gender": "H",
-   "ranking": 27,
+   "ranking": 29,
    "reference": "Bertrand Farse",
    "num_of_wins": 19,
    "num_of_losses": 25,
@@ -903,7 +903,7 @@
    "first_name": "Sven",
    "birthday": "18/04/1997",
    "gender": "H",
-   "ranking": 9,
+   "ranking": 12,
    "reference": "Sven Gadzish",
    "num_of_wins": 22,
    "num_of_losses": 20,
@@ -917,7 +917,7 @@
    "first_name": "Martin",
    "birthday": "18/04/1997",
    "gender": "H",
-   "ranking": 5,
+   "ranking": 6,
    "reference": "Martin Bernard",
    "num_of_wins": 21,
    "num_of_losses": 17,
@@ -931,7 +931,7 @@
    "first_name": "Jacques",
    "birthday": "18/04/1997",
    "gender": "H",
-   "ranking": 29,
+   "ranking": 32,
    "reference": "Jacques Rousseau",
    "num_of_wins": 15,
    "num_of_losses": 23,
@@ -945,21 +945,21 @@
    "first_name": "Arnold",
    "birthday": "18/04/1997",
    "gender": "H",
-   "ranking": 6,
+   "ranking": 7,
    "reference": "Arnold Noire",
-   "num_of_wins": 35,
-   "num_of_losses": 29,
+   "num_of_wins": 37,
+   "num_of_losses": 31,
    "num_of_draw": 36,
-   "win_loss_ratio": 1.21,
-   "num_of_match": 100,
-   "num_of_tournaments": 25
+   "win_loss_ratio": 1.19,
+   "num_of_match": 104,
+   "num_of_tournaments": 26
   },
   "69": {
    "name": "De Galice",
    "first_name": "Fran\u00e7ois",
    "birthday": "18/04/1980",
    "gender": "H",
-   "ranking": 28,
+   "ranking": 30,
    "reference": "Fran\u00e7ois De Galice",
    "num_of_wins": 17,
    "num_of_losses": 23,
@@ -973,14 +973,14 @@
    "first_name": "Garry",
    "birthday": "18/04/1956",
    "gender": "H",
-   "ranking": 4,
+   "ranking": 11,
    "reference": "Garry Kasparov",
-   "num_of_wins": 20,
-   "num_of_losses": 16,
+   "num_of_wins": 21,
+   "num_of_losses": 19,
    "num_of_draw": 18,
-   "win_loss_ratio": 1.25,
-   "num_of_match": 54,
-   "num_of_tournaments": 14
+   "win_loss_ratio": 1.11,
+   "num_of_match": 58,
+   "num_of_tournaments": 15
   }
  },
  "Tournament": {
@@ -1522,6 +1522,988 @@
       2,
       3,
       5
+     ]
+    }
+   }
+  },
+  "3": {
+   "name": "Tournoi2021",
+   "location": "",
+   "start_date": "15/05/2020",
+   "end_date": "15/05/2020",
+   "num_of_round": 4,
+   "selected_players": [
+    "Agn\u00e8s Canayer",
+    "Alexandra Borchio-Fontimp",
+    "Annick Billon",
+    "Arnaud Bazin",
+    "Arnaud De Belenet",
+    "Arnold Noire",
+    "Bernard Bonne",
+    "Bernard Buis"
+   ],
+   "game_type": "Bullet",
+   "notes": "",
+   "serialized_object": {
+    "1": [
+     [
+      [
+       "Arnaud Bazin",
+       "Agn\u00e8s Canayer"
+      ],
+      [
+       "Alexandra Borchio-Fontimp",
+       "Bernard Buis"
+      ],
+      [
+       "Arnold Noire",
+       "Bernard Bonne"
+      ],
+      [
+       "Arnaud De Belenet",
+       "Annick Billon"
+      ]
+     ],
+     [
+      "2",
+      null,
+      "1",
+      "2"
+     ],
+     [
+      "11-Nov-2021 (14:39:25.630112)",
+      "11-Nov-2021 (14:39:25.630112)",
+      "11-Nov-2021 (14:39:25.630112)",
+      "11-Nov-2021 (14:39:25.630112)"
+     ],
+     [
+      "11-Nov-2021 (14:40:00.078152)",
+      "11-Nov-2021 (14:40:00.949799)",
+      "11-Nov-2021 (14:40:01.885969)",
+      "11-Nov-2021 (14:40:02.366073)"
+     ]
+    ],
+    "2": [
+     [
+      [
+       "Arnold Noire",
+       "Agn\u00e8s Canayer"
+      ],
+      [
+       "Annick Billon",
+       "Alexandra Borchio-Fontimp"
+      ],
+      [
+       "Bernard Buis",
+       "Arnaud Bazin"
+      ],
+      [
+       "Arnaud De Belenet",
+       "Bernard Bonne"
+      ]
+     ],
+     [
+      "2",
+      "1",
+      null,
+      "1"
+     ],
+     [
+      "11-Nov-2021 (14:41:34.158386)",
+      "11-Nov-2021 (14:41:34.158386)",
+      "11-Nov-2021 (14:41:34.158386)",
+      "11-Nov-2021 (14:41:34.158386)"
+     ],
+     [
+      "11-Nov-2021 (14:41:38.525694)",
+      "11-Nov-2021 (14:41:39.237138)",
+      "11-Nov-2021 (14:41:40.194031)",
+      "11-Nov-2021 (14:41:41.254197)"
+     ]
+    ],
+    "3": [
+     [
+      [
+       "Agn\u00e8s Canayer",
+       "Annick Billon"
+      ],
+      [
+       "Arnold Noire",
+       "Arnaud De Belenet"
+      ],
+      [
+       "Bernard Buis",
+       "Bernard Bonne"
+      ],
+      [
+       "Arnaud Bazin",
+       "Alexandra Borchio-Fontimp"
+      ]
+     ],
+     [
+      "2",
+      "1",
+      null,
+      "1"
+     ],
+     [
+      "11-Nov-2021 (14:42:19.189987)",
+      "11-Nov-2021 (14:42:19.189987)",
+      "11-Nov-2021 (14:42:19.189987)",
+      "11-Nov-2021 (14:42:19.189987)"
+     ],
+     [
+      "11-Nov-2021 (14:42:22.829749)",
+      "11-Nov-2021 (14:42:23.196929)",
+      "11-Nov-2021 (14:42:23.461743)",
+      "11-Nov-2021 (14:42:23.710167)"
+     ]
+    ],
+    "4": [
+     [
+      [
+       "Annick Billon",
+       "Arnold Noire"
+      ],
+      [
+       "Agn\u00e8s Canayer",
+       "Bernard Buis"
+      ],
+      [
+       "Arnaud Bazin",
+       "Arnaud De Belenet"
+      ],
+      [
+       "Alexandra Borchio-Fontimp",
+       "Bernard Bonne"
+      ]
+     ],
+     [
+      "1",
+      "2",
+      null,
+      "1"
+     ],
+     [
+      "11-Nov-2021 (14:42:45.957847)",
+      "11-Nov-2021 (14:42:45.957847)",
+      "11-Nov-2021 (14:42:45.957847)",
+      "11-Nov-2021 (14:42:45.957847)"
+     ],
+     [
+      "11-Nov-2021 (14:42:48.341544)",
+      "11-Nov-2021 (14:42:48.653697)",
+      "11-Nov-2021 (14:42:49.997941)",
+      "11-Nov-2021 (14:42:50.333533)"
+     ]
+    ]
+   },
+   "scoreboard": {
+    "1": {
+     "reference": "Arnaud Bazin",
+     "id": 1,
+     "scorerank": 3,
+     "score": 2.0,
+     "associations": [
+      5,
+      6,
+      2,
+      4
+     ]
+    },
+    "2": {
+     "reference": "Alexandra Borchio-Fontimp",
+     "id": 2,
+     "scorerank": 6,
+     "score": 1.5,
+     "associations": [
+      6,
+      8,
+      1,
+      7
+     ]
+    },
+    "3": {
+     "reference": "Arnold Noire",
+     "id": 3,
+     "scorerank": 4,
+     "score": 2,
+     "associations": [
+      7,
+      5,
+      4,
+      8
+     ]
+    },
+    "4": {
+     "reference": "Arnaud De Belenet",
+     "id": 4,
+     "scorerank": 7,
+     "score": 1.5,
+     "associations": [
+      8,
+      7,
+      3,
+      1
+     ]
+    },
+    "5": {
+     "reference": "Agn\u00e8s Canayer",
+     "id": 5,
+     "scorerank": 5,
+     "score": 2,
+     "associations": [
+      1,
+      3,
+      8,
+      6
+     ]
+    },
+    "6": {
+     "reference": "Bernard Buis",
+     "id": 6,
+     "scorerank": 2,
+     "score": 2.5,
+     "associations": [
+      2,
+      1,
+      7,
+      5
+     ]
+    },
+    "7": {
+     "reference": "Bernard Bonne",
+     "id": 7,
+     "scorerank": 8,
+     "score": 0.5,
+     "associations": [
+      3,
+      4,
+      6,
+      2
+     ]
+    },
+    "8": {
+     "reference": "Annick Billon",
+     "id": 8,
+     "scorerank": 1,
+     "score": 4,
+     "associations": [
+      4,
+      2,
+      5,
+      3
+     ]
+    }
+   }
+  },
+  "4": {
+   "name": "TournoiS3",
+   "location": "Nice",
+   "start_date": "15/05/1997",
+   "end_date": "15/05/1997",
+   "num_of_round": 4,
+   "selected_players": [
+    "Agn\u00e8s Canayer",
+    "Alexandra Borchio-Fontimp",
+    "Annick Billon",
+    "Arnaud Bazin",
+    "Arnaud De Belenet",
+    "Arnold Noire",
+    "Bernard Bonne",
+    "Bernard Buis"
+   ],
+   "game_type": "Blitz",
+   "notes": "",
+   "serialized_object": {
+    "1": [
+     [
+      [
+       "Arnaud Bazin",
+       "Bernard Buis"
+      ],
+      [
+       "Arnold Noire",
+       "Agn\u00e8s Canayer"
+      ],
+      [
+       "Alexandra Borchio-Fontimp",
+       "Annick Billon"
+      ],
+      [
+       "Arnaud De Belenet",
+       "Bernard Bonne"
+      ]
+     ],
+     [
+      "2",
+      null,
+      "1",
+      "2"
+     ],
+     [
+      "11-Nov-2021 (14:44:05.149374)",
+      "11-Nov-2021 (14:44:05.149374)",
+      "11-Nov-2021 (14:44:05.149374)",
+      "11-Nov-2021 (14:44:05.149374)"
+     ],
+     [
+      "11-Nov-2021 (14:44:06.981684)",
+      "11-Nov-2021 (14:44:07.246696)",
+      "11-Nov-2021 (14:44:07.484960)",
+      "11-Nov-2021 (14:44:07.917747)"
+     ]
+    ],
+    "2": [
+     [
+      [
+       "Alexandra Borchio-Fontimp",
+       "Bernard Buis"
+      ],
+      [
+       "Bernard Bonne",
+       "Arnold Noire"
+      ],
+      [
+       "Agn\u00e8s Canayer",
+       "Arnaud Bazin"
+      ],
+      [
+       "Arnaud De Belenet",
+       "Annick Billon"
+      ]
+     ],
+     [
+      "2",
+      null,
+      "1",
+      "2"
+     ],
+     [
+      "11-Nov-2021 (14:44:19.197296)",
+      "11-Nov-2021 (14:44:19.197296)",
+      "11-Nov-2021 (14:44:19.197296)",
+      "11-Nov-2021 (14:44:19.197296)"
+     ],
+     [
+      "11-Nov-2021 (14:44:20.532979)",
+      "11-Nov-2021 (14:44:21.166037)",
+      "11-Nov-2021 (14:44:21.997554)",
+      "11-Nov-2021 (14:44:23.238655)"
+     ]
+    ],
+    "3": [
+     [
+      [
+       "Bernard Buis",
+       "Agn\u00e8s Canayer"
+      ],
+      [
+       "Bernard Bonne",
+       "Alexandra Borchio-Fontimp"
+      ],
+      [
+       "Arnold Noire",
+       "Annick Billon"
+      ],
+      [
+       "Arnaud Bazin",
+       "Arnaud De Belenet"
+      ]
+     ],
+     [
+      null,
+      "1",
+      "2",
+      null
+     ],
+     [
+      "11-Nov-2021 (14:44:34.294531)",
+      "11-Nov-2021 (14:44:34.294531)",
+      "11-Nov-2021 (14:44:34.294531)",
+      "11-Nov-2021 (14:44:34.294531)"
+     ],
+     [
+      "11-Nov-2021 (14:44:35.725366)",
+      "11-Nov-2021 (14:44:36.005206)",
+      "11-Nov-2021 (14:44:36.280209)",
+      "11-Nov-2021 (14:44:36.508507)"
+     ]
+    ]
+   },
+   "scoreboard": {
+    "1": {
+     "reference": "Arnaud Bazin",
+     "id": 1,
+     "scorerank": 7,
+     "score": 0.5,
+     "associations": [
+      5,
+      6,
+      4
+     ]
+    },
+    "2": {
+     "reference": "Arnold Noire",
+     "id": 2,
+     "scorerank": 5,
+     "score": 1.0,
+     "associations": [
+      6,
+      8,
+      7
+     ]
+    },
+    "3": {
+     "reference": "Alexandra Borchio-Fontimp",
+     "id": 3,
+     "scorerank": 6,
+     "score": 1,
+     "associations": [
+      7,
+      5,
+      8
+     ]
+    },
+    "4": {
+     "reference": "Arnaud De Belenet",
+     "id": 4,
+     "scorerank": 8,
+     "score": 0.5,
+     "associations": [
+      8,
+      7,
+      1
+     ]
+    },
+    "5": {
+     "reference": "Bernard Buis",
+     "id": 5,
+     "scorerank": 1,
+     "score": 2.5,
+     "associations": [
+      1,
+      3,
+      6
+     ]
+    },
+    "6": {
+     "reference": "Agn\u00e8s Canayer",
+     "id": 6,
+     "scorerank": 3,
+     "score": 2.0,
+     "associations": [
+      2,
+      1,
+      5
+     ]
+    },
+    "7": {
+     "reference": "Annick Billon",
+     "id": 7,
+     "scorerank": 4,
+     "score": 2,
+     "associations": [
+      3,
+      4,
+      2
+     ]
+    },
+    "8": {
+     "reference": "Bernard Bonne",
+     "id": 8,
+     "scorerank": 2,
+     "score": 2.5,
+     "associations": [
+      4,
+      2,
+      3
+     ]
+    }
+   }
+  },
+  "5": {
+   "name": "TournoiS5",
+   "location": "Rennes",
+   "start_date": "15/05/2020",
+   "end_date": "15/05/2020",
+   "num_of_round": 4,
+   "selected_players": [
+    "Agn\u00e8s Canayer",
+    "Alexandra Borchio-Fontimp",
+    "Annick Billon",
+    "Arnaud Bazin",
+    "Arnaud De Belenet",
+    "Arnold Noire",
+    "Bernard Bonne",
+    "Bernard Buis",
+    "Bertrand Farse",
+    "Bruno Belin"
+   ],
+   "game_type": "Bullet",
+   "notes": "",
+   "serialized_object": {
+    "1": [
+     [
+      [
+       "Arnaud Bazin",
+       "Agn\u00e8s Canayer"
+      ],
+      [
+       "Arnold Noire",
+       "Annick Billon"
+      ],
+      [
+       "Alexandra Borchio-Fontimp",
+       "Bertrand Farse"
+      ],
+      [
+       "Arnaud De Belenet",
+       "Bernard Bonne"
+      ],
+      [
+       "Bernard Buis",
+       "Bruno Belin"
+      ]
+     ],
+     [
+      "2",
+      null,
+      "1",
+      "2",
+      "2"
+     ],
+     [
+      "11-Nov-2021 (15:07:06.611700)",
+      "11-Nov-2021 (15:07:06.611700)",
+      "11-Nov-2021 (15:07:06.611700)",
+      "11-Nov-2021 (15:07:06.611700)",
+      "11-Nov-2021 (15:07:06.611700)"
+     ],
+     [
+      "11-Nov-2021 (15:07:07.778675)",
+      "11-Nov-2021 (15:07:08.122672)",
+      "11-Nov-2021 (15:07:08.739116)",
+      "11-Nov-2021 (15:07:08.998363)",
+      "11-Nov-2021 (15:07:10.099644)"
+     ]
+    ],
+    "2": [
+     [
+      [
+       "Alexandra Borchio-Fontimp",
+       "Agn\u00e8s Canayer"
+      ],
+      [
+       "Bernard Bonne",
+       "Bruno Belin"
+      ],
+      [
+       "Arnold Noire",
+       "Arnaud Bazin"
+      ],
+      [
+       "Annick Billon",
+       "Arnaud De Belenet"
+      ],
+      [
+       "Bernard Buis",
+       "Bertrand Farse"
+      ]
+     ],
+     [
+      "2",
+      null,
+      "1",
+      "2",
+      null
+     ],
+     [
+      "11-Nov-2021 (15:07:17.779100)",
+      "11-Nov-2021 (15:07:17.779100)",
+      "11-Nov-2021 (15:07:17.779100)",
+      "11-Nov-2021 (15:07:17.779100)",
+      "11-Nov-2021 (15:07:17.779100)"
+     ],
+     [
+      "11-Nov-2021 (15:07:19.147543)",
+      "11-Nov-2021 (15:07:19.428922)",
+      "11-Nov-2021 (15:07:21.067930)",
+      "11-Nov-2021 (15:07:21.523209)",
+      "11-Nov-2021 (15:07:22.075175)"
+     ]
+    ]
+   },
+   "scoreboard": {
+    "1": {
+     "reference": "Arnaud Bazin",
+     "id": 1,
+     "scorerank": 10,
+     "score": 0,
+     "associations": [
+      6,
+      2
+     ]
+    },
+    "2": {
+     "reference": "Arnold Noire",
+     "id": 2,
+     "scorerank": 2,
+     "score": 1.5,
+     "associations": [
+      7,
+      1
+     ]
+    },
+    "3": {
+     "reference": "Alexandra Borchio-Fontimp",
+     "id": 3,
+     "scorerank": 5,
+     "score": 1,
+     "associations": [
+      8,
+      6
+     ]
+    },
+    "4": {
+     "reference": "Arnaud De Belenet",
+     "id": 4,
+     "scorerank": 6,
+     "score": 1,
+     "associations": [
+      9,
+      7
+     ]
+    },
+    "5": {
+     "reference": "Bernard Buis",
+     "id": 5,
+     "scorerank": 7,
+     "score": 0.5,
+     "associations": [
+      10,
+      8
+     ]
+    },
+    "6": {
+     "reference": "Agn\u00e8s Canayer",
+     "id": 6,
+     "scorerank": 1,
+     "score": 2,
+     "associations": [
+      1,
+      3
+     ]
+    },
+    "7": {
+     "reference": "Annick Billon",
+     "id": 7,
+     "scorerank": 8,
+     "score": 0.5,
+     "associations": [
+      2,
+      4
+     ]
+    },
+    "8": {
+     "reference": "Bertrand Farse",
+     "id": 8,
+     "scorerank": 9,
+     "score": 0.5,
+     "associations": [
+      3,
+      5
+     ]
+    },
+    "9": {
+     "reference": "Bernard Bonne",
+     "id": 9,
+     "scorerank": 3,
+     "score": 1.5,
+     "associations": [
+      4,
+      10
+     ]
+    },
+    "10": {
+     "reference": "Bruno Belin",
+     "id": 10,
+     "scorerank": 4,
+     "score": 1.5,
+     "associations": [
+      5,
+      9
+     ]
+    }
+   }
+  },
+  "6": {
+   "name": "ParisVillage",
+   "location": "",
+   "start_date": "15/05/2020",
+   "end_date": "15/05/2020",
+   "num_of_round": 4,
+   "selected_players": [
+    "Garry Kasparov",
+    "Gilbert Bouchet",
+    "Christine Bonfanti-Dossat",
+    "C\u00e9line Boulay-Esperonnier",
+    "David Assouline",
+    "Viviane Artigalas",
+    "Toine Bourrat",
+    "Michel Canev\u00e8t"
+   ],
+   "game_type": "Bullet",
+   "notes": "",
+   "serialized_object": {
+    "1": [
+     [
+      [
+       "Garry Kasparov",
+       "Gilbert Bouchet"
+      ],
+      [
+       "Viviane Artigalas",
+       "C\u00e9line Boulay-Esperonnier"
+      ],
+      [
+       "David Assouline",
+       "Toine Bourrat"
+      ],
+      [
+       "Christine Bonfanti-Dossat",
+       "Michel Canev\u00e8t"
+      ]
+     ],
+     [
+      "2",
+      null,
+      "1",
+      "2"
+     ],
+     [
+      "11-Nov-2021 (15:13:47.594589)",
+      "11-Nov-2021 (15:13:47.594589)",
+      "11-Nov-2021 (15:13:47.594589)",
+      "11-Nov-2021 (15:13:47.594589)"
+     ],
+     [
+      "11-Nov-2021 (15:13:48.786087)",
+      "11-Nov-2021 (15:13:49.050573)",
+      "11-Nov-2021 (15:13:49.267727)",
+      "11-Nov-2021 (15:13:49.450730)"
+     ]
+    ],
+    "2": [
+     [
+      [
+       "David Assouline",
+       "Gilbert Bouchet"
+      ],
+      [
+       "Michel Canev\u00e8t",
+       "Viviane Artigalas"
+      ],
+      [
+       "C\u00e9line Boulay-Esperonnier",
+       "Garry Kasparov"
+      ],
+      [
+       "Christine Bonfanti-Dossat",
+       "Toine Bourrat"
+      ]
+     ],
+     [
+      "2",
+      null,
+      "1",
+      "2"
+     ],
+     [
+      "11-Nov-2021 (15:13:53.018572)",
+      "11-Nov-2021 (15:13:53.018572)",
+      "11-Nov-2021 (15:13:53.018572)",
+      "11-Nov-2021 (15:13:53.018572)"
+     ],
+     [
+      "11-Nov-2021 (15:13:54.362843)",
+      "11-Nov-2021 (15:13:54.666234)",
+      "11-Nov-2021 (15:13:54.889818)",
+      "11-Nov-2021 (15:13:55.092538)"
+     ]
+    ],
+    "3": [
+     [
+      [
+       "Gilbert Bouchet",
+       "C\u00e9line Boulay-Esperonnier"
+      ],
+      [
+       "Michel Canev\u00e8t",
+       "David Assouline"
+      ],
+      [
+       "Viviane Artigalas",
+       "Toine Bourrat"
+      ],
+      [
+       "Garry Kasparov",
+       "Christine Bonfanti-Dossat"
+      ]
+     ],
+     [
+      "2",
+      null,
+      "1",
+      "2"
+     ],
+     [
+      "11-Nov-2021 (15:13:59.682745)",
+      "11-Nov-2021 (15:13:59.682745)",
+      "11-Nov-2021 (15:13:59.682745)",
+      "11-Nov-2021 (15:13:59.682745)"
+     ],
+     [
+      "11-Nov-2021 (15:14:02.730545)",
+      "11-Nov-2021 (15:14:02.235211)",
+      "11-Nov-2021 (15:14:03.924109)",
+      "11-Nov-2021 (15:14:04.379579)"
+     ]
+    ],
+    "4": [
+     [
+      [
+       "C\u00e9line Boulay-Esperonnier",
+       "Michel Canev\u00e8t"
+      ],
+      [
+       "Viviane Artigalas",
+       "Gilbert Bouchet"
+      ],
+      [
+       "David Assouline",
+       "Christine Bonfanti-Dossat"
+      ],
+      [
+       "Toine Bourrat",
+       "Garry Kasparov"
+      ]
+     ],
+     [
+      "2",
+      null,
+      "1",
+      "2"
+     ],
+     [
+      "11-Nov-2021 (15:14:08.555045)",
+      "11-Nov-2021 (15:14:08.555045)",
+      "11-Nov-2021 (15:14:08.555045)",
+      "11-Nov-2021 (15:14:08.555045)"
+     ],
+     [
+      "11-Nov-2021 (15:15:25.074907)",
+      "11-Nov-2021 (15:15:25.962317)",
+      "11-Nov-2021 (15:15:26.210408)",
+      "11-Nov-2021 (15:15:26.402707)"
+     ]
+    ]
+   },
+   "scoreboard": {
+    "1": {
+     "reference": "Garry Kasparov",
+     "id": 1,
+     "scorerank": 6,
+     "score": 1,
+     "associations": [
+      5,
+      6,
+      4,
+      7
+     ]
+    },
+    "2": {
+     "reference": "Viviane Artigalas",
+     "id": 2,
+     "scorerank": 2,
+     "score": 2.5,
+     "associations": [
+      6,
+      8,
+      7,
+      5
+     ]
+    },
+    "3": {
+     "reference": "David Assouline",
+     "id": 3,
+     "scorerank": 3,
+     "score": 2.5,
+     "associations": [
+      7,
+      5,
+      8,
+      4
+     ]
+    },
+    "4": {
+     "reference": "Christine Bonfanti-Dossat",
+     "id": 4,
+     "scorerank": 7,
+     "score": 1,
+     "associations": [
+      8,
+      7,
+      1,
+      3
+     ]
+    },
+    "5": {
+     "reference": "Gilbert Bouchet",
+     "id": 5,
+     "scorerank": 4,
+     "score": 2.5,
+     "associations": [
+      1,
+      3,
+      6,
+      2
+     ]
+    },
+    "6": {
+     "reference": "C\u00e9line Boulay-Esperonnier",
+     "id": 6,
+     "scorerank": 5,
+     "score": 2.5,
+     "associations": [
+      2,
+      1,
+      5,
+      8
+     ]
+    },
+    "7": {
+     "reference": "Toine Bourrat",
+     "id": 7,
+     "scorerank": 8,
+     "score": 1,
+     "associations": [
+      3,
+      4,
+      2,
+      1
+     ]
+    },
+    "8": {
+     "reference": "Michel Canev\u00e8t",
+     "id": 8,
+     "scorerank": 1,
+     "score": 3.0,
+     "associations": [
+      4,
+      2,
+      3,
+      6
      ]
     }
    }

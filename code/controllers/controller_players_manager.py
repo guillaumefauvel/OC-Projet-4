@@ -29,7 +29,7 @@ def players_manager():
 
     elif answer == "3":
         vm.view_header(4)
-        show_player_infos()
+        player_informations()
 
 def adding_player():
     """ Create a new player object from the gathered informations"""
@@ -65,7 +65,7 @@ def delete_player():
     return
 
 
-def show_player_infos():
+def player_informations():
     """ Show the informations of a player """
 
     vrm.show_list_of_players(make_players_dict())
@@ -76,7 +76,9 @@ def show_player_infos():
     for player in Player._serialized_registry:
         if player['reference'] == selected_player:
             player_infos = player
-    vpm.show_player_infos(player_infos)
+            vpm.show_player_infos(player_infos)
 
-    cm.menu_loop(show_player_infos)
+    cm.menu_loop(player_informations)
+
+    return
 

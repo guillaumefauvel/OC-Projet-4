@@ -182,3 +182,15 @@ def show_list_of_players(player_dict):
 
     return
 
+def show_tournament_name(tournament_name):
+    """ Show a formated version of the tournament name
+    Arg : a string containing the tournament name """
+
+    layer = f"+{'-'*64}+"
+    name_lenght = int(len(tournament_name)/2)
+    new_form = f"|{(int(63/2)-name_lenght)*' '}{tournament_name}{((int(63/2)-name_lenght+1))*' '}|"
+    print(layer)
+    print(new_form)
+    print(layer)
+
+    return

@@ -1,4 +1,4 @@
-
+from datetime import datetime
 
 def ask_choice():
     """ Query the user choice
@@ -28,10 +28,11 @@ def new_player():
         if player_type[info] == "Date de naissance : ":
             while True:
                 take = input(player_type[info])
-                if len(take) == 10 and take[2] == "/" and take[5] == "/":
+                try:
+                    datetime.strptime(take,"%d/%m/%Y")
                     player_infos.append(take)
                     break
-                else:
+                except ValueError:
                     print("---< Merci d'entrer une date au format 'JJ/MM/AAAA'. ")
 
         elif player_type[info] == "Genre [H/F]: ":

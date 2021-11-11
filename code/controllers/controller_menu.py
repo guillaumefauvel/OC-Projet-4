@@ -56,5 +56,5 @@ def menu_loop(function):
             launch_the_menu()
             break
         elif response is False:
-            function()
+            return function()
 

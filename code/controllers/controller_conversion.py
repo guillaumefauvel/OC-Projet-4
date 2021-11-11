@@ -1,5 +1,4 @@
 from models.player import Player
-import json
 
 def convert_to_player_object(list_of_player_reference):
     """ Convert a list of player reference into a list of player object

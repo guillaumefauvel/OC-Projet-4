@@ -10,6 +10,7 @@ import views.view_menu as vm
 def reports_manager():
     """ Show the user the possibilities and gathered his answer.
     He is redirected in order to fulfill is choice."""
+
     vm.view_header(11)
 
     answer = vrm.ask_for_report_choice()
@@ -122,7 +123,10 @@ def tournament_players_by_alpha():
     the player of a given tournament """
 
     vrm.show_list(make_tournament_dict())
+
     tournament_choice = vrm.ask_tournament_choice(make_tournament_dict())
+
+    vrm.show_tournament_name(make_tournament_dict()[tournament_choice][0])
     vrm.show_tournament_players_by_alpha(make_tournament_dict()[tournament_choice])
 
 
@@ -131,17 +135,20 @@ def tournament_players_by_rank():
     by specifying their rank in the general scoreboard"""
 
     ctm.updating_general_rank_by_ratio()
-
     vrm.show_list(make_tournament_dict())
+
     tournament_choice = vrm.ask_tournament_choice(make_tournament_dict())
     players_list = make_tournament_dict()[tournament_choice][1]
     player_object = []
+
     for value in players_list:
         player_object.append(ctm.player_researcher(value)[0])
     player_dict = {}
     for value in player_object:
         player_dict[value.reference] = value.ranking
     player_dict = dict(sorted(player_dict.items(), key=lambda item: item[1]))
+
+    vrm.show_tournament_name(make_tournament_dict()[tournament_choice][0])
     vrm.show_tournament_players_by_rank(player_dict)
 
 
@@ -149,9 +156,11 @@ def tournament_scoreboard():
     """ Show the final scorebaord of the selected tournament """
 
     vrm.show_list(make_tournament_dict())
+
     tournament_choice = vrm.ask_tournament_choice(make_tournament_dict())
     tournament_name = make_tournament_dict()[tournament_choice][0]
     scoreboard = make_tournament_dict()[tournament_choice][3]
+
     vrm.show_scoreboard(sorted(scoreboard.values(), key=lambda k: k['score'], reverse=True), tournament_name)
 
 
@@ -170,9 +179,12 @@ def tournament_history():
 
     vrm.show_list(make_tournament_dict())
     tournament_choice = vrm.ask_tournament_choice(make_tournament_dict())
+
     round_list = make_tournament_dict()[tournament_choice][2]
     players_list = make_tournament_dict()[tournament_choice][1]
     scoreboard = {}
+
+    vrm.show_tournament_name(make_tournament_dict()[tournament_choice][0])
 
     for player, index in zip(players_list, range(1, len(players_list)+1)):
         scoreboard[index] = {"reference": player, "score": 0, "rank": index, "round_result": ""}
@@ -206,8 +218,9 @@ def general_scoreboard():
     """ Show the general scoreboard, it is sorted by ranking and it
     filters out every players that never played """
 
-    sorted_list = sorted(Player._serialized_registry, key=lambda d: d['ranking'])
-    filtered_list = [d for d in sorted_list if d['num_of_match'] > 0]
+    sorted_by_rank = sorted(Player._serialized_registry, key=lambda d: d['ranking'])
+    filtered_list = [d for d in sorted_by_rank if d['num_of_match'] > 0]
+
     vrm.show_general_scoreboard(filtered_list)
 
     return
