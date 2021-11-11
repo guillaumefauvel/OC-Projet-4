@@ -1,5 +1,6 @@
 # Readme - OC-Projet-4 - ChessTournamentManager
 Ce programme permet de gérer la mise en place de plusieurs tournois d'échec. La mécanique d'apparaige est basée sur le système suisse. Les données sont stockées au format JSON grâce à TinyDB.
+
 ##
 
 ### Arborescence : 
@@ -26,7 +27,7 @@ Ce programme permet de gérer la mise en place de plusieurs tournois d'échec. L
 
 
 ##
-### Comment naviguer dans l'application : 
+### Navigation : 
 
 Pour sélectionner un des multiples choix il suffit d'entrer l'index du choix voulu.
 Dans certaine situation, il est possible de revenir en arrière. Il suffit d'appuyer sur ''ENTRER''.
