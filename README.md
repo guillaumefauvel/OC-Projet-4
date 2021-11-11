@@ -1,9 +1,9 @@
 # Readme - OC-Projet-4 - ChessTournamentManager
 Ce programme permet de gérer la mise en place de plusieurs tournois d'échec. La mécanique d'apparaige est basée sur le système suisse. Les données sont stockées au format JSON grâce à TinyDB.
+##
 
+### Arborescence : 
 
-### Ce que fait l'application : 
-	- Les différentes possibilités :
 
 		1. Gestion des tournois
 			1. Lancer un nouveau tournoi 
@@ -25,13 +25,14 @@ Ce programme permet de gérer la mise en place de plusieurs tournois d'échec. L
 		4. Quitter le programme 
 
 
-
+##
 ### Comment naviguer dans l'application : 
+
 Pour sélectionner un des multiples choix il suffit d'entrer l'index du choix voulu.
 Dans certaine situation, il est possible de revenir en arrière. Il suffit d'appuyer sur ''ENTRER''.
 
 
-
+##
 ### La structure - Modèle MVC :
 Nous avons développé l'application en utilisant le dessign pattern MVC. Ainsi nous avons trois documents.
 
@@ -51,7 +52,7 @@ Il existe 4 grands modèles : Joueur, Tournoi, Round et Match.
 Le Tournoi à besoin du rang des Joeurs afin d'organiser l'apparaige des Matchs. Il fournis à l'object Round une liste de match afin que l'object Round puisse créer ces Matchs. 
 
 
-
+##
 ### Mise en garde : 
 Si l'application est coupée la sauvegarde échoue. En effet la sauvegarde du programme s'effectue lorsque l'utilisateur quitte le programme.
-Les tournois ou les joueurs sont véritablement supprimés de la base de données lorsque l'utilisateur quitte le programme.
+Les tournois ou les joueurs sont donc véritablement supprimés de la base de données lorsque l'utilisateur quitte le programme.
