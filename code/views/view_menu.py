@@ -18,8 +18,9 @@ def verify_menu_command():
 def menu_proposition():
     """ Show the user the menu possibilities and ask his choice
     Return : A int associated to the user anwser """
+    view_header(15)
 
-    print("\nQue voulez-vous faire ? \n\n  1. Gestion des tournois \n  2. Gestion des joueurs "
+    print("Que voulez-vous faire ? \n\n  1. Gestion des tournois \n  2. Gestion des joueurs "
           "\n  3. Gestion des rapports \n  "
           "4. Quitter le programme")
     response = verify_menu_command()
@@ -50,11 +51,18 @@ def view_header(header_ref):
                       6:"-- Joueurs classés par rang --",
                       7:"-- Liste de tout les tournois --",
                       8:"-- Tableau des scores d'un tournoi --",
-                      9:"-- Récapitulatif d'un tournois --"}
+                      9:"-- Récapitulatif d'un tournois --",
+                      10:"-- Ajout d'un nouveau joueur --",
+                      11:"----- GESTION DES RAPPORTS -----",
+                      12:"----- GESTION DES JOEURS -----",
+                      13:"----- GESTION DES TOURNOIS -----",
+                      14:"-- Lancement d'un nouveau tournoi --",
+                      15:"---------- MENU ----------",
+                      16:"----- FIN DU TOURNOI -----"}
 
-    print("\n\n"+len(dict_of_header[header_ref])*"-")
+    print("\n"+len(dict_of_header[header_ref])*"-")
     print(dict_of_header[header_ref])
-    print(len(dict_of_header[header_ref])*"-")
+    print(len(dict_of_header[header_ref])*"-"+"\n")
 
     return
 

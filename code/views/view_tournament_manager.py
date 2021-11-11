@@ -1,5 +1,20 @@
 import views.view_reports_manager as vrm
 
+def ask_choice():
+    """ Show the user his possible choices and ask him his selection """
+
+    print("Que souhaitez faire ? \n\n  1. Lancer un nouveau tournoi \n  2."
+          " Reprendre un tournoi en cours \n  3. Supprimer un tournoi")
+    while True:
+        answer = input("\nRéponse : ")
+        if answer == "":
+            return
+        if answer in ["1","2","3"]:
+            break
+        else:
+            print("->Merci de rentrer 1, 2 ou 3.")
+    return answer
+
 def check_date(caraccteristic):
     """Check if the input date fit the asked format, if not it show an error and ask again"""
     while True:
@@ -14,10 +29,6 @@ def new_tournament(player_dict):
     """ Form that gather informations from the user in order to make a tournament
     Arg : A dictionnary of all the listed players
     Return : All the informations needed to create a tournament"""
-
-    print("\n\n-------------------------------------")
-    print("-- Lancement d'un nouveau tournoi. --")
-    print("-------------------------------------\n")
 
     tournament_caracteristics = ["Nom : ", "Lieu : ", "Date de début (JJ/MM/AAAA): ", "Date de fin (JJ/MM/AAAA): ",
                                  "Nombre de tours : " , "\nJoueurs séléctionnés : ", "Type de jeu : " ,"Notes : " ]
@@ -100,22 +111,6 @@ def new_tournament(player_dict):
 
     return name, location, start_date, end_date, num_of_round, selected_players, game_type, notes
 
-
-def ask_choice():
-    """ Show the user his possible choices and ask him his selection """
-    print("\n-------------------------------")
-    print("---- GESTION DES TOURNOIS -----")
-    print("-------------------------------")
-    print("\nQue souhaitez faire ? \n\n  1. Lancer un nouveau tournoi \n  2."
-          " Reprendre un tournoi en cours \n  3. Supprimer un tournoi")
-    while True:
-        answer = input("\nRéponse : ")
-        if answer in ["1","2","3"]:
-            break
-        else:
-            print("->Merci de rentrer 1, 2 ou 3.")
-    return answer
-
 def show_tournament_list(dict,mode):
     """ Show a list of tournament and ask the index of the selected tournament
     Arg : a tournament dict, a mode that use a variant of the origin function"""
@@ -129,15 +124,17 @@ def show_tournament_list(dict,mode):
 
     while True:
         try:
-            selected_tournament = int(input("\nQuel tournoi voulez-vous sélectionner ? "))
-            if selected_tournament in dict.keys():
+            selected_tournament = input("\nQuel tournoi voulez-vous sélectionner ? ")
+            if selected_tournament == "":
+                return
+            if int(selected_tournament) in dict.keys():
                 break
             else:
                 print("->Merci de rentrer un index valide")
         except ValueError:
             print("->Merci de rentrer un index valide")
 
-    selected_tournament = dict[selected_tournament]
+    selected_tournament = dict[int(selected_tournament)]
 
     return selected_tournament
 

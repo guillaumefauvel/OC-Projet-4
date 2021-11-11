@@ -5,10 +5,8 @@ import math
 def ask_for_report_choice():
     """ Show the possible reports and ask the user his selection
     Return : An int that correspond to the user choice"""
-    print("\n-------------------------------")
-    print("---- GESTION DES RAPPORTS -----")
-    print("-------------------------------")
-    print("\nQuel type de rapport voulez-vous générer ? \n")
+
+    print("Quel type de rapport voulez-vous générer ? \n")
     print("  1. Une liste de tous les joueurs classée par ordre alphabétique")
     print("  2. Une liste de tous les joueurs classée par classement")
     print("  3. Une liste de tous les joueurs d'un tournoi classée par ordre alphabétique")
@@ -18,7 +16,7 @@ def ask_for_report_choice():
     print("  7. Le récapitulatif d'un tournoi")
     print("  8. Le tableau des scores")
 
-    possible_choice = ["1", "2", "3", "4", "5", "6", "7", "8"]
+    possible_choice = ["","1", "2", "3", "4", "5", "6", "7", "8"]
 
     while True:
         answer = input("\nRéponse : ")

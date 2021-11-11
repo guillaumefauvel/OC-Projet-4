@@ -10,46 +10,50 @@ import views.view_menu as vm
 def reports_manager():
     """ Show the user the possibilities and gathered his answer.
     He is redirected in order to fulfill is choice."""
+    vm.view_header(11)
 
-    answer = int(vrm.ask_for_report_choice())
+    answer = vrm.ask_for_report_choice()
+    if answer == "":
+        return cm.navigator(0,3)
 
-    if answer == 1:
+    if answer == "1":
         vm.view_header(5)
         vrm.show_list_of_players(make_players_dict())
-        cm.navigator(3)
+        cm.navigator(3,1)
 
-    elif answer == 2:
+    elif answer == "2":
         vm.view_header(6)
         vrm.show_list_of_players(sort_by_rank())
-        cm.navigator(3)
+        cm.navigator(3,1)
 
-    elif answer == 3:
+    elif answer == "3":
         vm.view_header(5)
         tournament_players_by_alpha()
-        cm.navigator(3)
+        cm.navigator(3,1)
 
-    elif answer == 4:
+    elif answer == "4":
         vm.view_header(6)
         tournament_players_by_rank()
-        cm.navigator(3)
+        cm.navigator(3,1)
 
-    elif answer == 5:
+    elif answer == "5":
         vm.view_header(7)
         vrm.show_tournaments_infos(make_tournament_dict())
-        cm.navigator(3)
+        cm.navigator(3,1)
 
-    elif answer == 6:
+    elif answer == "6":
         vm.view_header(8)
         tournament_scoreboard()
-        cm.navigator(3)
+        cm.navigator(3,1)
 
-    elif answer == 7:
+    elif answer == "7":
         vm.view_header(9)
         tournament_history()
-        cm.navigator(3)
-    elif answer == 8:
+        cm.navigator(3,1)
+
+    elif answer == "8":
         general_scoreboard()
-        cm.navigator(3)
+        cm.navigator(3,1)
 
     return
 

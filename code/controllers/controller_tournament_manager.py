@@ -16,22 +16,34 @@ def tournament_manager():
     """ Show the user the possibilities and gathered his answer.
     He is redirected in order to fulfill is choice."""
 
+    view_menu.view_header(13)
     answer = vtm.ask_choice()
+
+    if answer == None:
+
+        return cm.navigator(0, 3)
+
     if answer == "1":
+
+        view_menu.view_header(14)
         tournament_launching()
+
     elif answer == "2":
+
         if len(unfinished_tournaments()) != 0:
             view_menu.view_header(1)
             selected_tournament = vtm.show_tournament_list(unfinished_tournaments(),2)
+            if selected_tournament == None:
+                return cm.navigator(1,2)
             name, finished_round, tournament_object, round_left = selected_tournament
             tournament_continuation(tournament_object,finished_round)
         else:
-            view_menu.view_header(2)
             tournament_manager()
 
     elif answer == "3":
-        vtm.deleting_a_tournament()
-        cm.menu_loop(delete_tournament)
+
+        view_menu.view_header(2)
+        delete_tournament()
 
     return
 
@@ -53,8 +65,11 @@ def tournament_launching():
 
 def delete_tournament():
     """ Remove a selected tournament from the database """
+    try:
+        tournament_to_delete = vtm.show_tournament_list(crm.make_tournament_dict(),1)[0]
+    except TypeError:
+        return cm.navigator(1,2)
 
-    tournament_to_delete = vtm.show_tournament_list(crm.make_tournament_dict(),1)[0]
     database = TinyDB('database.json', indent=1)
     tournament_table = database.table("Tournament")
 
@@ -65,6 +80,9 @@ def delete_tournament():
     for tournament in Tournament._registry:
         if tournament.name == tournament_to_delete:
             Tournament._registry.remove(tournament)
+
+    cm.menu_loop(delete_tournament)
+
     return
 
 
@@ -234,5 +252,7 @@ def tournament_continuation(tournament_object,finished_round):
     updating_players_stats(tournament_object)
     updating_general_rank_by_ratio()
     tournament_object.serialized_the_object()
+    view_menu.view_header(16)
+    cm.launch_the_menu()
 
     return

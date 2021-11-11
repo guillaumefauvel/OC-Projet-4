@@ -3,19 +3,17 @@
 def ask_choice():
     """ Query the user choice
     Return : An int that correspond to the user choice """
-    print("\n-------------------------------")
-    print("----- GESTION DES JOUEURS -----")
-    print("-------------------------------")
 
-    print("\nQue souhaitez faire ? \n\n  1. Ajouter un nouveau joueur\n  2."
+    print("Que souhaitez faire ? \n\n  1. Ajouter un nouveau joueur\n  2."
           " Supprimer un joueur \n  3. Rechercher les informations d'un joueur")
 
     while True:
         answer = input("\nRéponse : ")
-        if answer in ["1", "2", "3"]:
+        if answer in ["","1", "2", "3"]:
             break
         else:
             print("->Merci de rentrer 1,2 ou 3.")
+
     return answer
 
 
@@ -23,11 +21,6 @@ def new_player():
     """ Form that gather player informations
     Return : Informations that are needed to create a player object"""
 
-    print("\n\n-------------------------------")
-    print("-- Ajout d'un nouveau joueur --")
-    print("-------------------------------\n")
-
-    print("\n--- Ajout d'un nouveau joueur ---\n ")
     player_infos = []
     player_type = ["Nom : ", "Prénom : ", "Date de naissance : ", "Genre [H/F]: ", "Classement : "]
     for info in range(len(player_type)):
@@ -74,15 +67,17 @@ def ask_player_selection(player_dict):
 
     while True:
         try:
-            selected_player = int(input("\nQuel joueur voulez-vous sélectionner ? "))
-            if selected_player in player_dict.keys():
+            selected_player = input("\nQuel joueur voulez-vous sélectionner ? ")
+            if selected_player == "":
+                return
+            if int(selected_player) in player_dict.keys():
                 break
             else:
                 print("->Merci de rentrer un index valide")
         except ValueError:
             print("->Merci de rentrer un index valide")
 
-    selected_player = player_dict[selected_player][0]
+    selected_player = player_dict[int(selected_player)][0]
 
     return selected_player
 
