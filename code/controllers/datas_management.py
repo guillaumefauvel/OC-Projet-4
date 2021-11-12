@@ -3,8 +3,35 @@ from models.tournament import Tournament
 from models.round import Round
 from models.match import Match
 
-from tinydb import TinyDB, Query
+from tinydb import TinyDB
 from datetime import datetime
+
+
+def save_data():
+    """ Save the player and the tournament data into a json file """
+    database = TinyDB('database.json', indent=1)
+    database.purge_table("Player")
+    database.purge_table("Tournament")
+
+    player_table = database.table("Player")
+    player_table.insert_multiple(Player._serialized_registry)
+
+    tournament_table = database.table('Tournament')
+    tournament_table.insert_multiple(Tournament._serialized_registry)
+    return
+
+
+def serializing_tournament_player():
+    """ Serialize the players and the tournaments"""
+
+    for player in Player._registry:
+        player.update_player_datas()
+
+    for tournament in Tournament._registry:
+        tournament.serialized_the_object()
+
+    return
+
 
 def player_maker(dict_to_transform):
     """ Create player objects
@@ -28,31 +55,6 @@ def player_maker(dict_to_transform):
         player.winloss_ratio = value['win_loss_ratio']
         player.num_of_match = value['num_of_match']
         player.num_of_tournaments = value['num_of_tournaments']
-
-
-def save_data():
-    """ Save the player and the tournament data into a json file """
-    database = TinyDB('database.json', indent=1)
-    database.purge_table("Player")
-    database.purge_table("Tournament")
-
-    player_table = database.table("Player")
-    player_table.insert_multiple(Player._serialized_registry)
-
-    tournament_table = database.table('Tournament')
-    tournament_table.insert_multiple(Tournament._serialized_registry)
-    return
-
-
-def load_from_save():
-    """ Recreate player and tournament object from the json file """
-    database = TinyDB('database.json', indent=1)
-    player_table = database.table("Player")
-    tournament_table = database.table("Tournament")
-    player_maker(player_table.all())
-    tournament_maker(tournament_table.all())
-
-    return
 
 
 def tournament_maker(dict_to_transform):
@@ -83,6 +85,11 @@ def tournament_maker(dict_to_transform):
                 end_times = value['serialized_object'][str(index)][3]
 
                 Tournament._registry[-1].object_dict[index] = Round(duel_list)
+                round_start_time = value['serialized_object'][str(index)][4][0]
+                round_end_time = value['serialized_object'][str(index)][4][1]
+                Round._registry[-1].start_time = datetime.strptime(round_start_time, '%d-%b-%Y (%H:%M:%S.%f)')
+                Round._registry[-1].end_time = datetime.strptime(round_end_time, '%d-%b-%Y (%H:%M:%S.%f)')
+
                 Tournament._registry[-1].object_dict[index].make_match()
 
                 for match, result, start_time, end_time in zip(Match._registry[-len(results):],
@@ -95,27 +102,12 @@ def tournament_maker(dict_to_transform):
             Tournament._registry[-1].scoreboard = value['scoreboard']
 
 
-def serializing_tournament_player():
-    """ Serialize the players and the tournaments"""
-
-    for player in Player._registry:
-        player.update_player_datas()
-
-    for tournament in Tournament._registry:
-        tournament.serialized_the_object()
-
-    return
-
-
-def delete_duplicates():
-    """-DEVonly Remove tournament duplicated from the database """
-
+def load_from_save():
+    """ Recreate player and tournament object from the json file """
     database = TinyDB('database.json', indent=1)
+    player_table = database.table("Player")
     tournament_table = database.table("Tournament")
-    list_of_tournament_names = []
-    for value in tournament_table:
-        if value['name'] not in list_of_tournament_names:
-            list_of_tournament_names.append(value['name'])
-        else:
-            tournament_table.remove(Query().name == value['name'])
+    player_maker(player_table.all())
+    tournament_maker(tournament_table.all())
+
     return

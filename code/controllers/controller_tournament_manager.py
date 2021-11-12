@@ -1,6 +1,7 @@
 from models.player import Player
 from models.match import Match
 from models.tournament import Tournament
+from models.round import Round
 
 import views.view_tournament as vt
 import views.view_tournament_manager as vtm
@@ -9,7 +10,7 @@ from views import view_menu
 import controllers.controller_reports_manager as crm
 import controllers.controller_menu as cm
 
-from tinydb import TinyDB, Query
+from datetime import datetime
 
 
 def tournament_manager():
@@ -71,10 +72,6 @@ def delete_tournament():
     except TypeError:
         return cm.navigator(1,2)
 
-    database = TinyDB('database.json', indent=1)
-    tournament_table = database.table("Tournament")
-
-    tournament_table.remove(Query().name == tournament_to_delete)
     for value in Tournament._serialized_registry:
         if value['name'] == tournament_to_delete:
             Tournament._serialized_registry.remove(value)
@@ -144,6 +141,7 @@ def adding_time_match(match_label_list):
             if match.player_1 == player_1:
                 match.start_time = match_label_list[time_infos][0][1]['start_time']
                 match.end_time = match_label_list[time_infos][1]
+
     return
 
 
@@ -213,6 +211,7 @@ def launch_from_controller(tournament_object):
     list_of_duel = tournament_object.first_draw()
     vt.show_duel(list_of_duel)
     time_informations = vt.asking_end_match(list_of_duel)
+    Round._registry[-1].end_time = datetime.now()
     results = vt.asking_match_result(list_of_duel)
     adding_result_match(results)
     adding_time_match(time_informations)
@@ -237,6 +236,7 @@ def tournament_continuation(tournament_object,finished_round):
         tournament_object.updating_scoreboard_associations(list_of_duel)
         vt.show_duel(list_of_duel)
         time_informations = vt.asking_end_match(list_of_duel)
+        Round._registry[-1].end_time = datetime.now()
         results = vt.asking_match_result(list_of_duel)
         adding_result_match(results)
         adding_time_match(time_informations)

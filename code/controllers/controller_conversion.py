@@ -20,11 +20,15 @@ def round_conversion(list_of_round):
     serialized_dict = {}
 
     for value, index in zip(list_of_round, range(1, len(list_of_round) + 1)):
+
+        round_start_time = list_of_round[value].start_time.strftime("%d-%b-%Y (%H:%M:%S.%f)")
+        round_end_time = list_of_round[value].end_time.strftime("%d-%b-%Y (%H:%M:%S.%f)")
+
         serialized_dict[index] = [list_of_round[value].duel_list,
                                   [x.winner for x in list_of_round[value].attached_match],
                                   [x.start_time.strftime("%d-%b-%Y (%H:%M:%S.%f)")
                                    for x in list_of_round[value].attached_match],
                                   [x.end_time.strftime("%d-%b-%Y (%H:%M:%S.%f)")
-                                   for x in list_of_round[value].attached_match]]
+                                   for x in list_of_round[value].attached_match],[round_start_time,round_end_time]]
 
     return serialized_dict

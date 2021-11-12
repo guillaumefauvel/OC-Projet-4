@@ -204,12 +204,18 @@ def tournament_history():
                 tournament_history_auxiliary(scoreboard, player_2, 0.5, "E")
 
         sorted_version = sorted(scoreboard.values(), key=lambda k: k['score'], reverse=True)
-
         for player, new_rank in zip(sorted_version, range(1, len(sorted_version)+1)):
             player['rank'] = new_rank
 
-        vrm.show_duel(round_list[round][0])
+
+        # newlist = [x for x in fruits if x != "apple"]
+
+        start_time, end_time = [datetime.strptime(x, '%d-%b-%Y (%H:%M:%S.%f)')
+                                for x in round_list[round][-1]]
+
         vrm.show_scoreboard_with_round(sorted_version, round)
+        vrm.show_round_duration(start_time, end_time)
+        vrm.show_duel(round_list[round][0])
 
     return
 

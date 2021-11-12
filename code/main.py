@@ -10,8 +10,6 @@ def main():
 
     menu_attribution(menu_proposition())
 
-    datas_management.serializing_tournament_player()
-    datas_management.save_data()
 
 if __name__ == "__main__":
     main()

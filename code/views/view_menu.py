@@ -7,12 +7,12 @@ def verify_menu_command():
         response = input("\nVotre choix : ")
         try:
             response = int(response)
-            if 5 > response > 0:
+            if 7 > response > 0:
                 return response
             else:
-                print("Veuillez saisir un entier entre 1 et 4")
+                print("Veuillez saisir un entier entre 1 et 6")
         except ValueError:
-            print("Veuillez saisir un entier entre 1 et 4")
+            print("Veuillez saisir un entier entre 1 et 6")
 
 
 def menu_proposition():
@@ -22,7 +22,8 @@ def menu_proposition():
 
     print("Que voulez-vous faire ? \n\n  1. Gestion des tournois \n  2. Gestion des joueurs "
           "\n  3. Gestion des rapports \n  "
-          "4. Quitter le programme")
+          "4. Sauvegarder l'état du programme \n  5. Quitter le programme en sauvegardant \n"
+          "  6. Quitter le programme sans sauvegarder \n")
     response = verify_menu_command()
 
     return response
@@ -66,4 +67,15 @@ def view_header(header_ref):
 
     return
 
-
+def confirm_quit():
+    """ Ask the user the user if he is sure that he want to quit
+    the program without saving
+    Return : A boolean """
+    while True:
+        response = input("\nVoulez-vous vraiment quitter le programme sans sauvegarder ? y/n ")
+        if response == "y":
+            return True
+        elif response == "n":
+            return False
+        else:
+            print("->Merci de répondre par oui (y) ou par non (n).")

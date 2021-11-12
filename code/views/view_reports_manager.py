@@ -1,6 +1,5 @@
 """ Report Manager - View """
 from prettytable import PrettyTable
-import math
 
 def ask_for_report_choice():
     """ Show the possible reports and ask the user his selection
@@ -149,7 +148,7 @@ def show_duel(list_of_duel):
     print("")
     for duel in list_of_duel:
         print(f"{duel[0]} affrontais {duel[1]}")
-    print("")
+    print("\n")
 
     return
 
@@ -165,13 +164,14 @@ def show_list_of_players(player_dict):
         first_player = f"{value}. {player_dict[value][0]}"
         second_player = f"{value+div}. {player_dict[value+div][0]}"
         third_player = f"{value+div*2}. {player_dict[value+div*2][0]}"
-        # new_dict[value] = [player_dict()[value][0], player_dict()[value+div][0], player_dict()[value+div*2][0]]
         new_dict[value] = [first_player, second_player, third_player]
+
     if remainder == 1:
         first_player = f"{len(player_dict)}. {player_dict[len(player_dict)][0]}"
         new_dict[div+1] = [first_player,"",""]
-    else:
-        first_player = f"{len(player_dict)-1}. {player_dict[len(player_dict-1)][0]}"
+
+    elif remainder == 2:
+        first_player = f"{len(player_dict)-1}. {player_dict[len(player_dict)-1][0]}"
         second_player = f"{len(player_dict)}. {player_dict[len(player_dict)][0]}"
         new_dict[div+1] = [first_player,second_player,""]
 
@@ -192,5 +192,16 @@ def show_tournament_name(tournament_name):
     print(layer)
     print(new_form)
     print(layer)
+
+    return
+
+def show_round_duration(start_time,end_time):
+    """ Show the date, the start time and the
+    end time of a given round.
+    Args : type=datetime object, start_time of a round, end_time of a round"""
+    date = start_time.strftime("%m/%d/%Y")
+    start = start_time.strftime("%H:%M")
+    end = end_time.strftime("%H:%M")
+    print(f"\nDate : {date}\nHeure de début : {start}\nHeure de fin : {end}")
 
     return

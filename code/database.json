@@ -21,7 +21,7 @@
    "first_name": "Pascal",
    "birthday": "19/09/1962",
    "gender": "H",
-   "ranking": 25,
+   "ranking": 24,
    "reference": "Pascal Allizard",
    "num_of_wins": 158,
    "num_of_losses": 161,
@@ -35,7 +35,7 @@
    "first_name": "Jean-Claude",
    "birthday": "20/02/1961",
    "gender": "H",
-   "ranking": 13,
+   "ranking": 15,
    "reference": "Jean-Claude Anglars",
    "num_of_wins": 167,
    "num_of_losses": 158,
@@ -49,7 +49,7 @@
    "first_name": "Maurice",
    "birthday": "22/06/1953",
    "gender": "H",
-   "ranking": 26,
+   "ranking": 25,
    "reference": "Maurice Antiste",
    "num_of_wins": 156,
    "num_of_losses": 160,
@@ -77,7 +77,7 @@
    "first_name": "Jean-Michel",
    "birthday": "28/04/1966",
    "gender": "H",
-   "ranking": 24,
+   "ranking": 23,
    "reference": "Jean-Michel Arnaud",
    "num_of_wins": 156,
    "num_of_losses": 157,
@@ -91,7 +91,7 @@
    "first_name": "St\u00e9phane",
    "birthday": "09/03/1973",
    "gender": "H",
-   "ranking": 27,
+   "ranking": 26,
    "reference": "St\u00e9phane Artano",
    "num_of_wins": 152,
    "num_of_losses": 158,
@@ -119,7 +119,7 @@
    "first_name": "David",
    "birthday": "16/06/1959",
    "gender": "H",
-   "ranking": 28,
+   "ranking": 27,
    "reference": "David Assouline",
    "num_of_wins": 27,
    "num_of_losses": 28,
@@ -217,28 +217,28 @@
    "first_name": "Arnaud",
    "birthday": "08/03/1965",
    "gender": "H",
-   "ranking": 5,
+   "ranking": 7,
    "reference": "Arnaud Bazin",
-   "num_of_wins": 30,
-   "num_of_losses": 23,
-   "num_of_draw": 38,
-   "win_loss_ratio": 1.3,
-   "num_of_match": 91,
-   "num_of_tournaments": 17
+   "num_of_wins": 35,
+   "num_of_losses": 30,
+   "num_of_draw": 42,
+   "win_loss_ratio": 1.17,
+   "num_of_match": 107,
+   "num_of_tournaments": 21
   },
   "17": {
    "name": "De Belenet",
    "first_name": "Arnaud",
    "birthday": "12/08/1968",
    "gender": "H",
-   "ranking": 10,
+   "ranking": 28,
    "reference": "Arnaud De Belenet",
-   "num_of_wins": 21,
-   "num_of_losses": 19,
-   "num_of_draw": 11,
-   "win_loss_ratio": 1.11,
-   "num_of_match": 51,
-   "num_of_tournaments": 12
+   "num_of_wins": 26,
+   "num_of_losses": 28,
+   "num_of_draw": 13,
+   "win_loss_ratio": 0.93,
+   "num_of_match": 67,
+   "num_of_tournaments": 16
   },
   "18": {
    "name": "Belin",
@@ -357,14 +357,14 @@
    "first_name": "Annick",
    "birthday": "29/10/1957",
    "gender": "F",
-   "ranking": 23,
+   "ranking": 5,
    "reference": "Annick Billon",
-   "num_of_wins": 17,
-   "num_of_losses": 17,
-   "num_of_draw": 17,
-   "win_loss_ratio": 1.0,
-   "num_of_match": 51,
-   "num_of_tournaments": 12
+   "num_of_wins": 26,
+   "num_of_losses": 19,
+   "num_of_draw": 22,
+   "win_loss_ratio": 1.37,
+   "num_of_match": 67,
+   "num_of_tournaments": 16
   },
   "27": {
    "name": "Bizet",
@@ -499,12 +499,12 @@
    "gender": "H",
    "ranking": 31,
    "reference": "Bernard Bonne",
-   "num_of_wins": 15,
-   "num_of_losses": 22,
-   "num_of_draw": 14,
-   "win_loss_ratio": 0.68,
-   "num_of_match": 51,
-   "num_of_tournaments": 12
+   "num_of_wins": 19,
+   "num_of_losses": 29,
+   "num_of_draw": 19,
+   "win_loss_ratio": 0.66,
+   "num_of_match": 67,
+   "num_of_tournaments": 16
   },
   "37": {
    "name": "Bonnecarr\u00e8re",
@@ -553,14 +553,14 @@
    "first_name": "Alexandra",
    "birthday": "12/04/1951",
    "gender": "F",
-   "ranking": 9,
+   "ranking": 8,
    "reference": "Alexandra Borchio-Fontimp",
-   "num_of_wins": 16,
-   "num_of_losses": 14,
-   "num_of_draw": 21,
-   "win_loss_ratio": 1.14,
-   "num_of_match": 51,
-   "num_of_tournaments": 12
+   "num_of_wins": 21,
+   "num_of_losses": 18,
+   "num_of_draw": 28,
+   "win_loss_ratio": 1.17,
+   "num_of_match": 67,
+   "num_of_tournaments": 16
   },
   "41": {
    "name": "Bor\u00e9",
@@ -749,14 +749,14 @@
    "first_name": "Bernard",
    "birthday": "26/04/1959",
    "gender": "H",
-   "ranking": 14,
+   "ranking": 10,
    "reference": "Bernard Buis",
-   "num_of_wins": 19,
-   "num_of_losses": 18,
-   "num_of_draw": 14,
-   "win_loss_ratio": 1.06,
-   "num_of_match": 51,
-   "num_of_tournaments": 12
+   "num_of_wins": 25,
+   "num_of_losses": 22,
+   "num_of_draw": 20,
+   "win_loss_ratio": 1.14,
+   "num_of_match": 67,
+   "num_of_tournaments": 16
   },
   "55": {
    "name": "Burgoa",
@@ -833,14 +833,14 @@
    "first_name": "Agn\u00e8s",
    "birthday": "02/04/1976",
    "gender": "F",
-   "ranking": 15,
+   "ranking": 14,
    "reference": "Agn\u00e8s Canayer",
-   "num_of_wins": 19,
-   "num_of_losses": 18,
-   "num_of_draw": 14,
-   "win_loss_ratio": 1.06,
-   "num_of_match": 51,
-   "num_of_tournaments": 12
+   "num_of_wins": 25,
+   "num_of_losses": 23,
+   "num_of_draw": 19,
+   "win_loss_ratio": 1.09,
+   "num_of_match": 67,
+   "num_of_tournaments": 16
   },
   "61": {
    "name": "Canev\u00e8t",
@@ -889,7 +889,7 @@
    "first_name": "Jean",
    "birthday": "18/04/1995",
    "gender": "H",
-   "ranking": 8,
+   "ranking": 9,
    "reference": "Jean Godran",
    "num_of_wins": 21,
    "num_of_losses": 18,
@@ -945,14 +945,14 @@
    "first_name": "Arnold",
    "birthday": "18/04/1997",
    "gender": "H",
-   "ranking": 7,
+   "ranking": 13,
    "reference": "Arnold Noire",
-   "num_of_wins": 37,
-   "num_of_losses": 31,
-   "num_of_draw": 36,
-   "win_loss_ratio": 1.19,
-   "num_of_match": 104,
-   "num_of_tournaments": 26
+   "num_of_wins": 43,
+   "num_of_losses": 39,
+   "num_of_draw": 38,
+   "win_loss_ratio": 1.1,
+   "num_of_match": 120,
+   "num_of_tournaments": 30
   },
   "69": {
    "name": "De Galice",
@@ -985,10 +985,10 @@
  },
  "Tournament": {
   "1": {
-   "name": "ParisNice",
-   "location": "Paris/Nice",
+   "name": "ParisMarseille",
+   "location": "Paris/Marseille",
    "start_date": "15/05/2020",
-   "end_date": "18/05/2020",
+   "end_date": "15/05/2020",
    "num_of_round": 4,
    "selected_players": [
     "Agn\u00e8s Canayer",
@@ -1006,133 +1006,19 @@
     "1": [
      [
       [
-       "Bernard Bonne",
-       "Arnaud De Belenet"
-      ],
-      [
-       "Arnold Noire",
-       "Bernard Buis"
-      ],
-      [
-       "Alexandra Borchio-Fontimp",
-       "Agn\u00e8s Canayer"
-      ],
-      [
-       "Arnaud Bazin",
-       "Annick Billon"
-      ]
-     ],
-     [
-      "2",
-      "1",
-      null,
-      "1"
-     ],
-     [
-      "10-Nov-2021 (15:09:21.001996)",
-      "10-Nov-2021 (15:09:21.001996)",
-      "10-Nov-2021 (15:09:21.001996)",
-      "10-Nov-2021 (15:09:21.001996)"
-     ],
-     [
-      "10-Nov-2021 (15:09:22.202179)",
-      "10-Nov-2021 (15:09:22.945906)",
-      "10-Nov-2021 (15:09:23.260996)",
-      "10-Nov-2021 (15:09:23.541385)"
-     ]
-    ],
-    "2": [
-     [
-      [
-       "Arnold Noire",
-       "Arnaud Bazin"
-      ],
-      [
-       "Arnaud De Belenet",
-       "Alexandra Borchio-Fontimp"
-      ],
-      [
-       "Agn\u00e8s Canayer",
-       "Bernard Bonne"
-      ],
-      [
-       "Bernard Buis",
-       "Annick Billon"
-      ]
-     ],
-     [
-      "2",
-      null,
-      "1",
-      "2"
-     ],
-     [
-      "10-Nov-2021 (15:09:27.897741)",
-      "10-Nov-2021 (15:09:27.897741)",
-      "10-Nov-2021 (15:09:27.897741)",
-      "10-Nov-2021 (15:09:27.897741)"
-     ],
-     [
-      "10-Nov-2021 (15:09:29.329912)",
-      "10-Nov-2021 (15:09:30.073737)",
-      "10-Nov-2021 (15:09:30.865961)",
-      "10-Nov-2021 (15:09:33.760320)"
-     ]
-    ],
-    "3": [
-     [
-      [
-       "Arnaud Bazin",
-       "Arnaud De Belenet"
-      ],
-      [
-       "Agn\u00e8s Canayer",
-       "Arnold Noire"
-      ],
-      [
-       "Alexandra Borchio-Fontimp",
-       "Annick Billon"
-      ],
-      [
-       "Bernard Bonne",
-       "Bernard Buis"
-      ]
-     ],
-     [
-      "2",
-      null,
-      "1",
-      "2"
-     ],
-     [
-      "10-Nov-2021 (15:09:37.027976)",
-      "10-Nov-2021 (15:09:37.027976)",
-      "10-Nov-2021 (15:09:37.027976)",
-      "10-Nov-2021 (15:09:37.027976)"
-     ],
-     [
-      "10-Nov-2021 (15:09:38.058983)",
-      "10-Nov-2021 (15:09:38.385512)",
-      "10-Nov-2021 (15:09:40.153153)",
-      "10-Nov-2021 (15:09:40.498154)"
-     ]
-    ],
-    "4": [
-     [
-      [
-       "Arnaud De Belenet",
-       "Agn\u00e8s Canayer"
-      ],
-      [
        "Alexandra Borchio-Fontimp",
        "Arnold Noire"
-      ],
-      [
-       "Arnaud Bazin",
-       "Bernard Buis"
       ],
       [
        "Annick Billon",
+       "Agn\u00e8s Canayer"
+      ],
+      [
+       "Bernard Buis",
+       "Arnaud De Belenet"
+      ],
+      [
+       "Arnaud Bazin",
        "Bernard Bonne"
       ]
      ],
@@ -1143,121 +1029,101 @@
       "2"
      ],
      [
-      "10-Nov-2021 (15:09:44.691816)",
-      "10-Nov-2021 (15:09:44.691816)",
-      "10-Nov-2021 (15:09:44.691816)",
-      "10-Nov-2021 (15:09:44.691816)"
+      "12-Nov-2021 (10:59:06.830914)",
+      "12-Nov-2021 (10:59:06.830914)",
+      "12-Nov-2021 (10:59:06.830914)",
+      "12-Nov-2021 (10:59:06.830914)"
      ],
      [
-      "10-Nov-2021 (15:09:45.791749)",
-      "10-Nov-2021 (15:09:47.001901)",
-      "10-Nov-2021 (15:09:47.355040)",
-      "10-Nov-2021 (15:09:47.673584)"
+      "12-Nov-2021 (10:59:07.950756)",
+      "12-Nov-2021 (10:59:08.157331)",
+      "12-Nov-2021 (10:59:08.345680)",
+      "12-Nov-2021 (10:59:08.517673)"
+     ],
+     [
+      "12-Nov-2021 (10:59:06.830914)",
+      "12-Nov-2021 (10:59:08.517673)"
      ]
     ]
    },
    "scoreboard": {
     "1": {
-     "reference": "Bernard Bonne",
+     "reference": "Alexandra Borchio-Fontimp",
      "id": 1,
      "scorerank": 6,
-     "score": 1,
+     "score": 0,
      "associations": [
-      5,
-      7,
-      6,
-      8
+      5
      ]
     },
     "2": {
-     "reference": "Arnold Noire",
+     "reference": "Annick Billon",
      "id": 2,
-     "scorerank": 5,
-     "score": 2.0,
+     "scorerank": 4,
+     "score": 0.5,
      "associations": [
-      6,
-      4,
-      7,
-      3
+      6
      ]
     },
     "3": {
-     "reference": "Alexandra Borchio-Fontimp",
+     "reference": "Bernard Buis",
      "id": 3,
-     "scorerank": 3,
-     "score": 2.5,
+     "scorerank": 1,
+     "score": 1,
      "associations": [
-      7,
-      5,
-      8,
-      2
+      7
      ]
     },
     "4": {
      "reference": "Arnaud Bazin",
      "id": 4,
-     "scorerank": 1,
-     "score": 3,
+     "scorerank": 7,
+     "score": 0,
      "associations": [
-      8,
-      2,
-      5,
-      6
+      8
      ]
     },
     "5": {
-     "reference": "Arnaud De Belenet",
+     "reference": "Arnold Noire",
      "id": 5,
-     "scorerank": 4,
-     "score": 2.5,
+     "scorerank": 2,
+     "score": 1,
      "associations": [
-      1,
-      3,
-      4,
-      7
+      1
      ]
     },
     "6": {
-     "reference": "Bernard Buis",
+     "reference": "Agn\u00e8s Canayer",
      "id": 6,
-     "scorerank": 7,
-     "score": 1,
+     "scorerank": 5,
+     "score": 0.5,
      "associations": [
-      2,
-      8,
-      1,
-      4
+      2
      ]
     },
     "7": {
-     "reference": "Agn\u00e8s Canayer",
+     "reference": "Arnaud De Belenet",
      "id": 7,
-     "scorerank": 2,
-     "score": 3.0,
+     "scorerank": 8,
+     "score": 0,
      "associations": [
-      3,
-      1,
-      2,
-      5
+      3
      ]
     },
     "8": {
-     "reference": "Annick Billon",
+     "reference": "Bernard Bonne",
      "id": 8,
-     "scorerank": 8,
+     "scorerank": 3,
      "score": 1,
      "associations": [
-      4,
-      6,
-      3,
-      1
+      4
      ]
     }
    }
   },
   "2": {
-   "name": "ParisToulon",
-   "location": "Paris/Toulon",
+   "name": "TournoisTrimestreN3",
+   "location": "Dijon",
    "start_date": "15/05/2020",
    "end_date": "15/05/2020",
    "num_of_round": 4,
@@ -1272,24 +1138,24 @@
     "Bernard Buis"
    ],
    "game_type": "Bullet",
-   "notes": "",
+   "notes": "ras",
    "serialized_object": {
     "1": [
      [
       [
        "Alexandra Borchio-Fontimp",
+       "Arnold Noire"
+      ],
+      [
+       "Annick Billon",
+       "Agn\u00e8s Canayer"
+      ],
+      [
+       "Bernard Buis",
        "Arnaud De Belenet"
       ],
       [
        "Arnaud Bazin",
-       "Agn\u00e8s Canayer"
-      ],
-      [
-       "Arnold Noire",
-       "Annick Billon"
-      ],
-      [
-       "Bernard Buis",
        "Bernard Bonne"
       ]
      ],
@@ -1300,35 +1166,39 @@
       "2"
      ],
      [
-      "11-Nov-2021 (09:59:16.352877)",
-      "11-Nov-2021 (09:59:16.352877)",
-      "11-Nov-2021 (09:59:16.352877)",
-      "11-Nov-2021 (09:59:16.352877)"
+      "12-Nov-2021 (11:44:33.723000)",
+      "12-Nov-2021 (11:44:33.723000)",
+      "12-Nov-2021 (11:44:33.723000)",
+      "12-Nov-2021 (11:44:33.723000)"
      ],
      [
-      "11-Nov-2021 (09:59:17.504107)",
-      "11-Nov-2021 (09:59:17.872575)",
-      "11-Nov-2021 (09:59:18.248795)",
-      "11-Nov-2021 (09:59:18.624731)"
+      "12-Nov-2021 (11:44:35.355242)",
+      "12-Nov-2021 (11:44:36.027226)",
+      "12-Nov-2021 (11:44:36.258973)",
+      "12-Nov-2021 (11:44:36.484478)"
+     ],
+     [
+      "12-Nov-2021 (11:44:33.723000)",
+      "12-Nov-2021 (11:44:36.484478)"
      ]
     ],
     "2": [
      [
       [
-       "Arnold Noire",
-       "Arnaud De Belenet"
+       "Bernard Buis",
+       "Arnold Noire"
       ],
       [
        "Bernard Bonne",
-       "Arnaud Bazin"
+       "Annick Billon"
       ],
       [
        "Agn\u00e8s Canayer",
        "Alexandra Borchio-Fontimp"
       ],
       [
-       "Bernard Buis",
-       "Annick Billon"
+       "Arnaud Bazin",
+       "Arnaud De Belenet"
       ]
      ],
      [
@@ -1338,73 +1208,81 @@
       "2"
      ],
      [
-      "11-Nov-2021 (09:59:24.048701)",
-      "11-Nov-2021 (09:59:24.048701)",
-      "11-Nov-2021 (09:59:24.048701)",
-      "11-Nov-2021 (09:59:24.048701)"
+      "12-Nov-2021 (11:44:40.947671)",
+      "12-Nov-2021 (11:44:40.947671)",
+      "12-Nov-2021 (11:44:40.947671)",
+      "12-Nov-2021 (11:44:40.947671)"
      ],
      [
-      "11-Nov-2021 (09:59:25.072178)",
-      "11-Nov-2021 (09:59:25.352728)",
-      "11-Nov-2021 (09:59:25.992810)",
-      "11-Nov-2021 (09:59:26.315732)"
+      "12-Nov-2021 (11:44:42.311598)",
+      "12-Nov-2021 (11:44:42.571063)",
+      "12-Nov-2021 (11:44:42.786963)",
+      "12-Nov-2021 (11:44:42.986961)"
+     ],
+     [
+      "12-Nov-2021 (11:44:40.946670)",
+      "12-Nov-2021 (11:44:42.986961)"
      ]
     ],
     "3": [
      [
       [
-       "Arnaud De Belenet",
+       "Arnold Noire",
        "Agn\u00e8s Canayer"
       ],
       [
        "Bernard Bonne",
-       "Arnold Noire"
+       "Bernard Buis"
       ],
       [
-       "Arnaud Bazin",
-       "Annick Billon"
+       "Annick Billon",
+       "Arnaud De Belenet"
       ],
       [
        "Alexandra Borchio-Fontimp",
-       "Bernard Buis"
+       "Arnaud Bazin"
       ]
      ],
      [
+      "2",
       null,
       "1",
-      "2",
-      "1"
+      "2"
      ],
      [
-      "11-Nov-2021 (09:59:29.424797)",
-      "11-Nov-2021 (09:59:29.424797)",
-      "11-Nov-2021 (09:59:29.424797)",
-      "11-Nov-2021 (09:59:29.424797)"
+      "12-Nov-2021 (11:44:49.458639)",
+      "12-Nov-2021 (11:44:49.458639)",
+      "12-Nov-2021 (11:44:49.458639)",
+      "12-Nov-2021 (11:44:49.458639)"
      ],
      [
-      "11-Nov-2021 (09:59:30.808175)",
-      "11-Nov-2021 (09:59:31.256547)",
-      "11-Nov-2021 (09:59:31.672919)",
-      "11-Nov-2021 (09:59:32.064737)"
+      "12-Nov-2021 (11:44:50.336075)",
+      "12-Nov-2021 (11:44:50.614073)",
+      "12-Nov-2021 (11:44:50.867072)",
+      "12-Nov-2021 (11:44:51.067073)"
+     ],
+     [
+      "12-Nov-2021 (11:44:49.458639)",
+      "12-Nov-2021 (11:44:51.067073)"
      ]
     ],
     "4": [
      [
       [
-       "Arnaud De Belenet",
+       "Agn\u00e8s Canayer",
        "Bernard Bonne"
       ],
       [
-       "Agn\u00e8s Canayer",
-       "Annick Billon"
+       "Annick Billon",
+       "Arnold Noire"
       ],
       [
-       "Alexandra Borchio-Fontimp",
+       "Bernard Buis",
        "Arnaud Bazin"
       ],
       [
-       "Arnold Noire",
-       "Bernard Buis"
+       "Arnaud De Belenet",
+       "Alexandra Borchio-Fontimp"
       ]
      ],
      [
@@ -1414,16 +1292,20 @@
       null
      ],
      [
-      "11-Nov-2021 (09:59:35.736547)",
-      "11-Nov-2021 (09:59:35.736547)",
-      "11-Nov-2021 (09:59:35.736547)",
-      "11-Nov-2021 (09:59:35.736547)"
+      "12-Nov-2021 (11:44:54.219129)",
+      "12-Nov-2021 (11:44:54.219129)",
+      "12-Nov-2021 (11:44:54.219129)",
+      "12-Nov-2021 (11:44:54.219129)"
      ],
      [
-      "11-Nov-2021 (09:59:37.192973)",
-      "11-Nov-2021 (09:59:37.544862)",
-      "11-Nov-2021 (09:59:37.912145)",
-      "11-Nov-2021 (09:59:38.336569)"
+      "12-Nov-2021 (11:44:55.579280)",
+      "12-Nov-2021 (11:44:55.882965)",
+      "12-Nov-2021 (11:44:56.165879)",
+      "12-Nov-2021 (11:44:56.618456)"
+     ],
+     [
+      "12-Nov-2021 (11:44:54.219129)",
+      "12-Nov-2021 (11:44:56.618456)"
      ]
     ]
    },
@@ -1431,29 +1313,29 @@
     "1": {
      "reference": "Alexandra Borchio-Fontimp",
      "id": 1,
-     "scorerank": 7,
-     "score": 1,
+     "scorerank": 8,
+     "score": 0.5,
      "associations": [
       5,
       6,
       4,
-      2
+      7
      ]
     },
     "2": {
-     "reference": "Arnaud Bazin",
+     "reference": "Annick Billon",
      "id": 2,
-     "scorerank": 4,
-     "score": 2.0,
+     "scorerank": 1,
+     "score": 3.0,
      "associations": [
       6,
       8,
       7,
-      1
+      5
      ]
     },
     "3": {
-     "reference": "Arnold Noire",
+     "reference": "Bernard Buis",
      "id": 3,
      "scorerank": 6,
      "score": 1.5,
@@ -1465,10 +1347,10 @@
      ]
     },
     "4": {
-     "reference": "Bernard Buis",
+     "reference": "Arnaud Bazin",
      "id": 4,
-     "scorerank": 8,
-     "score": 0.5,
+     "scorerank": 4,
+     "score": 2,
      "associations": [
       8,
       7,
@@ -1477,15 +1359,15 @@
      ]
     },
     "5": {
-     "reference": "Arnaud De Belenet",
+     "reference": "Arnold Noire",
      "id": 5,
-     "scorerank": 1,
-     "score": 3.0,
+     "scorerank": 5,
+     "score": 2,
      "associations": [
       1,
       3,
       6,
-      8
+      2
      ]
     },
     "6": {
@@ -1497,1008 +1379,26 @@
       2,
       1,
       5,
-      7
-     ]
-    },
-    "7": {
-     "reference": "Annick Billon",
-     "id": 7,
-     "scorerank": 5,
-     "score": 2,
-     "associations": [
-      3,
-      4,
-      2,
-      6
-     ]
-    },
-    "8": {
-     "reference": "Bernard Bonne",
-     "id": 8,
-     "scorerank": 3,
-     "score": 3.0,
-     "associations": [
-      4,
-      2,
-      3,
-      5
-     ]
-    }
-   }
-  },
-  "3": {
-   "name": "Tournoi2021",
-   "location": "",
-   "start_date": "15/05/2020",
-   "end_date": "15/05/2020",
-   "num_of_round": 4,
-   "selected_players": [
-    "Agn\u00e8s Canayer",
-    "Alexandra Borchio-Fontimp",
-    "Annick Billon",
-    "Arnaud Bazin",
-    "Arnaud De Belenet",
-    "Arnold Noire",
-    "Bernard Bonne",
-    "Bernard Buis"
-   ],
-   "game_type": "Bullet",
-   "notes": "",
-   "serialized_object": {
-    "1": [
-     [
-      [
-       "Arnaud Bazin",
-       "Agn\u00e8s Canayer"
-      ],
-      [
-       "Alexandra Borchio-Fontimp",
-       "Bernard Buis"
-      ],
-      [
-       "Arnold Noire",
-       "Bernard Bonne"
-      ],
-      [
-       "Arnaud De Belenet",
-       "Annick Billon"
-      ]
-     ],
-     [
-      "2",
-      null,
-      "1",
-      "2"
-     ],
-     [
-      "11-Nov-2021 (14:39:25.630112)",
-      "11-Nov-2021 (14:39:25.630112)",
-      "11-Nov-2021 (14:39:25.630112)",
-      "11-Nov-2021 (14:39:25.630112)"
-     ],
-     [
-      "11-Nov-2021 (14:40:00.078152)",
-      "11-Nov-2021 (14:40:00.949799)",
-      "11-Nov-2021 (14:40:01.885969)",
-      "11-Nov-2021 (14:40:02.366073)"
-     ]
-    ],
-    "2": [
-     [
-      [
-       "Arnold Noire",
-       "Agn\u00e8s Canayer"
-      ],
-      [
-       "Annick Billon",
-       "Alexandra Borchio-Fontimp"
-      ],
-      [
-       "Bernard Buis",
-       "Arnaud Bazin"
-      ],
-      [
-       "Arnaud De Belenet",
-       "Bernard Bonne"
-      ]
-     ],
-     [
-      "2",
-      "1",
-      null,
-      "1"
-     ],
-     [
-      "11-Nov-2021 (14:41:34.158386)",
-      "11-Nov-2021 (14:41:34.158386)",
-      "11-Nov-2021 (14:41:34.158386)",
-      "11-Nov-2021 (14:41:34.158386)"
-     ],
-     [
-      "11-Nov-2021 (14:41:38.525694)",
-      "11-Nov-2021 (14:41:39.237138)",
-      "11-Nov-2021 (14:41:40.194031)",
-      "11-Nov-2021 (14:41:41.254197)"
-     ]
-    ],
-    "3": [
-     [
-      [
-       "Agn\u00e8s Canayer",
-       "Annick Billon"
-      ],
-      [
-       "Arnold Noire",
-       "Arnaud De Belenet"
-      ],
-      [
-       "Bernard Buis",
-       "Bernard Bonne"
-      ],
-      [
-       "Arnaud Bazin",
-       "Alexandra Borchio-Fontimp"
-      ]
-     ],
-     [
-      "2",
-      "1",
-      null,
-      "1"
-     ],
-     [
-      "11-Nov-2021 (14:42:19.189987)",
-      "11-Nov-2021 (14:42:19.189987)",
-      "11-Nov-2021 (14:42:19.189987)",
-      "11-Nov-2021 (14:42:19.189987)"
-     ],
-     [
-      "11-Nov-2021 (14:42:22.829749)",
-      "11-Nov-2021 (14:42:23.196929)",
-      "11-Nov-2021 (14:42:23.461743)",
-      "11-Nov-2021 (14:42:23.710167)"
-     ]
-    ],
-    "4": [
-     [
-      [
-       "Annick Billon",
-       "Arnold Noire"
-      ],
-      [
-       "Agn\u00e8s Canayer",
-       "Bernard Buis"
-      ],
-      [
-       "Arnaud Bazin",
-       "Arnaud De Belenet"
-      ],
-      [
-       "Alexandra Borchio-Fontimp",
-       "Bernard Bonne"
-      ]
-     ],
-     [
-      "1",
-      "2",
-      null,
-      "1"
-     ],
-     [
-      "11-Nov-2021 (14:42:45.957847)",
-      "11-Nov-2021 (14:42:45.957847)",
-      "11-Nov-2021 (14:42:45.957847)",
-      "11-Nov-2021 (14:42:45.957847)"
-     ],
-     [
-      "11-Nov-2021 (14:42:48.341544)",
-      "11-Nov-2021 (14:42:48.653697)",
-      "11-Nov-2021 (14:42:49.997941)",
-      "11-Nov-2021 (14:42:50.333533)"
-     ]
-    ]
-   },
-   "scoreboard": {
-    "1": {
-     "reference": "Arnaud Bazin",
-     "id": 1,
-     "scorerank": 3,
-     "score": 2.0,
-     "associations": [
-      5,
-      6,
-      2,
-      4
-     ]
-    },
-    "2": {
-     "reference": "Alexandra Borchio-Fontimp",
-     "id": 2,
-     "scorerank": 6,
-     "score": 1.5,
-     "associations": [
-      6,
-      8,
-      1,
-      7
-     ]
-    },
-    "3": {
-     "reference": "Arnold Noire",
-     "id": 3,
-     "scorerank": 4,
-     "score": 2,
-     "associations": [
-      7,
-      5,
-      4,
       8
      ]
     },
-    "4": {
+    "7": {
      "reference": "Arnaud De Belenet",
-     "id": 4,
+     "id": 7,
      "scorerank": 7,
      "score": 1.5,
      "associations": [
-      8,
-      7,
       3,
+      4,
+      2,
       1
-     ]
-    },
-    "5": {
-     "reference": "Agn\u00e8s Canayer",
-     "id": 5,
-     "scorerank": 5,
-     "score": 2,
-     "associations": [
-      1,
-      3,
-      8,
-      6
-     ]
-    },
-    "6": {
-     "reference": "Bernard Buis",
-     "id": 6,
-     "scorerank": 2,
-     "score": 2.5,
-     "associations": [
-      2,
-      1,
-      7,
-      5
-     ]
-    },
-    "7": {
-     "reference": "Bernard Bonne",
-     "id": 7,
-     "scorerank": 8,
-     "score": 0.5,
-     "associations": [
-      3,
-      4,
-      6,
-      2
-     ]
-    },
-    "8": {
-     "reference": "Annick Billon",
-     "id": 8,
-     "scorerank": 1,
-     "score": 4,
-     "associations": [
-      4,
-      2,
-      5,
-      3
-     ]
-    }
-   }
-  },
-  "4": {
-   "name": "TournoiS3",
-   "location": "Nice",
-   "start_date": "15/05/1997",
-   "end_date": "15/05/1997",
-   "num_of_round": 4,
-   "selected_players": [
-    "Agn\u00e8s Canayer",
-    "Alexandra Borchio-Fontimp",
-    "Annick Billon",
-    "Arnaud Bazin",
-    "Arnaud De Belenet",
-    "Arnold Noire",
-    "Bernard Bonne",
-    "Bernard Buis"
-   ],
-   "game_type": "Blitz",
-   "notes": "",
-   "serialized_object": {
-    "1": [
-     [
-      [
-       "Arnaud Bazin",
-       "Bernard Buis"
-      ],
-      [
-       "Arnold Noire",
-       "Agn\u00e8s Canayer"
-      ],
-      [
-       "Alexandra Borchio-Fontimp",
-       "Annick Billon"
-      ],
-      [
-       "Arnaud De Belenet",
-       "Bernard Bonne"
-      ]
-     ],
-     [
-      "2",
-      null,
-      "1",
-      "2"
-     ],
-     [
-      "11-Nov-2021 (14:44:05.149374)",
-      "11-Nov-2021 (14:44:05.149374)",
-      "11-Nov-2021 (14:44:05.149374)",
-      "11-Nov-2021 (14:44:05.149374)"
-     ],
-     [
-      "11-Nov-2021 (14:44:06.981684)",
-      "11-Nov-2021 (14:44:07.246696)",
-      "11-Nov-2021 (14:44:07.484960)",
-      "11-Nov-2021 (14:44:07.917747)"
-     ]
-    ],
-    "2": [
-     [
-      [
-       "Alexandra Borchio-Fontimp",
-       "Bernard Buis"
-      ],
-      [
-       "Bernard Bonne",
-       "Arnold Noire"
-      ],
-      [
-       "Agn\u00e8s Canayer",
-       "Arnaud Bazin"
-      ],
-      [
-       "Arnaud De Belenet",
-       "Annick Billon"
-      ]
-     ],
-     [
-      "2",
-      null,
-      "1",
-      "2"
-     ],
-     [
-      "11-Nov-2021 (14:44:19.197296)",
-      "11-Nov-2021 (14:44:19.197296)",
-      "11-Nov-2021 (14:44:19.197296)",
-      "11-Nov-2021 (14:44:19.197296)"
-     ],
-     [
-      "11-Nov-2021 (14:44:20.532979)",
-      "11-Nov-2021 (14:44:21.166037)",
-      "11-Nov-2021 (14:44:21.997554)",
-      "11-Nov-2021 (14:44:23.238655)"
-     ]
-    ],
-    "3": [
-     [
-      [
-       "Bernard Buis",
-       "Agn\u00e8s Canayer"
-      ],
-      [
-       "Bernard Bonne",
-       "Alexandra Borchio-Fontimp"
-      ],
-      [
-       "Arnold Noire",
-       "Annick Billon"
-      ],
-      [
-       "Arnaud Bazin",
-       "Arnaud De Belenet"
-      ]
-     ],
-     [
-      null,
-      "1",
-      "2",
-      null
-     ],
-     [
-      "11-Nov-2021 (14:44:34.294531)",
-      "11-Nov-2021 (14:44:34.294531)",
-      "11-Nov-2021 (14:44:34.294531)",
-      "11-Nov-2021 (14:44:34.294531)"
-     ],
-     [
-      "11-Nov-2021 (14:44:35.725366)",
-      "11-Nov-2021 (14:44:36.005206)",
-      "11-Nov-2021 (14:44:36.280209)",
-      "11-Nov-2021 (14:44:36.508507)"
-     ]
-    ]
-   },
-   "scoreboard": {
-    "1": {
-     "reference": "Arnaud Bazin",
-     "id": 1,
-     "scorerank": 7,
-     "score": 0.5,
-     "associations": [
-      5,
-      6,
-      4
-     ]
-    },
-    "2": {
-     "reference": "Arnold Noire",
-     "id": 2,
-     "scorerank": 5,
-     "score": 1.0,
-     "associations": [
-      6,
-      8,
-      7
-     ]
-    },
-    "3": {
-     "reference": "Alexandra Borchio-Fontimp",
-     "id": 3,
-     "scorerank": 6,
-     "score": 1,
-     "associations": [
-      7,
-      5,
-      8
-     ]
-    },
-    "4": {
-     "reference": "Arnaud De Belenet",
-     "id": 4,
-     "scorerank": 8,
-     "score": 0.5,
-     "associations": [
-      8,
-      7,
-      1
-     ]
-    },
-    "5": {
-     "reference": "Bernard Buis",
-     "id": 5,
-     "scorerank": 1,
-     "score": 2.5,
-     "associations": [
-      1,
-      3,
-      6
-     ]
-    },
-    "6": {
-     "reference": "Agn\u00e8s Canayer",
-     "id": 6,
-     "scorerank": 3,
-     "score": 2.0,
-     "associations": [
-      2,
-      1,
-      5
-     ]
-    },
-    "7": {
-     "reference": "Annick Billon",
-     "id": 7,
-     "scorerank": 4,
-     "score": 2,
-     "associations": [
-      3,
-      4,
-      2
      ]
     },
     "8": {
      "reference": "Bernard Bonne",
      "id": 8,
-     "scorerank": 2,
-     "score": 2.5,
-     "associations": [
-      4,
-      2,
-      3
-     ]
-    }
-   }
-  },
-  "5": {
-   "name": "TournoiS5",
-   "location": "Rennes",
-   "start_date": "15/05/2020",
-   "end_date": "15/05/2020",
-   "num_of_round": 4,
-   "selected_players": [
-    "Agn\u00e8s Canayer",
-    "Alexandra Borchio-Fontimp",
-    "Annick Billon",
-    "Arnaud Bazin",
-    "Arnaud De Belenet",
-    "Arnold Noire",
-    "Bernard Bonne",
-    "Bernard Buis",
-    "Bertrand Farse",
-    "Bruno Belin"
-   ],
-   "game_type": "Bullet",
-   "notes": "",
-   "serialized_object": {
-    "1": [
-     [
-      [
-       "Arnaud Bazin",
-       "Agn\u00e8s Canayer"
-      ],
-      [
-       "Arnold Noire",
-       "Annick Billon"
-      ],
-      [
-       "Alexandra Borchio-Fontimp",
-       "Bertrand Farse"
-      ],
-      [
-       "Arnaud De Belenet",
-       "Bernard Bonne"
-      ],
-      [
-       "Bernard Buis",
-       "Bruno Belin"
-      ]
-     ],
-     [
-      "2",
-      null,
-      "1",
-      "2",
-      "2"
-     ],
-     [
-      "11-Nov-2021 (15:07:06.611700)",
-      "11-Nov-2021 (15:07:06.611700)",
-      "11-Nov-2021 (15:07:06.611700)",
-      "11-Nov-2021 (15:07:06.611700)",
-      "11-Nov-2021 (15:07:06.611700)"
-     ],
-     [
-      "11-Nov-2021 (15:07:07.778675)",
-      "11-Nov-2021 (15:07:08.122672)",
-      "11-Nov-2021 (15:07:08.739116)",
-      "11-Nov-2021 (15:07:08.998363)",
-      "11-Nov-2021 (15:07:10.099644)"
-     ]
-    ],
-    "2": [
-     [
-      [
-       "Alexandra Borchio-Fontimp",
-       "Agn\u00e8s Canayer"
-      ],
-      [
-       "Bernard Bonne",
-       "Bruno Belin"
-      ],
-      [
-       "Arnold Noire",
-       "Arnaud Bazin"
-      ],
-      [
-       "Annick Billon",
-       "Arnaud De Belenet"
-      ],
-      [
-       "Bernard Buis",
-       "Bertrand Farse"
-      ]
-     ],
-     [
-      "2",
-      null,
-      "1",
-      "2",
-      null
-     ],
-     [
-      "11-Nov-2021 (15:07:17.779100)",
-      "11-Nov-2021 (15:07:17.779100)",
-      "11-Nov-2021 (15:07:17.779100)",
-      "11-Nov-2021 (15:07:17.779100)",
-      "11-Nov-2021 (15:07:17.779100)"
-     ],
-     [
-      "11-Nov-2021 (15:07:19.147543)",
-      "11-Nov-2021 (15:07:19.428922)",
-      "11-Nov-2021 (15:07:21.067930)",
-      "11-Nov-2021 (15:07:21.523209)",
-      "11-Nov-2021 (15:07:22.075175)"
-     ]
-    ]
-   },
-   "scoreboard": {
-    "1": {
-     "reference": "Arnaud Bazin",
-     "id": 1,
-     "scorerank": 10,
-     "score": 0,
-     "associations": [
-      6,
-      2
-     ]
-    },
-    "2": {
-     "reference": "Arnold Noire",
-     "id": 2,
-     "scorerank": 2,
-     "score": 1.5,
-     "associations": [
-      7,
-      1
-     ]
-    },
-    "3": {
-     "reference": "Alexandra Borchio-Fontimp",
-     "id": 3,
-     "scorerank": 5,
-     "score": 1,
-     "associations": [
-      8,
-      6
-     ]
-    },
-    "4": {
-     "reference": "Arnaud De Belenet",
-     "id": 4,
-     "scorerank": 6,
-     "score": 1,
-     "associations": [
-      9,
-      7
-     ]
-    },
-    "5": {
-     "reference": "Bernard Buis",
-     "id": 5,
-     "scorerank": 7,
-     "score": 0.5,
-     "associations": [
-      10,
-      8
-     ]
-    },
-    "6": {
-     "reference": "Agn\u00e8s Canayer",
-     "id": 6,
-     "scorerank": 1,
-     "score": 2,
-     "associations": [
-      1,
-      3
-     ]
-    },
-    "7": {
-     "reference": "Annick Billon",
-     "id": 7,
-     "scorerank": 8,
-     "score": 0.5,
-     "associations": [
-      2,
-      4
-     ]
-    },
-    "8": {
-     "reference": "Bertrand Farse",
-     "id": 8,
-     "scorerank": 9,
-     "score": 0.5,
-     "associations": [
-      3,
-      5
-     ]
-    },
-    "9": {
-     "reference": "Bernard Bonne",
-     "id": 9,
-     "scorerank": 3,
-     "score": 1.5,
-     "associations": [
-      4,
-      10
-     ]
-    },
-    "10": {
-     "reference": "Bruno Belin",
-     "id": 10,
-     "scorerank": 4,
-     "score": 1.5,
-     "associations": [
-      5,
-      9
-     ]
-    }
-   }
-  },
-  "6": {
-   "name": "ParisVillage",
-   "location": "",
-   "start_date": "15/05/2020",
-   "end_date": "15/05/2020",
-   "num_of_round": 4,
-   "selected_players": [
-    "Garry Kasparov",
-    "Gilbert Bouchet",
-    "Christine Bonfanti-Dossat",
-    "C\u00e9line Boulay-Esperonnier",
-    "David Assouline",
-    "Viviane Artigalas",
-    "Toine Bourrat",
-    "Michel Canev\u00e8t"
-   ],
-   "game_type": "Bullet",
-   "notes": "",
-   "serialized_object": {
-    "1": [
-     [
-      [
-       "Garry Kasparov",
-       "Gilbert Bouchet"
-      ],
-      [
-       "Viviane Artigalas",
-       "C\u00e9line Boulay-Esperonnier"
-      ],
-      [
-       "David Assouline",
-       "Toine Bourrat"
-      ],
-      [
-       "Christine Bonfanti-Dossat",
-       "Michel Canev\u00e8t"
-      ]
-     ],
-     [
-      "2",
-      null,
-      "1",
-      "2"
-     ],
-     [
-      "11-Nov-2021 (15:13:47.594589)",
-      "11-Nov-2021 (15:13:47.594589)",
-      "11-Nov-2021 (15:13:47.594589)",
-      "11-Nov-2021 (15:13:47.594589)"
-     ],
-     [
-      "11-Nov-2021 (15:13:48.786087)",
-      "11-Nov-2021 (15:13:49.050573)",
-      "11-Nov-2021 (15:13:49.267727)",
-      "11-Nov-2021 (15:13:49.450730)"
-     ]
-    ],
-    "2": [
-     [
-      [
-       "David Assouline",
-       "Gilbert Bouchet"
-      ],
-      [
-       "Michel Canev\u00e8t",
-       "Viviane Artigalas"
-      ],
-      [
-       "C\u00e9line Boulay-Esperonnier",
-       "Garry Kasparov"
-      ],
-      [
-       "Christine Bonfanti-Dossat",
-       "Toine Bourrat"
-      ]
-     ],
-     [
-      "2",
-      null,
-      "1",
-      "2"
-     ],
-     [
-      "11-Nov-2021 (15:13:53.018572)",
-      "11-Nov-2021 (15:13:53.018572)",
-      "11-Nov-2021 (15:13:53.018572)",
-      "11-Nov-2021 (15:13:53.018572)"
-     ],
-     [
-      "11-Nov-2021 (15:13:54.362843)",
-      "11-Nov-2021 (15:13:54.666234)",
-      "11-Nov-2021 (15:13:54.889818)",
-      "11-Nov-2021 (15:13:55.092538)"
-     ]
-    ],
-    "3": [
-     [
-      [
-       "Gilbert Bouchet",
-       "C\u00e9line Boulay-Esperonnier"
-      ],
-      [
-       "Michel Canev\u00e8t",
-       "David Assouline"
-      ],
-      [
-       "Viviane Artigalas",
-       "Toine Bourrat"
-      ],
-      [
-       "Garry Kasparov",
-       "Christine Bonfanti-Dossat"
-      ]
-     ],
-     [
-      "2",
-      null,
-      "1",
-      "2"
-     ],
-     [
-      "11-Nov-2021 (15:13:59.682745)",
-      "11-Nov-2021 (15:13:59.682745)",
-      "11-Nov-2021 (15:13:59.682745)",
-      "11-Nov-2021 (15:13:59.682745)"
-     ],
-     [
-      "11-Nov-2021 (15:14:02.730545)",
-      "11-Nov-2021 (15:14:02.235211)",
-      "11-Nov-2021 (15:14:03.924109)",
-      "11-Nov-2021 (15:14:04.379579)"
-     ]
-    ],
-    "4": [
-     [
-      [
-       "C\u00e9line Boulay-Esperonnier",
-       "Michel Canev\u00e8t"
-      ],
-      [
-       "Viviane Artigalas",
-       "Gilbert Bouchet"
-      ],
-      [
-       "David Assouline",
-       "Christine Bonfanti-Dossat"
-      ],
-      [
-       "Toine Bourrat",
-       "Garry Kasparov"
-      ]
-     ],
-     [
-      "2",
-      null,
-      "1",
-      "2"
-     ],
-     [
-      "11-Nov-2021 (15:14:08.555045)",
-      "11-Nov-2021 (15:14:08.555045)",
-      "11-Nov-2021 (15:14:08.555045)",
-      "11-Nov-2021 (15:14:08.555045)"
-     ],
-     [
-      "11-Nov-2021 (15:15:25.074907)",
-      "11-Nov-2021 (15:15:25.962317)",
-      "11-Nov-2021 (15:15:26.210408)",
-      "11-Nov-2021 (15:15:26.402707)"
-     ]
-    ]
-   },
-   "scoreboard": {
-    "1": {
-     "reference": "Garry Kasparov",
-     "id": 1,
-     "scorerank": 6,
-     "score": 1,
-     "associations": [
-      5,
-      6,
-      4,
-      7
-     ]
-    },
-    "2": {
-     "reference": "Viviane Artigalas",
-     "id": 2,
-     "scorerank": 2,
-     "score": 2.5,
-     "associations": [
-      6,
-      8,
-      7,
-      5
-     ]
-    },
-    "3": {
-     "reference": "David Assouline",
-     "id": 3,
      "scorerank": 3,
      "score": 2.5,
-     "associations": [
-      7,
-      5,
-      8,
-      4
-     ]
-    },
-    "4": {
-     "reference": "Christine Bonfanti-Dossat",
-     "id": 4,
-     "scorerank": 7,
-     "score": 1,
-     "associations": [
-      8,
-      7,
-      1,
-      3
-     ]
-    },
-    "5": {
-     "reference": "Gilbert Bouchet",
-     "id": 5,
-     "scorerank": 4,
-     "score": 2.5,
-     "associations": [
-      1,
-      3,
-      6,
-      2
-     ]
-    },
-    "6": {
-     "reference": "C\u00e9line Boulay-Esperonnier",
-     "id": 6,
-     "scorerank": 5,
-     "score": 2.5,
-     "associations": [
-      2,
-      1,
-      5,
-      8
-     ]
-    },
-    "7": {
-     "reference": "Toine Bourrat",
-     "id": 7,
-     "scorerank": 8,
-     "score": 1,
-     "associations": [
-      3,
-      4,
-      2,
-      1
-     ]
-    },
-    "8": {
-     "reference": "Michel Canev\u00e8t",
-     "id": 8,
-     "scorerank": 1,
-     "score": 3.0,
      "associations": [
       4,
       2,

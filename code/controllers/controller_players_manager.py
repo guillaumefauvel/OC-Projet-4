@@ -1,5 +1,4 @@
 
-from tinydb import TinyDB, Query
 from models.player import Player
 from controllers.controller_reports_manager import make_players_dict
 import controllers.controller_menu as cm
@@ -49,10 +48,6 @@ def delete_player():
     if player_to_delete == None:
         return cm.navigator(2,2)
 
-    database = TinyDB('database.json', indent=1)
-    player_table = database.table("Player")
-
-    player_table.remove(Query().reference == player_to_delete)
     for value in Player._serialized_registry:
         if value['reference'] == player_to_delete:
             Player._serialized_registry.remove(value)

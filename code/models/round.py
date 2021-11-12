@@ -1,5 +1,5 @@
 from models.match import Match
-
+from datetime import datetime
 
 class Round:
     """ A Round object is created by a tournament """
@@ -9,6 +9,8 @@ class Round:
         self._registry.append(self)
         self.duel_list = duel_list
         self.attached_match = []
+        self.start_time = datetime.now()
+        self.end_time = ""
         return
 
     def make_match(self):

@@ -5,6 +5,8 @@ import controllers.controller_menu as cm
 from controllers.controller_tournament_manager import tournament_manager
 from controllers.controller_reports_manager import reports_manager
 from controllers.controller_players_manager import players_manager
+from controllers import datas_management
+
 
 
 def menu_attribution(response):
@@ -18,7 +20,18 @@ def menu_attribution(response):
     elif response == 3:
         reports_manager()
     elif response == 4:
-        pass
+        datas_management.serializing_tournament_player()
+        datas_management.save_data()
+        return launch_the_menu()
+    elif response == 5:
+        datas_management.serializing_tournament_player()
+        datas_management.save_data()
+        return
+    elif response == 6:
+        if vm.confirm_quit() is True:
+            return
+        else:
+            return launch_the_menu()
 
 def launch_the_menu():
     """ Show the menu proposition to the user and ask for their answer """
