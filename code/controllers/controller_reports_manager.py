@@ -7,6 +7,7 @@ import controllers.controller_tournament_manager as ctm
 import controllers.controller_menu as cm
 import views.view_menu as vm
 
+
 def reports_manager():
     """ Show the user the possibilities and gathered his answer.
     He is redirected in order to fulfill is choice."""
@@ -15,46 +16,46 @@ def reports_manager():
 
     answer = vrm.ask_for_report_choice()
     if answer == "":
-        return cm.navigator(0,3)
+        return cm.navigator(0, 3)
 
     if answer == "1":
         vm.view_header(5)
         vrm.show_list_of_players(make_players_dict())
-        cm.navigator(3,1)
+        cm.navigator(3, 1)
 
     elif answer == "2":
         vm.view_header(6)
         vrm.show_list_of_players(sort_by_rank())
-        cm.navigator(3,1)
+        cm.navigator(3, 1)
 
     elif answer == "3":
         vm.view_header(5)
         tournament_players_by_alpha()
-        cm.navigator(3,1)
+        cm.navigator(3, 1)
 
     elif answer == "4":
         vm.view_header(6)
         tournament_players_by_rank()
-        cm.navigator(3,1)
+        cm.navigator(3, 1)
 
     elif answer == "5":
         vm.view_header(7)
         vrm.show_tournaments_infos(make_tournament_dict())
-        cm.navigator(3,1)
+        cm.navigator(3, 1)
 
     elif answer == "6":
         vm.view_header(8)
         tournament_scoreboard()
-        cm.navigator(3,1)
+        cm.navigator(3, 1)
 
     elif answer == "7":
         vm.view_header(9)
         tournament_history()
-        cm.navigator(3,1)
+        cm.navigator(3, 1)
 
     elif answer == "8":
         general_scoreboard()
-        cm.navigator(3,1)
+        cm.navigator(3, 1)
 
     return
 
@@ -82,7 +83,7 @@ def make_tournament_dict():
         tournament_dict[index] = tournament.name, tournament.selected_players, \
                                  tournament.serialized_object, tournament.scoreboard, \
                                  tournament.location, tournament.start_date, \
-                                 tournament.end_date, tournament.num_of_round
+                                 tournament.end_date, tournament.num_of_round, tournament.notes
 
     return tournament_dict
 
@@ -185,12 +186,13 @@ def tournament_history():
     scoreboard = {}
 
     vrm.show_tournament_name(make_tournament_dict()[tournament_choice][0])
+    vrm.show_notes(make_tournament_dict()[tournament_choice][-1])
 
     for player, index in zip(players_list, range(1, len(players_list)+1)):
         scoreboard[index] = {"reference": player, "score": 0, "rank": index, "round_result": ""}
 
-    for round in round_list:
-        for duel, result in zip(round_list[round][0], round_list[round][1]):
+    for index in round_list:
+        for duel, result in zip(round_list[index][0], round_list[index][1]):
             player_1 = duel[0]
             player_2 = duel[1]
             if result == "1":
@@ -207,15 +209,12 @@ def tournament_history():
         for player, new_rank in zip(sorted_version, range(1, len(sorted_version)+1)):
             player['rank'] = new_rank
 
-
-        # newlist = [x for x in fruits if x != "apple"]
-
         start_time, end_time = [datetime.strptime(x, '%d-%b-%Y (%H:%M:%S.%f)')
-                                for x in round_list[round][-1]]
+                                for x in round_list[index][-1]]
 
-        vrm.show_scoreboard_with_round(sorted_version, round)
+        vrm.show_scoreboard_with_round(sorted_version, index)
         vrm.show_round_duration(start_time, end_time)
-        vrm.show_duel(round_list[round][0])
+        vrm.show_duel(round_list[index][0])
 
     return
 

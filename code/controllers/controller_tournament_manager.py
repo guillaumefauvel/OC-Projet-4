@@ -20,7 +20,7 @@ def tournament_manager():
     view_menu.view_header(13)
     answer = vtm.ask_choice()
 
-    if answer == None:
+    if answer is None:
 
         return cm.navigator(0, 3)
 
@@ -33,11 +33,11 @@ def tournament_manager():
 
         if len(unfinished_tournaments()) != 0:
             view_menu.view_header(1)
-            selected_tournament = vtm.show_tournament_list(unfinished_tournaments(),2)
-            if selected_tournament == None:
-                return cm.navigator(1,2)
+            selected_tournament = vtm.show_tournament_list(unfinished_tournaments(), 2)
+            if selected_tournament is None:
+                return cm.navigator(1, 2)
             name, finished_round, tournament_object, round_left = selected_tournament
-            tournament_continuation(tournament_object,finished_round)
+            tournament_continuation(tournament_object, finished_round)
         else:
             tournament_manager()
 
@@ -64,13 +64,14 @@ def tournament_launching():
 
     return
 
+
 def delete_tournament():
     """ Remove a selected tournament from the database """
 
     try:
-        tournament_to_delete = vtm.show_tournament_list(crm.make_tournament_dict(),1)[0]
+        tournament_to_delete = vtm.show_tournament_list(crm.make_tournament_dict(), 1)[0]
     except TypeError:
-        return cm.navigator(1,2)
+        return cm.navigator(1, 2)
 
     for value in Tournament._serialized_registry:
         if value['name'] == tournament_to_delete:
@@ -95,18 +96,17 @@ def unfinished_tournaments():
         if tournament.num_of_round != len(tournament.serialized_object):
             index = index + 1
             round_left = tournament.num_of_round - len(tournament.serialized_object)
-            tournament_dict[index] = tournament.name, len(tournament.serialized_object), \
-                                     tournament, round_left
+            tournament_dict[index] = tournament.name, len(tournament.serialized_object), tournament, round_left
 
     return tournament_dict
 
 
-def tournament_status_treatment(bool):
+def tournament_status_treatment(booleans):
     """ Stop a tournament if the day has ended """
 
-    if bool is False:
+    if booleans is False:
         return True
-    elif bool is True:
+    elif booleans is True:
         cm.menu_attribution(view_menu.menu_proposition())
         return False
 
@@ -171,8 +171,7 @@ def updating_players_stats(tournament_object):
     for player in players_list:
         player_object = player_researcher(player)[0]
         player_object.num_of_tournaments += 1
-        num_of_match = player_object.num_of_wins + player_object.num_of_losses\
-                        + player_object.num_of_draw
+        num_of_match = player_object.num_of_wins + player_object.num_of_losses + player_object.num_of_draw
         player_object.num_of_match = num_of_match
         try:
             player_object.winloss_ratio = round(player_object.num_of_wins / player_object.num_of_losses, 2)
@@ -218,15 +217,16 @@ def launch_from_controller(tournament_object):
     tournament_object.updating_scoreboard_score(1)
     tournament_object.sort_score_rank()
     vt.show_score(sorted(tournament_object.scoreboard.values(),
-                             key=lambda k: k['score'], reverse=True), 1)
+                         key=lambda k: k['score'], reverse=True), 1)
     if not tournament_status_treatment(vt.asking_end_of_day()):
         return
 
-    tournament_continuation(tournament_object,1)
+    tournament_continuation(tournament_object, 1)
 
     return
 
-def tournament_continuation(tournament_object,finished_round):
+
+def tournament_continuation(tournament_object, finished_round):
     """ Hold the mechanic behind the continuation of a tournament """
     # Iterate on the number of round left
 
@@ -243,11 +243,11 @@ def tournament_continuation(tournament_object,finished_round):
         tournament_object.updating_scoreboard_score(number_of_round)
         tournament_object.sort_score_rank()
         vt.show_score(sorted(tournament_object.scoreboard.values(), key=lambda k: k['score'],
-                          reverse=True), number_of_round)
+                             reverse=True), number_of_round)
 
         tournament_object.serialized_the_object()
         if len(tournament_object.serialized_object) != tournament_object.num_of_round:
-            if tournament_status_treatment(vt.asking_end_of_day()) == False:
+            if not tournament_status_treatment(vt.asking_end_of_day()):
                 return
 
     updating_players_stats(tournament_object)

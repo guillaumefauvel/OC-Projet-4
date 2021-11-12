@@ -85,6 +85,7 @@ def show_score(scoreboard, round_number):
     table = table.get_string(title=f"Round {round_number}")
     print("\n"+table)
 
+
 def asking_end_of_day():
     """ Ask the user if the tournament is finish for the day
     Return : a bool """

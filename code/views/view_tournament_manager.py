@@ -1,6 +1,7 @@
 import views.view_reports_manager as vrm
 from datetime import datetime
 
+
 def ask_choice():
     """ Show the user his possible choices and ask him his selection """
 
@@ -10,11 +11,12 @@ def ask_choice():
         answer = input("\nRéponse : ")
         if answer == "":
             return
-        if answer in ["1","2","3"]:
+        if answer in ["1", "2", "3"]:
             break
         else:
             print("->Merci de rentrer 1, 2 ou 3.")
     return answer
+
 
 def check_date(caraccteristic):
     """Check if the input date fit the asked format, if not it show an error and ask again"""
@@ -27,13 +29,14 @@ def check_date(caraccteristic):
             print("---< Merci d'entrer une date au format 'JJ/MM/AAAA'. ")
     pass
 
+
 def new_tournament(player_dict):
     """ Form that gather informations from the user in order to make a tournament
     Arg : A dictionnary of all the listed players
     Return : All the informations needed to create a tournament"""
 
     tournament_caracteristics = ["Nom : ", "Lieu : ", "Date de début (JJ/MM/AAAA): ", "Date de fin (JJ/MM/AAAA): ",
-                                 "Nombre de tours : " , "\nJoueurs séléctionnés : ", "Type de jeu : " ,"Notes : " ]
+                                 "Nombre de tours : ", "\nJoueurs séléctionnés : ", "Type de jeu : ", "Notes : "]
     tournament_input = []
 
     for caraccteristic in tournament_caracteristics:
@@ -61,6 +64,7 @@ def new_tournament(player_dict):
             print("")
 
             vrm.show_list_of_players(player_dict)
+            print("Merci de mettre un espace entre chaque index de joueur.")
 
             selected_players = []
 
@@ -68,14 +72,15 @@ def new_tournament(player_dict):
 
                 answer = input(caraccteristic)
                 answer_list = answer.split()
-                if len(answer_list)%2 != 0:
+                if len(answer_list) % 2 != 0:
                     print("-> Merci de saisir un nombre pair")
                 if len(answer_list) != len(set(answer_list)):
                     print("-> Merci de saisir un joueur une seul fois")
-                elif len(answer_list)%2 == 0 and len(answer_list) == len(set(answer_list)):
+                elif len(answer_list) % 2 == 0 and len(answer_list) == len(set(answer_list)):
                     try:
                         answer_list_conversion = [int(value) for value in answer_list]
-                        verification = sum(answer_list_conversion)
+                        if sum(answer_list_conversion) != 0:
+                            pass
                         for player in answer_list_conversion:
                             for index in player_dict:
                                 if player == index:
@@ -113,32 +118,34 @@ def new_tournament(player_dict):
 
     return name, location, start_date, end_date, num_of_round, selected_players, game_type, notes
 
-def show_tournament_list(dict,mode):
+
+def show_tournament_list(dictionnary, mode):
     """ Show a list of tournament and ask the index of the selected tournament
     Arg : a tournament dict, a mode that use a variant of the origin function"""
     print("")
     if mode == 1:
-        for value in dict:
-            print(f"{value}. {dict[value][0]}")
+        for value in dictionnary:
+            print(f"{value}. {dictionnary[value][0]}")
     if mode == 2:
-        for value in dict:
-            print(f"{value}. {dict[value][0]} - [{dict[value][3]} round(s) restant(s)]")
+        for value in dictionnary:
+            print(f"{value}. {dictionnary[value][0]} - [{dictionnary[value][3]} round(s) restant(s)]")
 
     while True:
         try:
             selected_tournament = input("\nQuel tournoi voulez-vous sélectionner ? ")
             if selected_tournament == "":
                 return
-            if int(selected_tournament) in dict.keys():
+            if int(selected_tournament) in dictionnary.keys():
                 break
             else:
                 print("->Merci de rentrer un index valide")
         except ValueError:
             print("->Merci de rentrer un index valide")
 
-    selected_tournament = dict[int(selected_tournament)]
+    selected_tournament = dictionnary[int(selected_tournament)]
 
     return selected_tournament
+
 
 def no_unfinished_tournament():
     """ Indicate to the user that there is no unfinished tournament """

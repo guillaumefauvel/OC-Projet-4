@@ -1,5 +1,6 @@
 from datetime import datetime
 
+
 def ask_choice():
     """ Query the user choice
     Return : An int that correspond to the user choice """
@@ -9,7 +10,7 @@ def ask_choice():
 
     while True:
         answer = input("\nRéponse : ")
-        if answer in ["","1", "2", "3"]:
+        if answer in ["", "1", "2", "3"]:
             break
         else:
             print("->Merci de rentrer 1,2 ou 3.")
@@ -29,7 +30,7 @@ def new_player():
             while True:
                 take = input(player_type[info])
                 try:
-                    datetime.strptime(take,"%d/%m/%Y")
+                    datetime.strptime(take, "%d/%m/%Y")
                     player_infos.append(take)
                     break
                 except ValueError:
@@ -92,9 +93,9 @@ def show_player_infos(player_infos):
     else:
         print(f"--- informations de la joueuse : {player_infos['reference']} ---\n")
     list_of_infos = ['Nom', 'Prénom', 'Date de naissance', 'Genre', 'Classement', '',
-                    'Nombre de match gagnés', 'Nombre de match perdus',
-                    'Nombre de match nuls', 'Ratio Victoires/Défaites', 'Nombre de match joués',
-                    'Nombre de tournois joués', ]
+                     'Nombre de match gagnés', 'Nombre de match perdus',
+                     'Nombre de match nuls', 'Ratio Victoires/Défaites', 'Nombre de match joués',
+                     'Nombre de tournois joués', ]
     for infos_type, value in zip(list_of_infos, player_infos):
         if len(infos_type) > 2:
             print(f"{infos_type}: {player_infos[value]}")

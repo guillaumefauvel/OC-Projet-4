@@ -1,8 +1,9 @@
+""" Tournament object """
+
+import itertools
 import collections
 from models.round import Round
 from controllers.controller_conversion import convert_to_player_object, round_conversion
-
-import itertools
 
 
 class Tournament:
@@ -27,6 +28,7 @@ class Tournament:
         self.scoreboard = {}
         self.object_dict = {}
         self.serialized_object = {}
+        self.serialized_version = {}
 
     def return_ranking(self):
         """ Return a ordered dictionnary that contains participants informations
@@ -71,7 +73,7 @@ class Tournament:
         self.object_dict[1].make_match()
         return duel_list
 
-    def updating_scoreboard_score(self, round):
+    def updating_scoreboard_score(self, round_obj_index):
         """ Update the score of the scoreboard
         Arg : the round index
         Return : nothing, modification of the scoreboard file
@@ -80,7 +82,7 @@ class Tournament:
         list_of_winner = []
         list_of_equality = []
 
-        for match in self.object_dict[round].attached_match:
+        for match in self.object_dict[round_obj_index].attached_match:
             if match.winner == "1":
                 list_of_winner.append(match.player_1)
             elif match.winner == "2":
@@ -100,16 +102,16 @@ class Tournament:
         Arg : The round index - in order to link the round to his tournament
         Return : The list of the next duels """
 
-        dict = {}
+        short_term_dict = {}
         duel_list = []
         player_to_match = []
 
         for value, index in zip(sorted(self.scoreboard.values(), key=lambda k: k['score'], reverse=True),
                                 range(1, len(self.scoreboard)+1)):
-            dict[index] = value['id'], value['associations'], value['reference']
+            short_term_dict[index] = value['id'], value['associations'], value['reference']
 
-        for value in list(dict):
-            if value not in list(dict):
+        for value in list(short_term_dict):
+            if value not in list(short_term_dict):
                 pass
             else:
                 index = 0
@@ -119,16 +121,16 @@ class Tournament:
                         if index > len(self.scoreboard):
                             player_to_match.append(value)
                             break
-                        if dict[value][0] not in dict[value + index][1]:
-                            duel_list.append([dict[value][2], dict[value + index][2]])
-                            dict.pop(value)
-                            dict.pop(value + index)
+                        if short_term_dict[value][0] not in short_term_dict[value + index][1]:
+                            duel_list.append([short_term_dict[value][2], short_term_dict[value + index][2]])
+                            short_term_dict.pop(value)
+                            short_term_dict.pop(value + index)
                             break
                     except KeyError:
                         pass
 
         # If the fastest attribution method didn't work we use another method.
-        if len(dict) > 0:
+        if len(short_term_dict) > 0:
             duel_list = self.scoreboard_converter(self.swiss_pairing())
 
         self.object_dict[round_index] = Round(duel_list)
@@ -140,11 +142,11 @@ class Tournament:
         """ Only used if the first pairing method didn't find every matchs
         Return : A list of duel based on the sorted scoreboard index """
 
-        dict = {}
+        scoreboard_dict = {}
 
         for value, index in zip(sorted(self.scoreboard.values(), key=lambda k: k['score'], reverse=True),
                                 range(1, len(self.scoreboard)+1)):
-            dict[index] = value['id'], value['associations'], value['reference'], value['score']
+            scoreboard_dict[index] = value['id'], value['associations'], value['reference'], value['score']
 
         general_list = []
         general_score = []
@@ -154,8 +156,8 @@ class Tournament:
                 general_list.append([index, index2])
 
         for value in general_list:
-            player_1 = dict[value[0]]
-            player_2 = dict[value[1]]
+            player_1 = scoreboard_dict[value[0]]
+            player_2 = scoreboard_dict[value[1]]
             player_1_id = player_1[0]
             player_2_id = player_2[0]
             player_1_score = player_1[3]
@@ -175,8 +177,6 @@ class Tournament:
         new_dict = {}
         for association, score, index in zip(general_list, general_score, range(1, len(general_list)+1)):
             new_dict[index] = association, score
-
-        # perm = permutations([v for v in range(1, len(self.selected_players)+1, 1)])
 
         lowest_score = 200
         best_combination = []
@@ -256,7 +256,6 @@ class Tournament:
             'serialized_object': self.serialized_object,
             'scoreboard': self.scoreboard
         }
-        # Deleting the old version
         for value in self._serialized_registry:
             if value['name'] == self.name:
                 self._serialized_registry.remove(value)

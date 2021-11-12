@@ -1,5 +1,4 @@
 
-
 def verify_menu_command():
     """ Check if the input is as expected """
 
@@ -41,31 +40,33 @@ def ask_menu_return():
         else:
             print("Merci de répondre par oui 'y' ou par non 'n'")
 
+
 def view_header(header_ref):
     """ Show a header
     Arg : an int, the header reference """
-    dict_of_header = {1:"-- Reprise d'un tournoi --",
-                      2:"-- Suppression d'un tournoi --",
-                      3:"-- Suppression d'un joueur --",
-                      4:"-- Informations d'un joueur --",
-                      5:"-- Joueurs classés par ordre alphabétique --",
-                      6:"-- Joueurs classés par rang --",
-                      7:"-- Liste de tout les tournois --",
-                      8:"-- Tableau des scores d'un tournoi --",
-                      9:"-- Récapitulatif d'un tournois --",
-                      10:"-- Ajout d'un nouveau joueur --",
-                      11:"----- GESTION DES RAPPORTS -----",
-                      12:"----- GESTION DES JOEURS -----",
-                      13:"----- GESTION DES TOURNOIS -----",
-                      14:"-- Lancement d'un nouveau tournoi --",
-                      15:"---------- MENU ----------",
-                      16:"----- FIN DU TOURNOI -----"}
+    dict_of_header = {1: "-- Reprise d'un tournoi --",
+                      2: "-- Suppression d'un tournoi --",
+                      3: "-- Suppression d'un joueur --",
+                      4: "-- Informations d'un joueur --",
+                      5: "-- Joueurs classés par ordre alphabétique --",
+                      6: "-- Joueurs classés par rang --",
+                      7: "-- Liste de tout les tournois --",
+                      8: "-- Tableau des scores d'un tournoi --",
+                      9: "-- Récapitulatif d'un tournois --",
+                      10: "-- Ajout d'un nouveau joueur --",
+                      11: "----- GESTION DES RAPPORTS -----",
+                      12: "----- GESTION DES JOEURS -----",
+                      13: "----- GESTION DES TOURNOIS -----",
+                      14: "-- Lancement d'un nouveau tournoi --",
+                      15: "---------- MENU ----------",
+                      16: "----- FIN DU TOURNOI -----"}
 
-    print("\n"+len(dict_of_header[header_ref])*"-")
+    print("\n" + len(dict_of_header[header_ref]) * "-")
     print(dict_of_header[header_ref])
-    print(len(dict_of_header[header_ref])*"-"+"\n")
+    print(len(dict_of_header[header_ref]) * "-" + "\n")
 
     return
+
 
 def confirm_quit():
     """ Ask the user the user if he is sure that he want to quit

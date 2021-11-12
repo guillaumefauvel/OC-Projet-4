@@ -4,7 +4,7 @@ from views.view_menu import menu_proposition
 
 
 def main():
-
+    """ Load the datas and launch the menu """
     datas_management.load_from_save()
     datas_management.serializing_tournament_player()
 

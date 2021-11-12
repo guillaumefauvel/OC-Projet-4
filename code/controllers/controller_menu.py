@@ -8,7 +8,6 @@ from controllers.controller_players_manager import players_manager
 from controllers import datas_management
 
 
-
 def menu_attribution(response):
     """ Receive the user's choice and redirect the user towards the wanted manager
     Arg : A int number between 1 and 4 """
@@ -33,6 +32,7 @@ def menu_attribution(response):
         else:
             return launch_the_menu()
 
+
 def launch_the_menu():
     """ Show the menu proposition to the user and ask for their answer """
 
@@ -40,7 +40,8 @@ def launch_the_menu():
 
     return
 
-def navigator(num_of_the_manager,mode):
+
+def navigator(num_of_the_manager, mode):
     """ Provide a navigation solution by either going back to the
     menu or going back to the parent manager.
     Args : The index of the manager, the selected_mode """
@@ -57,6 +58,7 @@ def navigator(num_of_the_manager,mode):
 
     return
 
+
 def menu_loop(function):
     """ Ask the user if he want to go back to the menu. if he choose not to
     the function passed as an argument is called.
@@ -70,4 +72,3 @@ def menu_loop(function):
             break
         elif response is False:
             return function()
-

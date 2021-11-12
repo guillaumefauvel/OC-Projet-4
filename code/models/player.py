@@ -1,8 +1,9 @@
-"""Player object"""
+""" Player object """
 
 
 class Player:
-    """ Players objects are used in every tournament. """
+    """Players objects are used in every tournament."""
+
     _registry = []
     _serialized_registry = []
 
@@ -23,39 +24,39 @@ class Player:
         self.num_of_tournaments = 0
 
         self.serialized_version = {
-            'name': self.name,
-            'first_name': self.first_name,
-            'birthday': self.birthday,
-            'gender': self.gender,
-            'ranking': self.ranking,
-            'reference': self.reference,
-            'num_of_wins': self.num_of_wins,
-            'num_of_losses': self.num_of_losses,
-            'num_of_draw': self.num_of_draw,
-            'win_loss_ratio': self.winloss_ratio,
-            'num_of_match': self.num_of_match,
-            'num_of_tournaments': self.num_of_tournaments
+            "name": self.name,
+            "first_name": self.first_name,
+            "birthday": self.birthday,
+            "gender": self.gender,
+            "ranking": self.ranking,
+            "reference": self.reference,
+            "num_of_wins": self.num_of_wins,
+            "num_of_losses": self.num_of_losses,
+            "num_of_draw": self.num_of_draw,
+            "win_loss_ratio": self.winloss_ratio,
+            "num_of_match": self.num_of_match,
+            "num_of_tournaments": self.num_of_tournaments,
         }
         self._serialized_registry.append(self.serialized_version)
 
     def update_player_datas(self):
-        """ Replace the former serialized player by an updated version """
+        """Replace the former serialized player by an updated version"""
         self.serialized_version = {
-            'name': self.name,
-            'first_name': self.first_name,
-            'birthday': self.birthday,
-            'gender': self.gender,
-            'ranking': self.ranking,
-            'reference': self.reference,
-            'num_of_wins': self.num_of_wins,
-            'num_of_losses': self.num_of_losses,
-            'num_of_draw': self.num_of_draw,
-            'win_loss_ratio': self.winloss_ratio,
-            'num_of_match': self.num_of_match,
-            'num_of_tournaments': self.num_of_tournaments
+            "name": self.name,
+            "first_name": self.first_name,
+            "birthday": self.birthday,
+            "gender": self.gender,
+            "ranking": self.ranking,
+            "reference": self.reference,
+            "num_of_wins": self.num_of_wins,
+            "num_of_losses": self.num_of_losses,
+            "num_of_draw": self.num_of_draw,
+            "win_loss_ratio": self.winloss_ratio,
+            "num_of_match": self.num_of_match,
+            "num_of_tournaments": self.num_of_tournaments,
         }
         for value in self._serialized_registry:
-            if value['reference'] == self.reference:
+            if value["reference"] == self.reference:
                 self._serialized_registry.remove(value)
 
         self._serialized_registry.append(self.serialized_version)

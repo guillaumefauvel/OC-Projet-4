@@ -1,6 +1,7 @@
 """ Report Manager - View """
 from prettytable import PrettyTable
 
+
 def ask_for_report_choice():
     """ Show the possible reports and ask the user his selection
     Return : An int that correspond to the user choice"""
@@ -15,7 +16,7 @@ def ask_for_report_choice():
     print("  7. Le récapitulatif d'un tournoi")
     print("  8. Le tableau des scores")
 
-    possible_choice = ["","1", "2", "3", "4", "5", "6", "7", "8"]
+    possible_choice = ["", "1", "2", "3", "4", "5", "6", "7", "8"]
 
     while True:
         answer = input("\nRéponse : ")
@@ -44,8 +45,8 @@ def ask_tournament_choice(dictionnary):
     while True:
         answer = input("\nQuel tournois désirer vous consulter ? ")
         try:
-            test = dictionnary[int(answer)]
-            break
+            if dictionnary[int(answer)] != 0:
+                break
         except KeyError:
             print("Merci d'indiquer un index valide")
         except ValueError:
@@ -135,7 +136,7 @@ def show_general_scoreboard(scoreboard):
         table.add_row([value["reference"], value["ranking"], value["win_loss_ratio"],
                        value["num_of_match"], value["num_of_wins"], value["num_of_losses"],
                        value["num_of_draw"], value["num_of_tournaments"]])
-    table = table.get_string(title=f"-Tableau des scores-")
+    table = table.get_string(title="-Tableau des scores-")
 
     print(table)
 
@@ -152,15 +153,16 @@ def show_duel(list_of_duel):
 
     return
 
+
 def show_list_of_players(player_dict):
     """ Show a list of player in a compact way
     Arg : A player dict """
     new_dict = {}
-    table = PrettyTable(["C1","C2","C3"])
+    table = PrettyTable(["C1", "C2", "C3"])
     div = len(player_dict)//3
-    remainder = len(player_dict)%3
+    remainder = len(player_dict) % 3
 
-    for value in range(1,div+1):
+    for value in range(1, div+1):
         first_player = f"{value}. {player_dict[value][0]}"
         second_player = f"{value+div}. {player_dict[value+div][0]}"
         third_player = f"{value+div*2}. {player_dict[value+div*2][0]}"
@@ -168,12 +170,12 @@ def show_list_of_players(player_dict):
 
     if remainder == 1:
         first_player = f"{len(player_dict)}. {player_dict[len(player_dict)][0]}"
-        new_dict[div+1] = [first_player,"",""]
+        new_dict[div+1] = [first_player, "", ""]
 
     elif remainder == 2:
         first_player = f"{len(player_dict)-1}. {player_dict[len(player_dict)-1][0]}"
         second_player = f"{len(player_dict)}. {player_dict[len(player_dict)][0]}"
-        new_dict[div+1] = [first_player,second_player,""]
+        new_dict[div+1] = [first_player, second_player, ""]
 
     for value in new_dict:
         table.add_row(new_dict[value])
@@ -182,26 +184,45 @@ def show_list_of_players(player_dict):
 
     return
 
+
 def show_tournament_name(tournament_name):
     """ Show a formated version of the tournament name
     Arg : a string containing the tournament name """
 
     layer = f"+{'-'*64}+"
     name_lenght = int(len(tournament_name)/2)
-    new_form = f"|{(int(63/2)-name_lenght)*' '}{tournament_name}{((int(63/2)-name_lenght+1))*' '}|"
+    new_form = f"|{(int(63/2)-name_lenght)*' '}{tournament_name}{(int(63/2)-name_lenght+1)*' '}|"
     print(layer)
     print(new_form)
     print(layer)
 
     return
 
-def show_round_duration(start_time,end_time):
+
+def show_round_duration(start_time, end_time):
     """ Show the date, the start time and the
     end time of a given round.
     Args : type=datetime object, start_time of a round, end_time of a round"""
+
     date = start_time.strftime("%m/%d/%Y")
     start = start_time.strftime("%H:%M")
     end = end_time.strftime("%H:%M")
     print(f"\nDate : {date}\nHeure de début : {start}\nHeure de fin : {end}")
+
+    return
+
+
+def show_notes(notes):
+    if len(notes) > 0:
+        print("\nNotes : \n")
+        list_of_word = []
+
+        for word in notes.split():
+            list_of_word.append(word)
+            line = " ".join(list_of_word)
+            if len(line) > 60:
+                print(line)
+                list_of_word = []
+        print("")
 
     return

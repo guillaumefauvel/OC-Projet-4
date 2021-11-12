@@ -1,5 +1,6 @@
 from models.player import Player
 
+
 def convert_to_player_object(list_of_player_reference):
     """ Convert a list of player reference into a list of player object
     Arg : A list of player reference (ie: 'Garry Kasparov')
@@ -29,6 +30,7 @@ def round_conversion(list_of_round):
                                   [x.start_time.strftime("%d-%b-%Y (%H:%M:%S.%f)")
                                    for x in list_of_round[value].attached_match],
                                   [x.end_time.strftime("%d-%b-%Y (%H:%M:%S.%f)")
-                                   for x in list_of_round[value].attached_match],[round_start_time,round_end_time]]
+                                   for x in list_of_round[value].attached_match],
+                                  [round_start_time, round_end_time]]
 
     return serialized_dict
