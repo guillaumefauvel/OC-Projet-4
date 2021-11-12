@@ -61,6 +61,6 @@ Le Tournoi à besoin du rang des Joueurs afin d'organiser l'apparaige des Matchs
 
 ##
 ### Mise en garde : 
-Si l'application est coupée la sauvegarde échoue. En effet la sauvegarde du programme s'effectue lorsque l'utilisateur quitte le programme.  
-Les tournois ou les joueurs supprimés de la base de données lorsque l'utilisateur quitte le programme (avec sauvegarde)
+Si l'application est interrompue en cours de fonctionnement, les dernières modifications risquent de pas avoir intégré la base de données.
+Les tournois ou les joueurs supprimés sont ôtés de la base de données lorsque l'utilisateur quitte le programme (avec sauvegarde)
 où lorsqu'il décide de sauvegarder.
