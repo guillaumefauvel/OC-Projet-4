@@ -5,8 +5,8 @@ Ce programme permet de gérer la mise en place de plusieurs tournois d'échec. L
 
 ### Lancement du programme :
 Afin de lancer le programme, assurez-vous d'avoir préalablement créé et activé un environnement virtuel. Installez-les 
-requirements à l'aide d'un `pip install requirements.txt`. Lancer le programme en entrant `python main.py`.  
-Pour lancer un diagnosic flake8 lancer `flake8 code --max-line-length 119 --format=html --htmldir=flake-report` dans le 
+requirements à l'aide d'un `pip install requirements.txt`. Lancez le programme en entrant `python main.py`.  
+Pour lancer un diagnosic flake8 lancez `flake8 code --max-line-length 119 --format=html --htmldir=flake-report` dans le 
 terminal. Accèdez au résulat en entrant `flake-report/index.html`.
 
 ### Arborescence : 
@@ -46,21 +46,21 @@ Nous avons développé l'application en utilisant le dessign pattern MVC. Ainsi 
 
 **_Controllers_** : 
 Il est composé de 4 controllers principaux. Le controller Menu redirige les requêtes vers le controller souhaité (tournament, player, report)
-Cependant nous faisont appel à deux autres controllers annexes. Il y en a un pour gérer les conversions et il y en a un autre pour gérer la gestion des données.
+Cependant nous faisont appel à deux autres controllers annexes. Le premier s'occupe des conversions et le second gère la gestion des données.
 
 
 **_Views_** : 
 Nous retrouvons un fichier view pour chacun des controllers clés (menu, tournament, player, report).
-Cependant le fichier view propre aux tournois a été divisé en deux. La première partie gère la gestion des tournois, tandis que l'autre s'occupe du déroulé d'un tournoi.
+Cependant le fichier view propre aux tournois a été divisé en deux. La première partie gère la gestion des tournois, tandis que l'autre s'occupe du bon déroulement d'un tournoi.
 
 
 **_Models_** :
 Il existe 4 grands modèles : Joueur, Tournoi, Round et Match. 
-Le Tournoi à besoin du rang des Joeurs afin d'organiser l'apparaige des Matchs. Il fournit à l'object Round une liste de match afin que l'object Round puisse créer ces Matchs. 
+Le Tournoi à besoin du rang des Joueurs afin d'organiser l'apparaige des Matchs. Il fournit à l'object Round une liste de match afin que l'object Round puisse créer ces Matchs. 
 
 
 ##
 ### Mise en garde : 
 Si l'application est coupée la sauvegarde échoue. En effet la sauvegarde du programme s'effectue lorsque l'utilisateur quitte le programme.  
-Les tournois ou les joueurs sont donc véritablement supprimés de la base de données lorsque l'utilisateur quitte le programme (avec sauvegarde)
+Les tournois ou les joueurs supprimés de la base de données lorsque l'utilisateur quitte le programme (avec sauvegarde)
 où lorsqu'il décide de sauvegarder.
